@@ -2,7 +2,6 @@ library(tidyverse)
 library(rvest)
 library(stringr)
 
-
 page <- read_html("https://www.rstudio.com/resources/cheatsheets/")
 
 boxes <- page %>%
@@ -17,13 +16,13 @@ url <- boxes %>%
   html_node(".fusion-button-wrapper a") %>%
   html_attr("href")
 
-name <- url %>%
+id <- url %>%
   basename() %>%
   tools::file_path_sans_ext() %>%
   str_replace("-cheatsheet", "")
 
-cheatsheets <- tibble(name, title, url)
+cheatsheets <- tibble(id, title, url)
 
 cheatsheets %>%
-  filter(!is.na(name), !is.na(title)) %>%
+  filter(!is.na(id), !is.na(title)) %>%
   write_csv("books/cheatsheets.csv")

@@ -1,0 +1,585 @@
+id,title,url,depth
+books-cheatsheets-rmarkdown-2.0,R Markdown Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf,NA
+books-cheatsheets-rstudio-IDE,RStudio IDE Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf,NA
+books-cheatsheets-shiny,Shiny Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf,NA
+books-cheatsheets-ggplot2-2.1,Data Visualization Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf,NA
+books-cheatsheets-devtools,Package Development Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/06/devtools-cheatsheet.pdf,NA
+books-cheatsheets-data-wrangling,Data Wrangling Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf,NA
+books-cheatsheets-rmarkdown-reference,R Markdown Reference Guide,https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf,NA
+books-cheatsheets-r-cheat-sheet-3,Base R,https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf,NA
+books-cheatsheets-advancedR,Advanced R,https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf,NA
+books-cheatsheets-RegExCheatsheet,Regular Expressions,https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf,NA
+books-cheatsheets-how-big-is-your-graph,How big is your graph? (base R graphics),https://www.rstudio.com/wp-content/uploads/2016/10/how-big-is-your-graph.pdf,NA
+books-ggplot2-1,Introduction,NA,1.0
+books-ggplot2-1.1,Welcome to ggplot2,NA,2.0
+books-ggplot2-1.2,What is the grammar of graphics?,NA,2.0
+books-ggplot2-1.3,How does ggplot2 fit in with other R graphics?,NA,2.0
+books-ggplot2-1.4,About this book,NA,2.0
+books-ggplot2-1.5,Installation,NA,2.0
+books-ggplot2-1.6,Other resources,NA,2.0
+books-ggplot2-1.7,Colophon,NA,2.0
+books-ggplot2-2,Getting started with ggplot2,NA,1.0
+books-ggplot2-2.1,Introduction,NA,2.0
+books-ggplot2-2.2,Fuel economy data,NA,2.0
+books-ggplot2-2.3,Key components,NA,2.0
+books-ggplot2-2.4,"Colour, size, shape and other aesthetic attributes",NA,2.0
+books-ggplot2-2.5,Facetting,NA,2.0
+books-ggplot2-2.6,Plot geoms,NA,2.0
+books-ggplot2-2.7,Modifying the axes,NA,2.0
+books-ggplot2-2.8,Output,NA,2.0
+books-ggplot2-2.9,Quick plots,NA,2.0
+books-ggplot2-3,Toolbox,NA,1.0
+books-ggplot2-3.1,Introduction,NA,2.0
+books-ggplot2-3.2,Basic plot types,NA,2.0
+books-ggplot2-3.3,Labels,NA,2.0
+books-ggplot2-3.4,Annotations,NA,2.0
+books-ggplot2-3.5,Collective geoms,NA,2.0
+books-ggplot2-3.6,Surface plots,NA,2.0
+books-ggplot2-3.7,Drawing maps,NA,2.0
+books-ggplot2-3.8,Revealing uncertainty,NA,2.0
+books-ggplot2-3.9,Weighted data,NA,2.0
+books-ggplot2-3.10,Diamonds data,NA,2.0
+books-ggplot2-3.11,Displaying distributions,NA,2.0
+books-ggplot2-3.12,Dealing with overplotting,NA,2.0
+books-ggplot2-3.13,Statistical summaries,NA,2.0
+books-ggplot2-3.14,Add-on packages,NA,2.0
+books-ggplot2-4,Mastering the grammar,NA,1.0
+books-ggplot2-4.1,Introduction,NA,2.0
+books-ggplot2-4.2,Building a scatterplot,NA,2.0
+books-ggplot2-4.3,Adding complexity,NA,2.0
+books-ggplot2-4.4,Components of the layered grammar,NA,2.0
+books-ggplot2-4.5,Exercises,NA,2.0
+books-ggplot2-5,Build a plot layer by layer,NA,1.0
+books-ggplot2-5.1,Introduction,NA,2.0
+books-ggplot2-5.2,Building a plot,NA,2.0
+books-ggplot2-5.3,Data,NA,2.0
+books-ggplot2-5.4,Aesthetic mappings,NA,2.0
+books-ggplot2-5.5,Geoms,NA,2.0
+books-ggplot2-5.6,Stats,NA,2.0
+books-ggplot2-5.7,Position adjustments,NA,2.0
+books-ggplot2-6,"Scales, axes and legends",NA,1.0
+books-ggplot2-6.1,Introduction,NA,2.0
+books-ggplot2-6.2,Modifying scales,NA,2.0
+books-ggplot2-6.3,Guides: legends and axes,NA,2.0
+books-ggplot2-6.4,Legends,NA,2.0
+books-ggplot2-6.5,Limits,NA,2.0
+books-ggplot2-6.6,Scales toolbox,NA,2.0
+books-ggplot2-7,Positioning,NA,1.0
+books-ggplot2-7.1,Introduction,NA,2.0
+books-ggplot2-7.2,Facetting,NA,2.0
+books-ggplot2-7.3,Coordinate systems,NA,2.0
+books-ggplot2-7.4,Linear coordinate systems,NA,2.0
+books-ggplot2-7.5,Non-linear coordinate systems,NA,2.0
+books-ggplot2-8,Themes,NA,1.0
+books-ggplot2-8.1,Introduction,NA,2.0
+books-ggplot2-8.2,Complete themes,NA,2.0
+books-ggplot2-8.3,Modifying theme components,NA,2.0
+books-ggplot2-8.4,Theme elements,NA,2.0
+books-ggplot2-8.5,Saving your output,NA,2.0
+books-ggplot2-9,Data analysis,NA,1.0
+books-ggplot2-9.1,Introduction,NA,2.0
+books-ggplot2-9.2,Tidy data,NA,2.0
+books-ggplot2-9.3,Spread and gather,NA,2.0
+books-ggplot2-9.4,Separate and unite,NA,2.0
+books-ggplot2-9.5,Case studies,NA,2.0
+books-ggplot2-9.6,Learning more,NA,2.0
+books-ggplot2-10,Data transformation,NA,1.0
+books-ggplot2-10.1,Introduction,NA,2.0
+books-ggplot2-10.2,Filter observations,NA,2.0
+books-ggplot2-10.3,Create new variables,NA,2.0
+books-ggplot2-10.4,Group-wise summaries,NA,2.0
+books-ggplot2-10.5,Transformation pipelines,NA,2.0
+books-ggplot2-10.6,Learning more,NA,2.0
+books-ggplot2-11,Modelling for visualisation,NA,1.0
+books-ggplot2-11.1,Introduction,NA,2.0
+books-ggplot2-11.2,Removing trend,NA,2.0
+books-ggplot2-11.3,Texas housing data,NA,2.0
+books-ggplot2-11.4,Visualising models,NA,2.0
+books-ggplot2-11.5,Model-level summaries,NA,2.0
+books-ggplot2-11.6,Coefficient-level summaries,NA,2.0
+books-ggplot2-11.7,Observation data,NA,2.0
+books-ggplot2-12,Programming with ggplot2,NA,1.0
+books-ggplot2-12.1,Introduction,NA,2.0
+books-ggplot2-12.2,Single components,NA,2.0
+books-ggplot2-12.3,Multiple components,NA,2.0
+books-ggplot2-12.4,Plot functions,NA,2.0
+books-ggplot2-12.5,Functional programming,NA,2.0
+books-r4ds-1,Introduction,http://r4ds.had.co.nz/introduction.html,1.0
+books-r4ds-1.1,What you will learn,http://r4ds.had.co.nz/introduction.html#what-you-will-learn,2.0
+books-r4ds-1.2,How this book is organised,http://r4ds.had.co.nz/introduction.html#how-this-book-is-organised,2.0
+books-r4ds-1.3,What you won’t learn,http://r4ds.had.co.nz/introduction.html#what-you-wont-learn,2.0
+books-r4ds-1.4,Prerequisites,http://r4ds.had.co.nz/introduction.html#prerequisites,2.0
+books-r4ds-1.5,Running R code,http://r4ds.had.co.nz/introduction.html#running-r-code,2.0
+books-r4ds-1.6,Getting help and learning more,http://r4ds.had.co.nz/introduction.html#getting-help-and-learning-more,2.0
+books-r4ds-1.7,Acknowledgements,http://r4ds.had.co.nz/introduction.html#acknowledgements,2.0
+books-r4ds-1.8,Colophon,http://r4ds.had.co.nz/introduction.html#colophon,2.0
+books-r4ds-2,Introduction,http://r4ds.had.co.nz/explore-intro.html,1.0
+books-r4ds-3,Data visualisation,http://r4ds.had.co.nz/data-visualisation.html,1.0
+books-r4ds-3.1,Introduction,http://r4ds.had.co.nz/data-visualisation.html#introduction-1,2.0
+books-r4ds-3.2,First steps,http://r4ds.had.co.nz/data-visualisation.html#first-steps,2.0
+books-r4ds-3.3,Aesthetic mappings,http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings,2.0
+books-r4ds-3.4,Common problems,http://r4ds.had.co.nz/data-visualisation.html#common-problems,2.0
+books-r4ds-3.5,Facets,http://r4ds.had.co.nz/data-visualisation.html#facets,2.0
+books-r4ds-3.6,Geometric objects,http://r4ds.had.co.nz/data-visualisation.html#geometric-objects,2.0
+books-r4ds-3.7,Statistical transformations,http://r4ds.had.co.nz/data-visualisation.html#statistical-transformations,2.0
+books-r4ds-3.8,Position adjustments,http://r4ds.had.co.nz/data-visualisation.html#position-adjustments,2.0
+books-r4ds-3.9,Coordinate systems,http://r4ds.had.co.nz/data-visualisation.html#coordinate-systems,2.0
+books-r4ds-3.10,The layered grammar of graphics,http://r4ds.had.co.nz/data-visualisation.html#the-layered-grammar-of-graphics,2.0
+books-r4ds-4,Workflow: basics,http://r4ds.had.co.nz/workflow-basics.html,1.0
+books-r4ds-4.1,Coding basics,http://r4ds.had.co.nz/workflow-basics.html#coding-basics,2.0
+books-r4ds-4.2,What’s in a name?,http://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name,2.0
+books-r4ds-4.3,Calling functions,http://r4ds.had.co.nz/workflow-basics.html#calling-functions,2.0
+books-r4ds-4.4,Practice,http://r4ds.had.co.nz/workflow-basics.html#practice,2.0
+books-r4ds-5,Data transformation,http://r4ds.had.co.nz/transform.html,1.0
+books-r4ds-5.1,Introduction,http://r4ds.had.co.nz/transform.html#introduction-2,2.0
+books-r4ds-5.2,Filter rows with,http://r4ds.had.co.nz/transform.html#filter-rows-with-filter,2.0
+books-r4ds-5.3,Arrange rows with,http://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange,2.0
+books-r4ds-5.4,Select columns with,http://r4ds.had.co.nz/transform.html#select-columns-with-select,2.0
+books-r4ds-5.5,Add new variables with,http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate,2.0
+books-r4ds-5.6,Grouped summaries with,http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise,2.0
+books-r4ds-5.7,Grouped mutates (and filters),http://r4ds.had.co.nz/transform.html#grouped-mutates-and-filters,2.0
+books-r4ds-6,Workflow: scripts,http://r4ds.had.co.nz/workflow-scripts.html,1.0
+books-r4ds-6.1,Running code,http://r4ds.had.co.nz/workflow-scripts.html#running-code,2.0
+books-r4ds-6.2,RStudio diagnostics,http://r4ds.had.co.nz/workflow-scripts.html#rstudio-diagnostics,2.0
+books-r4ds-6.3,Practice,http://r4ds.had.co.nz/workflow-scripts.html#practice-1,2.0
+books-r4ds-7,Exploratory Data Analysis,http://r4ds.had.co.nz/exploratory-data-analysis.html,1.0
+books-r4ds-7.1,Introduction,http://r4ds.had.co.nz/exploratory-data-analysis.html#introduction-3,2.0
+books-r4ds-7.2,Questions,http://r4ds.had.co.nz/exploratory-data-analysis.html#questions,2.0
+books-r4ds-7.3,Variation,http://r4ds.had.co.nz/exploratory-data-analysis.html#variation,2.0
+books-r4ds-7.4,Missing values,http://r4ds.had.co.nz/exploratory-data-analysis.html#missing-values-2,2.0
+books-r4ds-7.5,Covariation,http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation,2.0
+books-r4ds-7.6,Patterns and models,http://r4ds.had.co.nz/exploratory-data-analysis.html#patterns-and-models,2.0
+books-r4ds-7.7,ggplot2 calls,http://r4ds.had.co.nz/exploratory-data-analysis.html#ggplot2-calls,2.0
+books-r4ds-7.8,Learning more,http://r4ds.had.co.nz/exploratory-data-analysis.html#learning-more,2.0
+books-r4ds-8,Workflow: projects,http://r4ds.had.co.nz/workflow-projects.html,1.0
+books-r4ds-8.1,What is real?,http://r4ds.had.co.nz/workflow-projects.html#what-is-real,2.0
+books-r4ds-8.2,Where does your analysis live?,http://r4ds.had.co.nz/workflow-projects.html#where-does-your-analysis-live,2.0
+books-r4ds-8.3,Paths and directories,http://r4ds.had.co.nz/workflow-projects.html#paths-and-directories,2.0
+books-r4ds-8.4,RStudio projects,http://r4ds.had.co.nz/workflow-projects.html#rstudio-projects,2.0
+books-r4ds-8.5,Summary,http://r4ds.had.co.nz/workflow-projects.html#summary,2.0
+books-r4ds-9,Introduction,http://r4ds.had.co.nz/wrangle-intro.html,1.0
+books-r4ds-10,Tibbles,http://r4ds.had.co.nz/tibbles.html,1.0
+books-r4ds-10.1,Introduction,http://r4ds.had.co.nz/tibbles.html#introduction-4,2.0
+books-r4ds-10.2,Creating tibbles,http://r4ds.had.co.nz/tibbles.html#tibbles,2.0
+books-r4ds-10.3,Tibbles vs. data.frame,http://r4ds.had.co.nz/tibbles.html#tibbles-vs.data.frame,2.0
+books-r4ds-10.4,Interacting with older code,http://r4ds.had.co.nz/tibbles.html#interacting-with-older-code,2.0
+books-r4ds-10.5,Exercises,http://r4ds.had.co.nz/tibbles.html#exercises-18,2.0
+books-r4ds-11,Data import,http://r4ds.had.co.nz/data-import.html,1.0
+books-r4ds-11.1,Introduction,http://r4ds.had.co.nz/data-import.html#introduction-5,2.0
+books-r4ds-11.2,Getting started,http://r4ds.had.co.nz/data-import.html#getting-started,2.0
+books-r4ds-11.3,Parsing a vector,http://r4ds.had.co.nz/data-import.html#parsing-a-vector,2.0
+books-r4ds-11.4,Parsing a file,http://r4ds.had.co.nz/data-import.html#parsing-a-file,2.0
+books-r4ds-11.5,Writing to a file,http://r4ds.had.co.nz/data-import.html#writing-to-a-file,2.0
+books-r4ds-11.6,Other types of data,http://r4ds.had.co.nz/data-import.html#other-types-of-data,2.0
+books-r4ds-12,Tidy data,http://r4ds.had.co.nz/tidy-data.html,1.0
+books-r4ds-12.1,Introduction,http://r4ds.had.co.nz/tidy-data.html#introduction-6,2.0
+books-r4ds-12.2,Tidy data,http://r4ds.had.co.nz/tidy-data.html#tidy-data-1,2.0
+books-r4ds-12.3,Spreading and gathering,http://r4ds.had.co.nz/tidy-data.html#spreading-and-gathering,2.0
+books-r4ds-12.4,Separating and uniting,http://r4ds.had.co.nz/tidy-data.html#separating-and-uniting,2.0
+books-r4ds-12.5,Missing values,http://r4ds.had.co.nz/tidy-data.html#missing-values-3,2.0
+books-r4ds-12.6,Case Study,http://r4ds.had.co.nz/tidy-data.html#case-study,2.0
+books-r4ds-12.7,Non-tidy data,http://r4ds.had.co.nz/tidy-data.html#non-tidy-data,2.0
+books-r4ds-13,Relational data,http://r4ds.had.co.nz/relational-data.html,1.0
+books-r4ds-13.1,Introduction,http://r4ds.had.co.nz/relational-data.html#introduction-7,2.0
+books-r4ds-13.2,nycflights13,http://r4ds.had.co.nz/relational-data.html#nycflights13-relational,2.0
+books-r4ds-13.3,Keys,http://r4ds.had.co.nz/relational-data.html#keys,2.0
+books-r4ds-13.4,Mutating joins,http://r4ds.had.co.nz/relational-data.html#mutating-joins,2.0
+books-r4ds-13.5,Filtering joins,http://r4ds.had.co.nz/relational-data.html#filtering-joins,2.0
+books-r4ds-13.6,Join problems,http://r4ds.had.co.nz/relational-data.html#join-problems,2.0
+books-r4ds-13.7,Set operations,http://r4ds.had.co.nz/relational-data.html#set-operations,2.0
+books-r4ds-14,Strings,http://r4ds.had.co.nz/strings.html,1.0
+books-r4ds-14.1,Introduction,http://r4ds.had.co.nz/strings.html#introduction-8,2.0
+books-r4ds-14.2,String basics,http://r4ds.had.co.nz/strings.html#string-basics,2.0
+books-r4ds-14.3,Matching patterns with regular expressions,http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions,2.0
+books-r4ds-14.4,Tools,http://r4ds.had.co.nz/strings.html#tools,2.0
+books-r4ds-14.5,Other types of pattern,http://r4ds.had.co.nz/strings.html#other-types-of-pattern,2.0
+books-r4ds-14.6,Other uses of regular expressions,http://r4ds.had.co.nz/strings.html#other-uses-of-regular-expressions,2.0
+books-r4ds-14.7,stringi,http://r4ds.had.co.nz/strings.html#stringi,2.0
+books-r4ds-15,Factors,http://r4ds.had.co.nz/factors.html,1.0
+books-r4ds-15.1,Introduction,http://r4ds.had.co.nz/factors.html#introduction-9,2.0
+books-r4ds-15.2,Creating factors,http://r4ds.had.co.nz/factors.html#creating-factors,2.0
+books-r4ds-15.3,General Social Survey,http://r4ds.had.co.nz/factors.html#general-social-survey,2.0
+books-r4ds-15.4,Modifying factor order,http://r4ds.had.co.nz/factors.html#modifying-factor-order,2.0
+books-r4ds-15.5,Modifying factor levels,http://r4ds.had.co.nz/factors.html#modifying-factor-levels,2.0
+books-r4ds-16,Dates and times,http://r4ds.had.co.nz/dates-and-times.html,1.0
+books-r4ds-16.1,Introduction,http://r4ds.had.co.nz/dates-and-times.html#introduction-10,2.0
+books-r4ds-16.2,Creating date/times,http://r4ds.had.co.nz/dates-and-times.html#creating-datetimes,2.0
+books-r4ds-16.3,Date-time components,http://r4ds.had.co.nz/dates-and-times.html#date-time-components,2.0
+books-r4ds-16.4,Time spans,http://r4ds.had.co.nz/dates-and-times.html#time-spans,2.0
+books-r4ds-16.5,Time zones,http://r4ds.had.co.nz/dates-and-times.html#time-zones,2.0
+books-r4ds-17,Introduction,http://r4ds.had.co.nz/program-intro.html,1.0
+books-r4ds-17.1,Learning more,http://r4ds.had.co.nz/program-intro.html#learning-more-1,2.0
+books-r4ds-18,Pipes,http://r4ds.had.co.nz/pipes.html,1.0
+books-r4ds-18.1,Introduction,http://r4ds.had.co.nz/pipes.html#introduction-11,2.0
+books-r4ds-18.2,Piping alternatives,http://r4ds.had.co.nz/pipes.html#piping-alternatives,2.0
+books-r4ds-18.3,When not to use the pipe,http://r4ds.had.co.nz/pipes.html#when-not-to-use-the-pipe,2.0
+books-r4ds-18.4,Other tools from magrittr,http://r4ds.had.co.nz/pipes.html#other-tools-from-magrittr,2.0
+books-r4ds-19,Functions,http://r4ds.had.co.nz/functions.html,1.0
+books-r4ds-19.1,Introduction,http://r4ds.had.co.nz/functions.html#introduction-12,2.0
+books-r4ds-19.2,When should you write a function?,http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function,2.0
+books-r4ds-19.3,Functions are for humans and computers,http://r4ds.had.co.nz/functions.html#functions-are-for-humans-and-computers,2.0
+books-r4ds-19.4,Conditional execution,http://r4ds.had.co.nz/functions.html#conditional-execution,2.0
+books-r4ds-19.5,Function arguments,http://r4ds.had.co.nz/functions.html#function-arguments,2.0
+books-r4ds-19.6,Return values,http://r4ds.had.co.nz/functions.html#return-values,2.0
+books-r4ds-19.7,Environment,http://r4ds.had.co.nz/functions.html#environment,2.0
+books-r4ds-20,Vectors,http://r4ds.had.co.nz/vectors.html,1.0
+books-r4ds-20.1,Introduction,http://r4ds.had.co.nz/vectors.html#introduction-13,2.0
+books-r4ds-20.2,Vector basics,http://r4ds.had.co.nz/vectors.html#vector-basics,2.0
+books-r4ds-20.3,Important types of atomic vector,http://r4ds.had.co.nz/vectors.html#important-types-of-atomic-vector,2.0
+books-r4ds-20.4,Using atomic vectors,http://r4ds.had.co.nz/vectors.html#using-atomic-vectors,2.0
+books-r4ds-20.5,Recursive vectors (lists),http://r4ds.had.co.nz/vectors.html#lists,2.0
+books-r4ds-20.6,Attributes,http://r4ds.had.co.nz/vectors.html#attributes,2.0
+books-r4ds-20.7,Augmented vectors,http://r4ds.had.co.nz/vectors.html#augmented-vectors,2.0
+books-r4ds-21,Iteration,http://r4ds.had.co.nz/iteration.html,1.0
+books-r4ds-21.1,Introduction,http://r4ds.had.co.nz/iteration.html#introduction-14,2.0
+books-r4ds-21.2,For loops,http://r4ds.had.co.nz/iteration.html#for-loops,2.0
+books-r4ds-21.3,For loop variations,http://r4ds.had.co.nz/iteration.html#for-loop-variations,2.0
+books-r4ds-21.4,For loops vs. functionals,http://r4ds.had.co.nz/iteration.html#for-loops-vs.functionals,2.0
+books-r4ds-21.5,The map functions,http://r4ds.had.co.nz/iteration.html#the-map-functions,2.0
+books-r4ds-21.6,Dealing with failure,http://r4ds.had.co.nz/iteration.html#dealing-with-failure,2.0
+books-r4ds-21.7,Mapping over multiple arguments,http://r4ds.had.co.nz/iteration.html#mapping-over-multiple-arguments,2.0
+books-r4ds-21.8,Walk,http://r4ds.had.co.nz/iteration.html#walk,2.0
+books-r4ds-21.9,Other patterns of for loops,http://r4ds.had.co.nz/iteration.html#other-patterns-of-for-loops,2.0
+books-r4ds-22,Introduction,http://r4ds.had.co.nz/model-intro.html,1.0
+books-r4ds-22.1,Hypothesis generation vs. hypothesis confirmation,http://r4ds.had.co.nz/model-intro.html#hypothesis-generation-vs.hypothesis-confirmation,2.0
+books-r4ds-23,Model basics,http://r4ds.had.co.nz/model-basics.html,1.0
+books-r4ds-23.1,Introduction,http://r4ds.had.co.nz/model-basics.html#introduction-15,2.0
+books-r4ds-23.2,A simple model,http://r4ds.had.co.nz/model-basics.html#a-simple-model,2.0
+books-r4ds-23.3,Visualising models,http://r4ds.had.co.nz/model-basics.html#visualising-models,2.0
+books-r4ds-23.4,Formulas and model families,http://r4ds.had.co.nz/model-basics.html#formulas-and-model-families,2.0
+books-r4ds-23.5,Missing values,http://r4ds.had.co.nz/model-basics.html#missing-values-5,2.0
+books-r4ds-23.6,Other model families,http://r4ds.had.co.nz/model-basics.html#other-model-families,2.0
+books-r4ds-24,Model building,http://r4ds.had.co.nz/model-building.html,1.0
+books-r4ds-24.1,Introduction,http://r4ds.had.co.nz/model-building.html#introduction-16,2.0
+books-r4ds-24.2,Why are low quality diamonds more expensive?,http://r4ds.had.co.nz/model-building.html#diamond-prices,2.0
+books-r4ds-24.3,What affects the number of daily flights?,http://r4ds.had.co.nz/model-building.html#what-affects-the-number-of-daily-flights,2.0
+books-r4ds-24.4,Learning more about models,http://r4ds.had.co.nz/model-building.html#learning-more-about-models,2.0
+books-r4ds-25,Many models,http://r4ds.had.co.nz/many-models.html,1.0
+books-r4ds-25.1,Introduction,http://r4ds.had.co.nz/many-models.html#introduction-17,2.0
+books-r4ds-25.2,gapminder,http://r4ds.had.co.nz/many-models.html#gapminder,2.0
+books-r4ds-25.3,List-columns,http://r4ds.had.co.nz/many-models.html#list-columns-1,2.0
+books-r4ds-25.4,Creating list-columns,http://r4ds.had.co.nz/many-models.html#creating-list-columns,2.0
+books-r4ds-25.5,Simplifying list-columns,http://r4ds.had.co.nz/many-models.html#simplifying-list-columns,2.0
+books-r4ds-25.6,Making tidy data with broom,http://r4ds.had.co.nz/many-models.html#making-tidy-data-with-broom,2.0
+books-r4ds-26,Introduction,http://r4ds.had.co.nz/communicate-intro.html,1.0
+books-r4ds-27,R Markdown,http://r4ds.had.co.nz/r-markdown.html,1.0
+books-r4ds-27.1,Introduction,http://r4ds.had.co.nz/r-markdown.html#introduction-18,2.0
+books-r4ds-27.2,R Markdown basics,http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics,2.0
+books-r4ds-27.3,Text formatting with Markdown,http://r4ds.had.co.nz/r-markdown.html#text-formatting-with-markdown,2.0
+books-r4ds-27.4,Code chunks,http://r4ds.had.co.nz/r-markdown.html#code-chunks,2.0
+books-r4ds-27.5,Troubleshooting,http://r4ds.had.co.nz/r-markdown.html#troubleshooting,2.0
+books-r4ds-27.6,YAML header,http://r4ds.had.co.nz/r-markdown.html#yaml-header,2.0
+books-r4ds-27.7,Learning more,http://r4ds.had.co.nz/r-markdown.html#learning-more-2,2.0
+books-r4ds-28,Graphics for communication,http://r4ds.had.co.nz/graphics-for-communication.html,1.0
+books-r4ds-28.1,Introduction,http://r4ds.had.co.nz/graphics-for-communication.html#introduction-19,2.0
+books-r4ds-28.2,Label,http://r4ds.had.co.nz/graphics-for-communication.html#label,2.0
+books-r4ds-28.3,Annotations,http://r4ds.had.co.nz/graphics-for-communication.html#annotations,2.0
+books-r4ds-28.4,Scales,http://r4ds.had.co.nz/graphics-for-communication.html#scales,2.0
+books-r4ds-28.5,Zooming,http://r4ds.had.co.nz/graphics-for-communication.html#zooming,2.0
+books-r4ds-28.6,Themes,http://r4ds.had.co.nz/graphics-for-communication.html#themes,2.0
+books-r4ds-28.7,Saving your plots,http://r4ds.had.co.nz/graphics-for-communication.html#saving-your-plots,2.0
+books-r4ds-28.8,Learning more,http://r4ds.had.co.nz/graphics-for-communication.html#learning-more-3,2.0
+books-r4ds-29,R Markdown formats,http://r4ds.had.co.nz/r-markdown-formats.html,1.0
+books-r4ds-29.1,Introduction,http://r4ds.had.co.nz/r-markdown-formats.html#introduction-20,2.0
+books-r4ds-29.2,Output options,http://r4ds.had.co.nz/r-markdown-formats.html#output-options,2.0
+books-r4ds-29.3,Documents,http://r4ds.had.co.nz/r-markdown-formats.html#documents,2.0
+books-r4ds-29.4,Notebooks,http://r4ds.had.co.nz/r-markdown-formats.html#notebooks,2.0
+books-r4ds-29.5,Presentations,http://r4ds.had.co.nz/r-markdown-formats.html#presentations,2.0
+books-r4ds-29.6,Dashboards,http://r4ds.had.co.nz/r-markdown-formats.html#dashboards,2.0
+books-r4ds-29.7,Interactivity,http://r4ds.had.co.nz/r-markdown-formats.html#interactivity,2.0
+books-r4ds-29.8,Websites,http://r4ds.had.co.nz/r-markdown-formats.html#websites,2.0
+books-r4ds-29.9,Other formats,http://r4ds.had.co.nz/r-markdown-formats.html#other-formats,2.0
+books-r4ds-29.10,Learning more,http://r4ds.had.co.nz/r-markdown-formats.html#learning-more-4,2.0
+books-r4ds-30,R Markdown workflow,http://r4ds.had.co.nz/r-markdown-workflow.html,1.0
+cheatsheets-rmarkdown-2.0,R Markdown Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf,NA
+cheatsheets-rstudio-IDE,RStudio IDE Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf,NA
+cheatsheets-shiny,Shiny Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf,NA
+cheatsheets-ggplot2-2.1,Data Visualization Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf,NA
+cheatsheets-devtools,Package Development Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/06/devtools-cheatsheet.pdf,NA
+cheatsheets-data-wrangling,Data Wrangling Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf,NA
+cheatsheets-rmarkdown-reference,R Markdown Reference Guide,https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf,NA
+cheatsheets-r-cheat-sheet-3,Base R,https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf,NA
+cheatsheets-advancedR,Advanced R,https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf,NA
+cheatsheets-RegExCheatsheet,Regular Expressions,https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf,NA
+cheatsheets-how-big-is-your-graph,How big is your graph? (base R graphics),https://www.rstudio.com/wp-content/uploads/2016/10/how-big-is-your-graph.pdf,NA
+ggplot2-1,Introduction,NA,1.0
+ggplot2-1.1,Welcome to ggplot2,NA,2.0
+ggplot2-1.2,What is the grammar of graphics?,NA,2.0
+ggplot2-1.3,How does ggplot2 fit in with other R graphics?,NA,2.0
+ggplot2-1.4,About this book,NA,2.0
+ggplot2-1.5,Installation,NA,2.0
+ggplot2-1.6,Other resources,NA,2.0
+ggplot2-1.7,Colophon,NA,2.0
+ggplot2-2,Getting started with ggplot2,NA,1.0
+ggplot2-2.1,Introduction,NA,2.0
+ggplot2-2.2,Fuel economy data,NA,2.0
+ggplot2-2.3,Key components,NA,2.0
+ggplot2-2.4,"Colour, size, shape and other aesthetic attributes",NA,2.0
+ggplot2-2.5,Facetting,NA,2.0
+ggplot2-2.6,Plot geoms,NA,2.0
+ggplot2-2.7,Modifying the axes,NA,2.0
+ggplot2-2.8,Output,NA,2.0
+ggplot2-2.9,Quick plots,NA,2.0
+ggplot2-3,Toolbox,NA,1.0
+ggplot2-3.1,Introduction,NA,2.0
+ggplot2-3.2,Basic plot types,NA,2.0
+ggplot2-3.3,Labels,NA,2.0
+ggplot2-3.4,Annotations,NA,2.0
+ggplot2-3.5,Collective geoms,NA,2.0
+ggplot2-3.6,Surface plots,NA,2.0
+ggplot2-3.7,Drawing maps,NA,2.0
+ggplot2-3.8,Revealing uncertainty,NA,2.0
+ggplot2-3.9,Weighted data,NA,2.0
+ggplot2-3.10,Diamonds data,NA,2.0
+ggplot2-3.11,Displaying distributions,NA,2.0
+ggplot2-3.12,Dealing with overplotting,NA,2.0
+ggplot2-3.13,Statistical summaries,NA,2.0
+ggplot2-3.14,Add-on packages,NA,2.0
+ggplot2-4,Mastering the grammar,NA,1.0
+ggplot2-4.1,Introduction,NA,2.0
+ggplot2-4.2,Building a scatterplot,NA,2.0
+ggplot2-4.3,Adding complexity,NA,2.0
+ggplot2-4.4,Components of the layered grammar,NA,2.0
+ggplot2-4.5,Exercises,NA,2.0
+ggplot2-5,Build a plot layer by layer,NA,1.0
+ggplot2-5.1,Introduction,NA,2.0
+ggplot2-5.2,Building a plot,NA,2.0
+ggplot2-5.3,Data,NA,2.0
+ggplot2-5.4,Aesthetic mappings,NA,2.0
+ggplot2-5.5,Geoms,NA,2.0
+ggplot2-5.6,Stats,NA,2.0
+ggplot2-5.7,Position adjustments,NA,2.0
+ggplot2-6,"Scales, axes and legends",NA,1.0
+ggplot2-6.1,Introduction,NA,2.0
+ggplot2-6.2,Modifying scales,NA,2.0
+ggplot2-6.3,Guides: legends and axes,NA,2.0
+ggplot2-6.4,Legends,NA,2.0
+ggplot2-6.5,Limits,NA,2.0
+ggplot2-6.6,Scales toolbox,NA,2.0
+ggplot2-7,Positioning,NA,1.0
+ggplot2-7.1,Introduction,NA,2.0
+ggplot2-7.2,Facetting,NA,2.0
+ggplot2-7.3,Coordinate systems,NA,2.0
+ggplot2-7.4,Linear coordinate systems,NA,2.0
+ggplot2-7.5,Non-linear coordinate systems,NA,2.0
+ggplot2-8,Themes,NA,1.0
+ggplot2-8.1,Introduction,NA,2.0
+ggplot2-8.2,Complete themes,NA,2.0
+ggplot2-8.3,Modifying theme components,NA,2.0
+ggplot2-8.4,Theme elements,NA,2.0
+ggplot2-8.5,Saving your output,NA,2.0
+ggplot2-9,Data analysis,NA,1.0
+ggplot2-9.1,Introduction,NA,2.0
+ggplot2-9.2,Tidy data,NA,2.0
+ggplot2-9.3,Spread and gather,NA,2.0
+ggplot2-9.4,Separate and unite,NA,2.0
+ggplot2-9.5,Case studies,NA,2.0
+ggplot2-9.6,Learning more,NA,2.0
+ggplot2-10,Data transformation,NA,1.0
+ggplot2-10.1,Introduction,NA,2.0
+ggplot2-10.2,Filter observations,NA,2.0
+ggplot2-10.3,Create new variables,NA,2.0
+ggplot2-10.4,Group-wise summaries,NA,2.0
+ggplot2-10.5,Transformation pipelines,NA,2.0
+ggplot2-10.6,Learning more,NA,2.0
+ggplot2-11,Modelling for visualisation,NA,1.0
+ggplot2-11.1,Introduction,NA,2.0
+ggplot2-11.2,Removing trend,NA,2.0
+ggplot2-11.3,Texas housing data,NA,2.0
+ggplot2-11.4,Visualising models,NA,2.0
+ggplot2-11.5,Model-level summaries,NA,2.0
+ggplot2-11.6,Coefficient-level summaries,NA,2.0
+ggplot2-11.7,Observation data,NA,2.0
+ggplot2-12,Programming with ggplot2,NA,1.0
+ggplot2-12.1,Introduction,NA,2.0
+ggplot2-12.2,Single components,NA,2.0
+ggplot2-12.3,Multiple components,NA,2.0
+ggplot2-12.4,Plot functions,NA,2.0
+ggplot2-12.5,Functional programming,NA,2.0
+r4ds-1,Introduction,http://r4ds.had.co.nz/introduction.html,1.0
+r4ds-1.1,What you will learn,http://r4ds.had.co.nz/introduction.html#what-you-will-learn,2.0
+r4ds-1.2,How this book is organised,http://r4ds.had.co.nz/introduction.html#how-this-book-is-organised,2.0
+r4ds-1.3,What you won’t learn,http://r4ds.had.co.nz/introduction.html#what-you-wont-learn,2.0
+r4ds-1.4,Prerequisites,http://r4ds.had.co.nz/introduction.html#prerequisites,2.0
+r4ds-1.5,Running R code,http://r4ds.had.co.nz/introduction.html#running-r-code,2.0
+r4ds-1.6,Getting help and learning more,http://r4ds.had.co.nz/introduction.html#getting-help-and-learning-more,2.0
+r4ds-1.7,Acknowledgements,http://r4ds.had.co.nz/introduction.html#acknowledgements,2.0
+r4ds-1.8,Colophon,http://r4ds.had.co.nz/introduction.html#colophon,2.0
+r4ds-2,Introduction,http://r4ds.had.co.nz/explore-intro.html,1.0
+r4ds-3,Data visualisation,http://r4ds.had.co.nz/data-visualisation.html,1.0
+r4ds-3.1,Introduction,http://r4ds.had.co.nz/data-visualisation.html#introduction-1,2.0
+r4ds-3.2,First steps,http://r4ds.had.co.nz/data-visualisation.html#first-steps,2.0
+r4ds-3.3,Aesthetic mappings,http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings,2.0
+r4ds-3.4,Common problems,http://r4ds.had.co.nz/data-visualisation.html#common-problems,2.0
+r4ds-3.5,Facets,http://r4ds.had.co.nz/data-visualisation.html#facets,2.0
+r4ds-3.6,Geometric objects,http://r4ds.had.co.nz/data-visualisation.html#geometric-objects,2.0
+r4ds-3.7,Statistical transformations,http://r4ds.had.co.nz/data-visualisation.html#statistical-transformations,2.0
+r4ds-3.8,Position adjustments,http://r4ds.had.co.nz/data-visualisation.html#position-adjustments,2.0
+r4ds-3.9,Coordinate systems,http://r4ds.had.co.nz/data-visualisation.html#coordinate-systems,2.0
+r4ds-3.10,The layered grammar of graphics,http://r4ds.had.co.nz/data-visualisation.html#the-layered-grammar-of-graphics,2.0
+r4ds-4,Workflow: basics,http://r4ds.had.co.nz/workflow-basics.html,1.0
+r4ds-4.1,Coding basics,http://r4ds.had.co.nz/workflow-basics.html#coding-basics,2.0
+r4ds-4.2,What’s in a name?,http://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name,2.0
+r4ds-4.3,Calling functions,http://r4ds.had.co.nz/workflow-basics.html#calling-functions,2.0
+r4ds-4.4,Practice,http://r4ds.had.co.nz/workflow-basics.html#practice,2.0
+r4ds-5,Data transformation,http://r4ds.had.co.nz/transform.html,1.0
+r4ds-5.1,Introduction,http://r4ds.had.co.nz/transform.html#introduction-2,2.0
+r4ds-5.2,Filter rows with,http://r4ds.had.co.nz/transform.html#filter-rows-with-filter,2.0
+r4ds-5.3,Arrange rows with,http://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange,2.0
+r4ds-5.4,Select columns with,http://r4ds.had.co.nz/transform.html#select-columns-with-select,2.0
+r4ds-5.5,Add new variables with,http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate,2.0
+r4ds-5.6,Grouped summaries with,http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise,2.0
+r4ds-5.7,Grouped mutates (and filters),http://r4ds.had.co.nz/transform.html#grouped-mutates-and-filters,2.0
+r4ds-6,Workflow: scripts,http://r4ds.had.co.nz/workflow-scripts.html,1.0
+r4ds-6.1,Running code,http://r4ds.had.co.nz/workflow-scripts.html#running-code,2.0
+r4ds-6.2,RStudio diagnostics,http://r4ds.had.co.nz/workflow-scripts.html#rstudio-diagnostics,2.0
+r4ds-6.3,Practice,http://r4ds.had.co.nz/workflow-scripts.html#practice-1,2.0
+r4ds-7,Exploratory Data Analysis,http://r4ds.had.co.nz/exploratory-data-analysis.html,1.0
+r4ds-7.1,Introduction,http://r4ds.had.co.nz/exploratory-data-analysis.html#introduction-3,2.0
+r4ds-7.2,Questions,http://r4ds.had.co.nz/exploratory-data-analysis.html#questions,2.0
+r4ds-7.3,Variation,http://r4ds.had.co.nz/exploratory-data-analysis.html#variation,2.0
+r4ds-7.4,Missing values,http://r4ds.had.co.nz/exploratory-data-analysis.html#missing-values-2,2.0
+r4ds-7.5,Covariation,http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation,2.0
+r4ds-7.6,Patterns and models,http://r4ds.had.co.nz/exploratory-data-analysis.html#patterns-and-models,2.0
+r4ds-7.7,ggplot2 calls,http://r4ds.had.co.nz/exploratory-data-analysis.html#ggplot2-calls,2.0
+r4ds-7.8,Learning more,http://r4ds.had.co.nz/exploratory-data-analysis.html#learning-more,2.0
+r4ds-8,Workflow: projects,http://r4ds.had.co.nz/workflow-projects.html,1.0
+r4ds-8.1,What is real?,http://r4ds.had.co.nz/workflow-projects.html#what-is-real,2.0
+r4ds-8.2,Where does your analysis live?,http://r4ds.had.co.nz/workflow-projects.html#where-does-your-analysis-live,2.0
+r4ds-8.3,Paths and directories,http://r4ds.had.co.nz/workflow-projects.html#paths-and-directories,2.0
+r4ds-8.4,RStudio projects,http://r4ds.had.co.nz/workflow-projects.html#rstudio-projects,2.0
+r4ds-8.5,Summary,http://r4ds.had.co.nz/workflow-projects.html#summary,2.0
+r4ds-9,Introduction,http://r4ds.had.co.nz/wrangle-intro.html,1.0
+r4ds-10,Tibbles,http://r4ds.had.co.nz/tibbles.html,1.0
+r4ds-10.1,Introduction,http://r4ds.had.co.nz/tibbles.html#introduction-4,2.0
+r4ds-10.2,Creating tibbles,http://r4ds.had.co.nz/tibbles.html#tibbles,2.0
+r4ds-10.3,Tibbles vs. data.frame,http://r4ds.had.co.nz/tibbles.html#tibbles-vs.data.frame,2.0
+r4ds-10.4,Interacting with older code,http://r4ds.had.co.nz/tibbles.html#interacting-with-older-code,2.0
+r4ds-10.5,Exercises,http://r4ds.had.co.nz/tibbles.html#exercises-18,2.0
+r4ds-11,Data import,http://r4ds.had.co.nz/data-import.html,1.0
+r4ds-11.1,Introduction,http://r4ds.had.co.nz/data-import.html#introduction-5,2.0
+r4ds-11.2,Getting started,http://r4ds.had.co.nz/data-import.html#getting-started,2.0
+r4ds-11.3,Parsing a vector,http://r4ds.had.co.nz/data-import.html#parsing-a-vector,2.0
+r4ds-11.4,Parsing a file,http://r4ds.had.co.nz/data-import.html#parsing-a-file,2.0
+r4ds-11.5,Writing to a file,http://r4ds.had.co.nz/data-import.html#writing-to-a-file,2.0
+r4ds-11.6,Other types of data,http://r4ds.had.co.nz/data-import.html#other-types-of-data,2.0
+r4ds-12,Tidy data,http://r4ds.had.co.nz/tidy-data.html,1.0
+r4ds-12.1,Introduction,http://r4ds.had.co.nz/tidy-data.html#introduction-6,2.0
+r4ds-12.2,Tidy data,http://r4ds.had.co.nz/tidy-data.html#tidy-data-1,2.0
+r4ds-12.3,Spreading and gathering,http://r4ds.had.co.nz/tidy-data.html#spreading-and-gathering,2.0
+r4ds-12.4,Separating and uniting,http://r4ds.had.co.nz/tidy-data.html#separating-and-uniting,2.0
+r4ds-12.5,Missing values,http://r4ds.had.co.nz/tidy-data.html#missing-values-3,2.0
+r4ds-12.6,Case Study,http://r4ds.had.co.nz/tidy-data.html#case-study,2.0
+r4ds-12.7,Non-tidy data,http://r4ds.had.co.nz/tidy-data.html#non-tidy-data,2.0
+r4ds-13,Relational data,http://r4ds.had.co.nz/relational-data.html,1.0
+r4ds-13.1,Introduction,http://r4ds.had.co.nz/relational-data.html#introduction-7,2.0
+r4ds-13.2,nycflights13,http://r4ds.had.co.nz/relational-data.html#nycflights13-relational,2.0
+r4ds-13.3,Keys,http://r4ds.had.co.nz/relational-data.html#keys,2.0
+r4ds-13.4,Mutating joins,http://r4ds.had.co.nz/relational-data.html#mutating-joins,2.0
+r4ds-13.5,Filtering joins,http://r4ds.had.co.nz/relational-data.html#filtering-joins,2.0
+r4ds-13.6,Join problems,http://r4ds.had.co.nz/relational-data.html#join-problems,2.0
+r4ds-13.7,Set operations,http://r4ds.had.co.nz/relational-data.html#set-operations,2.0
+r4ds-14,Strings,http://r4ds.had.co.nz/strings.html,1.0
+r4ds-14.1,Introduction,http://r4ds.had.co.nz/strings.html#introduction-8,2.0
+r4ds-14.2,String basics,http://r4ds.had.co.nz/strings.html#string-basics,2.0
+r4ds-14.3,Matching patterns with regular expressions,http://r4ds.had.co.nz/strings.html#matching-patterns-with-regular-expressions,2.0
+r4ds-14.4,Tools,http://r4ds.had.co.nz/strings.html#tools,2.0
+r4ds-14.5,Other types of pattern,http://r4ds.had.co.nz/strings.html#other-types-of-pattern,2.0
+r4ds-14.6,Other uses of regular expressions,http://r4ds.had.co.nz/strings.html#other-uses-of-regular-expressions,2.0
+r4ds-14.7,stringi,http://r4ds.had.co.nz/strings.html#stringi,2.0
+r4ds-15,Factors,http://r4ds.had.co.nz/factors.html,1.0
+r4ds-15.1,Introduction,http://r4ds.had.co.nz/factors.html#introduction-9,2.0
+r4ds-15.2,Creating factors,http://r4ds.had.co.nz/factors.html#creating-factors,2.0
+r4ds-15.3,General Social Survey,http://r4ds.had.co.nz/factors.html#general-social-survey,2.0
+r4ds-15.4,Modifying factor order,http://r4ds.had.co.nz/factors.html#modifying-factor-order,2.0
+r4ds-15.5,Modifying factor levels,http://r4ds.had.co.nz/factors.html#modifying-factor-levels,2.0
+r4ds-16,Dates and times,http://r4ds.had.co.nz/dates-and-times.html,1.0
+r4ds-16.1,Introduction,http://r4ds.had.co.nz/dates-and-times.html#introduction-10,2.0
+r4ds-16.2,Creating date/times,http://r4ds.had.co.nz/dates-and-times.html#creating-datetimes,2.0
+r4ds-16.3,Date-time components,http://r4ds.had.co.nz/dates-and-times.html#date-time-components,2.0
+r4ds-16.4,Time spans,http://r4ds.had.co.nz/dates-and-times.html#time-spans,2.0
+r4ds-16.5,Time zones,http://r4ds.had.co.nz/dates-and-times.html#time-zones,2.0
+r4ds-17,Introduction,http://r4ds.had.co.nz/program-intro.html,1.0
+r4ds-17.1,Learning more,http://r4ds.had.co.nz/program-intro.html#learning-more-1,2.0
+r4ds-18,Pipes,http://r4ds.had.co.nz/pipes.html,1.0
+r4ds-18.1,Introduction,http://r4ds.had.co.nz/pipes.html#introduction-11,2.0
+r4ds-18.2,Piping alternatives,http://r4ds.had.co.nz/pipes.html#piping-alternatives,2.0
+r4ds-18.3,When not to use the pipe,http://r4ds.had.co.nz/pipes.html#when-not-to-use-the-pipe,2.0
+r4ds-18.4,Other tools from magrittr,http://r4ds.had.co.nz/pipes.html#other-tools-from-magrittr,2.0
+r4ds-19,Functions,http://r4ds.had.co.nz/functions.html,1.0
+r4ds-19.1,Introduction,http://r4ds.had.co.nz/functions.html#introduction-12,2.0
+r4ds-19.2,When should you write a function?,http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function,2.0
+r4ds-19.3,Functions are for humans and computers,http://r4ds.had.co.nz/functions.html#functions-are-for-humans-and-computers,2.0
+r4ds-19.4,Conditional execution,http://r4ds.had.co.nz/functions.html#conditional-execution,2.0
+r4ds-19.5,Function arguments,http://r4ds.had.co.nz/functions.html#function-arguments,2.0
+r4ds-19.6,Return values,http://r4ds.had.co.nz/functions.html#return-values,2.0
+r4ds-19.7,Environment,http://r4ds.had.co.nz/functions.html#environment,2.0
+r4ds-20,Vectors,http://r4ds.had.co.nz/vectors.html,1.0
+r4ds-20.1,Introduction,http://r4ds.had.co.nz/vectors.html#introduction-13,2.0
+r4ds-20.2,Vector basics,http://r4ds.had.co.nz/vectors.html#vector-basics,2.0
+r4ds-20.3,Important types of atomic vector,http://r4ds.had.co.nz/vectors.html#important-types-of-atomic-vector,2.0
+r4ds-20.4,Using atomic vectors,http://r4ds.had.co.nz/vectors.html#using-atomic-vectors,2.0
+r4ds-20.5,Recursive vectors (lists),http://r4ds.had.co.nz/vectors.html#lists,2.0
+r4ds-20.6,Attributes,http://r4ds.had.co.nz/vectors.html#attributes,2.0
+r4ds-20.7,Augmented vectors,http://r4ds.had.co.nz/vectors.html#augmented-vectors,2.0
+r4ds-21,Iteration,http://r4ds.had.co.nz/iteration.html,1.0
+r4ds-21.1,Introduction,http://r4ds.had.co.nz/iteration.html#introduction-14,2.0
+r4ds-21.2,For loops,http://r4ds.had.co.nz/iteration.html#for-loops,2.0
+r4ds-21.3,For loop variations,http://r4ds.had.co.nz/iteration.html#for-loop-variations,2.0
+r4ds-21.4,For loops vs. functionals,http://r4ds.had.co.nz/iteration.html#for-loops-vs.functionals,2.0
+r4ds-21.5,The map functions,http://r4ds.had.co.nz/iteration.html#the-map-functions,2.0
+r4ds-21.6,Dealing with failure,http://r4ds.had.co.nz/iteration.html#dealing-with-failure,2.0
+r4ds-21.7,Mapping over multiple arguments,http://r4ds.had.co.nz/iteration.html#mapping-over-multiple-arguments,2.0
+r4ds-21.8,Walk,http://r4ds.had.co.nz/iteration.html#walk,2.0
+r4ds-21.9,Other patterns of for loops,http://r4ds.had.co.nz/iteration.html#other-patterns-of-for-loops,2.0
+r4ds-22,Introduction,http://r4ds.had.co.nz/model-intro.html,1.0
+r4ds-22.1,Hypothesis generation vs. hypothesis confirmation,http://r4ds.had.co.nz/model-intro.html#hypothesis-generation-vs.hypothesis-confirmation,2.0
+r4ds-23,Model basics,http://r4ds.had.co.nz/model-basics.html,1.0
+r4ds-23.1,Introduction,http://r4ds.had.co.nz/model-basics.html#introduction-15,2.0
+r4ds-23.2,A simple model,http://r4ds.had.co.nz/model-basics.html#a-simple-model,2.0
+r4ds-23.3,Visualising models,http://r4ds.had.co.nz/model-basics.html#visualising-models,2.0
+r4ds-23.4,Formulas and model families,http://r4ds.had.co.nz/model-basics.html#formulas-and-model-families,2.0
+r4ds-23.5,Missing values,http://r4ds.had.co.nz/model-basics.html#missing-values-5,2.0
+r4ds-23.6,Other model families,http://r4ds.had.co.nz/model-basics.html#other-model-families,2.0
+r4ds-24,Model building,http://r4ds.had.co.nz/model-building.html,1.0
+r4ds-24.1,Introduction,http://r4ds.had.co.nz/model-building.html#introduction-16,2.0
+r4ds-24.2,Why are low quality diamonds more expensive?,http://r4ds.had.co.nz/model-building.html#diamond-prices,2.0
+r4ds-24.3,What affects the number of daily flights?,http://r4ds.had.co.nz/model-building.html#what-affects-the-number-of-daily-flights,2.0
+r4ds-24.4,Learning more about models,http://r4ds.had.co.nz/model-building.html#learning-more-about-models,2.0
+r4ds-25,Many models,http://r4ds.had.co.nz/many-models.html,1.0
+r4ds-25.1,Introduction,http://r4ds.had.co.nz/many-models.html#introduction-17,2.0
+r4ds-25.2,gapminder,http://r4ds.had.co.nz/many-models.html#gapminder,2.0
+r4ds-25.3,List-columns,http://r4ds.had.co.nz/many-models.html#list-columns-1,2.0
+r4ds-25.4,Creating list-columns,http://r4ds.had.co.nz/many-models.html#creating-list-columns,2.0
+r4ds-25.5,Simplifying list-columns,http://r4ds.had.co.nz/many-models.html#simplifying-list-columns,2.0
+r4ds-25.6,Making tidy data with broom,http://r4ds.had.co.nz/many-models.html#making-tidy-data-with-broom,2.0
+r4ds-26,Introduction,http://r4ds.had.co.nz/communicate-intro.html,1.0
+r4ds-27,R Markdown,http://r4ds.had.co.nz/r-markdown.html,1.0
+r4ds-27.1,Introduction,http://r4ds.had.co.nz/r-markdown.html#introduction-18,2.0
+r4ds-27.2,R Markdown basics,http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics,2.0
+r4ds-27.3,Text formatting with Markdown,http://r4ds.had.co.nz/r-markdown.html#text-formatting-with-markdown,2.0
+r4ds-27.4,Code chunks,http://r4ds.had.co.nz/r-markdown.html#code-chunks,2.0
+r4ds-27.5,Troubleshooting,http://r4ds.had.co.nz/r-markdown.html#troubleshooting,2.0
+r4ds-27.6,YAML header,http://r4ds.had.co.nz/r-markdown.html#yaml-header,2.0
+r4ds-27.7,Learning more,http://r4ds.had.co.nz/r-markdown.html#learning-more-2,2.0
+r4ds-28,Graphics for communication,http://r4ds.had.co.nz/graphics-for-communication.html,1.0
+r4ds-28.1,Introduction,http://r4ds.had.co.nz/graphics-for-communication.html#introduction-19,2.0
+r4ds-28.2,Label,http://r4ds.had.co.nz/graphics-for-communication.html#label,2.0
+r4ds-28.3,Annotations,http://r4ds.had.co.nz/graphics-for-communication.html#annotations,2.0
+r4ds-28.4,Scales,http://r4ds.had.co.nz/graphics-for-communication.html#scales,2.0
+r4ds-28.5,Zooming,http://r4ds.had.co.nz/graphics-for-communication.html#zooming,2.0
+r4ds-28.6,Themes,http://r4ds.had.co.nz/graphics-for-communication.html#themes,2.0
+r4ds-28.7,Saving your plots,http://r4ds.had.co.nz/graphics-for-communication.html#saving-your-plots,2.0
+r4ds-28.8,Learning more,http://r4ds.had.co.nz/graphics-for-communication.html#learning-more-3,2.0
+r4ds-29,R Markdown formats,http://r4ds.had.co.nz/r-markdown-formats.html,1.0
+r4ds-29.1,Introduction,http://r4ds.had.co.nz/r-markdown-formats.html#introduction-20,2.0
+r4ds-29.2,Output options,http://r4ds.had.co.nz/r-markdown-formats.html#output-options,2.0
+r4ds-29.3,Documents,http://r4ds.had.co.nz/r-markdown-formats.html#documents,2.0
+r4ds-29.4,Notebooks,http://r4ds.had.co.nz/r-markdown-formats.html#notebooks,2.0
+r4ds-29.5,Presentations,http://r4ds.had.co.nz/r-markdown-formats.html#presentations,2.0
+r4ds-29.6,Dashboards,http://r4ds.had.co.nz/r-markdown-formats.html#dashboards,2.0
+r4ds-29.7,Interactivity,http://r4ds.had.co.nz/r-markdown-formats.html#interactivity,2.0
+r4ds-29.8,Websites,http://r4ds.had.co.nz/r-markdown-formats.html#websites,2.0
+r4ds-29.9,Other formats,http://r4ds.had.co.nz/r-markdown-formats.html#other-formats,2.0
+r4ds-29.10,Learning more,http://r4ds.had.co.nz/r-markdown-formats.html#learning-more-4,2.0
+r4ds-30,R Markdown workflow,http://r4ds.had.co.nz/r-markdown-workflow.html,1.0
