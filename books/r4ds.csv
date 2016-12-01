@@ -1,4 +1,4 @@
-id,title,depth,url
+id,title,depth,href
 1,Introduction,1.0,http://r4ds.had.co.nz/introduction.html
 1.1,What you will learn,2.0,http://r4ds.had.co.nz/introduction.html#what-you-will-learn
 1.2,How this book is organised,2.0,http://r4ds.had.co.nz/introduction.html#how-this-book-is-organised

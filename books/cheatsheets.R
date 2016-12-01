@@ -12,16 +12,16 @@ title <- boxes %>%
   html_node("h2") %>%
   html_text()
 
-url <- boxes %>%
+href <- boxes %>%
   html_node(".fusion-button-wrapper a") %>%
   html_attr("href")
 
-id <- url %>%
+id <- href %>%
   basename() %>%
   tools::file_path_sans_ext() %>%
   str_replace("-cheatsheet", "")
 
-cheatsheets <- tibble(id, title, url)
+cheatsheets <- tibble(id, title, href)
 
 cheatsheets %>%
   filter(!is.na(id), !is.na(title)) %>%
