@@ -11,7 +11,7 @@ Ensure that you have all the tools to need for this class.
 
 * [Prerequisites](http://r4ds.had.co.nz/introduction.html#prerequisites)
 * [Running R code](http://r4ds.had.co.nz/introduction.html#running-r-code)
-* [RStudio IDE Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+* [RStudio IDE Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
 
 ### Supplemental readings
 

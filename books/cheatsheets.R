@@ -10,7 +10,8 @@ boxes <- page %>%
 
 title <- boxes %>%
   html_node("h2") %>%
-  html_text()
+  html_text() %>%
+  str_replace_all("\\s", " ")
 
 href <- boxes %>%
   html_node(".fusion-button-wrapper a") %>%
