@@ -1,0 +1,95 @@
+id,depth,title
+1,1.0,Introduction
+1.1,2.0,Welcome to ggplot2
+1.2,2.0,What is the grammar of graphics?
+1.3,2.0,How does ggplot2 fit in with other R graphics?
+1.4,2.0,About this book
+1.5,2.0,Installation
+1.6,2.0,Other resources
+1.7,2.0,Colophon
+2,1.0,Getting started with ggplot2
+2.1,2.0,Introduction
+2.2,2.0,Fuel economy data
+2.3,2.0,Key components
+2.4,2.0,"Colour, size, shape and other aesthetic attributes"
+2.5,2.0,Facetting
+2.6,2.0,Plot geoms
+2.7,2.0,Modifying the axes
+2.8,2.0,Output
+2.9,2.0,Quick plots
+3,1.0,Toolbox
+3.1,2.0,Introduction
+3.2,2.0,Basic plot types
+3.3,2.0,Labels
+3.4,2.0,Annotations
+3.5,2.0,Collective geoms
+3.6,2.0,Surface plots
+3.7,2.0,Drawing maps
+3.8,2.0,Revealing uncertainty
+3.9,2.0,Weighted data
+3.10,2.0,Diamonds data
+3.11,2.0,Displaying distributions
+3.12,2.0,Dealing with overplotting
+3.13,2.0,Statistical summaries
+3.14,2.0,Add-on packages
+4,1.0,Mastering the grammar
+4.1,2.0,Introduction
+4.2,2.0,Building a scatterplot
+4.3,2.0,Adding complexity
+4.4,2.0,Components of the layered grammar
+4.5,2.0,Exercises
+5,1.0,Build a plot layer by layer
+5.1,2.0,Introduction
+5.2,2.0,Building a plot
+5.3,2.0,Data
+5.4,2.0,Aesthetic mappings
+5.5,2.0,Geoms
+5.6,2.0,Stats
+5.7,2.0,Position adjustments
+6,1.0,"Scales, axes and legends"
+6.1,2.0,Introduction
+6.2,2.0,Modifying scales
+6.3,2.0,Guides: legends and axes
+6.4,2.0,Legends
+6.5,2.0,Limits
+6.6,2.0,Scales toolbox
+7,1.0,Positioning
+7.1,2.0,Introduction
+7.2,2.0,Facetting
+7.3,2.0,Coordinate systems
+7.4,2.0,Linear coordinate systems
+7.5,2.0,Non-linear coordinate systems
+8,1.0,Themes
+8.1,2.0,Introduction
+8.2,2.0,Complete themes
+8.3,2.0,Modifying theme components
+8.4,2.0,Theme elements
+8.5,2.0,Saving your output
+9,1.0,Data analysis
+9.1,2.0,Introduction
+9.2,2.0,Tidy data
+9.3,2.0,Spread and gather
+9.4,2.0,Separate and unite
+9.5,2.0,Case studies
+9.6,2.0,Learning more
+10,1.0,Data transformation
+10.1,2.0,Introduction
+10.2,2.0,Filter observations
+10.3,2.0,Create new variables
+10.4,2.0,Group-wise summaries
+10.5,2.0,Transformation pipelines
+10.6,2.0,Learning more
+11,1.0,Modelling for visualisation
+11.1,2.0,Introduction
+11.2,2.0,Removing trend
+11.3,2.0,Texas housing data
+11.4,2.0,Visualising models
+11.5,2.0,Model-level summaries
+11.6,2.0,Coefficient-level summaries
+11.7,2.0,Observation data
+12,1.0,Programming with ggplot2
+12.1,2.0,Introduction
+12.2,2.0,Single components
+12.3,2.0,Multiple components
+12.4,2.0,Plot functions
+12.5,2.0,Functional programming
