@@ -15,11 +15,16 @@ href <- toc %>%
   str_c("http://r4ds.had.co.nz/", .)
 
 title <- toc %>%
-  html_node(xpath =" .//b/following-sibling::text()") %>%
-  html_text(trim = TRUE)
+  map_chr(. %>%
+    html_nodes(xpath = "./a/node()[not(self::b)]") %>%
+    html_text() %>%
+    str_c(collapse = "") %>%
+    str_trim()
+  )
+
 
 chapters <- tibble(id, title, depth, href)
 
 chapters %>%
-  filter(!is.na(title), depth <= 2) %>%
+  filter(id != "", depth <= 2) %>%
   write_csv("books/r4ds.csv")

@@ -1,4 +1,5 @@
-<!-- Generated automatically from index.yaml. Do not edit by hand --># Foundations
+<!-- Generated automatically from index.yaml. Do not edit by hand -->
+# Foundations
 
 Learn the absolute essentials of data science as quickly as possible, so that you can start performing authentic (if simple) analyses.
 
@@ -47,9 +48,9 @@ Data transformation and visualisation are the most important data science tools.
 
 * [Aesthetic mappings](http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings)
 * [Facets](http://r4ds.had.co.nz/data-visualisation.html#facets)
-* [Filter rows with](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
-* [Add new variables with](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
-* [Grouped summaries with](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
+* [Filter rows with filter()](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
+* [Add new variables with mutate()](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
+* [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
 
 ### Supplemental readings
 

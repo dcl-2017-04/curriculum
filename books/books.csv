@@ -132,11 +132,11 @@ r4ds-4.3,Calling functions,http://r4ds.had.co.nz/workflow-basics.html#calling-fu
 r4ds-4.4,Practice,http://r4ds.had.co.nz/workflow-basics.html#practice,2
 r4ds-5,Data transformation,http://r4ds.had.co.nz/transform.html,1
 r4ds-5.1,Introduction,http://r4ds.had.co.nz/transform.html#introduction-2,2
-r4ds-5.2,Filter rows with,http://r4ds.had.co.nz/transform.html#filter-rows-with-filter,2
-r4ds-5.3,Arrange rows with,http://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange,2
-r4ds-5.4,Select columns with,http://r4ds.had.co.nz/transform.html#select-columns-with-select,2
-r4ds-5.5,Add new variables with,http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate,2
-r4ds-5.6,Grouped summaries with,http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise,2
+r4ds-5.2,Filter rows with filter(),http://r4ds.had.co.nz/transform.html#filter-rows-with-filter,2
+r4ds-5.3,Arrange rows with arrange(),http://r4ds.had.co.nz/transform.html#arrange-rows-with-arrange,2
+r4ds-5.4,Select columns with select(),http://r4ds.had.co.nz/transform.html#select-columns-with-select,2
+r4ds-5.5,Add new variables with mutate(),http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate,2
+r4ds-5.6,Grouped summaries with summarise(),http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise,2
 r4ds-5.7,Grouped mutates (and filters),http://r4ds.had.co.nz/transform.html#grouped-mutates-and-filters,2
 r4ds-6,Workflow: scripts,http://r4ds.had.co.nz/workflow-scripts.html,1
 r4ds-6.1,Running code,http://r4ds.had.co.nz/workflow-scripts.html#running-code,2
