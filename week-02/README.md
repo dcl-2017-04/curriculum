@@ -41,7 +41,7 @@ Now that you have some experience with dplyr, we'll fill in the blanks with a mo
 
 ## ggplot2 details
 
-Now that you have some experience with ggplot2, we'll fill in the blanks with a more systematic exploration of the details. Read Chapters 4 and 5 to get a
+Now that you have some experience with ggplot2, we'll fill in the blanks with a more systematic exploration of the details. Read Chapters 4 and 5 to get a better handle on the underyling theory (the Grammar of Graphics). Read Chapter 6 to learn how scales control the details of the mapping from data to visual properties.
 
 ### Readings
 

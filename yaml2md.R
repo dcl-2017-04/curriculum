@@ -56,7 +56,7 @@ md_bullet <- function(yaml) {
   } else if (has_name(yaml, "href")) {
     href <- yaml$href
     text <- yaml$text %||% href
-    id <- NA
+    id <- yaml$id %||% NA
   } else if (has_name(yaml, "todo")) {
     href <- NA
     text <- yaml$todo

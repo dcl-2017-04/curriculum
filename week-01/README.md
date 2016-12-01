@@ -53,15 +53,14 @@ Data transformation and visualisation are the most important data science tools.
   * [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) [r4ds-5.6]
   * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3]
 
-     Skim this chapter so you're aware of the most important ggplot2 tool. Come back and read in detail when you actually need to use them.
+     Skim this chapter so you're aware of the most important ggplot2 tools. Come back and read in detail when you actually need to use them.
 
 
 ### Supplemental readings
 
-  * [http://www.slideshare.net/JohnRauser/how-humans-see-data](http://www.slideshare.net/JohnRauser/how-humans-see-data)
+  * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data)
   * [Getting started with ggplot2](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2) [ggplot2-2]
   * [Data transformation](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10) [ggplot2-10]
-  * [http://shop.oreilly.com/product/0636920035992.do](http://shop.oreilly.com/product/0636920035992.do)
   * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046) [safari]
   * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661) [safari]
 

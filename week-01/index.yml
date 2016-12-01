@@ -21,6 +21,7 @@ parts:
   desc: >
     Experience the full data science workflow by creating an RMarkdown file,
     running some R code, and uploading the results to GitHub.
+  tags: [workflow]
 
   readings:
     - book: r4ds-27.1
@@ -43,6 +44,7 @@ parts:
     Data transformation and visualisation are the most important data science
     tools. You'll learn them first using tidy data (column = variable, row =
     case) that we provide.
+  tags: [explore, wrangle]
 
   readings:
     - book: r4ds-3.3
@@ -75,6 +77,7 @@ parts:
     You will get the most out of this class if you learn some tools and
     techniques for exploratory reading, getting help, and recording
     what you've learned.
+  tags: [workflow]
   readings:
     - todo: Reading. Strategies for effective reading, integrating information
         from multiple places, following links, accepting incompleteness.
