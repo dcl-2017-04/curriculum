@@ -76,5 +76,5 @@ parts:
     - todo: Note taking. How do you record what you've learned so you can
         reuse later (copy-and-paste from previous work as a skill). Using
         README's in github.
-    - book: ggplot2-3.4
+    - book: r4ds-3.4
 
