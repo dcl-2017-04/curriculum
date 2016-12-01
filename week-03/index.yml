@@ -1,0 +1,10 @@
+title: Care and feeding of tibbles
+
+parts:
+- title: Missing values
+
+  readings:
+    - book: r4ds-7.4
+    - book: r4ds-5.2.3
+    - book: r4ds-5.6.2
+    - book: r4ds-12.5

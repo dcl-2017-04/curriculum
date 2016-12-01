@@ -51,17 +51,24 @@ parts:
     - book: r4ds-5.5
     - book: r4ds-5.6
 
+    - book: ggplot2-3
+      desc: >
+        Skim this chapter so you're aware of the most important ggplot2 tools.
+        Come back and read in detail when you actually need to use them.
+
   supplements:
     - href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+      text: How humans see data, by John Rauser
+
     - book: ggplot2-2
+
     - book: ggplot2-10
-    - href: http://shop.oreilly.com/product/0636920035992.do
+
     - safari: video/programming/r/9781491917046
       text: Expert data wrangling with R, by Garrett Grolemund
+
     - safari: video/programming/r/9781491963661
       text: Data Visualisation in R with ggplot2, by Kara Woo
-    - href: http://www.infiniteskills.com/training/data-visualization-in-r-with-ggplot2.html
-    - href: https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial
 
 - title: Learning workflow
   desc: >
