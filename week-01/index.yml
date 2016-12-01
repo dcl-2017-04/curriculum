@@ -1,0 +1,80 @@
+title: Foundations
+desc: >
+  Learn the absolute essentials of data science as quickly as possible,
+  so that you can start performing authentic (if simple) analyses.
+
+parts:
+- title: Setup
+  desc: >
+    Ensure that you have all the tools to need for this class.
+
+  readings:
+  - book: r4ds-1.4
+  - book: r4ds-1.5
+  - book: cheatsheets-rstudio-IDE
+
+  supplements:
+  - href: http://stat545.com/block000_r-rstudio-install.html
+  - href: http://happygitwithr.com/installation-pain.html
+
+- title: Data science workflow
+  desc: >
+    Experience the full data science workflow by creating an RMarkdown file,
+    running some R code, and uploading the results to GitHub.
+
+  readings:
+    - book: r4ds-27.1
+    - book: r4ds-27.2
+    - book: r4ds-27.4
+    - book: r4ds-3.1
+    - book: r4ds-3.2
+    - todo: GitHub process
+    - todo: working directories
+
+  challenges:
+    - todo: practice whole process including sync to github
+
+  supplements:
+    - href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
+      text: Getting Started with R Markdown.
+
+- title: Data science basics
+  desc: >
+    Data transformation and visualisation are the most important data science
+    tools. You'll learn them first using tidy data (column = variable, row =
+    case) that we provide.
+
+  readings:
+    - book: r4ds-3.3
+    - book: r4ds-3.5
+    - book: r4ds-5.2
+    - book: r4ds-5.5
+    - book: r4ds-5.6
+
+  supplements:
+    - href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+    - book: ggplot2-2
+    - book: ggplot2-10
+    - href: http://shop.oreilly.com/product/0636920035992.do
+    - href: http://www.infiniteskills.com/training/data-visualization-in-r-with-ggplot2.html
+    - href: https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial
+
+- title: Learning workflow
+  desc: >
+    You will get the most out of this class if you learn some tools and
+    techniques for exploratory reading, getting help, and recording
+    what you've learned.
+  readings:
+    - todo: Reading. Strategies for effective reading, integrating information
+        from multiple places, following links, accepting incompleteness.
+        What is tacit knowledge, how to recognise when you’re missing it,
+        and what to do about it.
+    - todo: Asking questions. How to effectively ask questions so that we can
+        answer them effectively. How to title issues, what is reprex (morally),
+        using reprex package, code formatting for readability etc...
+        Using google.
+    - todo: Note taking. How do you record what you've learned so you can
+        reuse later (copy-and-paste from previous work as a skill). Using
+        README's in github.
+    - book: ggplot2-3.4
+
