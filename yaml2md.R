@@ -38,47 +38,60 @@ md_links <- function(yaml, title) {
   if (is.null(yaml))
     return("")
 
-  links <- yaml %>% map_chr(md_link)
-  bullets <- paste0("* ", links, "\n")
-
   paste0(
     "### ", title, "\n",
     "\n",
-    paste0(bullets, collapse = ""),
+    yaml %>% map_chr(md_bullet) %>% paste0(collapse = ""),
     "\n"
   )
 }
 
-md_link <- function(link) {
-  if (has_name(link, "book")) {
-    book <- find_book(link$book)
+md_bullet <- function(yaml) {
+  if (has_name(yaml, "book")) {
+    book <- find_book(yaml$book)
 
     href <- book$href
     text <- book$title
-  } else if (has_name(link, "href")) {
-    href <- link$href
-    text <- link$text %||% href
-  } else if (has_name(link, "todo")) {
+    id <- book$id
+  } else if (has_name(yaml, "href")) {
+    href <- yaml$href
+    text <- yaml$text %||% href
+    id <- NA
+  } else if (has_name(yaml, "todo")) {
     href <- NA
-    text <- link$todo
-  } else if (has_name(link, "safari")) {
+    text <- yaml$todo
+    id <- "TODO"
+  } else if (has_name(yaml, "safari")) {
     href <- paste0(
       "http://proquest.safaribooksonline.com.ezproxy.stanford.edu",
-      link$safari
+      yaml$safari
     )
-    text <- link$text
+    text <- yaml$text
+    id <- "safari"
   } else {
-    stop("Unknown link type", call. = FALSE)
+    stop("Unknown yaml type", call. = FALSE)
   }
 
 
-  if (is.na(href)) {
-    text
-  } else {
-    paste0("[", text, "](", href, ")")
+  if (!is.na(href)) {
+    text <- paste0("[", text, "](", href, ")")
   }
+  if (!is.na(id)) {
+    text <- paste0(text, " [", id, "]")
+  }
+  text <- paste0("  * ", text, "\n")
+
+  if (!is.null(yaml$desc)) {
+    text <- paste0(
+      text,
+      "\n",
+      indent(trimws(yaml$desc), 4), "\n",
+      "\n"
+    )
+  }
+
+  text
 }
-
 
 # Create READMEs ----------------------------------------------------------
 
@@ -88,6 +101,3 @@ build_readme <- function(path) {
 
   cat(md, file = file.path(path, "README.md"))
 }
-
-paths <- dir(pattern = "^week-")
-paths %>% walk(build_readme)

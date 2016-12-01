@@ -1,0 +1,57 @@
+title: Exploratory data analysis
+
+desc: >
+  Good data analysis involves fluid transitions between transformation and
+  visualisation. This week you'll practice those tools by using them for
+  EDA (exploratory data analysis), and diving into some of the details of
+  dplyr and ggplot2 that we elided last week.
+
+  Here we apply these tools to small (in-memory) data, but they're still
+  useful when you have big (out-of-memory) data. That's because a powerful
+  strategy for working with big data is to make it small with some combination
+  of subetting, summarising, or sampling.
+
+parts:
+- title: Exploratory data analysis
+  desc: >
+    Exploratory data analysis is partly a set of techniques, but is mostly a
+    mindset: you want to remain open to what the data is telling you.
+    You'll learn the techniques in the readings, and then practice the
+    mindset in class and in the challenges.
+  readings:
+    - book: r4ds-7.1
+    - book: r4ds-7.2
+    - book: r4ds-7.3
+    - book: r4ds-7.5
+  supplements:
+    - href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
+      title: Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance
+      desc: >
+        This analysis by Todd W. Schneider uses R (along with other tools)
+        to analyse over a billion taxi + uber trips in NYC. As you read through
+        the analysis think how you would do it yourself using the techniques you
+        have learned so far.
+
+- title: dplyr details
+  desc: >
+    Now that you have some experience with dplyr, we'll fill in the blanks
+    with a more sysematic exploration of the options.
+  readings:
+    - book: r4ds-5
+    - book: cheatsheets-data-wrangling
+  supplements:
+    - book: r4ds-18
+
+- title: ggplot2 details
+  desc: >
+    Now that you have some experience with ggplot2, we'll fill in the blanks
+    with a more systematic exploration of the details.
+  readings:
+    - book: ggplot2-4
+    - book: ggplot2-5
+    - book: ggplot2-6
+    - book: cheatsheets-ggplot2-2.1
+  challenge:
+    - todo: baby names. geom_line + grouping. How to summarise? Include
+       mutate that adds some interesting variables.
+

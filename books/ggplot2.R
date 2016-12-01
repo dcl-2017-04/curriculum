@@ -14,7 +14,7 @@ base_url <- "http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/"
 sections <- tibble(
   id = parts[, 2],
   depth = str_count(id, fixed(".")) + 1,
-  title = paste0(parts[, 3], " [ggplot2]")
+  title = parts[, 3]
 ) %>%
   filter(!is.na(id), !is.na(title), depth == 1) %>%
   mutate(href = paste0(base_url, isbn, "_", id))

@@ -20,12 +20,10 @@ title <- toc %>%
     html_text() %>%
     str_c(collapse = "") %>%
     str_trim()
-  ) %>%
-  paste0(" [R4DS]")
-
+  )
 
 chapters <- tibble(id, title, depth, href)
 
 chapters %>%
-  filter(id != "", depth <= 2) %>%
+  filter(id != "", depth <= 3) %>%
   write_csv("books/r4ds.csv")
