@@ -56,6 +56,10 @@ parts:
     - book: ggplot2-2
     - book: ggplot2-10
     - href: http://shop.oreilly.com/product/0636920035992.do
+    - safari: video/programming/r/9781491917046
+      text: Expert data wrangling with R, by Garrett Grolemund
+    - safari: video/programming/r/9781491963661
+      text: Data Visualisation in R with ggplot2, by Kara Woo
     - href: http://www.infiniteskills.com/training/data-visualization-in-r-with-ggplot2.html
     - href: https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial
 

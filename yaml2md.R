@@ -61,6 +61,12 @@ md_link <- function(link) {
   } else if (has_name(link, "todo")) {
     href <- NA
     text <- link$todo
+  } else if (has_name(link, "safari")) {
+    href <- paste0(
+      "http://proquest.safaribooksonline.com.ezproxy.stanford.edu",
+      link$safari
+    )
+    text <- link$text
   } else {
     stop("Unknown link type", call. = FALSE)
   }

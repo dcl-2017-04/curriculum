@@ -58,6 +58,8 @@ Data transformation and visualisation are the most important data science tools.
 * Getting started with ggplot2
 * Data transformation
 * [http://shop.oreilly.com/product/0636920035992.do](http://shop.oreilly.com/product/0636920035992.do)
+* [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046)
+* [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661)
 * [http://www.infiniteskills.com/training/data-visualization-in-r-with-ggplot2.html](http://www.infiniteskills.com/training/data-visualization-in-r-with-ggplot2.html)
 * [https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial](https://www.datacamp.com/courses/dplyr-data-manipulation-r-tutorial)
 
