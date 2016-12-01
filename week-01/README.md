@@ -9,8 +9,8 @@ Ensure that you have all the tools to need for this class.
 
 ### Readings
 
-* [Prerequisites](http://r4ds.had.co.nz/introduction.html#prerequisites)
-* [Running R code](http://r4ds.had.co.nz/introduction.html#running-r-code)
+* [Prerequisites [R4DS]](http://r4ds.had.co.nz/introduction.html#prerequisites)
+* [Running R code [R4DS]](http://r4ds.had.co.nz/introduction.html#running-r-code)
 * [RStudio IDE Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
 
 ### Supplemental readings
@@ -24,11 +24,11 @@ Experience the full data science workflow by creating an RMarkdown file, running
 
 ### Readings
 
-* [Introduction](http://r4ds.had.co.nz/r-markdown.html#introduction-18)
-* [R Markdown basics](http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics)
-* [Code chunks](http://r4ds.had.co.nz/r-markdown.html#code-chunks)
-* [Introduction](http://r4ds.had.co.nz/data-visualisation.html#introduction-1)
-* [First steps](http://r4ds.had.co.nz/data-visualisation.html#first-steps)
+* [Introduction [R4DS]](http://r4ds.had.co.nz/r-markdown.html#introduction-18)
+* [R Markdown basics [R4DS]](http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics)
+* [Code chunks [R4DS]](http://r4ds.had.co.nz/r-markdown.html#code-chunks)
+* [Introduction [R4DS]](http://r4ds.had.co.nz/data-visualisation.html#introduction-1)
+* [First steps [R4DS]](http://r4ds.had.co.nz/data-visualisation.html#first-steps)
 * GitHub process
 * working directories
 
@@ -46,17 +46,17 @@ Data transformation and visualisation are the most important data science tools.
 
 ### Readings
 
-* [Aesthetic mappings](http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings)
-* [Facets](http://r4ds.had.co.nz/data-visualisation.html#facets)
-* [Filter rows with filter()](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
-* [Add new variables with mutate()](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
-* [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
+* [Aesthetic mappings [R4DS]](http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings)
+* [Facets [R4DS]](http://r4ds.had.co.nz/data-visualisation.html#facets)
+* [Filter rows with filter() [R4DS]](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter)
+* [Add new variables with mutate() [R4DS]](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate)
+* [Grouped summaries with summarise() [R4DS]](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise)
 
 ### Supplemental readings
 
 * [http://www.slideshare.net/JohnRauser/how-humans-see-data](http://www.slideshare.net/JohnRauser/how-humans-see-data)
-* Getting started with ggplot2
-* Data transformation
+* [Getting started with ggplot2 [ggplot2]](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2)
+* [Data transformation [ggplot2]](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10)
 * [http://shop.oreilly.com/product/0636920035992.do](http://shop.oreilly.com/product/0636920035992.do)
 * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046)
 * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661)
@@ -72,5 +72,5 @@ You will get the most out of this class if you learn some tools and techniques f
 * Reading. Strategies for effective reading, integrating information from multiple places, following links, accepting incompleteness. What is tacit knowledge, how to recognise when you’re missing it, and what to do about it.
 * Asking questions. How to effectively ask questions so that we can answer them effectively. How to title issues, what is reprex (morally), using reprex package, code formatting for readability etc... Using google.
 * Note taking. How do you record what you've learned so you can reuse later (copy-and-paste from previous work as a skill). Using README's in github.
-* [Common problems](http://r4ds.had.co.nz/data-visualisation.html#common-problems)
+* [Common problems [R4DS]](http://r4ds.had.co.nz/data-visualisation.html#common-problems)
 

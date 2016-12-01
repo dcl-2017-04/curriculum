@@ -20,7 +20,8 @@ title <- toc %>%
     html_text() %>%
     str_c(collapse = "") %>%
     str_trim()
-  )
+  ) %>%
+  paste0(" [R4DS]")
 
 
 chapters <- tibble(id, title, depth, href)
