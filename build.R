@@ -1,3 +1,5 @@
+#! /usr/local/bin/Rscript
+
 # Update everything
 
 source("books/books.R")
