@@ -1,0 +1,12 @@
+title: Setup
+desc: >
+  Ensure that you have all the tools to need for this class.
+
+readings:
+- book: r4ds-1.4
+- book: r4ds-1.5
+- book: cheatsheets-rstudio-IDE
+
+supplements:
+- href: http://stat545.com/block000_r-rstudio-install.html
+- href: http://happygitwithr.com/installation-pain.html

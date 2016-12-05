@@ -1,0 +1,20 @@
+title: Learning workflow
+desc: >
+  You will get the most out of this class if you learn some tools and
+  techniques for exploratory reading, getting help, and recording
+  what you've learned.
+tags: [workflow]
+readings:
+- todo: Reading. Strategies for effective reading, integrating information
+    from multiple places, following links, accepting incompleteness.
+    What is tacit knowledge, how to recognise when you’re missing it,
+    and what to do about it.
+- todo: Asking questions. How to effectively ask questions so that we can
+    answer them effectively. How to title issues, what is reprex (morally),
+    using reprex package, code formatting for readability etc...
+    Using google.
+- todo: Note taking. How do you record what you've learned so you can
+    reuse later (copy-and-paste from previous work as a skill). Using
+    README's in github.
+- book: r4ds-3.4
+

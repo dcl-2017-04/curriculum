@@ -1,0 +1,13 @@
+title: dplyr details
+tags: [wrangle]
+
+desc: >
+  Now that you have some experience with dplyr, we'll fill in the blanks
+  with a more sysematic exploration of the options.
+
+readings:
+  - book: r4ds-5
+  - book: cheatsheets-data-wrangling
+
+supplements:
+  - book: r4ds-18

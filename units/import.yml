@@ -1,0 +1,9 @@
+title: Importing data
+tags: [wrangle]
+
+readings:
+- book: r4ds-11
+
+supplemental:
+- href: http://stat545.com/block016_secrets-happy-graphing.html
+  text: Secrets of a happy graphing life

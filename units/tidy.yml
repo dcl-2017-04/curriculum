@@ -1,0 +1,27 @@
+title: Tidy data
+tags: [wrangle]
+
+readings:
+- book: r4ds-12
+
+supplemental:
+- href: http://varianceexplained.org/r/tidy-genomics-biobroom/
+  text: >
+    Tidying computational biology models with biobroom:
+    a case study in tidy analysis
+  desc: by David Robinson
+
+- href: http://simplystatistics.org/2016/02/17/non-tidy-data/
+  text: Non-tidy data
+  desc: >
+    An example, by Jeff Leek, of when tidy data isn't as useful as
+    a non-tidy structure.
+
+- href: https://www.jstatsoft.org/v59/i10/
+  text: "Tidy Data"
+  desc: >
+    This article lays out more of the details behind tidy data, and works
+    through a few more case studies. However, it uses a previous iteration
+    of the tools, using reshape2 instead of tidyr. To see the code translated
+    into tidyr, read the
+    [tidy data vignette](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).

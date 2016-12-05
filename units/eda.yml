@@ -1,0 +1,29 @@
+title: EDA
+desc: >
+  Exploratory data analysis is partly a set of techniques, but is mostly a
+  mindset: you want to remain open to what the data is telling you.
+  You'll learn the techniques in the readings, and then practice the
+  mindset in class and in the challenges.
+tags: [explore]
+
+readings:
+- book: r4ds-7.1
+- book: r4ds-7.2
+- book: r4ds-7.3
+- book: r4ds-7.5
+
+supplements:
+- href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
+  text: "A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System"
+  desc: >
+    This analysis by Todd W. Schneider uses R (along with other tools)
+    to analyse over 20 million bike rides in NYC. As you read through
+    the analysis think how you would do it yourself using the techniques you
+    have learned so far.
+
+- href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
+  text: Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance
+  desc: >
+    This analysis, also by Todd W. Schneider, uses much more data than
+    the previous analysis. What additional challenges did Todd need to solve
+    to allow him to work with this data?

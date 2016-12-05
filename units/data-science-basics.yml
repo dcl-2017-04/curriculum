@@ -1,0 +1,33 @@
+title: Data science basics
+desc: >
+  Data transformation and visualisation are the most important data science
+  tools. You'll learn them first using tidy data (column = variable, row =
+  case) that we provide.
+tags: [explore, wrangle]
+
+readings:
+- book: r4ds-3.3
+- book: r4ds-3.5
+- book: r4ds-5.2
+- book: r4ds-5.5
+- book: r4ds-5.6
+
+- book: ggplot2-3
+  desc: >
+    Skim this chapter so you're aware of the most important ggplot2 tools.
+    Come back and read in detail when you actually need to use them.
+
+supplements:
+- href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+  text: How humans see data, by John Rauser
+  desc: (will be available in video form once O'Reilly edits videos)
+
+- book: ggplot2-2
+
+- book: ggplot2-10
+
+- safari: video/programming/r/9781491917046
+  text: Expert data wrangling with R, by Garrett Grolemund
+
+- safari: video/programming/r/9781491963661
+  text: Data Visualisation in R with ggplot2, by Kara Woo

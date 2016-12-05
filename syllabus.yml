@@ -1,0 +1,40 @@
+weeks:
+- title: Foundations
+  desc: >
+    Learn the absolute essentials of data science as quickly as possible,
+    so that you can start performing authentic (if simple) analyses.
+  units:
+  - setup
+  - workflow-basics
+  - data-science-basics
+
+- title: Exploratory data analysis
+  desc: >
+    Good data analysis involves fluid transitions between transformation and
+    visualisation. This week you'll practice those tools by using them for
+    EDA (exploratory data analysis), and diving into some of the details of
+    dplyr and ggplot2 that we elided last week.
+
+    Here we apply these tools to small (in-memory) data, but they're still
+    useful when you have big (out-of-memory) data. That's because a powerful
+    strategy for working with big data is to make it small with some combination
+    of subetting, summarising, or sampling.
+  units:
+    - EDA
+    - dplyr-details
+    - ggplot2-details
+  challenges:
+    - todo: baby names. geom_line + grouping. How to summarise? Include
+        mutate that adds some interesting variables.
+
+- title: Care and feeding of tibbles
+  desc: >
+    So far you've used tidy data that we've provided you. This will __never__
+    happen in real life, so this week you'll learn how to load data from a
+    flat files on disk, and get your data into a tidy form. We'll also touch on
+    some important theory about the R's data structures.
+  units:
+    - tidy
+    - import
+    - missing-values
+    - data-structure
