@@ -17,7 +17,43 @@ readings:
     Skim this chapter so you're aware of the most important ggplot2 tools.
     Come back and read in detail when you actually need to use them.
 
+exercises:
+- >
+  What’s gone wrong with this plot? Why are the points not blue?
+
+  ```{r}
+  ggplot(data = mpg) +
+    geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+  ```
+
+- >
+  What's gone wrong with this plot? Why is there only one histogram?
+
+  ```{r}
+  ggplot(data = mpg) +
+    geom_boxplot(mapping = aes(x = cyl, y = displ))
+  ```
+
+- >
+  Which variables in `mpg` are categorical? Which variables are continuous?
+  Map a continuous variable to color, size, and shape. How do these
+  aesthetics behave differently for categorical vs. continuous variables?
+
+- >
+  How does engine displacement vary with number of cylinders?
+  Draw a plot with ggplot2. Compute a numeric summary with ggplot2.
+  Create a new variable that gives the displacement per cylinder.
+  Visualise with ggplot2.
+
+- >
+  How does the relationship between `displ` and `cyl` vary with `drv`?
+  Show three plots and write a one paragrah summary. There are a handful of
+  cars with 5 cylinders. Remove them before drawing your plots.
+  Describe three things that you'd like to do to improve your plots but you
+  don't know how yet.
+
 supplements:
+
 - href: http://www.slideshare.net/JohnRauser/how-humans-see-data
   text: How humans see data, by John Rauser
   desc: (will be available in video form once O'Reilly edits videos)

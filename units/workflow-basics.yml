@@ -5,17 +5,14 @@ desc: >
 tags: [workflow]
 
 readings:
-  - book: r4ds-27.1
-  - book: r4ds-27.2
-  - book: r4ds-27.4
-  - book: r4ds-3.1
-  - book: r4ds-3.2
-  - todo: GitHub process
-  - todo: working directories
-
-challenges:
-  - todo: practice whole process including sync to github
+- book: r4ds-27.1
+- book: r4ds-27.2
+- book: r4ds-27.4
+- book: r4ds-3.1
+- book: r4ds-3.2
+- todo: GitHub process
+- todo: working directories
 
 supplements:
-  - href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
-    text: Getting Started with R Markdown.
+- href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
+  text: Getting Started with R Markdown.

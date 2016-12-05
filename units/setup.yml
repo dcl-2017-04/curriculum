@@ -7,6 +7,9 @@ readings:
 - book: r4ds-1.5
 - book: cheatsheets-rstudio-IDE
 
+exercises:
+- Run `library(tidyverse)`
+
 supplements:
 - href: http://stat545.com/block000_r-rstudio-install.html
 - href: http://happygitwithr.com/installation-pain.html
