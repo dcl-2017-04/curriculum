@@ -27,12 +27,11 @@ find_book <- function(x) {
   as.list(books[match, , drop = FALSE])
 }
 
-indent <- function(text, by = 2, wrap = FALSE) {
+indent <- function(text, by = 2, first = by, wrap = FALSE) {
   if (wrap) {
-    wrapped <- strwrap(text, width = 80, indent = by, exdent = by)
+    wrapped <- strwrap(text, width = 80, indent = first, exdent = by)
     paste0(wrapped, "\n", collapse = "")
   } else {
-    ind <- strrep(" ", by)
-    paste(ind, gsub("\n", paste0("\n", ind), text))
+    paste(strrep(" ", first), gsub("\n", paste0("\n", strrep(" ", by)), text))
   }
 }

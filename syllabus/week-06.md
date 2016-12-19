@@ -8,6 +8,5 @@ a special, compact, language for describing patterns in strings.
 
 ## Challenges
 
-  * neiss
-
+1.  neiss
 

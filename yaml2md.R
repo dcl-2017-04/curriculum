@@ -52,7 +52,7 @@ syllabus_week <- function(i, syllabus) {
       map_chr(md_unit) %>%
       paste0("\n", collapse = ""),
 
-    md_challenges(week$challenges)
+    md_list(week$challenges, "Challenges")
 
   )
 }
@@ -64,18 +64,19 @@ md_unit <- function(unit) {
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
     md_links(unit$readings, "Readings"),
+    md_list(unit$exercises, "Exercises"),
     md_links(unit$supplements, "Supplemental readings")
   )
 }
 
-md_challenges <- function(challenges) {
-  if (length(challenges) == 0)
+md_list <- function(x, title) {
+  if (length(x) == 0)
     return()
 
   paste0(
-    "## Challenges\n",
+    "## ", title, "\n",
     "\n",
-    paste0("  * ", challenges, "\n", collapse = "\n"),
+    paste0("1. ", indent(x, by = 4, first = 0), collapse = "\n"),
     "\n"
   )
 }

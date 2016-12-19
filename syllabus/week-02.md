@@ -73,8 +73,6 @@ properties.
 
 ## Challenges
 
-  * TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
-
-  * diamonds-3
-
+1.  TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
+1.  diamonds-3
 

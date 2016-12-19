@@ -13,9 +13,11 @@ readings:
     know that it exists.
 
 exercises:
-- Run `library(tidyverse)`. What are the core packages in the tidyverse?
+- |
+  Run `library(tidyverse)`. What are the core packages in the tidyverse?
 
-- What do the following keyboard shortcuts do? When should you use them?
+- |
+  What do the following keyboard shortcuts do? When should you use them?
 
   - `Cmd/Ctrl + Enter` (in the script editor)
   - `Cmd/Ctrl + Up arrow` (in the console)

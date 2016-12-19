@@ -18,6 +18,16 @@ Ensure that you have all the tools to need for this class.
     exists.
 
 
+## Exercises
+
+1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
+    
+1.  What do the following keyboard shortcuts do? When should you use them?
+    
+    - `Cmd/Ctrl + Enter` (in the script editor)
+    - `Cmd/Ctrl + Up arrow` (in the console)
+    - `Cmd/Ctrl + Shift + F10` (anywhere)
+    
 ### Supplemental readings
 
   * [http://stat545.com/block000_r-rstudio-install.html](http://stat545.com/block000_r-rstudio-install.html)
@@ -67,6 +77,37 @@ that we provide.
     back and read in detail when you actually need to use them.
 
 
+## Exercises
+
+1.  What’s gone wrong with this plot? Why are the points not blue?
+    
+    ```{r}
+    ggplot(data = mpg) +
+      geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+    ```
+    
+1.  What's gone wrong with this plot? Why is there only one histogram?
+    
+    ```{r}
+    ggplot(data = mpg) +
+      geom_boxplot(mapping = aes(x = cyl, y = displ))
+    ```
+    
+1.  Which variables in `mpg` are categorical? Which variables are continuous?
+    Map a continuous variable to color, size, and shape. How do these
+    aesthetics behave differently for categorical vs. continuous variables?
+    
+1.  How does engine displacement vary with number of cylinders?
+    Draw a plot with ggplot2. Compute a numeric summary with ggplot2.
+    Create a new variable that gives the displacement per cylinder.
+    Visualise with ggplot2.
+    
+1.  How does the relationship between `displ` and `cyl` vary with `drv`?
+    Show three plots and write a one paragrah summary. There are a handful of
+    cars with 5 cylinders. Remove them before drawing your plots.
+    Describe three things that you'd like to do to improve your plots but you
+    don't know how yet.
+    
 ### Supplemental readings
 
   * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data)
@@ -81,10 +122,7 @@ that we provide.
 
 ## Challenges
 
-  * diamonds-1
-
-  * diamonds-2
-
-  * TODO. practice whole process including sync to github
-
+1.  diamonds-1
+1.  diamonds-2
+1.  TODO. practice whole process including sync to github
 
