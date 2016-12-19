@@ -27,6 +27,7 @@
   - EDA
   - dplyr-details
   - ggplot2-details
+
   challenges:
   - TODO. Baby names. geom_line + grouping. How to summarise? Include
       mutate that adds some interesting variables.
@@ -42,17 +43,17 @@
   - tidy
   - import
   - missing-values
-  - data-structure
+  - data-structures
 
 - title: Functions and iteration
   desc: >
     R is a programming language, and mastering the basics of programming
     will give you powerful tools for automating your work. This week, you'll
     learn some alternatives to copy and paste.
-  units:
-  - vector-functions
-  - hierarchical-data
-  - report-generation
+  # units:
+  # - vector-functions
+  # - hierarchical-data
+  # - report-generation
 
 - title: Date/times and relational data
   desc: >
@@ -60,38 +61,38 @@
     related table (relational data). This will allow us to fully explore
     the datasets in nycflights13, and start to learn how weather is related
     to flight delays.
-  units:
-  - date-time
-  - relational-data
+  # units:
+  # - date-time
+  # - relational-data
 
 - title: Strings and factors
   desc: >
     There are two important types of variable that we haven't covered in
     detail yet: strings and factors. You'll also learn about regular expression
     which are a special, compact, language for describing patterns in strings.
-  units:
-  - string-basics
-  - regular-expressions
-  - factors
-  - communication-graphics
+  # units:
+  # - string-basics
+  # - regular-expressions
+  # - factors
+  # - communication-graphics
 
   challenges:
   - neiss
 
 - title: Modelling
 
-  units:
-  - model-basics
-  - model-building
+  # units:
+  # - model-basics
+  # - model-building
 
 - title: Hierarchical data with purrr
-  units:
-  - case-study-hierarchical
+  # units:
+  # - case-study-hierarchical
 
 - title: Text data with tidytext
-  units:
-  - case-study-text
+  # units:
+  # - case-study-text
 
 - title: Spatial data with sf
-  units:
-  - case-study-spatial
+  # units:
+  # - case-study-spatial

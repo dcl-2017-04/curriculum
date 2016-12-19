@@ -30,7 +30,7 @@ find_book <- function(x) {
 indent <- function(text, by = 2, wrap = FALSE) {
   if (wrap) {
     wrapped <- strwrap(text, width = 80, indent = by, exdent = by)
-    paste0(wrapped, collapse = "\n")
+    paste0(wrapped, "\n", collapse = "")
   } else {
     ind <- strrep(" ", by)
     paste(ind, gsub("\n", paste0("\n", ind), text))

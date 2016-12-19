@@ -2,14 +2,9 @@ library(yaml)
 library(tidyverse)
 source("utils.R")
 
-unit_paths <- dir("units", pattern = "\\.yml$", full.names = TRUE)
-units <- unit_paths %>% map(yaml.load_file)
 
-syllabus <- yaml.load_file("syllabus.yml")
-
-
-# Syllabus markdown -------------------------------------------------------
-# one page that lists each week, along with it's description
+# Syllabus index -------------------------------------------------------
+# lists each week, along with description
 
 week_path <- function(i) sprintf("week-%02d.md", i)
 
@@ -26,30 +21,69 @@ syllabus_index <- function(syllabus) {
     map2_chr(seq_along(.), syllabus_desc) %>%
     paste0("\n\n", collapse = "")
 
-  page <- paste0(
+  paste0(
+    md_generated_by("syllabus.yml"),
     "# Weekly syllabus\n",
     "\n",
     weeks
   )
 }
 
-write_syllabus(syllabus)
+# Weekly pages ------------------------------------------------------------
 
-write_syllabus <- function(syllabus) {
-  syllabus_index(syllabus) %>%
-    writeLines("syllabus/README.md")
-}
-# Markdown generation -----------------------------------------------------
+syllabus_week <- function(i, syllabus) {
+  week <- syllabus[[i]]
 
-md_page <- function(yaml) {
-  parts <- yaml$parts %>% map_chr(md_part)
+  unit_names <- week$units
+  if (length(unit_names) > 0) {
+    unit_paths <- paste0("units/", unit_names, ".yml")
+    units <- map(unit_paths, yaml.load_file)
+  } else {
+    units <- list()
+  }
 
   paste0(
-    "<!-- Generated automatically from index.yaml. Do not edit by hand -->\n",
-    md_header(yaml),
+    md_generated_by("syllabus.yml"),
+    "# ", week$title, " (Week ", i, ")\n",
     "\n",
-    paste0(parts, collapse = "")
+    indent(week$desc, 0, wrap = TRUE),
+    "\n",
+    units %>%
+      map_chr(md_unit) %>%
+      paste0("\n", collapse = ""),
+
+    md_challenges(week$challenges)
+
   )
+}
+
+md_unit <- function(unit) {
+  paste0(
+    "## ", unit$title, "\n",
+    "\n",
+    indent(unit$desc, 0, wrap = TRUE),
+    "\n",
+    md_links(unit$readings, "Readings"),
+    md_links(unit$supplements, "Supplemental readings")
+  )
+}
+
+md_challenges <- function(challenges) {
+  if (length(challenges) == 0)
+    return()
+
+  paste0(
+    "## Challenges\n",
+    "\n",
+    paste0("  * ", challenges, "\n", collapse = "\n"),
+    "\n"
+  )
+}
+
+# Markdown helpers -----------------------------------------------------
+
+md_generated_by <- function(source) {
+  paste0("<!-- Generated automatically from ", source, ". Do not edit by hand -->\n")
 }
 
 md_header <- function(yaml, level = 1) {
@@ -60,16 +94,6 @@ md_header <- function(yaml, level = 1) {
   )
 }
 
-md_part <- function(yaml, level = 2) {
-  paste0(
-    md_header(yaml, level = level),
-    "\n",
-    md_links(yaml$readings, "Readings"),
-    md_links(yaml$challenges, "Challenges"),
-    md_links(yaml$supplements, "Supplemental readings")
-  )
-}
-
 md_links <- function(yaml, title) {
   if (is.null(yaml))
     return("")
@@ -77,8 +101,7 @@ md_links <- function(yaml, title) {
   paste0(
     "### ", title, "\n",
     "\n",
-    yaml %>% map_chr(md_bullet) %>% paste0(collapse = ""),
-    "\n"
+    yaml %>% map_chr(md_bullet) %>% paste0(collapse = "")
   )
 }
 
@@ -105,7 +128,10 @@ md_bullet <- function(yaml) {
     text <- yaml$text
     id <- "safari"
   } else {
-    stop("Unknown yaml type", call. = FALSE)
+    stop(
+      "Unknown yaml type: ", paste(names(yaml), collapse = "/"),
+      call. = FALSE
+    )
   }
 
 
@@ -121,8 +147,7 @@ md_bullet <- function(yaml) {
     text <- paste0(
       text,
       "\n",
-      indent(trimws(yaml$desc), 4), "\n",
-      "\n"
+      indent(trimws(yaml$desc), 4, wrap = TRUE), "\n"
     )
   }
 
@@ -131,9 +156,11 @@ md_bullet <- function(yaml) {
 
 # Create READMEs ----------------------------------------------------------
 
-build_readme <- function(path) {
-  yaml <- yaml.load_file(file.path(path, "index.yml"))
-  md <- md_page(yaml)
+syllabus <- yaml.load_file("syllabus.yml")
+syllabus_index(syllabus) %>% writeLines("syllabus/README.md")
 
-  cat(md, file = file.path(path, "README.md"))
-}
+weekly <- seq_along(syllabus) %>%
+  map_chr(syllabus_week, syllabus = syllabus)
+
+walk2(weekly, file.path("syllabus", week_path(seq_along(syllabus))), writeLines)
+
