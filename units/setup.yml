@@ -4,12 +4,28 @@ desc: >
 
 readings:
 - book: r4ds-1.4
+
 - book: r4ds-1.5
+
 - book: cheatsheets-rstudio-IDE
+  desc: >
+    You don't need to read the complete cheatsheet, but you should
+    know that it exists.
 
 exercises:
-- Run `library(tidyverse)`
+- Run `library(tidyverse)`. What are the core packages in the tidyverse?
+
+- What do the following keyboard shortcuts do? When should you use them?
+
+  - `Cmd/Ctrl + Enter` (in the script editor)
+  - `Cmd/Ctrl + Up arrow` (in the console)
+  - `Cmd/Ctrl + Shift + F10` (anywhere)
 
 supplements:
 - href: http://stat545.com/block000_r-rstudio-install.html
-- href: http://happygitwithr.com/installation-pain.html
+
+- href: http://happygitwithr.com
+  desc: >
+    Refer to the first two parts of this book ("Installation" and
+    "Connect Git, GitHub, RStudio" if you have problems getting set up
+    with Git and Github.
