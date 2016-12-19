@@ -1,0 +1,38 @@
+title: Data transformations
+tags: [wrangle]
+
+desc: >
+  Transformation functions take one (or more) vectors and return a transformed
+  vector of the same length. They are often needed using your domain knowledge
+  to re-paramerising the data can make patterns more clear.
+
+readings:
+- book: r4ds-5.5.1
+  desc: >
+    Make sure that you're familiar with the most important existing
+    transformations.
+
+- book: cheatsheets-data-wrangling
+  desc: >
+    The cheatsheet includes a list of the most important transformation
+    functions. Refer to it when you forget.
+
+exercises:
+
+- |
+  Whenever your data includes a variable that could be calculated from other
+  variables in your dataset, you should always recalculate it and compare.
+  In the diamonds dataset, you could approximate `depth` from `x`, `y`, `z`
+
+- |
+  You could also approximate `carat` using `x`, `y`, and `z`. Start your
+  approximation by assuming that diamonds are cubes and computing the volume.
+  How are the volume and weight related? Can you use a better geometric
+  approximation? Can you approximate `carat` using the volume and the
+  density of diamond?
+
+- |
+  List all related variables in `nycflights13::flights`.  Double check
+  the value of `dep_delay`. Hint: you'll find the calculation easier if you
+  compute "decimal hours", i.e. `hour + minutes / 60`. Rather than copying
+  and pasting this calculation in multiple places, write a helper function.

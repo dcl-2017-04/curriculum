@@ -1,0 +1,8 @@
+title: Scales
+desc: >
+  Read Chapter 6 to learn how scales control the details of the mapping
+  from data to visual properties.
+tags: [explore]
+
+readings:
+- book: ggplot2-6

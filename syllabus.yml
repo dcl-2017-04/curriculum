@@ -24,9 +24,11 @@
     strategy for working with big data is to make it small with some combination
     of subetting, summarising, or sampling.
   units:
-  - EDA
-  - dplyr-details
-  - ggplot2-details
+  - eda
+  - data-summaries
+  - data-transformations
+  - ggplot2-theory
+  - scales
 
   challenges:
   - TODO. Baby names. geom_line + grouping. How to summarise? Include

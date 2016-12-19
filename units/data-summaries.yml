@@ -1,0 +1,61 @@
+title: Data summaries
+tags: [wrangle]
+
+desc: >
+  Summary functions take a vector of data and return a single number. You
+  Summary geoms divide the data into pieces, apply some summary and visualise
+  the results. Summaries are useful when you have a lot of data (and plotting
+  leads to overplotting), or when the data is noisy (and you need to make
+  small but consistent patterns more clear).
+
+readings:
+- book: r4ds-5.6.4
+
+- book: r4ds-19.1
+  desc: >
+    Not every summary function you need already exists. Sometimes you'll
+    need to combine one or more existing summaries to compute what you
+    want. While you can do this inline, it will make your code easier to
+    use if you use small helper functions.
+
+- book: r4ds-19.2
+
+- book: cheatsheets-data-wrangling
+  desc: >
+    The cheatsheet includes a list of the most important summary
+    functions. Refer to it when you forget.
+
+exercises:
+
+- |
+  Create a helper function to compute the coefficient of variation of a vector.
+  Create a helper function to compute the proportion of missing values in
+  a vector.
+
+- |
+  To understand how airline delays vary daily over the course of a year, you
+  need to summarise each day with a single number. Which variable should you
+  use? Compare summaries using `mean()`, `median()`, and mean(x > cutoff)`.
+  How do they differ? Which do you think is best?
+
+- |
+  Perhaps it's not actually the average delay that's most important, but
+  the variability in the delays. What's a good summary?
+
+- |
+  Using the summary that you think is most appropriate, explore the average
+  delay by destination. Explore the distribution of your summary. Can you
+  explain the location with the 5 highest and 5 lowest values?
+
+- |
+  Sometimes the number or proportion of missing values can be extremely
+  informative. Compute the proportion of flights missing departure times
+  for each day. Visualise the results. What do missing values represent?
+  How do they vary over the course of the year? How are they related to
+  delays?
+
+supplements:
+- href: https://en.wikipedia.org/wiki/Coefficient_of_variation
+  text: Coefficient of variation [wikipedia]
+
+- book: r4ds-18

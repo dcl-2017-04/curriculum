@@ -5,12 +5,20 @@ desc: >
   You'll learn the techniques in the readings, and then practice the
   mindset in class and in the challenges.
 tags: [explore]
+duration: 30
 
 readings:
 - book: r4ds-7.1
 - book: r4ds-7.2
 - book: r4ds-7.3
 - book: r4ds-7.5
+
+exercises:
+- |
+  Explore the distribution of `diamonds$price`. Do you discover anything
+  unusual or surprising? (Hint: Carefully think about the binwidth and make
+  sure you try a wide range of values.) Describe your findings and brainstorm
+  possible explanations.
 
 supplements:
 - href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
@@ -26,4 +34,4 @@ supplements:
   desc: >
     This analysis, also by Todd W. Schneider, uses much more data than
     the previous analysis. What additional challenges did Todd need to solve
-    to allow him to work with this data?
+    to allow him to work with this much data?
