@@ -1,7 +1,7 @@
 title: Setup
 desc: >
-  Ensure that you have all the tools to need for this class.
-duration: 45
+  Ensure that you have all the tools you need for this class.
+duration: 15-45
 
 readings:
 - book: r4ds-1.4
@@ -17,15 +17,7 @@ exercises:
 - |
   Run `library(tidyverse)`. What are the core packages in the tidyverse?
 
-- |
-  What do the following keyboard shortcuts do? When should you use them?
-
-  - `Cmd/Ctrl + Enter` (in the script editor)
-  - `Cmd/Ctrl + Up arrow` (in the console)
-  - `Cmd/Ctrl + Shift + F10` (anywhere)
-
 supplements:
-- href: http://stat545.com/block000_r-rstudio-install.html
 
 - href: http://happygitwithr.com
   desc: >

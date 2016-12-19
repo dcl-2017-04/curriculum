@@ -1,8 +1,9 @@
 title: Data science basics
 desc: >
-  Data transformation and visualisation are the most important data science
-  tools. You'll learn them first using tidy data (column = variable, row =
-  case) that we provide.
+  Data transformation and visualisation are the most important tools for
+  data science. You'll learn them first using tidy data (column = variable,
+  row = case) that we give you. Later, you'll learn how to apply them to
+  your own data.
 duration: 90
 tags: [explore, wrangle]
 
@@ -12,7 +13,6 @@ readings:
 - book: r4ds-5.2
 - book: r4ds-5.5
 - book: r4ds-5.6
-
 - book: ggplot2-3
   desc: >
     Skim this chapter so you're aware of the most important ggplot2 tools.
@@ -22,15 +22,15 @@ exercises:
 - |
   What’s gone wrong with this plot? Why are the points not blue?
 
-  ```{r}
+  ```R
   ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
   ```
 
 - |
-  What's gone wrong with this plot? Why is there only one histogram?
+  What's gone wrong with this plot? Why is there only one boxplot?
 
-  ```{r}
+  ```R
   ggplot(data = mpg) +
     geom_boxplot(mapping = aes(x = cyl, y = displ))
   ```
@@ -42,16 +42,20 @@ exercises:
 
 - |
   How does engine displacement vary with number of cylinders?
-  Draw a plot with ggplot2. Compute a numeric summary with ggplot2.
+  Draw a plot with ggplot2. Compute a numeric summary with dplyr.
+  What are the pros and cons of a plot vs. a numeric summary?
+
+- |
   Create a new variable that gives the displacement per cylinder.
-  Visualise with ggplot2.
+  How does it vary across classes. Visualise with ggplot2.
 
 - |
   How does the relationship between `displ` and `cyl` vary with `drv`?
-  Show three plots and write a one paragrah summary. There are a handful of
-  cars with 5 cylinders. Remove them before drawing your plots.
-  Describe three things that you'd like to do to improve your plots but you
-  don't know how yet.
+  There are a handful of cars with 5 cylinders. Remove them before drawing
+  your plots.
+
+  Show three plots and write a one paragrah summary. Describe three
+  improvements that you'd like to make to your plots, but you don't know how.
 
 supplements:
 
@@ -60,11 +64,15 @@ supplements:
   desc: (will be available in video form once O'Reilly edits videos)
 
 - book: ggplot2-2
+  desc: This covers similar ground to the readings in R4DS.
 
 - book: ggplot2-10
+  desc: This covers similar ground to the readings in R4DS.
 
 - safari: video/programming/r/9781491917046
   text: Expert data wrangling with R, by Garrett Grolemund
+  desc: This is a video introduction to dplyr.
 
 - safari: video/programming/r/9781491963661
   text: Data Visualisation in R with ggplot2, by Kara Woo
+  desc: This is a video introduction to ggplot2.

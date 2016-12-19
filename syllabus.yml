@@ -4,8 +4,8 @@
     so that you can start performing authentic (if simple) analyses.
   units:
   - setup
-  - workflow-basics
   - data-science-basics
+  - workflow-basics
 
   challenges:
   - diamonds-1
