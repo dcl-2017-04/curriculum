@@ -17,6 +17,7 @@ Ensure that you have all the tools to need for this class.
     You don't need to read the complete cheatsheet, but you should know that it
     exists.
 
+
 ### Supplemental readings
 
   * [http://stat545.com/block000_r-rstudio-install.html](http://stat545.com/block000_r-rstudio-install.html)
@@ -24,6 +25,7 @@ Ensure that you have all the tools to need for this class.
 
     Refer to the first two parts of this book ("Installation" and "Connect Git,
     GitHub, RStudio" if you have problems getting set up with Git and Github.
+
 
 
 ## Data science workflow
@@ -40,9 +42,11 @@ running some R code, and uploading the results to GitHub.
   * [First steps](http://r4ds.had.co.nz/data-visualisation.html#first-steps) [r4ds-3.2]
   * GitHub process [TODO]
   * working directories [TODO]
+
 ### Supplemental readings
 
   * [Getting Started with R Markdown.](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/)
+
 
 ## Data science basics
 
@@ -62,6 +66,7 @@ that we provide.
     Skim this chapter so you're aware of the most important ggplot2 tools. Come
     back and read in detail when you actually need to use them.
 
+
 ### Supplemental readings
 
   * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data)
@@ -72,6 +77,7 @@ that we provide.
   * [Data transformation](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10) [ggplot2-10]
   * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046) [safari]
   * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661) [safari]
+
 
 ## Challenges
 

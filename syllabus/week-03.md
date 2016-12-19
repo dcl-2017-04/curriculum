@@ -14,6 +14,7 @@ important theory about the R's data structures.
 
   * [Tidy data](http://r4ds.had.co.nz/tidy-data.html) [r4ds-12]
 
+
 ## Importing data
 
 
@@ -21,6 +22,7 @@ important theory about the R's data structures.
 ### Readings
 
   * [Data import](http://r4ds.had.co.nz/data-import.html) [r4ds-11]
+
 
 ## Missing values
 
@@ -33,6 +35,7 @@ important theory about the R's data structures.
   * [Missing values](http://r4ds.had.co.nz/transform.html#missing-values-1) [r4ds-5.6.2]
   * [Missing values](http://r4ds.had.co.nz/tidy-data.html#missing-values-3) [r4ds-12.5]
 
+
 ## Data structure theory
 
 
@@ -41,5 +44,6 @@ important theory about the R's data structures.
 
   * [Vectors](http://r4ds.had.co.nz/vectors.html) [r4ds-20]
   * [Tibbles](http://r4ds.had.co.nz/tibbles.html) [r4ds-10]
+
 
 

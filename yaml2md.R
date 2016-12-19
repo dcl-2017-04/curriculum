@@ -101,7 +101,8 @@ md_links <- function(yaml, title) {
   paste0(
     "### ", title, "\n",
     "\n",
-    yaml %>% map_chr(md_bullet) %>% paste0(collapse = "")
+    yaml %>% map_chr(md_bullet) %>% paste0(collapse = ""),
+    "\n"
   )
 }
 

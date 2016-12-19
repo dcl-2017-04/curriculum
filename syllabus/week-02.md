@@ -22,6 +22,7 @@ the challenges.
   * [Questions](http://r4ds.had.co.nz/exploratory-data-analysis.html#questions) [r4ds-7.2]
   * [Variation](http://r4ds.had.co.nz/exploratory-data-analysis.html#variation) [r4ds-7.3]
   * [Covariation](http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation) [r4ds-7.5]
+
 ### Supplemental readings
 
   * [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/)
@@ -38,6 +39,7 @@ the challenges.
     allow him to work with this data?
 
 
+
 ## dplyr details
 
 Now that you have some experience with dplyr, we'll fill in the blanks with a
@@ -47,9 +49,11 @@ more sysematic exploration of the options.
 
   * [Data transformation](http://r4ds.had.co.nz/transform.html) [r4ds-5]
   * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling]
+
 ### Supplemental readings
 
   * [Pipes](http://r4ds.had.co.nz/pipes.html) [r4ds-18]
+
 
 ## ggplot2 details
 
@@ -65,6 +69,7 @@ properties.
   * [Build a plot layer by layer](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_5) [ggplot2-5]
   * [Scales, axes and legends](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_6) [ggplot2-6]
   * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1]
+
 
 ## Challenges
 
