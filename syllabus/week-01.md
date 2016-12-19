@@ -19,7 +19,7 @@ Ensure that you have all the tools to need for this class.
     exists.
 
 
-## Exercises
+### Exercises
 
 1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
     
@@ -79,7 +79,7 @@ that we provide.
     back and read in detail when you actually need to use them.
 
 
-## Exercises
+### Exercises
 
 1.  What’s gone wrong with this plot? Why are the points not blue?
     

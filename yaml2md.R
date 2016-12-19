@@ -66,17 +66,17 @@ md_unit <- function(unit) {
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
     md_links(unit$readings, "Readings"),
-    md_list(unit$exercises, "Exercises"),
+    md_list(unit$exercises, "Exercises", level = 3),
     md_links(unit$supplements, "Supplemental readings")
   )
 }
 
-md_list <- function(x, title) {
+md_list <- function(x, title, level = 2) {
   if (length(x) == 0)
     return()
 
   paste0(
-    "## ", title, "\n",
+    md_heading(title, level = level),
     "\n",
     paste0("1. ", indent(x, by = 4, first = 0), collapse = "\n"),
     "\n"
@@ -89,12 +89,8 @@ md_generated_by <- function(source) {
   paste0("<!-- Generated automatically from ", source, ". Do not edit by hand -->\n")
 }
 
-md_header <- function(yaml, level = 1) {
-  paste0(
-    strrep("#", level), " ", yaml$title, "\n",
-    "\n",
-    yaml$desc
-  )
+md_heading <- function(x, level = 1) {
+  paste0(strrep("#", level), " ", x, "\n")
 }
 
 md_links <- function(yaml, title) {
