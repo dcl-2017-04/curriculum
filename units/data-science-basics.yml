@@ -3,6 +3,7 @@ desc: >
   Data transformation and visualisation are the most important data science
   tools. You'll learn them first using tidy data (column = variable, row =
   case) that we provide.
+duration: 90
 tags: [explore, wrangle]
 
 readings:

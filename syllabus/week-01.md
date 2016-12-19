@@ -5,6 +5,7 @@ Learn the absolute essentials of data science as quickly as possible, so that
 you can start performing authentic (if simple) analyses.
 
 ## Setup
+(estimated duration: 45 mins)
 
 Ensure that you have all the tools to need for this class.
 
@@ -59,6 +60,7 @@ running some R code, and uploading the results to GitHub.
 
 
 ## Data science basics
+(estimated duration: 90 mins)
 
 Data transformation and visualisation are the most important data science
 tools. You'll learn them first using tidy data (column = variable, row = case)

@@ -60,6 +60,8 @@ syllabus_week <- function(i, syllabus) {
 md_unit <- function(unit) {
   paste0(
     "## ", unit$title, "\n",
+    if (!is.null(unit$duration))
+      paste0("(estimated duration: ", unit$duration, " mins)\n"),
     "\n",
     indent(unit$desc, 0, wrap = TRUE),
     "\n",

@@ -1,6 +1,7 @@
 title: Setup
 desc: >
   Ensure that you have all the tools to need for this class.
+duration: 45
 
 readings:
 - book: r4ds-1.4
