@@ -1,4 +1,3 @@
-weeks:
 - title: Foundations
   desc: >
     Learn the absolute essentials of data science as quickly as possible,
@@ -11,8 +10,6 @@ weeks:
   challenges:
   - diamonds-1
   - diamonds-2
-
-  challenges:
   - TODO. practice whole process including sync to github
 
 - title: Exploratory data analysis

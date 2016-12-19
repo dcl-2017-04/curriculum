@@ -1,8 +1,44 @@
-library(tidyverse)
 library(yaml)
+library(tidyverse)
 source("utils.R")
 
+unit_paths <- dir("units", pattern = "\\.yml$", full.names = TRUE)
+units <- unit_paths %>% map(yaml.load_file)
 
+syllabus <- yaml.load_file("syllabus.yml")
+
+
+# Syllabus markdown -------------------------------------------------------
+# one page that lists each week, along with it's description
+
+week_path <- function(i) sprintf("week-%02d.md", i)
+
+syllabus_desc <- function(x, i) {
+  paste0(
+    "*   __Week ", i, "__: [", x$title, "](", week_path(i), ")\n",
+    "\n",
+    indent(x$desc, 4, wrap = TRUE)
+  )
+}
+
+syllabus_index <- function(syllabus) {
+  weeks <- syllabus %>%
+    map2_chr(seq_along(.), syllabus_desc) %>%
+    paste0("\n\n", collapse = "")
+
+  page <- paste0(
+    "# Weekly syllabus\n",
+    "\n",
+    weeks
+  )
+}
+
+write_syllabus(syllabus)
+
+write_syllabus <- function(syllabus) {
+  syllabus_index(syllabus) %>%
+    writeLines("syllabus/README.md")
+}
 # Markdown generation -----------------------------------------------------
 
 md_page <- function(yaml) {
