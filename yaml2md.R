@@ -153,14 +153,3 @@ md_bullet <- function(yaml) {
 
   text
 }
-
-# Create READMEs ----------------------------------------------------------
-
-syllabus <- yaml.load_file("syllabus.yml")
-syllabus_index(syllabus) %>% writeLines("syllabus/README.md")
-
-weekly <- seq_along(syllabus) %>%
-  map_chr(syllabus_week, syllabus = syllabus)
-
-walk2(weekly, file.path("syllabus", week_path(seq_along(syllabus))), writeLines)
-
