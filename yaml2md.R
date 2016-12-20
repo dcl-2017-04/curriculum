@@ -90,7 +90,10 @@ md_list <- function(x, title, level = 2) {
 # Markdown helpers -----------------------------------------------------
 
 md_generated_by <- function(source) {
-  paste0("<!-- Generated automatically from ", source, ". Do not edit by hand -->\n")
+  paste0(
+    "<!-- Generated automatically from ", source, ". Do not edit by hand -->\n",
+    "\n"
+  )
 }
 
 md_heading <- function(x, level = 1) {

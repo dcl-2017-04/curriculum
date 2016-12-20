@@ -1,4 +1,5 @@
 <!-- Generated automatically from syllabus.yml. Do not edit by hand -->
+
 # Weekly syllabus
 
 ## Foundations <small>(Week 1)</small>
