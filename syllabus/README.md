@@ -12,11 +12,7 @@
     Good data analysis involves fluid transitions between transformation and
     visualisation. This week you'll practice those tools by using them for EDA
     (exploratory data analysis), and diving into some of the details of dplyr
-    and ggplot2 that we elided last week. Here we apply these tools to small
-    (in-memory) data, but they're still useful when you have big
-    (out-of-memory) data. That's because a powerful strategy for working with
-    big data is to make it small with some combination of subetting,
-    summarising, or sampling.
+    and ggplot2 that we elided last week.
 
 
 *   __Week 3__: [Care and feeding of tibbles](week-03.md)

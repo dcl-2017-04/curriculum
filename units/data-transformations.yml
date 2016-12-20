@@ -6,11 +6,21 @@ desc: >
   vector of the same length. They are often needed using your domain knowledge
   to re-paramerising the data can make patterns more clear.
 
+  Transformation are important in visualisations, as sometimes you'll want
+  to do a quick and dirty transformation in the call to `aes()`. However,
+  another important transformation always occurs during visualisation:
+  transformation from data to visual properties. This is handled by the
+  scales.
+
 readings:
 - book: r4ds-5.5.1
   desc: >
     Make sure that you're familiar with the most important existing
     transformations.
+
+- book: ggplot2-6
+  desc: >
+
 
 - book: cheatsheets-data-wrangling
   desc: >
@@ -30,6 +40,13 @@ exercises:
   How are the volume and weight related? Can you use a better geometric
   approximation? Can you approximate `carat` using the volume and the
   density of diamond?
+
+- |
+  Log transforming `price` and `carat` makes the relationship between
+  the two variables more clear (and suggests that there are a lot of missing
+  expensive diamonds). There are at least three ways to perform this
+  transformation. Brainstorm some approaches and briefly describe the pros
+  and cons.
 
 - |
   List all related variables in `nycflights13::flights`.  Double check

@@ -8,6 +8,11 @@ desc: >
   leads to overplotting), or when the data is noisy (and you need to make
   small but consistent patterns more clear).
 
+  Here we apply these tools to small (in-memory) data, but they're still
+  useful when you have big (out-of-memory) data. That's because a powerful
+  strategy for working with big data is to make it small with some combination
+  of subsetting, summarising, or sampling.
+
 readings:
 - book: r4ds-5.6.4
 
@@ -58,4 +63,17 @@ supplements:
 - href: https://en.wikipedia.org/wiki/Coefficient_of_variation
   text: Coefficient of variation [wikipedia]
 
-- book: r4ds-18
+- href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
+  text: "A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System"
+  desc: >
+    This analysis by Todd W. Schneider uses R (along with other tools)
+    to analyse over 20 million bike rides in NYC. As you read through
+    the analysis think how you would do it yourself using the techniques you
+    have learned so far.
+
+- href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
+  text: Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance
+  desc: >
+    This analysis, also by Todd W. Schneider, uses much more data than
+    the previous analysis. What additional challenges did Todd need to solve
+    to allow him to work with this much data?
