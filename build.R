@@ -10,9 +10,9 @@ units <- load_units()
 
 syllabus %>%
   syllabus_index() %>%
-  writeLines("syllabus/README.md")
+  writeLines("docs/README.md")
 
-out_path <- paste0("syllabus/", names(units), ".md")
+out_path <- paste0("docs/", names(units), ".md")
 units %>%
   map_chr(md_unit) %>%
   walk2(out_path, writeLines)
