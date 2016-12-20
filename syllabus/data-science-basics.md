@@ -1,45 +1,11 @@
-<!-- Generated automatically from syllabus.yml. Do not edit by hand -->
-# Foundations (Week 1)
-
-Learn the absolute essentials of data science as quickly as possible, so that
-you can start performing authentic (if simple) analyses.
-
-## Setup
-(estimated duration: 15-45 mins)
-
-Ensure that you have all the tools you need for this class.
-
-### Readings
-
-  * [Prerequisites](http://r4ds.had.co.nz/introduction.html#prerequisites) [r4ds-1.4]
-  * [Running R code](http://r4ds.had.co.nz/introduction.html#running-r-code) [r4ds-1.5]
-  * [RStudio IDE Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf) [cheatsheets-rstudio-IDE]
-
-    You don't need to read the complete cheatsheet, but you should know that it
-    exists.
-
-
-### Exercises
-
-1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
-    
-### Supplemental readings
-
-  * [http://happygitwithr.com](http://happygitwithr.com)
-
-    Refer to the first two parts of this book ("Installation" and "Connect Git,
-    GitHub, RStudio" if you have problems getting set up with Git and Github.
-
-
-
-## Data science basics
+# Data science basics
 (estimated duration: 90 mins)
 
 Data transformation and visualisation are the most important tools for data
 science. You'll learn them first using tidy data (column = variable, row =
 case) that we give you. Later, you'll learn how to apply them to your own data.
 
-### Readings
+## Readings
 
   * [Aesthetic mappings](http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings) [r4ds-3.3]
   * [Facets](http://r4ds.had.co.nz/data-visualisation.html#facets) [r4ds-3.5]
@@ -52,7 +18,7 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
     back and read in detail when you actually need to use them.
 
 
-### Exercises
+## Exercises
 
 1.  What’s gone wrong with this plot? Why are the points not blue?
     
@@ -86,7 +52,8 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
     Show three plots and write a one paragrah summary. Describe three
     improvements that you'd like to make to your plots, but you don't know how.
     
-### Supplemental readings
+
+## Supplemental readings
 
   * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data)
 
@@ -109,51 +76,4 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
     This is a video introduction to ggplot2.
 
 
-
-## Data science workflow
-(estimated duration: 45 mins)
-
-Experience the full data science workflow by creating an RMarkdown file,
-running some R code, and uploading the results to GitHub. This is an authentic
-workflow: the only difference between this and what you'll use as a data
-scientist is that in this class you'll always show your code so we can give you
-feedback on the results _and_ the process.
-
-### Readings
-
-  * [Introduction](http://r4ds.had.co.nz/r-markdown.html#introduction-18) [r4ds-27.1]
-  * [R Markdown basics](http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics) [r4ds-27.2]
-  * [Code chunks](http://r4ds.had.co.nz/r-markdown.html#code-chunks) [r4ds-27.4]
-  * [Introduction](http://r4ds.had.co.nz/data-visualisation.html#introduction-1) [r4ds-3.1]
-  * [First steps](http://r4ds.had.co.nz/data-visualisation.html#first-steps) [r4ds-3.2]
-  * GitHub process [TODO]
-  * working directories [TODO]
-
-### Exercises
-
-1.  What do the following keyboard shortcuts do? When should you use them?
-    
-    - `Cmd/Ctrl + Enter` (in the script editor)
-    - `Cmd/Ctrl + Up arrow` (in the console)
-    - `Cmd/Ctrl + Shift + F10` (anywhere)
-    
-1.  Create an RMarkdown document that shows one interesting fact about
-    the mpg dataset. Upload it to your class GitHub repository.
-    
-    Include a figure and one paragraph of explanatory text.
-    
-### Supplemental readings
-
-  * [Getting Started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/)
-
-    This 60 minute webinar introduces you to R Markdown. It covers similar
-    content to the readings in video form.
-
-
-
-## Challenges
-
-1.  diamonds-1
-1.  diamonds-2
-1.  TODO. practice whole process including sync to github
 

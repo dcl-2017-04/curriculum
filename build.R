@@ -5,11 +5,14 @@
 source("books/books.R")
 source("yaml2md.R")
 
-syllabus <- yaml.load_file("syllabus.yml")
-syllabus_index(syllabus) %>% writeLines("syllabus/README.md")
+syllabus <- load_syllabus()
+units <- load_units()
 
-weekly <- seq_along(syllabus) %>%
-  map_chr(syllabus_week, syllabus = syllabus)
+syllabus %>%
+  syllabus_index() %>%
+  writeLines("syllabus/README.md")
 
-walk2(weekly, file.path("syllabus", week_path(seq_along(syllabus))), writeLines)
-
+out_path <- paste0("syllabus/", names(units), ".md")
+units %>%
+  map_chr(md_unit) %>%
+  walk2(out_path, writeLines)

@@ -2,24 +2,26 @@ library(yaml)
 library(tidyverse)
 source("utils.R")
 
+load_units <- function() {
+  paths <- dir("units", full.name = TRUE)
+  names(paths) <- tools::file_path_sans_ext(basename(paths))
+
+  map(paths, yaml.load_file)
+}
+
+load_syllabus <- function() {
+  yaml.load_file("syllabus.yml")
+}
 
 # Syllabus index -------------------------------------------------------
 # lists each week, along with description
 
 week_path <- function(i) sprintf("week-%02d.md", i)
 
-syllabus_desc <- function(x, i) {
-  paste0(
-    "*   __Week ", i, "__: [", x$title, "](", week_path(i), ")\n",
-    "\n",
-    indent(x$desc, 4, wrap = TRUE)
-  )
-}
-
 syllabus_index <- function(syllabus) {
   weeks <- syllabus %>%
     map2_chr(seq_along(.), syllabus_desc) %>%
-    paste0("\n\n", collapse = "")
+    paste0("\n", collapse = "")
 
   paste0(
     md_generated_by("syllabus.yml"),
@@ -29,44 +31,46 @@ syllabus_index <- function(syllabus) {
   )
 }
 
-# Weekly pages ------------------------------------------------------------
-
-syllabus_week <- function(i, syllabus) {
-  week <- syllabus[[i]]
-
-  unit_names <- week$units
-  if (length(unit_names) > 0) {
-    unit_paths <- paste0("units/", unit_names, ".yml")
-    units <- map(unit_paths, yaml.load_file)
-  } else {
-    units <- list()
-  }
-
+syllabus_desc <- function(x, i) {
   paste0(
-    md_generated_by("syllabus.yml"),
-    "# ", week$title, " (Week ", i, ")\n",
+    "## ", x$title, " <small>(Week ", i, ")</small>\n",
     "\n",
-    indent(week$desc, 0, wrap = TRUE),
+    indent(x$desc, 0, wrap = TRUE),
     "\n",
-    units %>%
-      map_chr(md_unit) %>%
-      paste0("\n", collapse = ""),
-
-    md_list(week$challenges, "Challenges")
-
+    syllabus_units(x),
+    syllabus_challenges(x)
   )
 }
 
+syllabus_units <- function(x) {
+  units <- x$units
+  if (length(units) == 0)
+    return()
+
+  paste0(
+    md_heading("Units", level = 2),
+    "\n",
+    paste0("1. [", units, "](", units, ".md)\n", collapse = ""),
+    "\n"
+  )
+}
+
+syllabus_challenges <- function(x) {
+  md_list(x$challenges, "Challenges")
+}
+
+# Weekly pages ------------------------------------------------------------
+
 md_unit <- function(unit) {
   paste0(
-    "## ", unit$title, "\n",
+    "# ", unit$title, "\n",
     if (!is.null(unit$duration))
       paste0("(estimated duration: ", unit$duration, " mins)\n"),
     "\n",
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
     md_links(unit$readings, "Readings"),
-    md_list(unit$exercises, "Exercises", level = 3),
+    md_list(unit$exercises, "Exercises"),
     md_links(unit$supplements, "Supplemental readings")
   )
 }
@@ -78,7 +82,7 @@ md_list <- function(x, title, level = 2) {
   paste0(
     md_heading(title, level = level),
     "\n",
-    paste0("1. ", indent(x, by = 4, first = 0), collapse = "\n"),
+    paste0("1. ", indent(x, by = 4, first = 0), "\n", collapse = ""),
     "\n"
   )
 }
@@ -93,12 +97,12 @@ md_heading <- function(x, level = 1) {
   paste0(strrep("#", level), " ", x, "\n")
 }
 
-md_links <- function(yaml, title) {
+md_links <- function(yaml, title, level = 2) {
   if (is.null(yaml))
     return("")
 
   paste0(
-    "### ", title, "\n",
+    md_heading(title, level = level),
     "\n",
     yaml %>% map_chr(md_bullet) %>% paste0(collapse = ""),
     "\n"

@@ -1,66 +1,100 @@
 <!-- Generated automatically from syllabus.yml. Do not edit by hand -->
 # Weekly syllabus
 
-*   __Week 1__: [Foundations](week-01.md)
+## Foundations <small>(Week 1)</small>
 
-    Learn the absolute essentials of data science as quickly as possible, so
-    that you can start performing authentic (if simple) analyses.
+Learn the absolute essentials of data science as quickly as possible, so that
+you can start performing authentic (if simple) analyses.
 
+## Units
 
-*   __Week 2__: [Exploratory data analysis](week-02.md)
+1. [setup](setup.md)
+1. [data-science-basics](data-science-basics.md)
+1. [workflow-basics](workflow-basics.md)
 
-    Good data analysis involves fluid transitions between transformation and
-    visualisation. This week you'll practice those tools by using them for EDA
-    (exploratory data analysis), and diving into some of the details of dplyr
-    and ggplot2 that we elided last week.
+## Challenges
 
-
-*   __Week 3__: [Care and feeding of tibbles](week-03.md)
-
-    So far you've used tidy data that we've provided you. This will __never__
-    happen in real life, so this week you'll learn how to load data from a flat
-    files on disk, and get your data into a tidy form. We'll also touch on some
-    important theory about the R's data structures.
+1.  diamonds-1
+1.  diamonds-2
+1.  TODO. practice whole process including sync to github
 
 
-*   __Week 4__: [Functions and iteration](week-04.md)
+## Exploratory data analysis <small>(Week 2)</small>
 
-    R is a programming language, and mastering the basics of programming will
-    give you powerful tools for automating your work. This week, you'll learn
-    some alternatives to copy and paste.
+Good data analysis involves fluid transitions between transformation and
+visualisation. This week you'll practice those tools by using them for EDA
+(exploratory data analysis), and diving into some of the details of dplyr and
+ggplot2 that we elided last week.
 
+## Units
 
-*   __Week 5__: [Date/times and relational data](week-05.md)
+1. [eda](eda.md)
+1. [ggplot2-theory](ggplot2-theory.md)
+1. [data-summaries](data-summaries.md)
+1. [data-transformations](data-transformations.md)
 
-    This week we'll learn how to handle date/time data, and multiple related
-    table (relational data). This will allow us to fully explore the datasets
-    in nycflights13, and start to learn how weather is related to flight
-    delays.
+## Challenges
 
-
-*   __Week 6__: [Strings and factors](week-06.md)
-
-    There are two important types of variable that we haven't covered in detail
-    yet: strings and factors. You'll also learn about regular expression which
-    are a special, compact, language for describing patterns in strings.
+1.  TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
+1.  diamonds-3
 
 
-*   __Week 7__: [Modelling](week-07.md)
+## Care and feeding of tibbles <small>(Week 3)</small>
+
+So far you've used tidy data that we've provided you. This will __never__
+happen in real life, so this week you'll learn how to load data from a flat
+files on disk, and get your data into a tidy form. We'll also touch on some
+important theory about the R's data structures.
+
+## Units
+
+1. [tidy](tidy.md)
+1. [import](import.md)
+1. [missing-values](missing-values.md)
+1. [data-structures](data-structures.md)
+
+
+## Functions and iteration <small>(Week 4)</small>
+
+R is a programming language, and mastering the basics of programming will give
+you powerful tools for automating your work. This week, you'll learn some
+alternatives to copy and paste.
+
+
+## Date/times and relational data <small>(Week 5)</small>
+
+This week we'll learn how to handle date/time data, and multiple related table
+(relational data). This will allow us to fully explore the datasets in
+nycflights13, and start to learn how weather is related to flight delays.
+
+
+## Strings and factors <small>(Week 6)</small>
+
+There are two important types of variable that we haven't covered in detail
+yet: strings and factors. You'll also learn about regular expression which are
+a special, compact, language for describing patterns in strings.
+
+## Challenges
+
+1.  neiss
+
+
+## Modelling <small>(Week 7)</small>
 
 
 
 
-*   __Week 8__: [Hierarchical data with purrr](week-08.md)
+## Hierarchical data with purrr <small>(Week 8)</small>
 
 
 
 
-*   __Week 9__: [Text data with tidytext](week-09.md)
+## Text data with tidytext <small>(Week 9)</small>
 
 
 
 
-*   __Week 10__: [Spatial data with sf](week-10.md)
+## Spatial data with sf <small>(Week 10)</small>
 
 
 
