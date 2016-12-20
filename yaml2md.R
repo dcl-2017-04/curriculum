@@ -37,26 +37,26 @@ syllabus_desc <- function(x, i) {
     "\n",
     indent(x$desc, 0, wrap = TRUE),
     "\n",
-    syllabus_units(x),
-    syllabus_challenges(x)
+    syllabus_units(x, level = 3),
+    syllabus_challenges(x, level = 3)
   )
 }
 
-syllabus_units <- function(x) {
+syllabus_units <- function(x, level) {
   units <- x$units
   if (length(units) == 0)
     return()
 
   paste0(
-    md_heading("Units", level = 2),
+    md_heading("Units", level = level),
     "\n",
     paste0("1. [", units, "](", units, ".md)\n", collapse = ""),
     "\n"
   )
 }
 
-syllabus_challenges <- function(x) {
-  md_list(x$challenges, "Challenges")
+syllabus_challenges <- function(x, level) {
+  md_list(x$challenges, "Challenges", level = level)
 }
 
 # Weekly pages ------------------------------------------------------------

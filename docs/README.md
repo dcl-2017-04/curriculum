@@ -7,13 +7,13 @@
 Learn the absolute essentials of data science as quickly as possible, so that
 you can start performing authentic (if simple) analyses.
 
-## Units
+### Units
 
 1. [setup](setup.md)
 1. [data-science-basics](data-science-basics.md)
 1. [workflow-basics](workflow-basics.md)
 
-## Challenges
+### Challenges
 
 1.  diamonds-1
 1.  diamonds-2
@@ -27,14 +27,14 @@ visualisation. This week you'll practice those tools by using them for EDA
 (exploratory data analysis), and diving into some of the details of dplyr and
 ggplot2 that we elided last week.
 
-## Units
+### Units
 
 1. [eda](eda.md)
 1. [ggplot2-theory](ggplot2-theory.md)
 1. [data-summaries](data-summaries.md)
 1. [data-transformations](data-transformations.md)
 
-## Challenges
+### Challenges
 
 1.  TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
 1.  diamonds-3
@@ -47,7 +47,7 @@ happen in real life, so this week you'll learn how to load data from a flat
 files on disk, and get your data into a tidy form. We'll also touch on some
 important theory about the R's data structures.
 
-## Units
+### Units
 
 1. [tidy](tidy.md)
 1. [import](import.md)
@@ -75,7 +75,7 @@ There are two important types of variable that we haven't covered in detail
 yet: strings and factors. You'll also learn about regular expression which are
 a special, compact, language for describing patterns in strings.
 
-## Challenges
+### Challenges
 
 1.  neiss
 
