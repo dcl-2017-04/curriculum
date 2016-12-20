@@ -33,8 +33,7 @@ feedback on the results _and_ the process.
 
 ## Supplemental readings
 
-  * [Getting Started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/)
-
+  * [Getting Started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/).
     This 60 minute webinar introduces you to R Markdown. It covers similar
     content to the readings in video form.
 

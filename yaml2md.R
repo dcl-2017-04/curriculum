@@ -148,15 +148,16 @@ md_bullet <- function(yaml) {
   if (!is.na(id)) {
     text <- paste0(text, " [", id, "]")
   }
-  text <- paste0("  * ", text, "\n")
+  text <- paste0("  * ", text)
 
   if (!is.null(yaml$desc)) {
     text <- paste0(
       text,
-      "\n",
-      indent(trimws(yaml$desc), 4, wrap = TRUE), "\n"
+      ".\n",
+      indent(trimws(yaml$desc), 4, wrap = TRUE)
     )
   }
+  text <- paste0(text, "\n")
 
   text
 }

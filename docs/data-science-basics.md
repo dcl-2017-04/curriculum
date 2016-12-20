@@ -12,8 +12,7 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
   * [Filter rows with filter()](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter) [r4ds-5.2]
   * [Add new variables with mutate()](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate) [r4ds-5.5]
   * [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) [r4ds-5.6]
-  * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3]
-
+  * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
     Skim this chapter so you're aware of the most important ggplot2 tools. Come
     back and read in detail when you actually need to use them.
 
@@ -55,24 +54,19 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
 
 ## Supplemental readings
 
-  * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data)
-
+  * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data).
     (will be available in video form once O'Reilly edits videos)
 
-  * [Getting started with ggplot2](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2) [ggplot2-2]
-
+  * [Getting started with ggplot2](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2) [ggplot2-2].
     This covers similar ground to the readings in R4DS.
 
-  * [Data transformation](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10) [ggplot2-10]
-
+  * [Data transformation](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10) [ggplot2-10].
     This covers similar ground to the readings in R4DS.
 
-  * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046) [safari]
-
+  * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046) [safari].
     This is a video introduction to dplyr.
 
-  * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661) [safari]
-
+  * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661) [safari].
     This is a video introduction to ggplot2.
 
 

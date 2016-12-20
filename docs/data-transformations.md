@@ -10,14 +10,12 @@ visual properties. This is handled by the scales.
 
 ## Readings
 
-  * [Useful creation functions](http://r4ds.had.co.nz/transform.html#mutate-funs) [r4ds-5.5.1]
-
+  * [Useful creation functions](http://r4ds.had.co.nz/transform.html#mutate-funs) [r4ds-5.5.1].
     Make sure that you're familiar with the most important existing
     transformations.
 
   * [Scales, axes and legends](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_6) [ggplot2-6]
-  * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling]
-
+  * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling].
     The cheatsheet includes a list of the most important transformation
     functions. Refer to it when you forget.
 
