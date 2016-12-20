@@ -8,15 +8,20 @@ duration: 90
 tags: [explore, wrangle]
 
 readings:
+
+- text: Data visualisation basics
 - book: r4ds-3.3
 - book: r4ds-3.5
+
+- text: Data manipulation basics
 - book: r4ds-5.2
 - book: r4ds-5.5
 - book: r4ds-5.6
-- book: ggplot2-3
-  desc: >
+
+- text: >
     Skim this chapter so you're aware of the most important ggplot2 tools.
     Come back and read in detail when you actually need to use them.
+- book: ggplot2-3
 
 exercises:
 - |
