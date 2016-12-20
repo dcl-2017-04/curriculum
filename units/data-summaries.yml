@@ -15,6 +15,14 @@ desc: >
 
 readings:
 - book: r4ds-5.6.4
+  desc: >
+    Familiarise yourself with the summary functions that you can use
+    in conjunction with `summarise()`
+
+- book: ggplot2-3
+  desc: >
+    Familiarise yourself with the geoms that you can use to summarise
+    data visually.
 
 - book: r4ds-19.1
   desc: >
@@ -62,6 +70,10 @@ exercises:
 supplements:
 - href: https://en.wikipedia.org/wiki/Coefficient_of_variation
   text: Coefficient of variation [wikipedia]
+
+- book: cheatsheets-ggplot2-2.1
+  desc: >
+    Use the ggplot2 cheatsheet to jog your memory of what's available.
 
 - href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
   text: "A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System"

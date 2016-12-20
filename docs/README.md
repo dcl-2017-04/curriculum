@@ -23,14 +23,13 @@ you can start performing authentic (if simple) analyses.
 ## Exploratory data analysis <small>(Week 2)</small>
 
 Good data analysis involves fluid transitions between transformation and
-visualisation. This week you'll practice those tools by using them for EDA
-(exploratory data analysis), and diving into some of the details of dplyr and
-ggplot2 that we elided last week.
+visualisation. This week you'll first learn about the overall philosophy of EDA
+(exploratory data analysis), and then dive into the details of data summaries
+and transformations.
 
 ### Units
 
 1. [eda](eda.md)
-1. [ggplot2-theory](ggplot2-theory.md)
 1. [data-summaries](data-summaries.md)
 1. [data-transformations](data-transformations.md)
 
@@ -58,8 +57,9 @@ important theory about the R's data structures.
 ## Functions and iteration <small>(Week 4)</small>
 
 R is a programming language, and mastering the basics of programming will give
-you powerful tools for automating your work. This week, you'll learn some
-alternatives to copy and paste.
+you powerful tools for automating your work. We've touched on basic functions
+already, but this week, we'll focus on them, learning important skills for
+automating your workflow.
 
 
 ## Date/times and relational data <small>(Week 5)</small>

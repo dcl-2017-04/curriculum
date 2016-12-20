@@ -134,6 +134,8 @@ md_bullet <- function(yaml) {
     )
     text <- yaml$text
     id <- "safari"
+  } else if (has_name(yaml, "text")) {
+    return(paste0(indent(yaml$text, 0, wrap = TRUE), "\n"))
   } else {
     stop(
       "Unknown yaml type: ", paste(names(yaml), collapse = "/"),

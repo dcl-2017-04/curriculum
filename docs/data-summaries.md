@@ -12,7 +12,12 @@ some combination of subsetting, summarising, or sampling.
 ## Readings
 
   * [Useful summary functions](http://r4ds.had.co.nz/transform.html#summarise-funs) [r4ds-5.6.4].
-    You need to be
+    Familiarise yourself with the summary functions that you can use in
+    conjunction with `summarise()`
+
+  * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
+    Familiarise yourself with the geoms that you can use to summarise data
+    visually.
 
   * [Introduction](http://r4ds.had.co.nz/functions.html#introduction-12) [r4ds-19.1].
     Not every summary function you need already exists. Sometimes you'll need
@@ -55,6 +60,9 @@ some combination of subsetting, summarising, or sampling.
 ## Supplemental readings
 
   * [Coefficient of variation [wikipedia]](https://en.wikipedia.org/wiki/Coefficient_of_variation)
+
+  * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1].
+    Use the ggplot2 cheatsheet to jog your memory of what's available.
 
   * [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/).
     This analysis by Todd W. Schneider uses R (along with other tools) to
