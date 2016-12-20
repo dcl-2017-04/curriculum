@@ -9,9 +9,13 @@ the challenges.
 ## Readings
 
   * [Introduction](http://r4ds.had.co.nz/exploratory-data-analysis.html#introduction-3) [r4ds-7.1]
+
   * [Questions](http://r4ds.had.co.nz/exploratory-data-analysis.html#questions) [r4ds-7.2]
+
   * [Variation](http://r4ds.had.co.nz/exploratory-data-analysis.html#variation) [r4ds-7.3]
+
   * [Covariation](http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation) [r4ds-7.5]
+
 
 ## Exercises
 

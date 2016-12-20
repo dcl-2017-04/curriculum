@@ -8,10 +8,15 @@ case) that we give you. Later, you'll learn how to apply them to your own data.
 ## Readings
 
   * [Aesthetic mappings](http://r4ds.had.co.nz/data-visualisation.html#aesthetic-mappings) [r4ds-3.3]
+
   * [Facets](http://r4ds.had.co.nz/data-visualisation.html#facets) [r4ds-3.5]
+
   * [Filter rows with filter()](http://r4ds.had.co.nz/transform.html#filter-rows-with-filter) [r4ds-5.2]
+
   * [Add new variables with mutate()](http://r4ds.had.co.nz/transform.html#add-new-variables-with-mutate) [r4ds-5.5]
+
   * [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) [r4ds-5.6]
+
   * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
     Skim this chapter so you're aware of the most important ggplot2 tools. Come
     back and read in detail when you actually need to use them.

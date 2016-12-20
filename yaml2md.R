@@ -154,10 +154,12 @@ md_bullet <- function(yaml) {
     text <- paste0(
       text,
       ".\n",
-      indent(trimws(yaml$desc), 4, wrap = TRUE)
+      indent(trimws(yaml$desc), 4, wrap = TRUE),
+      "\n"
     )
+  } else {
+    text <- paste0(text, "\n\n")
   }
-  text <- paste0(text, "\n")
 
   text
 }

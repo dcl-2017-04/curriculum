@@ -10,12 +10,19 @@ feedback on the results _and_ the process.
 ## Readings
 
   * [Introduction](http://r4ds.had.co.nz/r-markdown.html#introduction-18) [r4ds-27.1]
+
   * [R Markdown basics](http://r4ds.had.co.nz/r-markdown.html#r-markdown-basics) [r4ds-27.2]
+
   * [Code chunks](http://r4ds.had.co.nz/r-markdown.html#code-chunks) [r4ds-27.4]
+
   * [Introduction](http://r4ds.had.co.nz/data-visualisation.html#introduction-1) [r4ds-3.1]
+
   * [First steps](http://r4ds.had.co.nz/data-visualisation.html#first-steps) [r4ds-3.2]
+
   * GitHub process [TODO]
+
   * working directories [TODO]
+
 
 ## Exercises
 

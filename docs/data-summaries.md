@@ -11,7 +11,9 @@ some combination of subsetting, summarising, or sampling.
 
 ## Readings
 
-  * [Useful summary functions](http://r4ds.had.co.nz/transform.html#summarise-funs) [r4ds-5.6.4]
+  * [Useful summary functions](http://r4ds.had.co.nz/transform.html#summarise-funs) [r4ds-5.6.4].
+    You need to be
+
   * [Introduction](http://r4ds.had.co.nz/functions.html#introduction-12) [r4ds-19.1].
     Not every summary function you need already exists. Sometimes you'll need
     to combine one or more existing summaries to compute what you want. While
@@ -19,6 +21,7 @@ some combination of subsetting, summarising, or sampling.
     small helper functions.
 
   * [When should you write a function?](http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function) [r4ds-19.2]
+
   * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling].
     The cheatsheet includes a list of the most important summary functions.
     Refer to it when you forget.
@@ -52,6 +55,7 @@ some combination of subsetting, summarising, or sampling.
 ## Supplemental readings
 
   * [Coefficient of variation [wikipedia]](https://en.wikipedia.org/wiki/Coefficient_of_variation)
+
   * [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/).
     This analysis by Todd W. Schneider uses R (along with other tools) to
     analyse over 20 million bike rides in NYC. As you read through the analysis
