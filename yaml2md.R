@@ -89,7 +89,10 @@ build_exercise <- function(unit_name, level = 2) {
 
   # Render to docs to create figures etc
   md_path <- rmarkdown::render(rmd_path,
-    output_format = rmarkdown::github_document(),
+    output_format = rmarkdown::github_document(
+      fig_width = 6,
+      fig_height = 4
+    ),
     quiet = TRUE
   )
 
@@ -109,9 +112,8 @@ build_exercise <- function(unit_name, level = 2) {
 
 md_unit <- function(unit, unit_name) {
   paste0(
+    md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
-    if (!is.null(unit$duration))
-      paste0("(estimated duration: ", unit$duration, " mins)\n"),
     "\n",
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
