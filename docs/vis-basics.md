@@ -24,4 +24,31 @@ Come back and read in detail when you actually need to use them.
   * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3]
 
 
+## Exercises
+[vis-basics-exercises.Rmd](vis-basics-exercises.Rmd)
+
+
+1.  Map a continuous variable to the color, size, and shape aesthetics. Map a categorical variable to the color, size, and shape aesthetics. How do these aesthetics behave differently for categorical vs. continuous?
+
+2.  What’s gone wrong with this plot? Why is there a weird legend?
+
+    ``` r
+    library(ggplot2)
+    ggplot(data = mpg) +
+      geom_point(mapping = aes(x = displ, y = hwy, size = 2))
+    ```
+
+    ![](vis-basics-exercises_files/figure-markdown_github/unnamed-chunk-1-1.png)
+
+3.  What do the dots (`.`) mean in the following ggplot2 commands?
+
+    ``` r
+    ggplot(data = mpg) + 
+      geom_point(mapping = aes(x = displ, y = hwy)) +
+      facet_grid(drv ~ .)
+
+    ggplot(data = mpg) + 
+      geom_point(mapping = aes(x = displ, y = hwy)) +
+      facet_grid(. ~ cyl)
+    ```
 

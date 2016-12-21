@@ -1,0 +1,7 @@
+1.  What do the following keyboard shortcuts do? When should you use them?
+
+    - `Cmd/Ctrl + Enter` (in the script editor)
+    - `Cmd/Ctrl + Up arrow` (in the console)
+    - `Cmd/Ctrl + Shift + F10` (anywhere)
+
+1.  

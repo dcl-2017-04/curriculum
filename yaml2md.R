@@ -73,9 +73,41 @@ syllabus_challenges <- function(x, level) {
 syllabus_readings <- function(x, level) {
   md_links(x$supplements, "Supplemental readings", level = level)
 }
+
+
+# Exercises ---------------------------------------------------------------
+
+build_exercise <- function(unit_name, level = 2) {
+  path <- paste0("units/", unit_name, ".Rmd")
+  if (!file.exists(path))
+    return()
+
+  name <- paste0(unit_name, "-exercises.Rmd")
+
+  rmd_path <- file.path("docs", name)
+  file.copy(path, rmd_path)
+
+  # Render to docs to create figures etc
+  md_path <- rmarkdown::render(rmd_path,
+    output_format = rmarkdown::github_document(),
+    quiet = TRUE
+  )
+
+  # return as string then delete
+  md <- read_file(md_path)
+  unlink(md_path)
+
+  paste0(
+    md_heading("Exercises", level = level),
+    "[", name, "](", name, ")\n",
+    "\n",
+    md
+  )
+}
+
 # Weekly pages ------------------------------------------------------------
 
-md_unit <- function(unit) {
+md_unit <- function(unit, unit_name) {
   paste0(
     "# ", unit$title, "\n",
     if (!is.null(unit$duration))
@@ -83,7 +115,8 @@ md_unit <- function(unit) {
     "\n",
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
-    md_links(unit$readings, "Readings")
+    md_links(unit$readings, "Readings"),
+    build_exercise(unit_name)
   )
 }
 

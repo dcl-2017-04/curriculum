@@ -1,0 +1,12 @@
+1. Find all flights that:
+
+    1. Had an depature delay of two or more hours
+    1. Arrived more than two hours late, but didn’t leave late
+    1. Flew to Houston (IAH or HOU)
+
+1.  Compute the departure delay yourself by computing the difference
+    between `dep_time` and `sched_dep_time`. (Hint: convert to "decimal"
+    time = `hour + minutes / 60`). 
+   
+1.  Which destination has the highest average delay? Which destination that had
+    over 100 flights has highest average delay?
