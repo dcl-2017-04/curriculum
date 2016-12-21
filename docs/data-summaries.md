@@ -1,3 +1,9 @@
+---
+title: Data summaries
+---
+
+<!-- Generated automatically from data-summaries.yml. Do not edit by hand -->
+
 # Data summaries
 
 Summary functions take a vector of data and return a single number. You Summary

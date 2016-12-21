@@ -112,6 +112,10 @@ build_exercise <- function(unit_name, level = 2) {
 
 md_unit <- function(unit, unit_name) {
   paste0(
+    "---\n",
+    "title: ", unit$title, "\n",
+    "---\n",
+    "\n",
     md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
     "\n",

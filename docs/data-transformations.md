@@ -1,3 +1,9 @@
+---
+title: Data transformations
+---
+
+<!-- Generated automatically from data-transformations.yml. Do not edit by hand -->
+
 # Data transformations
 
 Transformation functions take one (or more) vectors and return a transformed

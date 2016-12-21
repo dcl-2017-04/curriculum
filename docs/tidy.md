@@ -1,3 +1,9 @@
+---
+title: Tidy data
+---
+
+<!-- Generated automatically from tidy.yml. Do not edit by hand -->
+
 # Tidy data
 
 

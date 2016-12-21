@@ -1,3 +1,9 @@
+---
+title: Learning workflow
+---
+
+<!-- Generated automatically from workflow-learning.yml. Do not edit by hand -->
+
 # Learning workflow
 
 You will get the most out of this class if you learn some tools and techniques

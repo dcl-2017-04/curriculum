@@ -1,3 +1,9 @@
+---
+title: Data basics
+---
+
+<!-- Generated automatically from data-basics.yml. Do not edit by hand -->
+
 # Data basics
 
 Learn what a data frame looks like, how to identify the variables and their

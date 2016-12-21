@@ -1,3 +1,9 @@
+---
+title: Data vis basics
+---
+
+<!-- Generated automatically from vis-basics.yml. Do not edit by hand -->
+
 # Data vis basics
 
 Data visualisation is one of the most important tools of data science. It's

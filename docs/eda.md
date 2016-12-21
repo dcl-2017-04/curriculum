@@ -1,5 +1,10 @@
+---
+title: EDA
+---
+
+<!-- Generated automatically from eda.yml. Do not edit by hand -->
+
 # EDA
-(estimated duration: 30 mins)
 
 Exploratory data analysis is partly a set of techniques, but is mostly a
 mindset: you want to remain open to what the data is telling you. You'll learn

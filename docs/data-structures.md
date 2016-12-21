@@ -1,3 +1,9 @@
+---
+title: Data structure theory
+---
+
+<!-- Generated automatically from data-structures.yml. Do not edit by hand -->
+
 # Data structure theory
 
 

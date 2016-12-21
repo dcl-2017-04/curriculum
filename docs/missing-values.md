@@ -1,3 +1,9 @@
+---
+title: Missing values
+---
+
+<!-- Generated automatically from missing-values.yml. Do not edit by hand -->
+
 # Missing values
 
 R uses `NA` to present unknown, but potentially measurable variables.

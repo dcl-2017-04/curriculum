@@ -1,3 +1,9 @@
+---
+title: Data science basics
+---
+
+<!-- Generated automatically from manip-basics.yml. Do not edit by hand -->
+
 # Data science basics
 
 Some basic data manipulation is essential for many visualisations. Here you'll

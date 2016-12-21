@@ -1,3 +1,9 @@
+---
+title: RMarkdown basics
+---
+
+<!-- Generated automatically from rmarkdown-basics.yml. Do not edit by hand -->
+
 # RMarkdown basics
 
 Experience the full data science workflow by creating an RMarkdown file that

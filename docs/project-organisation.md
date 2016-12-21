@@ -1,3 +1,9 @@
+---
+title: Project organisation
+---
+
+<!-- Generated automatically from project-organisation.yml. Do not edit by hand -->
+
 # Project organisation
 
 Now that we're at week 3, it's worth reviewing how you're organising your code.

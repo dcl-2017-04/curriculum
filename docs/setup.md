@@ -1,5 +1,10 @@
+---
+title: Setup
+---
+
+<!-- Generated automatically from setup.yml. Do not edit by hand -->
+
 # Setup
-(estimated duration: 15-45 mins)
 
 Ensure that you have all the tools you need for this class.
 
