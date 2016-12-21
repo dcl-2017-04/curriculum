@@ -1,0 +1,11 @@
+title: Data basics
+
+desc: >
+  Learn what a data frame looks like, how to identify the variables and
+  their types. Familiarise yourself with the data sets we're going to be
+  see a lot of.
+
+readings:
+- book: r4ds-3.2
+- book: r4ds-5.1
+

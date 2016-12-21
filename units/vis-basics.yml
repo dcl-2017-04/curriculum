@@ -1,0 +1,22 @@
+title: Data vis basics
+desc: >
+  Data visualisation is one of the most important tools of data science.
+  It's also a great place to start learning a programming language because
+  you get an immediate payoff that will help you keep motivated as you push
+  through initial frustrations
+tags: [vis]
+
+readings:
+
+- text: >
+    These sections will give you the basics of ggplot2, allowing to create
+    simple, but informative, plots.
+- book: r4ds-3.3
+- book: r4ds-3.4
+- book: r4ds-3.5
+- book: r4ds-3.6
+
+- text: >
+    Skim the following chapter so you're aware of the most important ggplot2
+    tools. Come back and read in detail when you actually need to use them.
+- book: ggplot2-3

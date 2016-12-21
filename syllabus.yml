@@ -4,12 +4,41 @@
     so that you can start performing authentic (if simple) analyses.
   units:
   - setup
-  - data-science-basics
-  - workflow-basics
+  - data-basics
+  - vis-basics
+  - manip-basics
+  - rmarkdown-basics
+
   challenges:
   - diamonds-1
   - diamonds-2
   - TODO. practice whole process including sync to github
+
+  supplements:
+  - href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+    text: How humans see data, by John Rauser
+    desc: (will be available in video form once O'Reilly edits videos)
+
+  - book: ggplot2-2
+    desc: This covers similar ground to the readings in R4DS.
+
+  - book: ggplot2-10
+    desc: This covers similar ground to the readings in R4DS.
+
+  - safari: video/programming/r/9781491917046
+    text: Expert data wrangling with R, by Garrett Grolemund
+    desc: A video introduction to dplyr.
+
+  - safari: video/programming/r/9781491963661
+    text: Data Visualisation in R with ggplot2, by Kara Woo
+    desc: A video introduction to ggplot2.
+
+  - href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
+    text: Getting Started with R Markdown
+    desc: >
+      This 60 minute webinar introduces you to R Markdown. It covers
+      similar content to the readings in video form.
+
 
 - title: Exploratory data analysis
   desc: >
