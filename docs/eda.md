@@ -29,11 +29,4 @@ some useful vocabulary.
   * [Build a plot layer by layer](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_5) [ggplot2-5]
 
 
-## Exercises
-
-1.  Explore the distribution of `diamonds$price`. Do you discover anything
-    unusual or surprising? (Hint: Carefully think about the binwidth and make
-    sure you try a wide range of values.) Describe your findings and brainstorm
-    possible explanations.
-
 

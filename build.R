@@ -5,6 +5,9 @@
 source("books/books.R")
 source("yaml2md.R")
 
+old <- dir("docs/", full.names = TRUE)
+unlink(old)
+
 syllabus <- load_syllabus()
 units <- load_units()
 

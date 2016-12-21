@@ -21,27 +21,4 @@ visual properties. This is handled by the scales.
     functions. Refer to it when you forget.
 
 
-## Exercises
-
-1.  Whenever your data includes a variable that could be calculated from other
-    variables in your dataset, you should always recalculate it and compare.
-    In the diamonds dataset, you could approximate `depth` from `x`, `y`, `z`
-    
-1.  You could also approximate `carat` using `x`, `y`, and `z`. Start your
-    approximation by assuming that diamonds are cubes and computing the volume.
-    How are the volume and weight related? Can you use a better geometric
-    approximation? Can you approximate `carat` using the volume and the
-    density of diamond?
-    
-1.  Log transforming `price` and `carat` makes the relationship between
-    the two variables more clear (and suggests that there are a lot of missing
-    expensive diamonds). There are at least three ways to perform this
-    transformation. Brainstorm some approaches and briefly describe the pros
-    and cons.
-    
-1.  List all related variables in `nycflights13::flights`.  Double check
-    the value of `dep_delay`. Hint: you'll find the calculation easier if you
-    compute "decimal hours", i.e. `hour + minutes / 60`. Rather than copying
-    and pasting this calculation in multiple places, write a helper function.
-
 

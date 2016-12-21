@@ -1,8 +1,8 @@
 <!-- Generated automatically from syllabus.yml. Do not edit by hand -->
 
-# Weekly syllabus
+# Syllabus
 
-## Foundations <small>(Week 1)</small>
+## Foundations
 
 Learn the absolute essentials of data science as quickly as possible, so that
 you can start performing authentic (if simple) analyses.
@@ -10,8 +10,10 @@ you can start performing authentic (if simple) analyses.
 ### Units
 
 1. [setup](setup.md)
-1. [data-science-basics](data-science-basics.md)
-1. [workflow-basics](workflow-basics.md)
+1. [data-basics](data-basics.md)
+1. [vis-basics](vis-basics.md)
+1. [manip-basics](manip-basics.md)
+1. [rmarkdown-basics](rmarkdown-basics.md)
 
 ### Challenges
 
@@ -19,8 +21,30 @@ you can start performing authentic (if simple) analyses.
 1.  diamonds-2
 1.  TODO. practice whole process including sync to github
 
+### Supplemental readings
 
-## Exploratory data analysis <small>(Week 2)</small>
+  * [How humans see data, by John Rauser](http://www.slideshare.net/JohnRauser/how-humans-see-data).
+    (will be available in video form once O'Reilly edits videos)
+
+  * [Getting started with ggplot2](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2) [ggplot2-2].
+    This covers similar ground to the readings in R4DS.
+
+  * [Data transformation](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_10) [ggplot2-10].
+    This covers similar ground to the readings in R4DS.
+
+  * [Expert data wrangling with R, by Garrett Grolemund](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491917046) [safari].
+    A video introduction to dplyr.
+
+  * [Data Visualisation in R with ggplot2, by Kara Woo](http://proquest.safaribooksonline.com.ezproxy.stanford.eduvideo/programming/r/9781491963661) [safari].
+    A video introduction to ggplot2.
+
+  * [Getting Started with R Markdown](https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/).
+    This 60 minute webinar introduces you to R Markdown. It covers similar
+    content to the readings in video form.
+
+
+
+## Exploratory data analysis
 
 Good data analysis involves fluid transitions between transformation and
 visualisation. This week you'll first learn about the overall philosophy of EDA
@@ -39,7 +63,7 @@ and transformations.
 1.  diamonds-3
 
 
-## Care and feeding of tibbles <small>(Week 3)</small>
+## Care and feeding of tibbles
 
 So far you've used tidy data that we've provided you. This will __never__
 happen in real life, so this week you'll learn how to load data from a flat
@@ -54,7 +78,7 @@ important theory about the R's data structures.
 1. [data-structures](data-structures.md)
 
 
-## Functions and iteration <small>(Week 4)</small>
+## Functions and iteration
 
 R is a programming language, and mastering the basics of programming will give
 you powerful tools for automating your work. We've touched on basic functions
@@ -62,14 +86,14 @@ already, but this week, we'll focus on them, learning important skills for
 automating your workflow.
 
 
-## Date/times and relational data <small>(Week 5)</small>
+## Date/times and relational data
 
 This week we'll learn how to handle date/time data, and multiple related table
 (relational data). This will allow us to fully explore the datasets in
 nycflights13, and start to learn how weather is related to flight delays.
 
 
-## Strings and factors <small>(Week 6)</small>
+## Strings and factors
 
 There are two important types of variable that we haven't covered in detail
 yet: strings and factors. You'll also learn about regular expression which are
@@ -80,22 +104,22 @@ a special, compact, language for describing patterns in strings.
 1.  neiss
 
 
-## Modelling <small>(Week 7)</small>
+## Modelling
 
 
 
 
-## Hierarchical data with purrr <small>(Week 8)</small>
+## Hierarchical data with purrr
 
 
 
 
-## Text data with tidytext <small>(Week 9)</small>
+## Text data with tidytext
 
 
 
 
-## Spatial data with sf <small>(Week 10)</small>
+## Spatial data with sf
 
 
 

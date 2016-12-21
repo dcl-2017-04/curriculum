@@ -32,48 +32,4 @@ some combination of subsetting, summarising, or sampling.
     Refer to it when you forget.
 
 
-## Exercises
-
-1.  Create a helper function to compute the coefficient of variation of a vector.
-    Create a helper function to compute the proportion of missing values in
-    a vector.
-    
-1.  To understand how airline delays vary daily over the course of a year, you
-    need to summarise each day with a single number. Which variable should you
-    use? Compare summaries using `mean()`, `median()`, and mean(x > cutoff)`.
-    How do they differ? Which do you think is best?
-    
-1.  Perhaps it's not actually the average delay that's most important, but
-    the variability in the delays. What's a good summary?
-    
-1.  Using the summary that you think is most appropriate, explore the average
-    delay by destination. Explore the distribution of your summary. Can you
-    explain the location with the 5 highest and 5 lowest values?
-    
-1.  Sometimes the number or proportion of missing values can be extremely
-    informative. Compute the proportion of flights missing departure times
-    for each day. Visualise the results. What do missing values represent?
-    How do they vary over the course of the year? How are they related to
-    delays?
-    
-
-## Supplemental readings
-
-  * [Coefficient of variation [wikipedia]](https://en.wikipedia.org/wiki/Coefficient_of_variation)
-
-  * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1].
-    Use the ggplot2 cheatsheet to jog your memory of what's available.
-
-  * [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/).
-    This analysis by Todd W. Schneider uses R (along with other tools) to
-    analyse over 20 million bike rides in NYC. As you read through the analysis
-    think how you would do it yourself using the techniques you have learned so
-    far.
-
-  * [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/).
-    This analysis, also by Todd W. Schneider, uses much more data than the
-    previous analysis. What additional challenges did Todd need to solve to
-    allow him to work with this much data?
-
-
 

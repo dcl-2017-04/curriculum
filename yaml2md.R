@@ -2,11 +2,23 @@ library(yaml)
 library(tidyverse)
 source("utils.R")
 
+read_yaml <- function(path) {
+  tryCatch(
+    yaml.load_file(path),
+    error = function(e) {
+      stop(
+        "Problem loading ", path, "\n",
+        e$message,
+        call. = FALSE)
+    }
+  )
+}
+
 load_units <- function() {
-  paths <- dir("units", full.name = TRUE)
+  paths <- dir("units", pattern = "\\.yml$", full.name = TRUE)
   names(paths) <- tools::file_path_sans_ext(basename(paths))
 
-  map(paths, yaml.load_file)
+  map(paths, read_yaml)
 }
 
 load_syllabus <- function() {
@@ -16,8 +28,6 @@ load_syllabus <- function() {
 # Syllabus index -------------------------------------------------------
 # lists each week, along with description
 
-week_path <- function(i) sprintf("week-%02d.md", i)
-
 syllabus_index <- function(syllabus) {
   weeks <- syllabus %>%
     map2_chr(seq_along(.), syllabus_desc) %>%
@@ -25,7 +35,7 @@ syllabus_index <- function(syllabus) {
 
   paste0(
     md_generated_by("syllabus.yml"),
-    "# Weekly syllabus\n",
+    "# Syllabus\n",
     "\n",
     weeks
   )
@@ -33,12 +43,13 @@ syllabus_index <- function(syllabus) {
 
 syllabus_desc <- function(x, i) {
   paste0(
-    "## ", x$title, " <small>(Week ", i, ")</small>\n",
+    "## ", x$title, "\n",
     "\n",
     indent(x$desc, 0, wrap = TRUE),
     "\n",
     syllabus_units(x, level = 3),
-    syllabus_challenges(x, level = 3)
+    syllabus_challenges(x, level = 3),
+    syllabus_readings(x, level = 3)
   )
 }
 
@@ -59,6 +70,9 @@ syllabus_challenges <- function(x, level) {
   md_list(x$challenges, "Challenges", level = level)
 }
 
+syllabus_readings <- function(x, level) {
+  md_links(x$supplements, "Supplemental readings", level = level)
+}
 # Weekly pages ------------------------------------------------------------
 
 md_unit <- function(unit) {
@@ -69,9 +83,7 @@ md_unit <- function(unit) {
     "\n",
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
-    md_links(unit$readings, "Readings"),
-    md_list(unit$exercises, "Exercises"),
-    md_links(unit$supplements, "Supplemental readings")
+    md_links(unit$readings, "Readings")
   )
 }
 

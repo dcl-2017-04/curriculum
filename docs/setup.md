@@ -14,16 +14,4 @@ Ensure that you have all the tools you need for this class.
     exists.
 
 
-## Exercises
-
-1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
-    
-
-## Supplemental readings
-
-  * [http://happygitwithr.com](http://happygitwithr.com).
-    Refer to the first two parts of this book ("Installation" and "Connect Git,
-    GitHub, RStudio" if you have problems getting set up with Git and Github.
-
-
 
