@@ -91,7 +91,7 @@ build_exercise <- function(unit_name, level = 2) {
   md_path <- rmarkdown::render(rmd_path,
     output_format = rmarkdown::github_document(
       fig_width = 6,
-      fig_height = 4
+      fig_height = 6 / 1.618
     ),
     quiet = TRUE
   )
