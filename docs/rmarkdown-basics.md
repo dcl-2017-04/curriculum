@@ -32,5 +32,9 @@ the process.
     -   `Cmd/Ctrl + Up arrow` (in the console)
     -   `Cmd/Ctrl + Shift + F10` (anywhere)
 
-2.
+2.  For a chunk, how do you?
+
+    -   Stop the code from running?
+    -   Run the code, but don't display it?
+    -   Run the code, but don't display it or its results?
 
