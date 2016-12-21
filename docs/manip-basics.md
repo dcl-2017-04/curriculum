@@ -20,7 +20,7 @@ the learn the most important dplyr functions: `filter()`, `mutate()`, and
 
 
 ## Exercises
-[manip-basics-exercises.Rmd](manip-basics-exercises.Rmd)
+[Download `.Rmd`](manip-basics-exercises.Rmd)
 
 
 1.  Find all flights that:
