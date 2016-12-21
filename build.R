@@ -5,7 +5,8 @@
 source("books/books.R")
 source("yaml2md.R")
 
-old <- dir("docs/", full.names = TRUE)
+old <- dir("docs", full.names = TRUE)
+old <- setdiff(old, "docs/_config.yml")
 unlink(old, recursive = TRUE)
 
 syllabus <- load_syllabus()
