@@ -55,12 +55,27 @@ and transformations.
 
 1. [eda](eda.md)
 1. [data-summaries](data-summaries.md)
+1. [function-summary](function-summary.md)
 1. [data-transformations](data-transformations.md)
 
 ### Challenges
 
 1.  TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
 1.  diamonds-3
+
+### Supplemental readings
+
+  * [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/).
+    This analysis by Todd W. Schneider uses R (along with other tools) to
+    analyse over 20 million bike rides in NYC. As you read through the analysis
+    think how you would do it yourself using the techniques you have learned so
+    far.
+
+  * [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/).
+    This analysis, also by Todd W. Schneider, uses much more data than the
+    previous analysis. What additional challenges did Todd need to solve to
+    allow him to work with this much data?
+
 
 
 ## Care and feeding of tibbles

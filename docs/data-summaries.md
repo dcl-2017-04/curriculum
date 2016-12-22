@@ -1,12 +1,12 @@
 ---
-title: Data summaries
+title: Grouped summaries
 ---
 
 <!-- Generated automatically from data-summaries.yml. Do not edit by hand -->
 
-# Data summaries
+# Grouped summaries
 
-Summary functions take a vector of data and return a single number. You Summary
+Summary functions take a vector of data and return a single number. Summary
 geoms divide the data into pieces, apply some summary and visualise the
 results. Summaries are useful when you have a lot of data (and plotting leads
 to overplotting), or when the data is noisy (and you need to make small but
@@ -22,20 +22,22 @@ some combination of subsetting, summarising, or sampling.
     conjunction with `summarise()`
 
   * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
-    Familiarise yourself with the geoms that you can use to summarise data
-    visually.
-
-  * [Introduction](http://r4ds.had.co.nz/functions.html#introduction-12) [r4ds-19.1].
-    Not every summary function you need already exists. Sometimes you'll need
-    to combine one or more existing summaries to compute what you want. While
-    you can do this inline, it will make your code easier to use if you use
-    small helper functions.
-
-  * [When should you write a function?](http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function) [r4ds-19.2]
-
-  * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling].
-    The cheatsheet includes a list of the most important summary functions.
-    Refer to it when you forget.
+    Read only section 3.5: compound geoms are conceptually the same as summary
+    functions: they divide the data into groups and display a visual summary.
 
 
+## Exercises
+[Download `.Rmd`](data-summaries-exercises.Rmd)
+
+
+1.  What's gone wrong with this plot? Why is there only one boxplot?
+
+    ``` r
+    ggplot(data = mpg) +
+      geom_boxplot(mapping = aes(x = cyl, y = displ))
+    ```
+
+        ## Warning: Continuous x aesthetic -- did you forget aes(group=...)?
+
+    ![](data-summaries-exercises_files/figure-markdown_github/unnamed-chunk-1-1.png) .
 

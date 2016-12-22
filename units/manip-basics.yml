@@ -1,10 +1,19 @@
-title: Data science basics
+title: Data manipulation basics
 desc: >
   Some basic data manipulation is essential for many visualisations. Here
   you'll the learn the most important dplyr functions: `filter()`,
   `mutate()`, and `group_by()` + `summarise()`.
 
 readings:
+- text: >
+    Skip through this chapter of R4DS focussing on `filter()`, `mutate()`
+    and `group_by()` + `summarise()`.
 - book: r4ds-5.2
 - book: r4ds-5.5
 - book: r4ds-5.6
+
+- book: cheatsheets-data-wrangling
+  desc: >
+    The cheatsheet includes a list of the most important summary
+    functions. Refer to it when you forget.
+

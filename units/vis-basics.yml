@@ -20,3 +20,7 @@ readings:
     Skim the following chapter so you're aware of the most important ggplot2
     tools. Come back and read in detail when you actually need to use them.
 - book: ggplot2-3
+
+- book: cheatsheets-ggplot2-2.1
+  desc: >
+    Use this resource to jog your memory of what's available
