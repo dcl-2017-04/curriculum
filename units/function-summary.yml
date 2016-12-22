@@ -5,8 +5,11 @@ desc: >
   want. While you can do this inline, it will make your code easier to
   use if you use small helper functions.
 
-readings:
+depends: [missing-values]
 
+readings:
 - book: r4ds-19.1
 - book: r4ds-19.2
+- book: r4ds-19.3
+
 

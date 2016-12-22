@@ -32,13 +32,13 @@ and transformations.
 ### Units
 
 1. [eda](eda.md)
-1. [data-summaries](data-summaries.md)
-1. [function-summary](function-summary.md)
+1. [missing-values](missing-values.md)
+1. [vis-theory](vis-theory.md)
+1. [vis-summaries](vis-summaries.md)
 1. [vis-transformations](vis-transformations.md)
 
 ### Challenges
 
-1.  TODO. Baby names. geom_line + grouping. How to summarise? Include mutate that adds some interesting variables.
 1.  diamonds-3
 
 
@@ -53,8 +53,8 @@ important theory about the R's data structures.
 
 1. [tidy](tidy.md)
 1. [import](import.md)
-1. [missing-values](missing-values.md)
 1. [data-structures](data-structures.md)
+1. [function-summary](function-summary.md)
 
 
 ## Functions and iteration

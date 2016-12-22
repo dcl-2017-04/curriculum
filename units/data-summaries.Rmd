@@ -1,7 +1,0 @@
-1.  What's gone wrong with this plot? Why is there only one boxplot?
-
-    ```{r}
-    ggplot(data = mpg) +
-      geom_boxplot(mapping = aes(x = cyl, y = displ))
-    ```
-.

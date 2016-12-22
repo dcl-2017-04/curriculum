@@ -1,0 +1,4 @@
+1.  Explore the distribution of `diamonds$price`. Do you discover anything
+    unusual or surprising? (Hint: Carefully think about the binwidth and make
+    sure you try a wide range of values.) Describe your findings and brainstorm
+    possible explanations.

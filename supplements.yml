@@ -42,3 +42,11 @@
     This analysis, also by Todd W. Schneider, uses much more data than
     the previous analysis. What additional challenges did Todd need to solve
     to allow him to work with this much data?
+
+
+- href: https://github.com/njtierney/naniar
+  text: naniar, by Nicholas Tierny
+  units: [missing-values]
+  desc: >
+    This is an ggplot2 extension that adds comprehensive tools for
+    visulising missing data.

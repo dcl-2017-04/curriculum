@@ -17,6 +17,8 @@ functions.
 
   * [When should you write a function?](http://r4ds.had.co.nz/functions.html#when-should-you-write-a-function) [r4ds-19.2]
 
+  * [Functions are for humans and computers](http://r4ds.had.co.nz/functions.html#functions-are-for-humans-and-computers) [r4ds-19.3]
+
 
 ## Exercises
 [Download `.Rmd`](function-summary-exercises.Rmd)
