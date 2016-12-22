@@ -1,6 +1,13 @@
 #! /usr/local/bin/Rscript
 
+message("Building md files")
+message("------------------------------------------------")
+
+
 # Update everything
+
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(yaml)))
 
 source("books/books.R")
 source("yaml2md.R")
@@ -20,3 +27,6 @@ out_path <- paste0("docs/", names(units), ".md")
 units %>%
   map2_chr(names(units), md_unit) %>%
   walk2(out_path, writeLines)
+
+message("------------------------------------------------")
+message("DONE")
