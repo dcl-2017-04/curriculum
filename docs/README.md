@@ -34,7 +34,7 @@ and transformations.
 1. [eda](eda.md)
 1. [data-summaries](data-summaries.md)
 1. [function-summary](function-summary.md)
-1. [data-transformations](data-transformations.md)
+1. [vis-transformations](vis-transformations.md)
 
 ### Challenges
 
