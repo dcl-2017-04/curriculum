@@ -39,6 +39,12 @@
       This 60 minute webinar introduces you to R Markdown. It covers
       similar content to the readings in video form.
 
+  - href: http://lenkiefer.com
+    text: Len Keifer's blog
+    desc: >
+      Len Keifer is Deputy Chief Economist at Freddie Mac, and posts many
+      interesting analyses of economic data.
+
 - title: Exploratory data analysis
   desc: >
     Good data analysis involves fluid transitions between transformation and

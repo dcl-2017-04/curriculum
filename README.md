@@ -1,17 +1,7 @@
 # Data challenge lab
 
-This repository contains the [draft syllabus](docs/) for the [Standford Data Challenge Lab](https://datalab.stanford.edu) Spring 2017 class.
+This repository contains the draft curriculum for the [Standford Data Challenge Lab](https://datalab.stanford.edu).
 
-The curriculum is composed of small __units__. A unit is composed of a set of guided readings and a handful of small exercises (in an `.Rmd`) designed to test that you've understood the material.
+The curriculum is composed of small __units__ and bigger __challenges__. A unit is a set of guided readings and a handful of low-level exercises (in an `.Rmd`) designed to test that you've understood the material. Challenges are integrative tasks that may take several hours to complete and are contextualised with real data problems. (In terms of Bloom's taxonomy, exercises tend be remember/understand/apply, and challenges are analyse/evaluate/create.)
 
-These small units are composed in several ways:
-
-* As a temporal __syllabus__, an ordering designed to work well for the 
-  "average" student. The syllabus also contains bigger integrative challenges 
-  and supplemental readings that provide extra colour.
-  
-
-
-## Other links
-
-* http://lenkiefer.com
+The units and challenges will be composed in several ways. So far, we have focused on a __[syllabus](http://dcl-2017-01.github.io/syllabus/)__, a temporal ordering designed to lay out the material into a 5-credit, 10-week course. 
