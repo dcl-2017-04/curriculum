@@ -48,8 +48,7 @@ syllabus_desc <- function(x, i) {
     indent(x$desc, 0, wrap = TRUE),
     "\n",
     syllabus_units(x, level = 3),
-    syllabus_challenges(x, level = 3),
-    syllabus_readings(x, level = 3)
+    syllabus_challenges(x, level = 3)
   )
 }
 

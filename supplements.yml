@@ -1,0 +1,44 @@
+- href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+  text: How humans see data, by John Rauser
+  desc: (will be available in video form once O'Reilly edits videos)
+
+- book: ggplot2-2
+  desc: This covers similar ground to the readings in R4DS.
+
+- book: ggplot2-10
+  desc: This covers similar ground to the readings in R4DS.
+
+- safari: video/programming/r/9781491917046
+  text: Expert data wrangling with R, by Garrett Grolemund
+  desc: A video introduction to dplyr.
+
+- safari: video/programming/r/9781491963661
+  text: Data Visualisation in R with ggplot2, by Kara Woo
+  desc: A video introduction to ggplot2.
+
+- href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
+  text: Getting Started with R Markdown
+  desc: >
+    This 60 minute webinar introduces you to R Markdown. It covers
+    similar content to the readings in video form.
+
+- href: http://lenkiefer.com
+  text: Len Keifer's blog
+  desc: >
+    Len Keifer is Deputy Chief Economist at Freddie Mac, and posts many
+    interesting analyses of economic data.
+
+- href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
+  text: "A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System"
+  desc: >
+    This analysis by Todd W. Schneider uses R (along with other tools)
+    to analyse over 20 million bike rides in NYC. As you read through
+    the analysis think how you would do it yourself using the techniques you
+    have learned so far.
+
+- href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
+  text: Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance
+  desc: >
+    This analysis, also by Todd W. Schneider, uses much more data than
+    the previous analysis. What additional challenges did Todd need to solve
+    to allow him to work with this much data?
