@@ -21,7 +21,7 @@ done this before the first day.
 
 
 ## Exercises
-[Download `.Rmd`](setup-exercises.Rmd)
+[Download `setup-exercises.Rmd`](setup-exercises.Rmd)
 
 
 1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?

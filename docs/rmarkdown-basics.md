@@ -23,7 +23,7 @@ the process.
 
 
 ## Exercises
-[Download `.Rmd`](rmarkdown-basics-exercises.Rmd)
+[Download `rmarkdown-basics-exercises.Rmd`](rmarkdown-basics-exercises.Rmd)
 
 
 1.  What do the following keyboard shortcuts do? When should you use them?

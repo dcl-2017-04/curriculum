@@ -24,7 +24,7 @@ EDA. (Note that you can skip Section 7.4: we'll come back to missing later)
 
 
 ## Exercises
-[Download `.Rmd`](eda-exercises.Rmd)
+[Download `eda-exercises.Rmd`](eda-exercises.Rmd)
 
 
 1.  Explore the distribution of `diamonds$price`. Do you discover anything unusual or surprising? (Hint: Carefully think about the binwidth and make sure you try a wide range of values.) Describe your findings and brainstorm possible explanations.

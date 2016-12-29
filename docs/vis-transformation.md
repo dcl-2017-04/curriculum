@@ -23,7 +23,7 @@ back to this idea late.
 
 
 ## Exercises
-[Download `.Rmd`](vis-transformation-exercises.Rmd)
+[Download `vis-transformation-exercises.Rmd`](vis-transformation-exercises.Rmd)
 
 
 1.  It's easier to see the relationship between `price` and `carat` if you if log transform both variables. Compare and contrast the following three approaches. What are the advantages and disadvantages?

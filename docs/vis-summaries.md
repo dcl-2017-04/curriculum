@@ -21,7 +21,7 @@ consistent patterns more clear).
 
 
 ## Exercises
-[Download `.Rmd`](vis-summaries-exercises.Rmd)
+[Download `vis-summaries-exercises.Rmd`](vis-summaries-exercises.Rmd)
 
 
 1.  What's gone wrong with this plot? Why is there only one boxplot?

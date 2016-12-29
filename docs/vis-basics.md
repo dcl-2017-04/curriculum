@@ -34,7 +34,7 @@ Come back and read in detail when you actually need to use them.
 
 
 ## Exercises
-[Download `.Rmd`](vis-basics-exercises.Rmd)
+[Download `vis-basics-exercises.Rmd`](vis-basics-exercises.Rmd)
 
 
 1.  Map a continuous variable to the color, size, and shape aesthetics. Map a categorical variable to the color, size, and shape aesthetics. How do these aesthetics behave differently for categorical vs. continuous?

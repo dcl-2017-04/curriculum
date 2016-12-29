@@ -18,7 +18,7 @@ you'll start by familiarising yourself with them.
 
 
 ## Exercises
-[Download `.Rmd`](data-basics-exercises.Rmd)
+[Download `data-basics-exercises.Rmd`](data-basics-exercises.Rmd)
 
 
 1.  How do you find out the definition of a built-in dataset? What do the `fl` and `drv` variables in `mpg` mean?

@@ -101,7 +101,7 @@ build_exercise <- function(unit_name, level = 2) {
 
   paste0(
     md_heading("Exercises", level = level),
-    "[Download `.Rmd`](", name, ")\n",
+    "[Download `", name, "`](", name, ")\n",
     "\n",
     md
   )

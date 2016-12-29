@@ -25,7 +25,7 @@ informative, so you should never silently ignore missing values.
 
 
 ## Exercises
-[Download `.Rmd`](missing-values-exercises.Rmd)
+[Download `missing-values-exercises.Rmd`](missing-values-exercises.Rmd)
 
 
 1.  If `x` is a numeric vector containing some missing values, what does `sum(x == NA)` return. Why? What does `mean(is.na(x))` return? Why?

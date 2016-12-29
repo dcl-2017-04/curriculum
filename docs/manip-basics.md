@@ -27,7 +27,7 @@ Skip through this chapter of R4DS focussing on `filter()`, `mutate()` and
 
 
 ## Exercises
-[Download `.Rmd`](manip-basics-exercises.Rmd)
+[Download `manip-basics-exercises.Rmd`](manip-basics-exercises.Rmd)
 
 
 1.  Find all flights that:
