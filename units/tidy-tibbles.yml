@@ -1,0 +1,14 @@
+title: Tidy tibbles
+desc: >
+  Tidy data has variables in columns, and cases (or observations) in rows.
+  So far you've only worked with carefully prepared tidy tibbles. Now it's time
+  to learn more about the theory behind tidy data, and what exactly a tibble
+  is.
+
+needs: [manip-basics, data-basics, vis-basics]
+tags: [wrangle]
+
+readings:
+- book: r4ds-10.1
+- book: r4ds-10.2
+- book: r4ds-12.2

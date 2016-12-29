@@ -15,18 +15,12 @@ you can start performing authentic (if simple) analyses.
 1. [manip-basics](manip-basics.md)
 1. [rmarkdown-basics](rmarkdown-basics.md)
 
-### Challenges
-
-1.  diamonds-1
-1.  diamonds-2
-1.  TODO. practice whole process including sync to github
-
 
 ## Exploratory data analysis
 
 Good data analysis involves fluid transitions between transformation and
-visualisation. This week you'll first learn about the overall philosophy of EDA
-(exploratory data analysis), and then dive into the details of data summaries
+visualisation. This week you'll first learn about the overall philosophy of
+exploratory data analysis (EDA), and dive into the details of visual summaries
 and transformations.
 
 ### Units
@@ -36,10 +30,6 @@ and transformations.
 1. [vis-theory](vis-theory.md)
 1. [vis-summaries](vis-summaries.md)
 1. [vis-transformation](vis-transformation.md)
-
-### Challenges
-
-1.  diamonds-3
 
 
 ## Care and feeding of tibbles
@@ -51,10 +41,12 @@ important theory about the R's data structures.
 
 ### Units
 
-1. [tidy](tidy.md)
+1. [tidy-tibbles](tidy-tibbles.md)
+1. [vectors](vectors.md)
 1. [import](import.md)
-1. [data-structures](data-structures.md)
-1. [function-summary](function-summary.md)
+1. [spread-gather](spread-gather.md)
+1. [separate-unite](separate-unite.md)
+1. [export](export.md)
 
 
 ## Functions and iteration

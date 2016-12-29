@@ -1,0 +1,12 @@
+title: spread-gather
+
+desc: >
+  The two most common ways for data to be messy are to have:
+
+  1. One variable spread across multiple columns.
+  1. One observation scattered across multiple rows.
+
+  To fix these problems you need `spread()` and `gather()`
+
+readings:
+- book: r4ds-12.3
