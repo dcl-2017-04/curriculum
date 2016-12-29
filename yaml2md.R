@@ -2,29 +2,6 @@ library(yaml)
 library(tidyverse)
 source("utils.R")
 
-read_yaml <- function(path) {
-  tryCatch(
-    yaml.load_file(path),
-    error = function(e) {
-      stop(
-        "Problem loading ", path, "\n",
-        e$message,
-        call. = FALSE)
-    }
-  )
-}
-
-load_units <- function() {
-  paths <- dir("units", pattern = "\\.yml$", full.name = TRUE)
-  names(paths) <- tools::file_path_sans_ext(basename(paths))
-
-  map(paths, read_yaml)
-}
-
-load_syllabus <- function() {
-  yaml.load_file("syllabus.yml")
-}
-
 # Syllabus index -------------------------------------------------------
 # lists each week, along with description
 
