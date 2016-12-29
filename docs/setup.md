@@ -6,7 +6,8 @@ title: Setup
 
 # Setup
 
-Ensure that you have all the tools you need for this class.
+Ensure that you have all the tools you need for this class. You should have
+done this before the first day.
 
 ## Readings
 
@@ -19,4 +20,11 @@ Ensure that you have all the tools you need for this class.
     exists.
 
 
+## Exercises
+[Download `.Rmd`](setup-exercises.Rmd)
+
+
+1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
+
+2.  What are the main differences between `install.packages()` and `library()`? How often do you need to call each one?
 

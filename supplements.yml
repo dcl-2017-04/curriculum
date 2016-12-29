@@ -1,3 +1,11 @@
+
+- href: http://happygitwithr.com
+  text: Happy Git and GitHub for the useR
+  desc: >
+    Refer to the first two parts of this book ("Installation" and
+    "Connect Git, GitHub, RStudio" if you have problems getting set up
+    with Git and Github.
+
 - href: http://www.slideshare.net/JohnRauser/how-humans-see-data
   text: How humans see data, by John Rauser
   desc: (will be available in video form once O'Reilly edits videos)

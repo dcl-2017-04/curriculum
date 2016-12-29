@@ -1,6 +1,7 @@
 title: Setup
 desc: >
-  Ensure that you have all the tools you need for this class.
+  Ensure that you have all the tools you need for this class. You should
+  have done this before the first day.
 duration: 15-45
 
 readings:
@@ -12,15 +13,3 @@ readings:
   desc: >
     You don't need to read the complete cheatsheet, but you should
     know that it exists.
-
-exercises:
-- |
-  Run `library(tidyverse)`. What are the core packages in the tidyverse?
-
-supplements:
-
-- href: http://happygitwithr.com
-  desc: >
-    Refer to the first two parts of this book ("Installation" and
-    "Connect Git, GitHub, RStudio" if you have problems getting set up
-    with Git and Github.
