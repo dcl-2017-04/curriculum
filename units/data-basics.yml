@@ -1,9 +1,9 @@
 title: Data basics
 
 desc: >
-  Learn what a data frame looks like, how to identify the variables and
-  their types. Familiarise yourself with the data sets we're going to be
-  see a lot of.
+  Learn what a data frame looks like when printed, and identify its variables
+  and their types. We're going to use the `mpg` and `flights` datasets
+  frequently, so you'll start by familiarising yourself with them.
 
 readings:
 - book: r4ds-3.2
