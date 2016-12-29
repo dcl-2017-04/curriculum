@@ -35,7 +35,7 @@ and transformations.
 1. [missing-values](missing-values.md)
 1. [vis-theory](vis-theory.md)
 1. [vis-summaries](vis-summaries.md)
-1. [vis-transformations](vis-transformations.md)
+1. [vis-transformation](vis-transformation.md)
 
 ### Challenges
 
