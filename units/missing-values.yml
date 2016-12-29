@@ -6,6 +6,9 @@ desc: >
   The pattern of missingness in a dataset is often informative, so you
   should never silently ignore missing values.
 
+needs: [manip-basics, vis-basics]
+
+
 readings:
 - book: r4ds-5.2.3
 

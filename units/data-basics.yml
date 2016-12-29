@@ -5,6 +5,8 @@ desc: >
   and their types. We're going to use the `mpg` and `flights` datasets
   frequently, so you'll start by familiarising yourself with them.
 
+needs: [setup]
+
 readings:
 - book: r4ds-3.2
 - book: r4ds-5.1

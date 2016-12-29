@@ -1,10 +1,10 @@
 ---
-title: RMarkdown basics
+title: R Markdown basics
 ---
 
 <!-- Generated automatically from rmarkdown-basics.yml. Do not edit by hand -->
 
-# RMarkdown basics
+# R Markdown basics
 
 Experience the full data science workflow by creating an RMarkdown file that
 includes prose and code. __Knit__ the file to create intermingle your text and

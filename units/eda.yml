@@ -4,6 +4,7 @@ desc: >
   mindset: you want to remain open to what the data is telling you.
 tags: [explore]
 duration: 30
+needs: [vis-basics, manip-basics]
 
 readings:
 - text: >

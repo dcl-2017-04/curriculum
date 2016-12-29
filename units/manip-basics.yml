@@ -4,6 +4,8 @@ desc: >
   you'll the learn the most important dplyr functions: `filter()`,
   `mutate()`, and `group_by()` + `summarise()`.
 
+needs: [data-basics]
+
 readings:
 - text: >
     Skip through this chapter of R4DS focussing on `filter()`, `mutate()`

@@ -1,4 +1,4 @@
-title: RMarkdown basics
+title: R Markdown basics
 desc: >
   Experience the full data science workflow by creating an RMarkdown file that
   includes prose and code. __Knit__ the file to create intermingle your
@@ -6,6 +6,8 @@ desc: >
   difference between this and what you'll use as a data scientist is that in
   this class you'll always show your code so we can give you feedback on the
   results _and_ the process.
+needs: [setup]
+
 tags: [workflow]
 
 readings:

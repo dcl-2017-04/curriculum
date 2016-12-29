@@ -6,6 +6,8 @@ desc: >
   through initial frustrations
 tags: [vis]
 
+needs: [data-basics]
+
 readings:
 
 - text: >
