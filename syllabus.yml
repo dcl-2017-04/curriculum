@@ -8,6 +8,11 @@
   - vis-basics
   - manip-basics
   - rmarkdown-basics
+  supplements:
+  - happy-git
+  - grolemund-wrangle
+  - woo-vis
+  - keifer-blog
 
 - title: Exploratory data analysis
   desc: >
@@ -21,6 +26,10 @@
   - vis-theory
   - vis-summaries
   - vis-transformation
+  supplements:
+  - rauser-how-humans-see
+  - schneider-bikes
+  - schneider-taxis
 
 - title: Care and feeding of tibbles
   desc: >
@@ -35,6 +44,11 @@
   - spread-gather
   - separate-unite
   - export
+  supplements:
+  - biobroom
+  - leek-non-tidy
+  - wickham-tidy-data
+  - happy-graphing
 
 - title: Functions and iteration
   desc: >

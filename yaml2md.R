@@ -25,7 +25,8 @@ syllabus_desc <- function(x, i) {
     indent(x$desc, 0, wrap = TRUE),
     "\n",
     syllabus_units(x, level = 3),
-    syllabus_challenges(x, level = 3)
+    syllabus_challenges(x, level = 3),
+    md_supplements(x$supplements, level = 3)
   )
 }
 
@@ -46,8 +47,56 @@ syllabus_challenges <- function(x, level) {
   md_list(x$challenges, "Challenges", level = level)
 }
 
-syllabus_readings <- function(x, level) {
-  md_links(x$supplements, "Supplemental readings", level = level)
+
+# Supplements -------------------------------------------------------------
+
+supplements_index <- function(x) {
+  slug <- x %>% map_chr("slug")
+  supplements <- x %>%
+    map_chr(md_supplement) %>%
+    .[order(slug)]
+
+  paste0(
+    md_generated_by("supplements.yml"),
+    "# Supplemental readings\n",
+    "\n",
+    paste(supplements, collapse = "")
+  )
+}
+
+md_supplements <- function(x, level = 2) {
+  if (length(x) == 0)
+    return("")
+
+  links <- paste0("* [", x, "](supplements.html#", x, ")\n")
+
+  paste0(
+    md_heading("Supplemental readings", level = level),
+    "\n",
+    paste0(links, collapse = ""),
+    "\n"
+  )
+}
+
+md_supplement <- function(x) {
+
+  if (has_name(x, "safari")) {
+    x$href <- paste0(
+      "http://proquest.safaribooksonline.com.ezproxy.stanford.edu",
+      x$safari
+    )
+  }
+
+  paste0(
+    "## ", x$text, " {#", x$slug, "}\n",
+    if (!is.null(x$author))
+      paste0("by ", x$author, "\n"),
+    "\n",
+    "<", x$href, ">\n",
+    "\n",
+    indent(trimws(x$desc), 0, wrap = TRUE),
+    "\n"
+  )
 }
 
 
@@ -80,7 +129,8 @@ build_exercise <- function(unit_name, level = 2) {
     md_heading("Exercises", level = level),
     "[Download `", name, "`](", name, ")\n",
     "\n",
-    md
+    md,
+    "\n"
   )
 }
 
@@ -98,7 +148,8 @@ md_unit <- function(unit, unit_name) {
     indent(unit$desc, 0, wrap = TRUE),
     "\n",
     md_links(unit$readings, "Readings"),
-    build_exercise(unit_name)
+    build_exercise(unit_name),
+    md_supplements(unit$supplements, level = 3)
   )
 }
 

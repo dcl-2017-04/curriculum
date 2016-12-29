@@ -49,3 +49,4 @@ consistent patterns more clear).
 
 3.  Another useful summary is the beeswarm plot (which you can create with [ggbeeswarm](https://github.com/eclarke/ggbeeswarm)). What makes them different to the other summary geoms?
 
+

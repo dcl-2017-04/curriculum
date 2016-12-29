@@ -38,3 +38,8 @@ the process.
     -   Run the code, but don't display it?
     -   Run the code, but don't display it or its results?
 
+### Supplemental readings
+
+* [grolemund-rmarkdown](supplements.html#grolemund-rmarkdown)
+
+

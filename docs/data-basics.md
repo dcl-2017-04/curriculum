@@ -27,3 +27,4 @@ you'll start by familiarising yourself with them.
 
 3.  Briefly describe `ggplot2::diamonds` using words. What is the new "ord" type?
 
+

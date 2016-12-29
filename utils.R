@@ -22,6 +22,11 @@ load_syllabus <- function() {
 }
 
 
+load_supplements <- function() {
+  read_yaml("supplements.yml")
+}
+
+
 has_name <- function(x, nm) {
   if (is.null(names(x)))
     return(FALSE)

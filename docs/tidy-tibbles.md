@@ -49,3 +49,4 @@ more about the theory behind tidy data, and what exactly a tibble is.
 
     Which representation is easiest to work with? Which is hardest? Why?
 
+

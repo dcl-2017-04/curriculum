@@ -1,79 +1,92 @@
-
-- href: http://happygitwithr.com
+- slug: happy-git
+  href: http://happygitwithr.com
   text: Happy Git and GitHub for the useR
   desc: >
     Refer to the first two parts of this book ("Installation" and
     "Connect Git, GitHub, RStudio" if you have problems getting set up
     with Git and Github.
+  needs: [setup]
 
-- href: http://www.slideshare.net/JohnRauser/how-humans-see-data
-  text: How humans see data, by John Rauser
+- slug: rauser-how-humans-see
+  href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+  text: How humans see data
+  author: John Rauser
   desc: (will be available in video form once O'Reilly edits videos)
+  needs: [vis-theory]
 
-- book: ggplot2-2
-  desc: This covers similar ground to the readings in R4DS.
-
-- book: ggplot2-10
-  desc: This covers similar ground to the readings in R4DS.
-
-- safari: video/programming/r/9781491917046
-  text: Expert data wrangling with R, by Garrett Grolemund
+- slug: grolemund-wrangle
+  safari: video/programming/r/9781491917046
+  text: Expert data wrangling with R
+  author: Garrett Grolemund
   desc: A video introduction to dplyr.
+  needs: [manip-basics]
 
-- safari: video/programming/r/9781491963661
-  text: Data Visualisation in R with ggplot2, by Kara Woo
+- slug: woo-vis
+  safari: video/programming/r/9781491963661
+  text: Data Visualisation in R with ggplot2
+  author: Kara Woo
   desc: A video introduction to ggplot2.
+  needs: [vis-basics]
 
-- href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
+- slug: grolemund-rmarkdown
+  href: https://www.rstudio.com/resources/webinars/getting-started-with-r-markdown/
   text: Getting Started with R Markdown
   desc: >
     This 60 minute webinar introduces you to R Markdown. It covers
     similar content to the readings in video form.
+  needs: [rmarkdown-basics]
 
-- href: http://lenkiefer.com
+- slug: keifer-blog
+  href: http://lenkiefer.com
   text: Len Keifer's blog
   desc: >
     Len Keifer is Deputy Chief Economist at Freddie Mac, and posts many
     interesting analyses of economic data.
+  needs: [vis-basics, manip-basics]
 
-- href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
+- slug: schneider-bikes
+  href: http://toddwschneider.com/posts/a-tale-of-twenty-two-million-citi-bikes-analyzing-the-nyc-bike-share-system/
   text: "A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System"
+  author: Todd W. Schneider
   desc: >
-    This analysis by Todd W. Schneider uses R (along with other tools)
-    to analyse over 20 million bike rides in NYC. As you read through
-    the analysis think how you would do it yourself using the techniques you
-    have learned so far.
+    This analysis uses R (along with other tools) to analyse over 20 million
+    bike rides in NYC. As you read through the analysis think how you would do
+    it yourself using the techniques you have learned so far.
 
-- href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
+- slug: schneider-taxis
+  href: http://toddwschneider.com/posts/analyzing-1-1-billion-nyc-taxi-and-uber-trips-with-a-vengeance/
   text: Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance
+  author: Todd W. Schneider
   desc: >
-    This analysis, also by Todd W. Schneider, uses much more data than
-    the previous analysis. What additional challenges did Todd need to solve
-    to allow him to work with this much data?
+    This analysis uses much more data than the previous analysis. What
+    additional challenges did Todd need to solve to allow him to work with
+    this much data?
 
-
-- href: https://github.com/njtierney/naniar
-  text: naniar, by Nicholas Tierny
-  units: [missing-values]
+- slug: naniar
+  href: https://github.com/njtierney/naniar
+  text: naniar
+  author: Nicholas Tierny
   desc: >
     This is an ggplot2 extension that adds comprehensive tools for
     visulising missing data.
+  needs: [missing-values]
 
-- href: http://varianceexplained.org/r/tidy-genomics-biobroom/
-  text: >
-    Tidying computational biology models with biobroom:
-    a case study in tidy analysis
+- slug: biobroom
+  href: http://varianceexplained.org/r/tidy-genomics-biobroom/
+  text: Tidying computational biology models with biobroom
   desc: by David Robinson
-  units: [tidy]
+  needs: [tidy-tibble, model-basics]
 
-- href: http://simplystatistics.org/2016/02/17/non-tidy-data/
+- slug: leek-non-tidy
+  href: http://simplystatistics.org/2016/02/17/non-tidy-data/
   text: Non-tidy data
   desc: >
     An example, by Jeff Leek, of when tidy data isn't as useful as
     a non-tidy structure.
-  units: [tidy]
+  needs: [tidy-tibble]
 
-- href: https://www.jstatsoft.org/v59/i10/
+- slug: wickham-tidy-data
+  href: https://www.jstatsoft.org/v59/i10/
   text: "Tidy Data"
   desc: >
     This article lays out more of the details behind tidy data, and works
@@ -81,13 +94,9 @@
     of the tools, using reshape2 instead of tidyr. To see the code translated
     into tidyr, read the
     [tidy data vignette](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html).
-  units: [tidy]
+  needs: [tidy-tibble]
 
-- href: http://adv-r.had.co.nz/Data-structures.html
-  text: Data structures
-  id: advr-2
-  units: [data-structures]
-
-- href: http://stat545.com/block016_secrets-happy-graphing.html
+- slug: happy-graphing
+  href: http://stat545.com/block016_secrets-happy-graphing.html
   text: Secrets of a happy graphing life
-  units: [vis-basics]
+  needs: [vis-basics, tidy-tibble]

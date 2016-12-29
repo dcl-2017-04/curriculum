@@ -60,3 +60,4 @@ geoms. Come back and read in detail when you actually need to use them.
       facet_grid(. ~ cyl)
     ```
 
+

@@ -15,10 +15,15 @@ unlink(old, recursive = TRUE)
 
 syllabus <- load_syllabus()
 units <- load_units()
+supplements <- load_supplements()
 
 syllabus %>%
   syllabus_index() %>%
   writeLines("docs/README.md")
+
+supplements %>%
+  supplements_index() %>%
+  writeLines("docs/supplements.md")
 
 out_path <- paste0("docs/", names(units), ".md")
 units %>%

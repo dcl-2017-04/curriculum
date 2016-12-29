@@ -14,3 +14,6 @@ readings:
 - book: r4ds-27.1
 - book: r4ds-27.2
 - book: r4ds-27.4
+
+supplements:
+- grolemund-rmarkdown

@@ -60,3 +60,8 @@ informative, so you should never silently ignore missing values.
 
     ![](missing-values-exercises_files/figure-markdown_github/unnamed-chunk-2-1.png)
 
+### Supplemental readings
+
+* [naniar](supplements.html#naniar)
+
+

@@ -15,6 +15,13 @@ you can start performing authentic (if simple) analyses.
 1. [manip-basics](manip-basics.md)
 1. [rmarkdown-basics](rmarkdown-basics.md)
 
+### Supplemental readings
+
+* [happy-git](supplements.html#happy-git)
+* [grolemund-wrangle](supplements.html#grolemund-wrangle)
+* [woo-vis](supplements.html#woo-vis)
+* [keifer-blog](supplements.html#keifer-blog)
+
 
 ## Exploratory data analysis
 
@@ -30,6 +37,12 @@ and transformations.
 1. [vis-theory](vis-theory.md)
 1. [vis-summaries](vis-summaries.md)
 1. [vis-transformation](vis-transformation.md)
+
+### Supplemental readings
+
+* [rauser-how-humans-see](supplements.html#rauser-how-humans-see)
+* [schneider-bikes](supplements.html#schneider-bikes)
+* [schneider-taxis](supplements.html#schneider-taxis)
 
 
 ## Care and feeding of tibbles
@@ -47,6 +60,13 @@ important theory about the R's data structures.
 1. [spread-gather](spread-gather.md)
 1. [separate-unite](separate-unite.md)
 1. [export](export.md)
+
+### Supplemental readings
+
+* [biobroom](supplements.html#biobroom)
+* [leek-non-tidy](supplements.html#leek-non-tidy)
+* [wickham-tidy-data](supplements.html#wickham-tidy-data)
+* [happy-graphing](supplements.html#happy-graphing)
 
 
 ## Functions and iteration

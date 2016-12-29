@@ -32,3 +32,4 @@ later)
 
 2.  Visualise the distribution of `diamonds$price` by `diamonds$cut`. Use at least three different approaches. What did you learn?
 
+
