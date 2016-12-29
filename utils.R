@@ -1,6 +1,6 @@
 read_yaml <- function(path) {
   tryCatch(
-    yaml.load_file(path),
+    yaml::yaml.load_file(path),
     error = function(e) {
       stop(
         "Problem loading ", path, "\n",
@@ -18,7 +18,7 @@ load_units <- function() {
 }
 
 load_syllabus <- function() {
-  yaml.load_file("syllabus.yml")
+  read_yaml("syllabus.yml")
 }
 
 

@@ -1,9 +1,6 @@
 #! /usr/local/bin/Rscript
 
-message("Building md files")
-message("------------------------------------------------")
-
-
+message("Building md files -------------------------------")
 # Update everything
 
 suppressWarnings(suppressMessages(library(tidyverse)))
@@ -28,5 +25,9 @@ units %>%
   map2_chr(names(units), md_unit) %>%
   walk2(out_path, writeLines)
 
+message("Building overview ------------------------------")
+source("overview.R")
+
 message("------------------------------------------------")
 message("DONE")
+
