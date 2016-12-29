@@ -10,7 +10,7 @@ readings:
 - text: >
     The following sections give you an overview of the most important tools
     for EDA. (Note that you can skip Section 7.4: we'll come back to missing
-    later)
+    values later)
 - book: r4ds-7.1
 - book: r4ds-7.2
 - book: r4ds-7.3
