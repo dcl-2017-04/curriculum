@@ -11,13 +11,17 @@ needs: [manip-basics, vis-basics]
 
 readings:
 - book: r4ds-5.2.3
+  desc: (transformation)
 
 - book: r4ds-5.6.2
+  desc: (summary)
 
 - book: r4ds-7.4
+  desc: (visualisation)
 
 - book: r4ds-12.5
   desc: >
+    (explicit vs implict).
     We haven't covered the vocabulary of "tidy data" yet, but be aware that
     different ways of organisation the same data may make explicit missing
     values that were previously implicit in the data.
