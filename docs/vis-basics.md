@@ -24,13 +24,12 @@ but informative, plots.
 
   * [Geometric objects](http://r4ds.had.co.nz/data-visualisation.html#geometric-objects) [r4ds-3.6]
 
-Skim the following chapter so you're aware of the most important ggplot2 tools.
-Come back and read in detail when you actually need to use them.
+Skim the following resources so you're aware of the most important ggplot2
+geoms. Come back and read in detail when you actually need to use them.
 
   * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3]
 
-  * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1].
-    Use this resource to jog your memory of what's available
+  * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1]
 
 
 ## Exercises
