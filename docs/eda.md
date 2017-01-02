@@ -24,12 +24,4 @@ later)
   * [Covariation](http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation) [r4ds-7.5]
 
 
-## Exercises
-[Download `eda-exercises.Rmd`](eda-exercises.Rmd)
-
-
-1.  Visualise the distribution of `diamonds$price`. Do you discover anything unusual or surprising? (Hint: Carefully think about the binwidth and make sure you try a wide range of values.) Describe your findings and brainstorm possible explanations.
-
-2.  Visualise the distribution of `diamonds$price` by `diamonds$cut`. Use at least three different approaches. What did you learn?
-
 

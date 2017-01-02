@@ -22,22 +22,6 @@ the process.
   * [Code chunks](http://r4ds.had.co.nz/r-markdown.html#code-chunks) [r4ds-27.4]
 
 
-## Exercises
-[Download `rmarkdown-basics-exercises.Rmd`](rmarkdown-basics-exercises.Rmd)
-
-
-1.  What do the following keyboard shortcuts do? When should you use them?
-
-    -   `Cmd/Ctrl + Enter` (in the script editor)
-    -   `Cmd/Ctrl + Up arrow` (in the console)
-    -   `Cmd/Ctrl + Shift + F10` (anywhere)
-
-2.  For a chunk, how do you?
-
-    -   Stop the code from running?
-    -   Run the code, but don't display it?
-    -   Run the code, but don't display it or its results?
-
 ### Supplemental readings
 
 * [grolemund-rmarkdown](supplements.html#grolemund-rmarkdown)

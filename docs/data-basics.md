@@ -17,14 +17,4 @@ you'll start by familiarising yourself with them.
   * [Introduction](http://r4ds.had.co.nz/transform.html#introduction-2) [r4ds-5.1]
 
 
-## Exercises
-[Download `data-basics-exercises.Rmd`](data-basics-exercises.Rmd)
-
-
-1.  How do you find out the definition of a built-in dataset? What do the `fl` and `drv` variables in `mpg` mean?
-
-2.  What are the seven most common types of variables? What abbreviation is shown for each one?
-
-3.  Briefly describe `ggplot2::diamonds` using words. What is the new "ord" type?
-
 

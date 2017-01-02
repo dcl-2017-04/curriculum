@@ -20,12 +20,4 @@ done this before the first day.
     exists.
 
 
-## Exercises
-[Download `setup-exercises.Rmd`](setup-exercises.Rmd)
-
-
-1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
-
-2.  What are the main differences between `install.packages()` and `library()`? How often do you need to call each one?
-
 

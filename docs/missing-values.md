@@ -27,39 +27,6 @@ informative, so you should never silently ignore missing values.
     make explicit missing values that were previously implicit in the data.
 
 
-## Exercises
-[Download `missing-values-exercises.Rmd`](missing-values-exercises.Rmd)
-
-
-1.  If `x` is a numeric vector containing some missing values, what does `sum(x == NA)` return. Why? What does `mean(is.na(x))` return? Why?
-
-2.  What happens to flights with missing departure delays in the following filter statement?
-
-    ``` r
-    library(nycflights13)
-
-    flights %>% 
-      filter(dep_delay > 120)
-    ```
-
-3.  Compare and contrast the ways that missing values appear in the following plot. Why does missingness in `x`, `y`, and `z` display differently?
-
-    ``` r
-    df <- tribble(
-      ~ x, ~ y, ~ z,
-      "a",   3,   2,
-      "b",  NA,   5,
-      "c",   4,  NA,
-      NA,    6,   6
-    )
-    ggplot(df, aes(x, y)) +
-      geom_point(aes(colour = z))
-    ```
-
-        ## Warning: Removed 1 rows containing missing values (geom_point).
-
-    ![](missing-values-exercises_files/figure-markdown_github/unnamed-chunk-2-1.png)
-
 ### Supplemental readings
 
 * [naniar](supplements.html#naniar)

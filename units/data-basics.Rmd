@@ -1,8 +1,0 @@
-1. How do you find out the definition of a built-in dataset?
-   What do the `fl` and `drv` variables in `mpg` mean?
-
-1. What are the seven most common types of variables? What abbreviation
-   is shown for each one?
-
-1. Briefly describe `ggplot2::diamonds` using words. What is the new
-   "ord" type?

@@ -1,4 +1,0 @@
-1.  Run `library(tidyverse)`. What are the core packages in the tidyverse?
-
-1.  What are the main differences between `install.packages()` and
-    `library()`? How often do you need to call each one?

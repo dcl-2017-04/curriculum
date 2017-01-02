@@ -20,10 +20,4 @@ functions.
   * [Functions are for humans and computers](http://r4ds.had.co.nz/functions.html#functions-are-for-humans-and-computers) [r4ds-19.3]
 
 
-## Exercises
-[Download `function-summary-exercises.Rmd`](function-summary-exercises.Rmd)
-
-
-1.  Create a helper function to compute the coefficient of variation of a vector.
-
 

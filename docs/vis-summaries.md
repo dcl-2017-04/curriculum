@@ -20,33 +20,4 @@ consistent patterns more clear).
     some aggregation before visualising the data.
 
 
-## Exercises
-[Download `vis-summaries-exercises.Rmd`](vis-summaries-exercises.Rmd)
-
-
-1.  What's gone wrong with this plot? Why is there only one boxplot?
-
-    ``` r
-    library(nycflights13)
-
-    flights <- mutate(flights, yday = lubridate::yday(time_hour))
-
-    ggplot(flights, aes(yday, dep_delay)) +
-      geom_boxplot()
-    ```
-
-    ![](vis-summaries-exercises_files/figure-markdown_github/unnamed-chunk-1-1.png)
-
-    Explain the problem and give a solution that gives one boxplot for each day of the year.
-
-2.  Use the following three techniques to visualise the distribution of delays by origin:
-
-    -   Frequency polygon + colour
-    -   Histogram + faceting
-    -   Side-by-side boxplots
-
-    What are the pros and cons of each approach?
-
-3.  Another useful summary is the beeswarm plot (which you can create with [ggbeeswarm](https://github.com/eclarke/ggbeeswarm)). What makes them different to the other summary geoms?
-
 
