@@ -149,7 +149,9 @@ md_unit <- function(unit, unit_name) {
     "\n",
     md_links(unit$readings, "Readings"),
     build_exercise(unit_name),
-    md_supplements(unit$supplements, level = 3)
+    md_supplements(unit$supplements, level = 3),
+    "\n",
+    "[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)"
   )
 }
 
