@@ -14,6 +14,8 @@ you can start performing authentic (if simple) analyses.
 1. [vis-basics](vis-basics.md)
 1. [manip-basics](manip-basics.md)
 1. [rmarkdown-basics](rmarkdown-basics.md)
+1. [code-style](code-style.md)
+1. [getting-help](getting-help.md)
 
 ### Supplemental readings
 

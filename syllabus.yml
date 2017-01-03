@@ -8,6 +8,8 @@
   - vis-basics
   - manip-basics
   - rmarkdown-basics
+  - code-style
+  - getting-help
   supplements:
   - happy-git
   - grolemund-wrangle
