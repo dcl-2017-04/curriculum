@@ -9,8 +9,7 @@ suppressWarnings(suppressMessages(library(yaml)))
 source("books/books.R")
 source("yaml2md.R")
 
-old <- dir("docs", full.names = TRUE)
-old <- setdiff(old, "docs/_config.yml")
+old <- dir("docs", pattern = "^[^_]", full.names = TRUE)
 unlink(old, recursive = TRUE)
 
 syllabus <- load_syllabus()
