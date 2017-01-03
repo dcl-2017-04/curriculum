@@ -6,8 +6,16 @@ title: Code style
 
 # Code style
 
-Code style is simultaneously incredibly important and utterly trivial. It'slikepunctuation: sureyoucanmakedowithoutit, but proper punctuation sure make things easier to read!
-For pipelines (including ggplot2 plots), I recommend putting each statement on a new line, ending each line with a `%>%` or `+` as appropriate. Each line that continues a pipe should be indented by two spaces. Include an empty line between different pipes and plots. Where possible give your pipes an informative name: this will help you remember their purpose when you come back to an analysis in the future.
+Code style is simultaneously incredibly important and utterly trivial.
+It'slikepunctuation: sureyoucanmakedowithoutit, but proper punctuation
+sure make things easier to read!
+
+For pipelines (including ggplot2 plots), I recommend putting each statement
+on a new line, ending each line with a `%>%` or `+` as appropriate.
+Each line that continues a pipe should be indented by two spaces.
+Include an empty line between different pipes and plots. Where possible
+give your pipes an informative name: this will help you remember their
+purpose when you come back to an analysis in the future.
 
 ## Readings
 
