@@ -6,9 +6,8 @@ title: Missing values
 
 # Missing values
 
-R uses `NA` to present unknown, but potentially measurable variables. In this
-unit, you'll learn The pattern of missingness in a dataset is often
-informative, so you should never silently ignore missing values.
+R uses `NA` to present unknown, but potentially measurable variables. In this unit, you'll learn
+The pattern of missingness in a dataset is often informative, so you should never silently ignore missing values.
 
 ## Readings
 

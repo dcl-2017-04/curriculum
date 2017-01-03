@@ -6,8 +6,7 @@ title: Setup
 
 # Setup
 
-Ensure that you have all the tools you need for this class. You should have
-done this before the first day.
+Ensure that you have all the tools you need for this class. You should have done this before the first day.
 
 ## Readings
 

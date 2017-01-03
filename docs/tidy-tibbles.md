@@ -6,9 +6,7 @@ title: Tidy tibbles
 
 # Tidy tibbles
 
-Tidy data has variables in columns, and cases (or observations) in rows. So far
-you've only worked with carefully prepared tidy tibbles. Now it's time to learn
-more about the theory behind tidy data, and what exactly a tibble is.
+Tidy data has variables in columns, and cases (or observations) in rows. So far you've only worked with carefully prepared tidy tibbles. Now it's time to learn more about the theory behind tidy data, and what exactly a tibble is.
 
 ## Readings
 

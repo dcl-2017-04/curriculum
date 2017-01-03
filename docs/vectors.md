@@ -6,10 +6,7 @@ title: Vectors
 
 # Vectors
 
-The building blocks of tibbles are vectors: a tibble is a list of vectors each
-of the same length. It's good to know a little bit about this underlying
-theory, and how to use the readr package to convert strings into different
-types of vector.
+The building blocks of tibbles are vectors: a tibble is a list of vectors each of the same length. It's good to know a little bit about this underlying theory, and how to use the readr package to convert strings into different types of vector.
 
 ## Readings
 

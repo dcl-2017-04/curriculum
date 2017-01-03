@@ -6,10 +6,7 @@ title: Summary functions
 
 # Summary functions
 
-Not every summary function you need already exists. Sometimes you'll need to
-combine one or more existing summaries to compute what you want. While you can
-do this inline, it will make your code easier to use if you use small helper
-functions.
+Not every summary function you need already exists. Sometimes you'll need to combine one or more existing summaries to compute what you want. While you can do this inline, it will make your code easier to use if you use small helper functions.
 
 ## Readings
 

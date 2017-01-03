@@ -145,7 +145,7 @@ md_unit <- function(unit, unit_name) {
     md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
     "\n",
-    indent(unit$desc, 0, wrap = TRUE),
+    unit$desc,
     "\n",
     md_links(unit$readings, "Readings"),
     build_exercise(unit_name),

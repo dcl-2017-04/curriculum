@@ -6,12 +6,8 @@ title: Grouped summaries
 
 # Grouped summaries
 
-Summary functions take a vector of data and return a single number; you use
-them in conjunction with `dplyr::summarise()`. The ggplot2 equivalent are the
-summary geoms, which the data into pieces, apply some summary and visualise the
-results. Summaries are useful when you have a lot of data (and plotting leads
-to overplotting), or when the data is noisy (and you need to make small but
-consistent patterns more clear).
+Summary functions take a vector of data and return a single number; you use them in conjunction with `dplyr::summarise()`. The ggplot2 equivalent are the summary geoms, which the data into pieces, apply some summary and visualise the results.
+Summaries are useful when you have a lot of data (and plotting leads to overplotting), or when the data is noisy (and you need to make small but consistent patterns more clear).
 
 ## Readings
 

@@ -6,8 +6,7 @@ title: Exploratory data analysis
 
 # Exploratory data analysis
 
-Exploratory data analysis is partly a set of techniques, but is mostly a
-mindset: you want to remain open to what the data is telling you.
+Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.
 
 ## Readings
 

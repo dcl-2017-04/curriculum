@@ -7,7 +7,6 @@ title: Importing data
 # Importing data
 
 
-
 ## Readings
 
   * [Parsing a file](http://r4ds.had.co.nz/data-import.html#parsing-a-file) [r4ds-11.4]

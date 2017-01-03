@@ -6,9 +6,7 @@ title: Code style
 
 # Code style
 
-Code style is simultaneously incredibly important and utterly trivial.
-It'slikepunctuation: sureyoucanmakedowithoutit, but proper punctuation sure
-make things easier to read!
+Code style is simultaneously incredibly important and utterly trivial. It'slikepunctuation: sureyoucanmakedowithoutit, but proper punctuation sure make things easier to read!
 
 ## Readings
 

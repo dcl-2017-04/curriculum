@@ -6,9 +6,7 @@ title: Data basics
 
 # Data basics
 
-Learn what a data frame looks like when printed, and identify its variables and
-their types. We're going to use the `mpg` and `flights` datasets frequently, so
-you'll start by familiarising yourself with them.
+Learn what a data frame looks like when printed, and identify its variables and their types. We're going to use the `mpg` and `flights` datasets frequently, so you'll start by familiarising yourself with them.
 
 ## Readings
 

@@ -6,10 +6,7 @@ title: spread-gather
 
 # spread-gather
 
-Another common common ways for data to be messy is to have multiple variables
-crammed into a single column. Here you'll learn how to use `separate()` to pull
-out into their own columns. The inverse operation, `unite()`, is needed less
-often, but it's important to know about it for symmetry.
+Another common common ways for data to be messy is to have multiple variables crammed into a single column. Here you'll learn how to use `separate()` to pull out into their own columns. The inverse operation, `unite()`, is needed less often, but it's important to know about it for symmetry.
 
 ## Readings
 
