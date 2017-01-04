@@ -9,6 +9,7 @@
   - manip-basics
   - rmarkdown-basics
   - code-style
+  - documentation
   supplements:
   - happy-git
   - grolemund-wrangle

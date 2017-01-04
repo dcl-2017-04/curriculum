@@ -1,0 +1,33 @@
+title: Documentation
+
+desc: |
+  R comes with rich built-in documentation that you can access by typing
+  `?` before the name of the function.  The documentation isn't always
+  aimed at newcomers, and may use terminology that you're not familiar with.
+  But don't despair! Ignore what you don't understand, and persevere.
+  Often you'll find what you need in the examples at the file.
+
+  There are three commands in R that you should be familiar with:
+
+  * `?function_name` opens the help for `function_name()`.
+
+  * `help(package = "package_name")` lists all the documentation available for
+    a package.
+
+  * `browseVignettes(package = "package_name")` lists all the "vignettes"
+    (long form documentation) available for a package.
+
+  There are also some useful websites that you'll learn about below.
+
+readings:
+- href: http://tidyverse.org
+  text: tidyverse.org
+  desc: >
+    This is a work in progress, but lists websites for individual packages
+    within the tidyverse.
+
+- href: https://www.rdocumentation.org
+  text: rdocumentation.org
+  desc: >
+    This website contains the documentation for the vast majority of R
+    packages with a searchable index.
