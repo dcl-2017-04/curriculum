@@ -26,11 +26,14 @@ devtools::install_github("jennybc/reprex")
 
 ## Readings
 
-  * [What is a reprex?](https://github.com/jennybc/reprex#what-is-a-reprex).
-    Some general advice on writing reprexes
+  * [Getting help and learning more](http://r4ds.had.co.nz/introduction.html#getting-help-and-learning-more) [r4ds-1.6].
+    Start with this basic overview of your options for getting help
 
   * [How to get unstuck](http://stat545.com/help-general.html).
     General tips and tricks for getting unstuck in R
+
+  * [What is a reprex?](https://github.com/jennybc/reprex#what-is-a-reprex).
+    Some general advice on writing reprexes
 
 
 

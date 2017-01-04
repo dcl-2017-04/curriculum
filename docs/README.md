@@ -15,7 +15,7 @@ you can start performing authentic (if simple) analyses.
 1. [manip-basics](manip-basics.md)
 1. [rmarkdown-basics](rmarkdown-basics.md)
 1. [code-style](code-style.md)
-1. [getting-help](getting-help.md)
+1. [documentation](documentation.md)
 
 ### Supplemental readings
 
@@ -39,6 +39,7 @@ and transformations.
 1. [vis-theory](vis-theory.md)
 1. [vis-summaries](vis-summaries.md)
 1. [vis-transformation](vis-transformation.md)
+1. [getting-help](getting-help.md)
 
 ### Supplemental readings
 

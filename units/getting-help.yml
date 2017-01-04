@@ -19,6 +19,8 @@ desc: |
   devtools::install_github("jennybc/reprex")
   ```
 
+needs: [documentation]
+
 readings:
 - book: r4ds-1.6
   text: Getting help and learning more
