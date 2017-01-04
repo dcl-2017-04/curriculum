@@ -9,7 +9,6 @@
   - manip-basics
   - rmarkdown-basics
   - code-style
-  - getting-help
   supplements:
   - happy-git
   - grolemund-wrangle
@@ -28,6 +27,7 @@
   - vis-theory
   - vis-summaries
   - vis-transformation
+  - getting-help
   supplements:
   - rauser-how-humans-see
   - schneider-bikes
