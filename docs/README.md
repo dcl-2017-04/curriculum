@@ -58,8 +58,8 @@ important theory about the R's data structures.
 ### Units
 
 1. [tidy-tibbles](tidy-tibbles.md)
-1. [vectors](vectors.md)
-1. [import](import.md)
+1. [parse-vector](parse-vector.md)
+1. [parse-file](parse-file.md)
 1. [spread-gather](spread-gather.md)
 1. [separate-unite](separate-unite.md)
 1. [export](export.md)
@@ -78,6 +78,10 @@ R is a programming language, and mastering the basics of programming will give
 you powerful tools for automating your work. We've touched on basic functions
 already, but this week, we'll focus on them, learning important skills for
 automating your workflow.
+
+### Units
+
+1. [vectors](vectors.md)
 
 
 ## Date/times and relational data

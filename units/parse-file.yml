@@ -1,0 +1,11 @@
+title: Parsing files
+tags: [wrangle]
+needs: [parse-vector, tidy-tibbles]
+
+desc: |
+  Now that you know how to parse character vectors, you can learn how to
+  parse complete files.
+
+readings:
+- book: r4ds-11.2
+- book: r4ds-11.4

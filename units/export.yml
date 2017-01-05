@@ -8,7 +8,7 @@ desc: >
     work flow every time you restart your analysis.
 
   * To track changes over time using Git & GitHub.
-needs: [import]
+needs: [manip-basics]
 
 readings:
 - book: r4ds-11.5

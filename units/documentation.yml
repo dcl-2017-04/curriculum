@@ -1,4 +1,5 @@
 title: Documentation
+needs: [setup]
 
 desc: |
   R comes with rich built-in documentation that you can access by typing

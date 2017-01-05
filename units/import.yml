@@ -1,6 +1,0 @@
-title: Importing data
-needs: [vectors, missing-values]
-tags: [wrangle]
-
-readings:
-- book: r4ds-11.4
