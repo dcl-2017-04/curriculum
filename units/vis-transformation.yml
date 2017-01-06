@@ -7,7 +7,7 @@ desc: >
   functions are the scales. They take variables (numeric, character, ...)
   and convert them to visual properties (colour, shape, ...).
 
-  Scales also control the axes and legends which helper the reader understand
+  Scales also control the axes and legends which help the reader understand
   the plot. Mastering this aspect of scales is important when creating plots
   for others to understand. We'll come back to this idea later.
 

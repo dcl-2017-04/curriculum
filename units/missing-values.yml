@@ -1,7 +1,6 @@
 title: Missing values
 desc: >
   R uses `NA` to present unknown, but potentially measurable variables.
-  In this unit, you'll learn
 
   The pattern of missingness in a dataset is often informative, so you
   should never silently ignore missing values.
@@ -21,7 +20,7 @@ readings:
 
 - book: r4ds-12.5
   desc: >
-    (explicit vs implict).
+    (explicit vs implicit).
     We haven't covered the vocabulary of "tidy data" yet, but be aware that
     different ways of organisation the same data may make explicit missing
     values that were previously implicit in the data.
