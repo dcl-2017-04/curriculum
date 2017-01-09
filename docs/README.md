@@ -82,6 +82,7 @@ automating your workflow.
 ### Units
 
 1. [Vectors](vectors.md)
+1. [Reprexes](reprexes.md)
 
 
 ## Date/times and relational data

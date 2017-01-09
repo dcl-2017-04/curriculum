@@ -61,6 +61,7 @@
     important skills for automating your workflow.
   units:
   - vectors
+  - reprexes
   # - function-summary
   # - vector-functions
   # - hierarchical-data
