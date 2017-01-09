@@ -1,6 +1,6 @@
 title: Parsing vectors
 tags: [wrangle]
-needs: [manip-basics]
+needs: [eda]
 
 desc: |
   Importing a file take places in two steps:

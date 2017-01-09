@@ -18,4 +18,4 @@ ggraph(needs_graph, layout = "sugiyama") +
   scale_y_reverse() +
   theme_void()
 
-ggsave("overview.png", width = 6, height = 6, dpi = 96)
+ggsave("overview.png", width = 8, height = 6, dpi = 96)

@@ -11,7 +11,7 @@ desc: >
   overplotting), or when the data is noisy (and you need to make
   small but consistent patterns more clear).
 
-needs: [vis-theory, manip-basics]
+needs: [vis-theory]
 
 readings:
 - book: ggplot2-3

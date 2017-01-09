@@ -15,7 +15,7 @@ desc: |
   optimised for efficient reading. For those scenarios, you may want to use
   RDS or feather files instead.
 
-needs: [manip-basics]
+needs: [parse-file]
 
 readings:
 - book: r4ds-11.5

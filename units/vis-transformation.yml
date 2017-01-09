@@ -11,7 +11,7 @@ desc: >
   the plot. Mastering this aspect of scales is important when creating plots
   for others to understand. We'll come back to this idea later.
 
-needs: [vis-theory, manip-basics]
+needs: [vis-theory]
 
 readings:
 

@@ -5,7 +5,7 @@ desc: >
   to learn more about the theory behind tidy data, and what exactly a tibble
   is.
 
-needs: [data-basics]
+needs: [eda]
 tags: [wrangle]
 
 readings:

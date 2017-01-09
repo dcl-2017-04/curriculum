@@ -1,5 +1,7 @@
 title: Separate and unite
 
+needs: [tidy-tibbles]
+
 desc: >
   Another common way for data to be messy is to have multiple
   variables crammed into a single column. Here you'll learn how to use

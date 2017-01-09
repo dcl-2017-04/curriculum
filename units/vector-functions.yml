@@ -16,7 +16,7 @@ desc: |
   * Summary functions that return an output of length one. You typically
     use these functions with `summarise()`.
 
-needs: [manip-basics, vectors]
+needs: [eda, vectors]
 
 readings:
 - book: r4ds-19.1

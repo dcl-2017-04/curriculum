@@ -1,5 +1,7 @@
 title: Spreading and gathering
 
+needs: [tidy-tibbles]
+
 desc: >
   The two most common ways for data to be messy are to have:
 

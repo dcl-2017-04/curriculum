@@ -5,7 +5,7 @@ desc: >
   The pattern of missingness in a dataset is often informative, so you
   should never silently ignore missing values.
 
-needs: [manip-basics, vis-basics]
+needs: [eda]
 
 
 readings:
