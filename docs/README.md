@@ -60,8 +60,8 @@ important theory about the R's data structures.
 1. [Tidy tibbles](tidy-tibbles.md)
 1. [Parsing vectors](parse-vector.md)
 1. [Parsing files](parse-file.md)
-1. [spread-gather](spread-gather.md)
-1. [spread-gather](separate-unite.md)
+1. [Spreading and gathering](spread-gather.md)
+1. [Separate and unite](separate-unite.md)
 1. [Exporting data](export.md)
 
 ### Supplemental readings

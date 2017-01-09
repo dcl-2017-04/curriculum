@@ -1,14 +1,14 @@
 ---
-title: spread-gather
+title: Spreading and gathering
 ---
 
 <!-- Generated automatically from spread-gather.yml. Do not edit by hand -->
 
-# spread-gather
+# Spreading and gathering
 
 The two most common ways for data to be messy are to have:
 1. One variable spread across multiple columns. 1. One observation scattered across multiple rows.
-To fix these problems you need `spread()` and `gather()`
+To fix these problems you need `spread()` and `gather()` from the tidyr package.
 
 ## Readings
 
