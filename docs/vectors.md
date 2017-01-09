@@ -25,4 +25,3 @@ The tidyverse functions that you've focussed on so far are holistic: they take a
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

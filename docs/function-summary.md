@@ -18,4 +18,3 @@ Not every summary function you need already exists. Sometimes you'll need to com
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

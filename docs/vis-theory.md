@@ -16,4 +16,3 @@ Now is a good time to learn a bit more about the underlying theory of ggplot2. R
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

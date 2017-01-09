@@ -25,4 +25,3 @@ Skip through this chapter of R4DS focussing on `filter()`, `mutate()` and
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

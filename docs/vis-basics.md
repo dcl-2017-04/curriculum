@@ -30,4 +30,3 @@ geoms. Come back and read in detail when you actually need to use them.
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

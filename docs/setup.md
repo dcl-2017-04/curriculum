@@ -20,4 +20,3 @@ Ensure that you have all the tools you need for this class. You should have done
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

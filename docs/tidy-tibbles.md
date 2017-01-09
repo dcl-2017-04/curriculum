@@ -18,4 +18,3 @@ Tidy data has variables in columns, and cases (or observations) in rows. So far 
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

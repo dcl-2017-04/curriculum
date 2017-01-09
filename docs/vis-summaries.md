@@ -17,4 +17,3 @@ Summaries are useful when you have a lot of data (and plotting leads to overplot
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

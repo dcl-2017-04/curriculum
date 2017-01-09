@@ -20,4 +20,3 @@ You will get the most out of this class if you learn some tools and techniques f
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

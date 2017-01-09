@@ -20,4 +20,3 @@ Now that we're at week 3, it's worth reviewing how you're organising your code. 
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

@@ -7,7 +7,7 @@ title: Visual transformations
 # Visual transformations
 
 You've already learned about transformation functions that you use with `dplyr::mutate()`. They take one (or more) vectors and return a transformed vector of the same length. The ggplot2 equivalent of transformation functions are the scales. They take variables (numeric, character, ...) and convert them to visual properties (colour, shape, ...).
-Scales also control the axes and legends which helper the reader understand the plot. Mastering this aspect of scales is important when creating plots for others to understand. We'll come back to this idea later.
+Scales also control the axes and legends which help the reader understand the plot. Mastering this aspect of scales is important when creating plots for others to understand. We'll come back to this idea later.
 
 ## Readings
 
@@ -17,4 +17,3 @@ Scales also control the axes and legends which helper the reader understand the 
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

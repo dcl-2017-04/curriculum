@@ -19,4 +19,3 @@ There are three main reasons you might want to export a tibble from R:
 
 
 
-[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)
