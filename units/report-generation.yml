@@ -1,0 +1,33 @@
+title: Generating multiple reports
+
+desc: |
+  So far you've turned `.Rmd` files into fully-fleshed reports using
+  RStudio. It is also useful to know how to do so programmatically so that
+  you can automate your R Markdown workflow. This is particularly useful
+  in conjunction with parameterised reports and `purrr::pwalk()`.
+
+  This technique isn't discussed frequently, but I think it's extremely
+  powerful. It might stretch your brain a bit, and you might not understand
+  exactly how it works, but it's useful pattern to know.
+
+needs: [rmarkdown-basics]
+
+readings:
+
+- href: http://rmarkdown.rstudio.com/developer_parameterized_reports.html
+  title: Parameterized reports
+  desc: >
+    Focus particularly on the "passing parameters" section as that shows
+    how to call `rmarkdown::render()`, which is the code equivalent
+    of the "knit" button in RStudio.
+
+- book: r4ds-21.7
+- book: r4ds-21.8
+  desc: >
+    The purrr function we're going to use is `pwalk()`. It isn't described
+    in much detail in R4DS but it's a straightforward combination of `pmap()`
+    and `walk()`.
+
+- book: r4ds-27.6
+  desc: >
+    Focus on §27.6.1

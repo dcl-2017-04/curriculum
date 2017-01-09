@@ -61,11 +61,11 @@
     important skills for automating your workflow.
   units:
   - vectors
+  - vector-functions
+  - lists
+  - iteration
+  - report-generation
   - reprexes
-  # - function-summary
-  # - vector-functions
-  # - hierarchical-data
-  # - report-generation
 
 - title: Date/times and relational data
   desc: >
@@ -99,6 +99,7 @@
 
 - title: Hierarchical data with purrr
   # units:
+  # - lists
   # - case-study-hierarchical
 
 - title: Text data with tidytext

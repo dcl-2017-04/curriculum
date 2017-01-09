@@ -6,7 +6,7 @@ title: Vectors
 
 # Vectors
 
-The tidyverse functions that you've focussed on so far are holistic: they take a complete data frame and perform various transformations on it. However, when writing your own functions it's better to start vectors because they are much simpler. In this unit, you'll learn a bit about the underlying theory of vectors.
+The tidyverse functions that you've focussed on so far are holistic: they take a complete data frame and perform various transformations on it. When writing your own functions it's better to start with functions that work with vectors because they are much simpler. You've used vectors quite a bit, but we haven't yet discussed them in detail.
 
 ## Readings
 

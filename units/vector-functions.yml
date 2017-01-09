@@ -1,0 +1,26 @@
+title: Vector functions
+desc: |
+  Functions are powerful tool for reducing the amount of duplication in your
+  code. Reducing duplicationg is a good principle because it means that
+  each "fact" in your code is only stored in one place. When the requirements
+  of your code change (as they invariably do), you only need to make the
+  change in a single place, reducing the chances of inconsistencies within
+  your code.
+
+  To start with, we'll focus on functions that work with vectors. There
+  are two common types:
+
+  * Vectorised functions that return an output the same length as their
+    input. You typically use these functions in `mutate()`.
+
+  * Summary functions that return an output of length one. You typically
+    use these functions with `summarise()`.
+
+needs: [manip-basics, vectors]
+
+readings:
+- book: r4ds-19.1
+- book: r4ds-19.2
+- book: r4ds-19.3
+
+
