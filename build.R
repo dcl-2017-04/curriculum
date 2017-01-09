@@ -17,7 +17,7 @@ units <- load_units()
 supplements <- load_supplements()
 
 syllabus %>%
-  syllabus_index() %>%
+  syllabus_index(units, supplements) %>%
   writeLines("docs/README.md")
 
 supplements %>%
@@ -26,7 +26,7 @@ supplements %>%
 
 out_path <- paste0("docs/", names(units), ".md")
 units %>%
-  map2_chr(names(units), md_unit) %>%
+  map2_chr(names(units), md_unit, supp_index = supplements) %>%
   walk2(out_path, writeLines)
 
 message("Building overview ------------------------------")

@@ -19,7 +19,7 @@ Experience the full data science workflow by creating an RMarkdown file that inc
 
 ### Supplemental readings
 
-* [grolemund-rmarkdown](supplements.html#grolemund-rmarkdown)
+* [Getting Started with R Markdown](supplements.html#grolemund-rmarkdown)
 
 
 [Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)

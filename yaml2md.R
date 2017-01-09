@@ -5,9 +5,14 @@ source("utils.R")
 # Syllabus index -------------------------------------------------------
 # lists each week, along with description
 
-syllabus_index <- function(syllabus) {
+syllabus_index <- function(syllabus, unit_index, supp_index) {
   weeks <- syllabus %>%
-    map2_chr(seq_along(.), syllabus_desc) %>%
+    map2_chr(
+      seq_along(.),
+      syllabus_desc,
+      unit_index = unit_index,
+      supp_index = supp_index
+    ) %>%
     paste0("\n", collapse = "")
 
   paste0(
@@ -18,27 +23,30 @@ syllabus_index <- function(syllabus) {
   )
 }
 
-syllabus_desc <- function(x, i) {
+syllabus_desc <- function(x, i, unit_index, supp_index) {
   paste0(
     "## ", x$title, "\n",
     "\n",
     indent(x$desc, 0, wrap = TRUE),
     "\n",
-    syllabus_units(x, level = 3),
+    syllabus_units(x, unit_index, level = 3),
     syllabus_challenges(x, level = 3),
-    md_supplements(x$supplements, level = 3)
+    md_supplements(x$supplements, supp_index, level = 3)
   )
 }
 
-syllabus_units <- function(x, level) {
+syllabus_units <- function(x, index, level) {
   units <- x$units
   if (length(units) == 0)
     return()
 
+  titles <- index[units] %>% map_chr("title") %>% unname()
+  links <- paste0("1. [", titles, "](", units, ".md)\n", collapse = "")
+
   paste0(
     md_heading("Units", level = level),
     "\n",
-    paste0("1. [", units, "](", units, ".md)\n", collapse = ""),
+    links,
     "\n"
   )
 }
@@ -64,11 +72,12 @@ supplements_index <- function(x) {
   )
 }
 
-md_supplements <- function(x, level = 2) {
+md_supplements <- function(x, index, level = 2) {
   if (length(x) == 0)
     return("")
 
-  links <- paste0("* [", x, "](supplements.html#", x, ")\n")
+  titles <- index[x] %>% map_chr("text") %>% unname()
+  links <- paste0("* [", titles, "](supplements.html#", x, ")\n")
 
   paste0(
     md_heading("Supplemental readings", level = level),
@@ -136,7 +145,7 @@ build_exercise <- function(unit_name, level = 2) {
 
 # Weekly pages ------------------------------------------------------------
 
-md_unit <- function(unit, unit_name) {
+md_unit <- function(unit, unit_name, supp_index) {
   paste0(
     "---\n",
     "title: ", unit$title, "\n",
@@ -149,7 +158,7 @@ md_unit <- function(unit, unit_name) {
     "\n",
     md_links(unit$readings, "Readings"),
     build_exercise(unit_name),
-    md_supplements(unit$supplements, level = 3),
+    md_supplements(unit$supplements, supp_index, level = 3),
     "\n",
     "[Give us your feedback on the task](https://goo.gl/forms/Lpq7Cj9dAUIgchJI2)"
   )

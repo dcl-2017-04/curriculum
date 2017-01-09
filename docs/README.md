@@ -9,20 +9,20 @@ you can start performing authentic (if simple) analyses.
 
 ### Units
 
-1. [setup](setup.md)
-1. [data-basics](data-basics.md)
-1. [vis-basics](vis-basics.md)
-1. [manip-basics](manip-basics.md)
-1. [rmarkdown-basics](rmarkdown-basics.md)
-1. [code-style](code-style.md)
-1. [documentation](documentation.md)
+1. [Setup](setup.md)
+1. [Data basics](data-basics.md)
+1. [Data vis basics](vis-basics.md)
+1. [Data manipulation basics](manip-basics.md)
+1. [R Markdown basics](rmarkdown-basics.md)
+1. [Code style](code-style.md)
+1. [Documentation](documentation.md)
 
 ### Supplemental readings
 
-* [happy-git](supplements.html#happy-git)
-* [grolemund-wrangle](supplements.html#grolemund-wrangle)
-* [woo-vis](supplements.html#woo-vis)
-* [keifer-blog](supplements.html#keifer-blog)
+* [Happy Git and GitHub for the useR](supplements.html#happy-git)
+* [Expert data wrangling with R](supplements.html#grolemund-wrangle)
+* [Data Visualisation in R with ggplot2](supplements.html#woo-vis)
+* [Len Keifer's blog](supplements.html#keifer-blog)
 
 
 ## Exploratory data analysis
@@ -34,18 +34,18 @@ and transformations.
 
 ### Units
 
-1. [eda](eda.md)
-1. [missing-values](missing-values.md)
-1. [vis-theory](vis-theory.md)
-1. [vis-summaries](vis-summaries.md)
-1. [vis-transformation](vis-transformation.md)
-1. [getting-help](getting-help.md)
+1. [Exploratory data analysis](eda.md)
+1. [Missing values](missing-values.md)
+1. [The grammar of graphics](vis-theory.md)
+1. [Grouped summaries](vis-summaries.md)
+1. [Visual transformations](vis-transformation.md)
+1. [Getting help](getting-help.md)
 
 ### Supplemental readings
 
-* [rauser-how-humans-see](supplements.html#rauser-how-humans-see)
-* [schneider-bikes](supplements.html#schneider-bikes)
-* [schneider-taxis](supplements.html#schneider-taxis)
+* [How humans see data](supplements.html#rauser-how-humans-see)
+* [A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System](supplements.html#schneider-bikes)
+* [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](supplements.html#schneider-taxis)
 
 
 ## Care and feeding of tibbles
@@ -57,19 +57,19 @@ important theory about the R's data structures.
 
 ### Units
 
-1. [tidy-tibbles](tidy-tibbles.md)
-1. [parse-vector](parse-vector.md)
-1. [parse-file](parse-file.md)
+1. [Tidy tibbles](tidy-tibbles.md)
+1. [Parsing vectors](parse-vector.md)
+1. [Parsing files](parse-file.md)
 1. [spread-gather](spread-gather.md)
-1. [separate-unite](separate-unite.md)
-1. [export](export.md)
+1. [spread-gather](separate-unite.md)
+1. [Exporting data](export.md)
 
 ### Supplemental readings
 
-* [biobroom](supplements.html#biobroom)
-* [leek-non-tidy](supplements.html#leek-non-tidy)
-* [wickham-tidy-data](supplements.html#wickham-tidy-data)
-* [happy-graphing](supplements.html#happy-graphing)
+* [Tidying computational biology models with biobroom](supplements.html#biobroom)
+* [Non-tidy data](supplements.html#leek-non-tidy)
+* [Tidy Data](supplements.html#wickham-tidy-data)
+* [Secrets of a happy graphing life](supplements.html#happy-graphing)
 
 
 ## Functions and iteration
@@ -81,7 +81,7 @@ automating your workflow.
 
 ### Units
 
-1. [vectors](vectors.md)
+1. [Vectors](vectors.md)
 
 
 ## Date/times and relational data

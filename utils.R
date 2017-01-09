@@ -21,9 +21,10 @@ load_syllabus <- function() {
   read_yaml("syllabus.yml")
 }
 
-
 load_supplements <- function() {
-  read_yaml("supplements.yml")
+  x <- read_yaml("supplements.yml")
+  x %>%
+    set_names(x %>% map_chr("slug"))
 }
 
 
