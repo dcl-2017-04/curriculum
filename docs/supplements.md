@@ -64,6 +64,14 @@ by John Rauser
 
 (will be available in video form once O'Reilly edits videos)
 
+## RMarkdown homepage {#rmarkdown}
+
+<http://rmarkdown.rstudio.com/>
+
+The official RStudio source of RMarkdown documentation. We're only scraping the
+surface of RMarkdown's capabilities in this course; read here to unlock more of
+its power.
+
 ## A Tale of Twenty-Two Million Citi Bike Rides: Analyzing the NYC Bike Share System {#schneider-bikes}
 by Todd W. Schneider
 

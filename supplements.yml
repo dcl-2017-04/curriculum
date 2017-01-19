@@ -1,3 +1,11 @@
+- slug: rmarkdown
+  href: http://rmarkdown.rstudio.com/
+  text: RMarkdown homepage
+  desc: >
+    The official RStudio source of RMarkdown documentation.
+    We're only scraping the surface of RMarkdown's capabilities in
+    this course; read here to unlock more of its power.
+
 - slug: happy-git
   href: http://happygitwithr.com
   text: Happy Git and GitHub for the useR
