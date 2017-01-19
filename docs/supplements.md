@@ -89,6 +89,14 @@ by Todd W. Schneider
 This analysis uses much more data than the previous analysis. What additional
 challenges did Todd need to solve to allow him to work with this much data?
 
+## RStudio conference purrr tutorial {#wickham-purrr}
+by Charlotte Wickham
+
+<https://github.com/cwickham/purrr-tutorial>
+
+This purrr tutorial doesn't assume any knowledge of functions, providing an
+approachable introduction.
+
 ## Tidy Data {#wickham-tidy-data}
 
 <https://www.jstatsoft.org/v59/i10/>

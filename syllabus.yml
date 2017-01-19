@@ -67,6 +67,9 @@
   - report-generation
   - reprexes
 
+  supplemental:
+  - wickham-purrr
+
 - title: Date/times and relational data
   desc: >
     This week we'll learn how to handle date/time data, and multiple

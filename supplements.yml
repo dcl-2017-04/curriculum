@@ -1,3 +1,11 @@
+- slug: wickham-purrr
+  href: https://github.com/cwickham/purrr-tutorial
+  text: RStudio conference purrr tutorial
+  author: Charlotte Wickham
+  desc: >
+    This purrr tutorial doesn't assume any knowledge of functions, providing
+    an approachable introduction.
+
 - slug: rmarkdown
   href: http://rmarkdown.rstudio.com/
   text: RMarkdown homepage
