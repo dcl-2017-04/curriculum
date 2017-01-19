@@ -6,7 +6,7 @@ title: Parsing vectors
 
 # Parsing vectors
 
-Importing a file take places in two steps:
+Importing a file takes place in two steps:
 
 1. The rectangular file is parsed into rows and columns. Each cell
    is a string.
