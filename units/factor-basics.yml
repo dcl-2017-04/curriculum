@@ -1,0 +1,13 @@
+title: Factor basics
+
+desc: |
+  Factors are similar to strings, but are used for data that has a fixed
+  and known set of possible values. They are needed for modelling, and
+  are useful for tweaking visualisations.
+
+needs: [string-basics]
+
+readings:
+- book: r4ds-15.1
+- book: r4ds-15.4
+- book: r4ds-15.5

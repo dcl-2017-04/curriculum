@@ -19,7 +19,7 @@ desc: |
   devtools::install_github("jennybc/reprex")
   ```
 
-needs: [getting-help]
+needs: [getting-help, code-style]
 
 readings:
 

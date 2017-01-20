@@ -34,6 +34,20 @@
   - schneider-bikes
   - schneider-taxis
 
+- title: Data type essentials
+  desc: >
+    The goal of this week is to give you a broad overview of the most important
+    data types in R that you haven't seen yet: date-times, strings, and factors.
+    You'll also learn more about the tidy tibble, two important tools for
+    tidying messy data, and joins, which allow you to combine multiple datasets.
+  units:
+  - datetime-basics
+  - string-basics
+  - factor-basics
+  - tidy-tibbles
+  - relational-basics
+  - spread-gather
+
 - title: Care and feeding of tibbles
   desc: >
     So far you've used tidy data that we've provided you. This will __never__
@@ -41,10 +55,8 @@
     flat files on disk, and get your data into a tidy form. We'll also touch on
     some important theory about the R's data structures.
   units:
-  - tidy-tibbles
   - parse-vector
   - parse-file
-  - spread-gather
   - separate-unite
   - export
   supplements:
@@ -69,16 +81,6 @@
 
   supplemental:
   - wickham-purrr
-
-- title: Date/times and relational data
-  desc: >
-    This week we'll learn how to handle date/time data, and multiple
-    related table (relational data). This will allow us to fully explore
-    the datasets in nycflights13, and start to learn how weather is related
-    to flight delays.
-  # units:
-  # - date-time
-  # - relational-data
 
 - title: Strings and factors
   desc: >

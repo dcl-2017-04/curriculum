@@ -48,6 +48,23 @@ and transformations.
 * [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](supplements.html#schneider-taxis)
 
 
+## Data type essentials
+
+The goal of this week is to give you a broad overview of the most important
+data types in R that you haven't seen yet: date-times, strings, and factors.
+You'll also learn more about the tidy tibble, two important tools for tidying
+messy data, and joins, which allow you to combine multiple datasets.
+
+### Units
+
+1. [Date/time basics](datetime-basics.md)
+1. [String basics](string-basics.md)
+1. [Factor basics](factor-basics.md)
+1. [Tidy tibbles](tidy-tibbles.md)
+1. [Essentials of relational data](relational-basics.md)
+1. [Spreading and gathering](spread-gather.md)
+
+
 ## Care and feeding of tibbles
 
 So far you've used tidy data that we've provided you. This will __never__
@@ -57,10 +74,8 @@ important theory about the R's data structures.
 
 ### Units
 
-1. [Tidy tibbles](tidy-tibbles.md)
 1. [Parsing vectors](parse-vector.md)
 1. [Parsing files](parse-file.md)
-1. [Spreading and gathering](spread-gather.md)
 1. [Separate and unite](separate-unite.md)
 1. [Exporting data](export.md)
 
@@ -87,13 +102,6 @@ automating your workflow.
 1. [Iteration](iteration.md)
 1. [Generating multiple reports](report-generation.md)
 1. [Reprexes](reprexes.md)
-
-
-## Date/times and relational data
-
-This week we'll learn how to handle date/time data, and multiple related table
-(relational data). This will allow us to fully explore the datasets in
-nycflights13, and start to learn how weather is related to flight delays.
 
 
 ## Strings and factors

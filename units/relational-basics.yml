@@ -1,0 +1,19 @@
+title: Essentials of relational data
+
+desc: |
+  It is extremely rare to only require a single table of data for an analysis.
+  Far more often you will need to combine together multiple sources of
+  information. Interconnected datasets is often called __relational__ because
+  you need to care about the relationships between the datasets.
+
+  Here you'll learn about the __keys__ which define the relationship, and
+  the __mutating joins__, the first set of tools for working with related
+  dataset.
+
+needs: [eda]
+
+readings:
+- book: r4ds-13.1
+- book: r4ds-13.2
+- book: r4ds-13.3
+- book: r4ds-13.4
