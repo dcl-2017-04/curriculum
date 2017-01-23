@@ -24,10 +24,10 @@
   needs: [setup]
 
 - slug: rauser-how-humans-see
-  href: http://www.slideshare.net/JohnRauser/how-humans-see-data
+  href: https://youtu.be/fSgEeI2Xpdc
   text: How humans see data
   author: John Rauser
-  desc: (will be available in video form once O'Reilly edits videos)
+  desc: Slides at <http://www.slideshare.net/JohnRauser/how-humans-see-data>
   needs: [vis-theory]
 
 - slug: grolemund-wrangle

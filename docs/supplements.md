@@ -60,9 +60,9 @@ missing data.
 ## How humans see data {#rauser-how-humans-see}
 by John Rauser
 
-<http://www.slideshare.net/JohnRauser/how-humans-see-data>
+<https://youtu.be/fSgEeI2Xpdc>
 
-(will be available in video form once O'Reilly edits videos)
+Slides at <http://www.slideshare.net/JohnRauser/how-humans-see-data>
 
 ## RMarkdown homepage {#rmarkdown}
 
