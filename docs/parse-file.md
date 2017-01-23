@@ -23,5 +23,7 @@ parse complete files. This involves two new skills:
 
   * [Parsing a file](http://r4ds.had.co.nz/data-import.html#parsing-a-file) [r4ds-11.4]
 
+  * [Data Import Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf) [cheatsheets-data-import]
+
 
 

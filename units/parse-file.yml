@@ -17,3 +17,4 @@ desc: |
 readings:
 - book: r4ds-11.2
 - book: r4ds-11.4
+- book: cheatsheets-data-import
