@@ -1,15 +1,13 @@
 id,title,href,depth
+cheatsheets-data-import,Data Import Cheat Sheet,https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf,NA
+cheatsheets-data-transformation,Data Transformation Cheat Sheet,https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf,NA
+cheatsheets-sparklyr,Sparklyr Cheat Sheet,http://spark.rstudio.com/images/sparklyr-cheatsheet.pdf,NA
 cheatsheets-rmarkdown-2.0,R Markdown Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf,NA
 cheatsheets-rstudio-IDE,RStudio IDE Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf,NA
 cheatsheets-shiny,Shiny Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf,NA
 cheatsheets-ggplot2-2.1,Data Visualization Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf,NA
 cheatsheets-devtools,Package Development Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/06/devtools-cheatsheet.pdf,NA
-cheatsheets-data-wrangling,Data Wrangling Cheat Sheet,https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf,NA
 cheatsheets-rmarkdown-reference,R Markdown Reference Guide,https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf,NA
-cheatsheets-r-cheat-sheet-3,Base R,https://www.rstudio.com/wp-content/uploads/2016/10/r-cheat-sheet-3.pdf,NA
-cheatsheets-advancedR,Advanced R,https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf,NA
-cheatsheets-RegExCheatsheet,Regular Expressions,https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf,NA
-cheatsheets-how-big-is-your-graph,How big is your graph? (base R graphics),https://www.rstudio.com/wp-content/uploads/2016/10/how-big-is-your-graph.pdf,NA
 ggplot2-1,Introduction,http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_1,1
 ggplot2-2,Getting started with ggplot2,http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_2,1
 ggplot2-3,Toolbox,http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3,1

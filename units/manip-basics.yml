@@ -14,7 +14,7 @@ readings:
 - book: r4ds-5.5
 - book: r4ds-5.6
 
-- book: cheatsheets-data-wrangling
+- book: cheatsheets-data-transformation
   desc: >
     The cheatsheet includes a list of the most important summary
     functions. Refer to it when you forget.

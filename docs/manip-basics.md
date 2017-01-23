@@ -19,7 +19,7 @@ Skip through this chapter of R4DS focussing on `filter()`, `mutate()` and
 
   * [Grouped summaries with summarise()](http://r4ds.had.co.nz/transform.html#grouped-summaries-with-summarise) [r4ds-5.6]
 
-  * [Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) [cheatsheets-data-wrangling].
+  * [Data Transformation Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-transformation-cheatsheet.pdf) [cheatsheets-data-transformation].
     The cheatsheet includes a list of the most important summary functions.
     Refer to it when you forget.
 

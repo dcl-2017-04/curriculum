@@ -26,4 +26,5 @@ cheatsheets <- tibble(id, title, href)
 
 cheatsheets %>%
   filter(!is.na(id), !is.na(title)) %>%
+  filter(cumall(title != "Base R")) %>% # Remove contributed cheatsheets
   write_csv("books/cheatsheets.csv")
