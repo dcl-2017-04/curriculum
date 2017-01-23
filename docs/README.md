@@ -48,12 +48,13 @@ and transformations.
 * [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](supplements.html#schneider-taxis)
 
 
-## Data type essentials
+## Data essentials
 
-The goal of this week is to give you a broad overview of the most important
-data types in R that you haven't seen yet: date-times, strings, and factors.
-You'll also learn more about the tidy tibble, two important tools for tidying
-messy data, and joins, which allow you to combine multiple datasets.
+This week is a grab bag of important data types and tools that will let you
+explore more datasets. You'll get a broad overview of the most important
+augmented vectors (date-times, strings, and factors), learn more about tidy
+tibbles, master two important tools for tidying messy data, and learn about
+joins, which allow you to combine multiple datasets.
 
 ### Units
 
@@ -70,7 +71,7 @@ messy data, and joins, which allow you to combine multiple datasets.
 So far you've used tidy data that we've provided you. This will __never__
 happen in real life, so this week you'll learn how to load data from a flat
 files on disk, and get your data into a tidy form. We'll also touch on some
-important theory about the R's data structures.
+important theory about R's data structures.
 
 ### Units
 
