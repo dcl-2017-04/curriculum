@@ -8,7 +8,10 @@ library(ggraph)
 
 key_books <- books %>%
   filter(is.na(depth) | depth < 3) %>%
-  transmute(book_id = forcats::fct_inorder(id))
+  transmute(
+    book_id = forcats::fct_inorder(id),
+    title
+  )
 
 readings <- load_units() %>%
   map("readings") %>%
@@ -21,15 +24,21 @@ unit_link <- function(x) {
   sprintf("[%s](https://dcl-2017-01.github.io/curriculum/%s.html)", x, x)
 }
 
-load_syllabus() %>%
+unit_readings <- load_syllabus() %>%
   map("units") %>%
   enframe("week", "unit") %>%
-  mutate(week = paste0("week", week)) %>%
+  mutate(week = sprintf("week%02d", week)) %>%
   unnest(unit) %>%
   left_join(readings) %>%
   group_by(week, book_id) %>%
-  summarise(units = paste0(unit_link(unit), collapse = ", ")) %>%
-  complete(key_books, fill = list(units = "")) %>%
+  summarise(units = paste0(unit_link(unit), collapse = ", "))
+
+key_books %>%
+  expand(book_id, week = sprintf("week%02d", 1:10)) %>%
+  left_join(unit_readings) %>%
+  replace_na(list(units = "")) %>%
+  left_join(key_books) %>%
+  select(book_id, title, everything()) %>%
   spread(week, units) %>%
   knitr::kable() %>%
   cat(file = "storyboard.md", sep = "\n")
