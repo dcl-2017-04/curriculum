@@ -6,6 +6,7 @@ title: Data vis basics
 
 # Data vis basics
 <small>(Builds on [Data basics](data-basics.md))</small>
+<small>(Leads to: [Exploratory data analysis](eda.md))</small>
 
 Data visualisation is one of the most important tools of data science. It's also a great place to start learning a programming language because you get an immediate payoff that will help you keep motivated as you push through initial frustrations
 

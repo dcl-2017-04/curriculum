@@ -169,6 +169,7 @@ md_unit <- function(unit, unit_name, unit_index, supp_index) {
     md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
     md_needs(unit$needs, unit_index),
+    md_leads(unit_name, unit_index),
     "\n",
     unit$desc,
     "\n",
@@ -199,6 +200,20 @@ md_needs <- function(units, unit_index) {
 
   paste0("<small>(Builds on ", links, ")</small>\n")
 }
+
+md_leads <- function(slug, unit_index) {
+  units <- unit_index %>%
+    keep(~ slug %in% .$needs)
+
+  if (length(units) == 0)
+    return()
+
+  titles <- units %>% map_chr("title") %>% unname()
+  links <- paste0("[", titles, "](", names(units), ".md)", collapse = ", ")
+
+  paste0("<small>(Leads to: ", links, ")</small>\n")
+}
+
 
 # Markdown helpers -----------------------------------------------------
 

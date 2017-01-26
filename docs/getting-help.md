@@ -6,6 +6,7 @@ title: Getting help
 
 # Getting help
 <small>(Builds on [Documentation](documentation.md))</small>
+<small>(Leads to: [Reprexes](reprexes.md))</small>
 
 It's good to have some resources outside of this class to get help.
 These readings will give you some solid advice on using google and

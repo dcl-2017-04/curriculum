@@ -6,6 +6,7 @@ title: Data manipulation basics
 
 # Data manipulation basics
 <small>(Builds on [Data basics](data-basics.md))</small>
+<small>(Leads to: [Exploratory data analysis](eda.md))</small>
 
 Some basic data manipulation is essential for many visualisations. Here you'll the learn the most important dplyr functions: `filter()`, `mutate()`, and `group_by()` + `summarise()`.
 
