@@ -19,7 +19,7 @@ supplements <- load_supplements()
 
 syllabus %>%
   syllabus_index(units, supplements) %>%
-  writeLines("docs/README.md")
+  writeLines("docs/index.md")
 
 syllabus %>%
   syllabus_toc() %>%
