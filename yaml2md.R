@@ -171,9 +171,9 @@ md_unit <- function(unit, unit_name, unit_index, supp_index) {
     "\n",
     unit$desc,
     "\n",
-    md_links(unit$readings, "Readings"),
+    md_links(unit$readings, "Readings", level = 2),
     build_exercise(unit_name),
-    md_supplements(unit$supplements, supp_index, level = 3)
+    md_supplements(unit$supplements, supp_index, level = 2)
   )
 }
 

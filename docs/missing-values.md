@@ -27,7 +27,7 @@ The pattern of missingness in a dataset is often informative, so you should neve
     make explicit missing values that were previously implicit in the data.
 
 
-### Supplemental readings
+## Supplemental readings
 
 * [naniar](supplements.html#naniar)
 

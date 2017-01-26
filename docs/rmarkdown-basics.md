@@ -23,7 +23,7 @@ Experience the full data science workflow by creating an RMarkdown file that inc
   * [R Markdown Reference Guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) [cheatsheets-rmarkdown-reference]
 
 
-### Supplemental readings
+## Supplemental readings
 
 * [Getting Started with R Markdown](supplements.html#grolemund-rmarkdown)
 * [RMarkdown homepage](supplements.html#rmarkdown)
