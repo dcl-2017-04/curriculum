@@ -7,6 +7,7 @@ title: Lists
 # Lists
 <small>(Builds on: [Vectors](vectors.md))</small>  
 <small>(Leads to: [Iteration](iteration.md))</small>
+
 Lists are R's most flexible data structure because you can put anything
 inside a list, even other lists. They power tibbles and data frames,
 and most other complex object types (e.g. linear models).

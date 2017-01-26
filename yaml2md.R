@@ -170,7 +170,7 @@ md_unit <- function(unit, unit_name, unit_index, supp_index) {
       c(md_needs(unit$needs, unit_index), md_leads(unit_name, unit_index)),
       collapse = "  \n"
     ),
-    "\n",
+    "\n\n",
     unit$desc,
     "\n",
     md_links(unit$readings, "Readings", level = 2),

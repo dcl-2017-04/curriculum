@@ -6,6 +6,7 @@ title: Separate and unite
 
 # Separate and unite
 <small>(Builds on: [Tidy tibbles](tidy-tibbles.md), [Regular expressions](regexps.md))</small>
+
 `tidyr::separate()` is a useful tool for handling another common type of
 messiness: when multiple variables crammed into a single column.
 Here you'll learn how to use `separate()` to pull out into their own columns.

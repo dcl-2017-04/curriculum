@@ -6,6 +6,7 @@ title: Perception
 
 # Perception
 <small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
+
 To construct effective graphics, you must understand the basics of how
 the human perceptual system works. This 40 minute talk by John Rauser,
 a data scientist as Snapchat, will give you a high-level overview.

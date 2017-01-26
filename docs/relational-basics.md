@@ -6,6 +6,7 @@ title: Essentials of relational data
 
 # Essentials of relational data
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>
+
 It is extremely rare to only require a single table of data for an analysis.
 Far more often you will need to combine together multiple sources of
 information. Interconnected datasets is often called __relational__ because
