@@ -5,7 +5,9 @@ title: Exporting data
 <!-- Generated automatically from export.yml. Do not edit by hand -->
 
 # Exporting data
+
 <small>(Builds on [Parsing files](parse-file.md))</small>
+
 
 There are three main reasons you might want to export a tibble from R:
 

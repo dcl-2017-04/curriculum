@@ -5,7 +5,9 @@ title: Spreading and gathering
 <!-- Generated automatically from spread-gather.yml. Do not edit by hand -->
 
 # Spreading and gathering
+
 <small>(Builds on [Tidy tibbles](tidy-tibbles.md))</small>
+
 
 The two most common ways for data to be messy are to have:
 1. One variable spread across multiple columns. 1. One observation scattered across multiple rows.

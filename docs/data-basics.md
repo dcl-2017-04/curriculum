@@ -5,7 +5,9 @@ title: Data basics
 <!-- Generated automatically from data-basics.yml. Do not edit by hand -->
 
 # Data basics
+
 <small>(Builds on [Setup](setup.md))</small>
+
 <small>(Leads to: [Data manipulation basics](manip-basics.md), [Data vis basics](vis-basics.md))</small>
 
 Learn what a data frame looks like when printed, and identify its variables and their types. We're going to use the `mpg` and `flights` datasets frequently, so you'll start by familiarising yourself with them.

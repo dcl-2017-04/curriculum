@@ -5,7 +5,9 @@ title: Generating multiple reports
 <!-- Generated automatically from report-generation.yml. Do not edit by hand -->
 
 # Generating multiple reports
+
 <small>(Builds on [Iteration](iteration.md), [R Markdown basics](rmarkdown-basics.md))</small>
+
 
 So far you've turned `.Rmd` files into fully-fleshed reports using
 RStudio. It is also useful to know how to do so programmatically so that

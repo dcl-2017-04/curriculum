@@ -6,6 +6,8 @@ title: Learning workflow
 
 # Learning workflow
 
+
+
 You will get the most out of this class if you learn some tools and techniques for exploratory reading, getting help, and recording what you've learned.
 
 ## Readings

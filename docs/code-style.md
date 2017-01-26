@@ -5,6 +5,8 @@ title: Code style
 <!-- Generated automatically from code-style.yml. Do not edit by hand -->
 
 # Code style
+
+
 <small>(Leads to: [Reprexes](reprexes.md))</small>
 
 Code style is simultaneously incredibly important and utterly trivial.

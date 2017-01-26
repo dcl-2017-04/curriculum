@@ -5,7 +5,9 @@ title: Labelling your graphics
 <!-- Generated automatically from vis-labelling.yml. Do not edit by hand -->
 
 # Labelling your graphics
+
 <small>(Builds on [Exploratory data analysis](eda.md))</small>
+
 
 Good label make visualisations much easier to understand for newcomers to
 the data. They are not so important while you're doing an analysis

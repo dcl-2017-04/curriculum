@@ -5,7 +5,9 @@ title: Documentation
 <!-- Generated automatically from documentation.yml. Do not edit by hand -->
 
 # Documentation
+
 <small>(Builds on [Setup](setup.md))</small>
+
 <small>(Leads to: [Getting help](getting-help.md))</small>
 
 R comes with rich built-in documentation that you can access by typing

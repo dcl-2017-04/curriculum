@@ -5,7 +5,9 @@ title: Iteration
 <!-- Generated automatically from iteration.yml. Do not edit by hand -->
 
 # Iteration
+
 <small>(Builds on [Lists](lists.md), [Vector functions](vector-functions.md))</small>
+
 <small>(Leads to: [Generating multiple reports](report-generation.md))</small>
 
 Functions allow you to eliminate one type of duplication. The tools

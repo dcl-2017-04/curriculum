@@ -5,6 +5,8 @@ title: Setup
 <!-- Generated automatically from setup.yml. Do not edit by hand -->
 
 # Setup
+
+
 <small>(Leads to: [Data basics](data-basics.md), [Documentation](documentation.md), [R Markdown basics](rmarkdown-basics.md), [Vectors](vectors.md))</small>
 
 Ensure that you have all the tools you need for this class. You should have done this before the first day.
