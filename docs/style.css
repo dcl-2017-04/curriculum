@@ -111,6 +111,10 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 strong {
   color:#222;
   font-weight:500;
@@ -123,7 +127,7 @@ section {
 }
 
 small {
-  font-size:11px;
+  font-size:13px;
 }
 
 hr {
