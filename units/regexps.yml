@@ -1,0 +1,12 @@
+title: Regular expressions
+
+desc: |
+  Regular expressions are a extremely concise language for describing patterns
+  in strings. They are important to master because they unlock a number of
+  new tools that allow you to bend strings to your will.
+
+needs: [string-basics]
+
+readings:
+- book: r4ds-14.3
+- book: r4ds-14.4

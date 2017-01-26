@@ -65,26 +65,31 @@ joins, which allow you to combine multiple datasets.
 1. [Essentials of relational data](relational-basics.md)
 1. [Spreading and gathering](spread-gather.md)
 
-
-## Care and feeding of tibbles
-
-So far you've used tidy data that we've provided you. This will __never__
-happen in real life, so this week you'll learn how to load data from a flat
-files on disk, and get your data into a tidy form. We'll also touch on some
-important theory about R's data structures.
-
-### Units
-
-1. [Parsing vectors](parse-vector.md)
-1. [Parsing files](parse-file.md)
-1. [Separate and unite](separate-unite.md)
-1. [Exporting data](export.md)
-
 ### Supplemental readings
 
 * [Tidying computational biology models with biobroom](supplements.html#biobroom)
 * [Non-tidy data](supplements.html#leek-non-tidy)
 * [Tidy Data](supplements.html#wickham-tidy-data)
+
+
+## Deepening your data skills
+
+So far you've used tidy data that we've provided you. This will __never__
+happen in real life, so this week you'll learn how to load data from a flat
+files on disk, and more skills for working with data stored as text. We'll also
+give you some skills for annotating and labelling your plots
+
+### Units
+
+1. [Parsing vectors](parse-vector.md)
+1. [Parsing files](parse-file.md)
+1. [Regular expressions](regexps.md)
+1. [Separate and unite](separate-unite.md)
+1. [Labelling your graphics](vis-labelling.md)
+1. [Perception](vis-perception.md)
+
+### Supplemental readings
+
 * [Secrets of a happy graphing life](supplements.html#happy-graphing)
 
 
@@ -103,6 +108,11 @@ automating your workflow.
 1. [Iteration](iteration.md)
 1. [Generating multiple reports](report-generation.md)
 1. [Reprexes](reprexes.md)
+1. [Exporting data](export.md)
+
+### Supplemental readings
+
+* [RStudio conference purrr tutorial](supplements.html#wickham-purrr)
 
 
 ## Strings and factors

@@ -49,22 +49,26 @@
   - tidy-tibbles
   - relational-basics
   - spread-gather
-
-- title: Care and feeding of tibbles
-  desc: >
-    So far you've used tidy data that we've provided you. This will __never__
-    happen in real life, so this week you'll learn how to load data from a
-    flat files on disk, and get your data into a tidy form. We'll also touch on
-    some important theory about R's data structures.
-  units:
-  - parse-vector
-  - parse-file
-  - separate-unite
-  - export
   supplements:
   - biobroom
   - leek-non-tidy
   - wickham-tidy-data
+
+- title: Deepening your data skills
+  desc: >
+    So far you've used tidy data that we've provided you. This will __never__
+    happen in real life, so this week you'll learn how to load data from a
+    flat files on disk, and more skills for working with data stored as
+    text. We'll also give you some skills for annotating and labelling your
+    plots
+  units:
+  - parse-vector
+  - parse-file
+  - regexps
+  - separate-unite
+  - vis-labelling
+  - vis-perception
+  supplements:
   - happy-graphing
 
 - title: Functions and iteration
@@ -80,8 +84,9 @@
   - iteration
   - report-generation
   - reprexes
+  - export
 
-  supplemental:
+  supplements:
   - wickham-purrr
 
 - title: Strings and factors
