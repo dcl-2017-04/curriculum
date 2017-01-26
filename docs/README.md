@@ -1,7 +1,5 @@
 <!-- Generated automatically from syllabus.yml. Do not edit by hand -->
 
-# Syllabus
-
 ## Foundations {#foundations}
 
 Learn the absolute essentials of data science as quickly as possible, so that

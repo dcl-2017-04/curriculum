@@ -17,8 +17,6 @@ syllabus_index <- function(syllabus, unit_index, supp_index) {
 
   paste0(
     md_generated_by("syllabus.yml"),
-    "# Syllabus\n",
-    "\n",
     weeks
   )
 }
