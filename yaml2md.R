@@ -16,6 +16,10 @@ syllabus_index <- function(syllabus, unit_index, supp_index) {
     paste0("\n", collapse = "")
 
   paste0(
+    "---\n",
+    "title: Syllabus\n",
+    "---\n",
+    "\n",
     md_generated_by("syllabus.yml"),
     weeks
   )

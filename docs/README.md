@@ -1,3 +1,7 @@
+---
+title: Syllabus
+---
+
 <!-- Generated automatically from syllabus.yml. Do not edit by hand -->
 
 ## Foundations {#foundations}
