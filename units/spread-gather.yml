@@ -2,7 +2,7 @@ title: Spreading and gathering
 
 needs: [tidy-tibbles]
 
-desc: >
+desc: |
   The two most common ways for data to be messy are to have:
 
   1. One variable spread across multiple columns.

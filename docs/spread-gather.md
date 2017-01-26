@@ -8,8 +8,12 @@ title: Spreading and gathering
 <small>(Builds on: [Tidy tibbles](tidy-tibbles.md))</small>
 
 The two most common ways for data to be messy are to have:
-1. One variable spread across multiple columns. 1. One observation scattered across multiple rows.
-To fix these problems you need `spread()` and `gather()` from the tidyr package.
+
+1. One variable spread across multiple columns.
+1. One observation scattered across multiple rows.
+
+To fix these problems you need `spread()` and `gather()` from the
+tidyr package.
 
 ## Readings
 
