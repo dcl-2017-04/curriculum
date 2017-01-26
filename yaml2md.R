@@ -43,9 +43,9 @@ syllabus_toc <- function(syllabus) {
 
   paste0(
     "<h2>Contents</h2>\n",
-    "<ul>\n",
+    "<ol>\n",
     paste0(bullets, collapse = ""),
-    "</ul>"
+    "</ol>"
   )
 }
 
