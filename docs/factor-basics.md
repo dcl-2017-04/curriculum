@@ -6,7 +6,7 @@ title: Factor basics
 
 # Factor basics
 
-<small>(Builds on [String basics](string-basics.md))</small>
+<small>(Builds on: [String basics](string-basics.md))</small>
 
 
 Factors are similar to strings, but are used for data that has a fixed

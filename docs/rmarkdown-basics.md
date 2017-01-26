@@ -6,7 +6,7 @@ title: R Markdown basics
 
 # R Markdown basics
 
-<small>(Builds on [Setup](setup.md))</small>
+<small>(Builds on: [Setup](setup.md))</small>
 
 <small>(Leads to: [Generating multiple reports](report-generation.md))</small>
 

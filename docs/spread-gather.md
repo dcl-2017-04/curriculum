@@ -6,7 +6,7 @@ title: Spreading and gathering
 
 # Spreading and gathering
 
-<small>(Builds on [Tidy tibbles](tidy-tibbles.md))</small>
+<small>(Builds on: [Tidy tibbles](tidy-tibbles.md))</small>
 
 
 The two most common ways for data to be messy are to have:

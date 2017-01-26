@@ -6,7 +6,7 @@ title: Date/time basics
 
 # Date/time basics
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 
 Date/time data includes dates, date-times, and times, but we'll mostly

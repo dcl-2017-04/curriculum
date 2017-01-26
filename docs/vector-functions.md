@@ -6,7 +6,7 @@ title: Vector functions
 
 # Vector functions
 
-<small>(Builds on [Exploratory data analysis](eda.md), [Vectors](vectors.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md), [Vectors](vectors.md))</small>
 
 <small>(Leads to: [Iteration](iteration.md))</small>
 

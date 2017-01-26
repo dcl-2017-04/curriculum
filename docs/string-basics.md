@@ -6,7 +6,7 @@ title: String basics
 
 # String basics
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 <small>(Leads to: [Factor basics](factor-basics.md), [Regular expressions](regexps.md))</small>
 

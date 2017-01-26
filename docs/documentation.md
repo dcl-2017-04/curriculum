@@ -6,7 +6,7 @@ title: Documentation
 
 # Documentation
 
-<small>(Builds on [Setup](setup.md))</small>
+<small>(Builds on: [Setup](setup.md))</small>
 
 <small>(Leads to: [Getting help](getting-help.md))</small>
 

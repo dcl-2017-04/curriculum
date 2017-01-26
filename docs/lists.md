@@ -6,7 +6,7 @@ title: Lists
 
 # Lists
 
-<small>(Builds on [Vectors](vectors.md))</small>
+<small>(Builds on: [Vectors](vectors.md))</small>
 
 <small>(Leads to: [Iteration](iteration.md))</small>
 

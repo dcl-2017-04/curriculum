@@ -6,7 +6,7 @@ title: Parsing files
 
 # Parsing files
 
-<small>(Builds on [Parsing vectors](parse-vector.md), [Tidy tibbles](tidy-tibbles.md))</small>
+<small>(Builds on: [Parsing vectors](parse-vector.md), [Tidy tibbles](tidy-tibbles.md))</small>
 
 <small>(Leads to: [Exporting data](export.md))</small>
 

@@ -6,7 +6,7 @@ title: Vectors
 
 # Vectors
 
-<small>(Builds on [Setup](setup.md))</small>
+<small>(Builds on: [Setup](setup.md))</small>
 
 <small>(Leads to: [Lists](lists.md), [Vector functions](vector-functions.md))</small>
 

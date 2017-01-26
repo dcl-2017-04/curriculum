@@ -6,7 +6,7 @@ title: Iteration
 
 # Iteration
 
-<small>(Builds on [Lists](lists.md), [Vector functions](vector-functions.md))</small>
+<small>(Builds on: [Lists](lists.md), [Vector functions](vector-functions.md))</small>
 
 <small>(Leads to: [Generating multiple reports](report-generation.md))</small>
 

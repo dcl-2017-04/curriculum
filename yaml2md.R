@@ -198,7 +198,7 @@ md_needs <- function(units, unit_index) {
   titles <- unit_index[units] %>% map_chr("title") %>% unname()
   links <- paste0("[", titles, "](", units, ".md)", collapse = ", ")
 
-  paste0("<small>(Builds on ", links, ")</small>\n")
+  paste0("<small>(Builds on: ", links, ")</small>\n")
 }
 
 md_leads <- function(slug, unit_index) {

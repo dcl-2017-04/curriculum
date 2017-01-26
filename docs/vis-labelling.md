@@ -6,7 +6,7 @@ title: Labelling your graphics
 
 # Labelling your graphics
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 
 Good label make visualisations much easier to understand for newcomers to

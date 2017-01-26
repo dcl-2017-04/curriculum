@@ -6,7 +6,7 @@ title: Generating multiple reports
 
 # Generating multiple reports
 
-<small>(Builds on [Iteration](iteration.md), [R Markdown basics](rmarkdown-basics.md))</small>
+<small>(Builds on: [Iteration](iteration.md), [R Markdown basics](rmarkdown-basics.md))</small>
 
 
 So far you've turned `.Rmd` files into fully-fleshed reports using

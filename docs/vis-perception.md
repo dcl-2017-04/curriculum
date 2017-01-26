@@ -6,7 +6,7 @@ title: Perception
 
 # Perception
 
-<small>(Builds on [The grammar of graphics](vis-theory.md))</small>
+<small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
 
 
 To construct effective graphics, you must understand the basics of how

@@ -6,7 +6,7 @@ title: Parsing vectors
 
 # Parsing vectors
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 <small>(Leads to: [Parsing files](parse-file.md))</small>
 

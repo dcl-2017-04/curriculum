@@ -6,7 +6,7 @@ title: Getting help
 
 # Getting help
 
-<small>(Builds on [Documentation](documentation.md))</small>
+<small>(Builds on: [Documentation](documentation.md))</small>
 
 <small>(Leads to: [Reprexes](reprexes.md))</small>
 

@@ -6,7 +6,7 @@ title: The grammar of graphics
 
 # The grammar of graphics
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 <small>(Leads to: [Perception](vis-perception.md), [Grouped summaries](vis-summaries.md), [Visual transformations](vis-transformation.md))</small>
 

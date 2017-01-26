@@ -6,7 +6,7 @@ title: Data basics
 
 # Data basics
 
-<small>(Builds on [Setup](setup.md))</small>
+<small>(Builds on: [Setup](setup.md))</small>
 
 <small>(Leads to: [Data manipulation basics](manip-basics.md), [Data vis basics](vis-basics.md))</small>
 

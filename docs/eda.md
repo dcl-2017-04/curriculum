@@ -6,7 +6,7 @@ title: Exploratory data analysis
 
 # Exploratory data analysis
 
-<small>(Builds on [Data vis basics](vis-basics.md), [Data manipulation basics](manip-basics.md))</small>
+<small>(Builds on: [Data vis basics](vis-basics.md), [Data manipulation basics](manip-basics.md))</small>
 
 <small>(Leads to: [Date/time basics](datetime-basics.md), [Missing values](missing-values.md), [Parsing vectors](parse-vector.md), [Essentials of relational data](relational-basics.md), [String basics](string-basics.md), [Tidy tibbles](tidy-tibbles.md), [Vector functions](vector-functions.md), [Labelling your graphics](vis-labelling.md), [The grammar of graphics](vis-theory.md))</small>
 

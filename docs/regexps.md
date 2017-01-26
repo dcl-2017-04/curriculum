@@ -6,7 +6,7 @@ title: Regular expressions
 
 # Regular expressions
 
-<small>(Builds on [String basics](string-basics.md))</small>
+<small>(Builds on: [String basics](string-basics.md))</small>
 
 <small>(Leads to: [Separate and unite](separate-unite.md))</small>
 

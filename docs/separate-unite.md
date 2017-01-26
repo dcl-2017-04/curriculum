@@ -6,7 +6,7 @@ title: Separate and unite
 
 # Separate and unite
 
-<small>(Builds on [Tidy tibbles](tidy-tibbles.md), [Regular expressions](regexps.md))</small>
+<small>(Builds on: [Tidy tibbles](tidy-tibbles.md), [Regular expressions](regexps.md))</small>
 
 
 `tidyr::separate()` is a useful tool for handling another common type of

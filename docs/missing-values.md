@@ -6,7 +6,7 @@ title: Missing values
 
 # Missing values
 
-<small>(Builds on [Exploratory data analysis](eda.md))</small>
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 
 R uses `NA` to present unknown, but potentially measurable variables.

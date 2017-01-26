@@ -6,7 +6,7 @@ title: Data manipulation basics
 
 # Data manipulation basics
 
-<small>(Builds on [Data basics](data-basics.md))</small>
+<small>(Builds on: [Data basics](data-basics.md))</small>
 
 <small>(Leads to: [Exploratory data analysis](eda.md))</small>
 

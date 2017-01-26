@@ -6,7 +6,7 @@ title: Reprexes
 
 # Reprexes
 
-<small>(Builds on [Getting help](getting-help.md), [Code style](code-style.md))</small>
+<small>(Builds on: [Getting help](getting-help.md), [Code style](code-style.md))</small>
 
 
 When you get stuck, first try and solve the problem yourself. A really
