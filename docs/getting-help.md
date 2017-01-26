@@ -5,11 +5,8 @@ title: Getting help
 <!-- Generated automatically from getting-help.yml. Do not edit by hand -->
 
 # Getting help
-
-<small>(Builds on: [Documentation](documentation.md))</small>
-
+<small>(Builds on: [Documentation](documentation.md))</small>  
 <small>(Leads to: [Reprexes](reprexes.md))</small>
-
 It's good to have some resources outside of this class to get help.
 These readings will give you some solid advice on using google and
 StackOverflow most effectively when you get stuck.

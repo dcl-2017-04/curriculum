@@ -5,11 +5,8 @@ title: Regular expressions
 <!-- Generated automatically from regexps.yml. Do not edit by hand -->
 
 # Regular expressions
-
-<small>(Builds on: [String basics](string-basics.md))</small>
-
+<small>(Builds on: [String basics](string-basics.md))</small>  
 <small>(Leads to: [Separate and unite](separate-unite.md))</small>
-
 Regular expressions are a extremely concise language for describing patterns
 in strings. They are important to master because they unlock a number of
 new tools that allow you to bend strings to your will.

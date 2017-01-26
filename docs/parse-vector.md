@@ -5,11 +5,8 @@ title: Parsing vectors
 <!-- Generated automatically from parse-vector.yml. Do not edit by hand -->
 
 # Parsing vectors
-
-<small>(Builds on: [Exploratory data analysis](eda.md))</small>
-
+<small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Parsing files](parse-file.md))</small>
-
 Importing a file takes place in two steps:
 
 1. The rectangular file is parsed into rows and columns. Each cell

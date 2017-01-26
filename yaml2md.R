@@ -166,10 +166,10 @@ md_unit <- function(unit, unit_name, unit_index, supp_index) {
     "\n",
     md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
-    "\n",
-    md_needs(unit$needs, unit_index),
-    "\n",
-    md_leads(unit_name, unit_index),
+    paste0(
+      c(md_needs(unit$needs, unit_index), md_leads(unit_name, unit_index)),
+      collapse = "  \n"
+    ),
     "\n",
     unit$desc,
     "\n",
@@ -198,7 +198,7 @@ md_needs <- function(units, unit_index) {
   titles <- unit_index[units] %>% map_chr("title") %>% unname()
   links <- paste0("[", titles, "](", units, ".md)", collapse = ", ")
 
-  paste0("<small>(Builds on: ", links, ")</small>\n")
+  paste0("<small>(Builds on: ", links, ")</small>")
 }
 
 md_leads <- function(slug, unit_index) {
@@ -211,7 +211,7 @@ md_leads <- function(slug, unit_index) {
   titles <- units %>% map_chr("title") %>% unname()
   links <- paste0("[", titles, "](", names(units), ".md)", collapse = ", ")
 
-  paste0("<small>(Leads to: ", links, ")</small>\n")
+  paste0("<small>(Leads to: ", links, ")</small>")
 }
 
 

@@ -5,11 +5,8 @@ title: Vector functions
 <!-- Generated automatically from vector-functions.yml. Do not edit by hand -->
 
 # Vector functions
-
-<small>(Builds on: [Exploratory data analysis](eda.md), [Vectors](vectors.md))</small>
-
+<small>(Builds on: [Exploratory data analysis](eda.md), [Vectors](vectors.md))</small>  
 <small>(Leads to: [Iteration](iteration.md))</small>
-
 Functions are powerful tool for reducing the amount of duplication in your
 code. Reducing duplicationg is a good principle because it means that
 each "fact" in your code is only stored in one place. When the requirements
