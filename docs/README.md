@@ -2,7 +2,7 @@
 
 # Syllabus
 
-## Foundations
+## Foundations {#foundations}
 
 Learn the absolute essentials of data science as quickly as possible, so that
 you can start performing authentic (if simple) analyses.
@@ -25,7 +25,7 @@ you can start performing authentic (if simple) analyses.
 * [Len Keifer's blog](supplements.html#keifer-blog)
 
 
-## Exploratory data analysis
+## Exploratory data analysis {#eda}
 
 Good data analysis involves fluid transitions between transformation and
 visualisation. This week you'll first learn about the overall philosophy of
@@ -48,7 +48,7 @@ and transformations.
 * [Analyzing 1.1 Billion NYC Taxi and Uber Trips, with a Vengeance](supplements.html#schneider-taxis)
 
 
-## Data essentials
+## Data essentials {#data-essentials}
 
 This week is a grab bag of important data types and tools that will let you
 explore more datasets. You'll get a broad overview of the most important
@@ -72,7 +72,7 @@ joins, which allow you to combine multiple datasets.
 * [Tidy Data](supplements.html#wickham-tidy-data)
 
 
-## Deepening your data skills
+## Deepening your data skills {#deepening}
 
 So far you've used tidy data that we've provided you. This will __never__
 happen in real life, so this week you'll learn how to load data from a flat
@@ -93,7 +93,7 @@ give you some skills for annotating and labelling your plots
 * [Secrets of a happy graphing life](supplements.html#happy-graphing)
 
 
-## Functions and iteration
+## Functions and iteration {#programming}
 
 R is a programming language, and mastering the basics of programming will give
 you powerful tools for automating your work. We've touched on basic functions
@@ -115,33 +115,22 @@ automating your workflow.
 * [RStudio conference purrr tutorial](supplements.html#wickham-purrr)
 
 
-## Strings and factors
-
-There are two important types of variable that we haven't covered in detail
-yet: strings and factors. You'll also learn about regular expression which are
-a special, compact, language for describing patterns in strings.
-
-### Challenges
-
-1.  neiss
-
-
-## Modelling
+## Modelling {#modelling}
 
 
 
 
-## Hierarchical data with purrr
+## Hierarchical data with purrr {#data-hierarchical}
 
 
 
 
-## Text data with tidytext
+## Text data with tidytext {#data-text}
 
 
 
 
-## Spatial data with sf
+## Spatial data with sf {#data-spatial}
 
 
 

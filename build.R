@@ -20,6 +20,10 @@ syllabus %>%
   syllabus_index(units, supplements) %>%
   writeLines("docs/README.md")
 
+syllabus %>%
+  syllabus_toc() %>%
+  writeLines("docs/_includes/toc.html")
+
 supplements %>%
   supplements_index() %>%
   writeLines("docs/supplements.md")

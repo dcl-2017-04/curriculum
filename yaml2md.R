@@ -25,7 +25,7 @@ syllabus_index <- function(syllabus, unit_index, supp_index) {
 
 syllabus_desc <- function(x, i, unit_index, supp_index) {
   paste0(
-    "## ", x$title, "\n",
+    "## ", x$title, " {#", x$slug, "}\n",
     "\n",
     indent(x$desc, 0, wrap = TRUE),
     "\n",
@@ -34,6 +34,21 @@ syllabus_desc <- function(x, i, unit_index, supp_index) {
     md_supplements(x$supplements, supp_index, level = 3)
   )
 }
+
+syllabus_toc <- function(syllabus) {
+  bullets <- map_chr(
+    syllabus,
+    ~ sprintf("<li><a href='{{ '/#%s' | relative_url }}'>%s</a></li>\n", .$slug, .$title)
+  )
+
+  paste0(
+    "<h2>Contents</h2>\n",
+    "<ul>\n",
+    paste0(bullets, collapse = ""),
+    "</ul>"
+  )
+}
+
 
 syllabus_units <- function(x, index, level) {
   units <- x$units
