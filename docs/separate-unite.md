@@ -6,7 +6,16 @@ title: Separate and unite
 
 # Separate and unite
 
-Another common way for data to be messy is to have multiple variables crammed into a single column. Here you'll learn how to use `separate()` to pull out into their own columns. The inverse operation, `unite()`, is needed less often, but is needed for symmetry.
+`tidyr::separate()` is a useful tool for handling another common type of
+messiness: when multiple variables crammed into a single column.
+Here you'll learn how to use `separate()` to pull out into their own columns.
+Note that the `sep` argument to `separate()` is a regular expression,
+which gives you a lot of power. You might also want to read about
+`extract()`: `str_split()` is to `separate()` as `str_match()` is to
+`extract().
+
+The inverse of `separate()` is `unite()`. You use it when you have a variable
+that is spread across multiple columns. This happen much less commonly.
 
 ## Readings
 
