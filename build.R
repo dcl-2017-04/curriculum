@@ -10,6 +10,7 @@ source("books/books.R")
 source("yaml2md.R")
 
 old <- dir("docs", pattern = "^[^_]", full.names = TRUE)
+old <- setdiff(old, "docs/style.css")
 unlink(old, recursive = TRUE)
 
 syllabus <- load_syllabus()
