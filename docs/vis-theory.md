@@ -5,6 +5,7 @@ title: The grammar of graphics
 <!-- Generated automatically from vis-theory.yml. Do not edit by hand -->
 
 # The grammar of graphics
+<small>(Builds on [Exploratory data analysis](eda.md))</small>
 
 Now is a good time to learn a bit more about the underlying theory of ggplot2. Read these two short chapters to familiarise yourself with the theory and learn some useful vocabulary.
 

@@ -5,6 +5,7 @@ title: Lists
 <!-- Generated automatically from lists.yml. Do not edit by hand -->
 
 # Lists
+<small>(Builds on [Vectors](vectors.md))</small>
 
 Lists are R's most flexible data structure because you can put anything
 inside a list, even other lists. They power tibbles and data frames,

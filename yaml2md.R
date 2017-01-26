@@ -160,7 +160,7 @@ build_exercise <- function(unit_name, level = 2) {
 
 # Weekly pages ------------------------------------------------------------
 
-md_unit <- function(unit, unit_name, supp_index) {
+md_unit <- function(unit, unit_name, unit_index, supp_index) {
   paste0(
     "---\n",
     "title: ", unit$title, "\n",
@@ -168,6 +168,7 @@ md_unit <- function(unit, unit_name, supp_index) {
     "\n",
     md_generated_by(paste0(unit_name, ".yml")),
     "# ", unit$title, "\n",
+    md_needs(unit$needs, unit_index),
     "\n",
     unit$desc,
     "\n",
@@ -187,6 +188,16 @@ md_list <- function(x, title, level = 2) {
     paste0("1. ", indent(x, by = 4, first = 0), "\n", collapse = ""),
     "\n"
   )
+}
+
+md_needs <- function(units, unit_index) {
+  if (length(units) == 0)
+    return()
+
+  titles <- unit_index[units] %>% map_chr("title") %>% unname()
+  links <- paste0("[", titles, "](", units, ".md)", collapse = ", ")
+
+  paste0("<small>(Builds on ", links, ")</small>\n")
 }
 
 # Markdown helpers -----------------------------------------------------

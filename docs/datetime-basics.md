@@ -5,6 +5,7 @@ title: Date/time basics
 <!-- Generated automatically from datetime-basics.yml. Do not edit by hand -->
 
 # Date/time basics
+<small>(Builds on [Exploratory data analysis](eda.md))</small>
 
 Date/time data includes dates, date-times, and times, but we'll mostly
 focus on dates and date-times. This unit gives you the basic tools you'll

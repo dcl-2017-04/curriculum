@@ -5,6 +5,7 @@ title: Exploratory data analysis
 <!-- Generated automatically from eda.yml. Do not edit by hand -->
 
 # Exploratory data analysis
+<small>(Builds on [Data vis basics](vis-basics.md), [Data manipulation basics](manip-basics.md))</small>
 
 Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.
 

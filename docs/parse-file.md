@@ -5,6 +5,7 @@ title: Parsing files
 <!-- Generated automatically from parse-file.yml. Do not edit by hand -->
 
 # Parsing files
+<small>(Builds on [Parsing vectors](parse-vector.md), [Tidy tibbles](tidy-tibbles.md))</small>
 
 Now that you know how to parse character vectors, you can learn how to
 parse complete files. This involves two new skills:

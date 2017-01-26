@@ -5,6 +5,7 @@ title: Iteration
 <!-- Generated automatically from iteration.yml. Do not edit by hand -->
 
 # Iteration
+<small>(Builds on [Lists](lists.md), [Vector functions](vector-functions.md))</small>
 
 Functions allow you to eliminate one type of duplication. The tools
 of iteration, for loops and functional programming, allow you to eliminate

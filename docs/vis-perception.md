@@ -5,6 +5,7 @@ title: Perception
 <!-- Generated automatically from vis-perception.yml. Do not edit by hand -->
 
 # Perception
+<small>(Builds on [The grammar of graphics](vis-theory.md))</small>
 
 To construct effective graphics, you must understand the basics of how
 the human perceptual system works. This 40 minute talk by John Rauser,

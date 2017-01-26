@@ -5,6 +5,7 @@ title: Parsing vectors
 <!-- Generated automatically from parse-vector.yml. Do not edit by hand -->
 
 # Parsing vectors
+<small>(Builds on [Exploratory data analysis](eda.md))</small>
 
 Importing a file takes place in two steps:
 

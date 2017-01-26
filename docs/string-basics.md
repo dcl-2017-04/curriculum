@@ -5,6 +5,7 @@ title: String basics
 <!-- Generated automatically from string-basics.yml. Do not edit by hand -->
 
 # String basics
+<small>(Builds on [Exploratory data analysis](eda.md))</small>
 
 The basics of string manipulation will give you the ability to create new
 strings by combining existing strings, or by pulling out values at specific
