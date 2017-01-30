@@ -16,7 +16,7 @@ As a bonus the majority of graphics were created with ggplot2.
 
   * [How humans see data (video)](https://youtu.be/fSgEeI2Xpdc)
 
-  * [How humans see data (slides)](http://www.slideshare.net/JohnRauser/how-humans-see-data>)
+  * [How humans see data (slides)](http://www.slideshare.net/JohnRauser/how-humans-see-data)
 
 
 
