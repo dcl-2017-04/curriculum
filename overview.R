@@ -1,6 +1,7 @@
 library(tidyverse)
 source("utils.R")
-# ----------------
+
+# devtools::install_github("thomasp85/ggraph", update = FALSE)
 library(ggraph)
 
 
