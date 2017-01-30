@@ -27,11 +27,10 @@ exactly how it works, but it's useful pattern to know.
 
   * [Walk](http://r4ds.had.co.nz/iteration.html#walk) [r4ds-21.8].
     The purrr function we're going to use is `pwalk()`. It isn't described in
-    much detail in R4DS but it's a straightforward combination of `pmap()` and
-    `walk()`.
+    detail in R4DS but it's a combination of `pmap()` and `walk()`.
 
   * [YAML header](http://r4ds.had.co.nz/r-markdown.html#yaml-header) [r4ds-27.6].
-    Focus on §27.6.1
+    Read only §27.6.1; you can skip §27.6.2 for now.
 
 
 

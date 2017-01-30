@@ -85,11 +85,8 @@
   units:
   - vectors
   - vector-functions
-  - lists
   - iteration
   - report-generation
-  - reprexes
-  - export
 
   supplements:
   - wickham-purrr
@@ -104,7 +101,6 @@
 - title: Hierarchical data with purrr
   slug: data-hierarchical
   # units:
-  # - lists
   # - case-study-hierarchical
 
 - title: Text data with tidytext
@@ -116,3 +112,13 @@
   slug: data-spatial
   # units:
   # - case-study-spatial
+
+- title: TBD
+  slug: tbd
+  desc: >
+    These units don't have a home yet, but hopefully will by the time
+    class is finished!
+  units:
+  - lists
+  - reprexes
+  - export

@@ -6,10 +6,14 @@ desc: |
   another. It's good to understand how for loops work, but in this class
   we'll mostly focus on the `map()` functions from purrr.
 
-needs: [lists, vector-functions]
+needs: [vector-functions]
 
 readings:
 
 - book: r4ds-21.2
+  desc: >
+    If you've ever written a for-loop in another programming language,
+    you should find this fairly straightforward, and you can just skim
+    this section to see how R is different.
 
 - book: r4ds-21.5

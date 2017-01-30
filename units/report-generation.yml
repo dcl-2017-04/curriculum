@@ -25,9 +25,8 @@ readings:
 - book: r4ds-21.8
   desc: >
     The purrr function we're going to use is `pwalk()`. It isn't described
-    in much detail in R4DS but it's a straightforward combination of `pmap()`
-    and `walk()`.
+    in detail in R4DS but it's a combination of `pmap()` and `walk()`.
 
 - book: r4ds-27.6
   desc: >
-    Focus on §27.6.1
+    Read only §27.6.1; you can skip §27.6.2 for now.

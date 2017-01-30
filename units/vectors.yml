@@ -10,16 +10,6 @@ needs: [setup]
 
 readings:
 - book: r4ds-20.2
-
 - book: r4ds-20.3
-
 - book: r4ds-20.4
-  desc: >
-    (Note that you can skip §20.5: we'll come back to that later)
-
-- book: r4ds-20.6
-
-- book: r4ds-20.7
-  desc: >
-    Skip §20.7.3: we'll come back to the structure of tibbles once you've
-    learned more about lists.
+- book: r4ds-20.5

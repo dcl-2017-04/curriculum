@@ -106,11 +106,8 @@ automating your workflow.
 
 1. [Vectors](vectors.md)
 1. [Vector functions](vector-functions.md)
-1. [Lists](lists.md)
 1. [Iteration](iteration.md)
 1. [Generating multiple reports](report-generation.md)
-1. [Reprexes](reprexes.md)
-1. [Exporting data](export.md)
 
 ### Supplemental readings
 
@@ -135,6 +132,18 @@ automating your workflow.
 ## Spatial data with sf {#data-spatial}
 
 
+
+
+## TBD {#tbd}
+
+These units don't have a home yet, but hopefully will by the time class is
+finished!
+
+### Units
+
+1. [Lists](lists.md)
+1. [Reprexes](reprexes.md)
+1. [Exporting data](export.md)
 
 
 
