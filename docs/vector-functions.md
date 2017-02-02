@@ -5,7 +5,7 @@ title: Vector functions
 <!-- Generated automatically from vector-functions.yml. Do not edit by hand -->
 
 # Vector functions
-<small>(Builds on: [Exploratory data analysis](eda.md), [Vectors](vectors.md))</small>  
+<small>(Builds on: [Exploratory data analysis](eda.md), [Atomic vectors](vectors.md))</small>  
 <small>(Leads to: [Iteration](iteration.md))</small>
 
 Functions are powerful tool for reducing the amount of duplication in your

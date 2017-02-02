@@ -85,6 +85,7 @@
   units:
   - vectors
   - vector-functions
+  - lists
   - iteration
   - report-generation
 
@@ -119,6 +120,5 @@
     These units don't have a home yet, but hopefully will by the time
     class is finished!
   units:
-  - lists
   - reprexes
   - export

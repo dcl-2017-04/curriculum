@@ -104,8 +104,9 @@ automating your workflow.
 
 ### Units
 
-1. [Vectors](vectors.md)
+1. [Atomic vectors](vectors.md)
 1. [Vector functions](vector-functions.md)
+1. [Lists](lists.md)
 1. [Iteration](iteration.md)
 1. [Generating multiple reports](report-generation.md)
 
@@ -141,7 +142,6 @@ finished!
 
 ### Units
 
-1. [Lists](lists.md)
 1. [Reprexes](reprexes.md)
 1. [Exporting data](export.md)
 

@@ -9,7 +9,3 @@ needs: [vectors]
 
 readings:
 - book: r4ds-20.4
-
-- book: r4ds-20.7
-  desc: >
-    Now it's time to focus on §20.7.3

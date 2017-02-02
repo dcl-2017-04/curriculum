@@ -6,7 +6,7 @@ desc: |
   another. It's good to understand how for loops work, but in this class
   we'll mostly focus on the `map()` functions from purrr.
 
-needs: [vector-functions]
+needs: [lists, vector-functions]
 
 readings:
 
