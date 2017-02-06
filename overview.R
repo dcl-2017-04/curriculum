@@ -65,9 +65,9 @@ needs_graph <- igraph::graph_from_data_frame(needs, vertices = weeks)
 
 ggraph(needs_graph, layout = "sugiyama") +
   geom_edge_diagonal() +
-  geom_node_label(aes(label = label)) +
+  geom_node_label(aes(label = label), size = 3) +
   scale_y_reverse() +
   theme_void()
 
-ggsave("overview.png", width = 12, height = 6, dpi = 96)
+ggsave("overview.png", width = 14, height = 6, dpi = 96)
 

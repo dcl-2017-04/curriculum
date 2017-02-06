@@ -12,6 +12,8 @@ desc: |
   give your pipes an informative name: this will help you remember their
   purpose when you come back to an analysis in the future.
 
+needs: [setup]
+
 readings:
 - href: http://adv-r.had.co.nz/Style.html
   text: Style guide

@@ -1,0 +1,13 @@
+title: Select and arrange
+desc: |
+  We haven't talked about two useful functions from dplyr:
+
+  * `select()` allows you pick variables based on their name
+
+  * `arrange()` allows you to range the order of the rows.
+
+needs: [manip-basics]
+
+readings:
+- book: r4ds-5.3
+- book: r4ds-5.4

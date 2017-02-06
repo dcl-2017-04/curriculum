@@ -87,10 +87,21 @@
   - vector-functions
   - lists
   - iteration
-  - report-generation
 
   supplements:
   - wickham-purrr
+
+- title: Miscellania
+  slug: misc
+  desc: >
+    A grab bag of things that we probably should've told you about previously
+    but somehow slipped Hadley's mind.
+  units:
+  - select-arrange
+  - manip-helpers
+  - window-functions
+  - filter-joins
+  - joins-debugging
 
 - title: Modelling
   slug: modelling
@@ -120,5 +131,6 @@
     These units don't have a home yet, but hopefully will by the time
     class is finished!
   units:
+  - report-generation
   - reprexes
   - export

@@ -108,11 +108,24 @@ automating your workflow.
 1. [Vector functions](vector-functions.md)
 1. [Lists](lists.md)
 1. [Iteration](iteration.md)
-1. [Generating multiple reports](report-generation.md)
 
 ### Supplemental readings
 
 * [RStudio conference purrr tutorial](supplements.html#wickham-purrr)
+
+
+## Miscellania {#misc}
+
+A grab bag of things that we probably should've told you about previously but
+somehow slipped Hadley's mind.
+
+### Units
+
+1. [Select and arrange](select-arrange.md)
+1. [manip-helpers](manip-helpers.md)
+1. [window-functions](window-functions.md)
+1. [Semi and anti joins](filter-joins.md)
+1. [Debugging joins](joins-debugging.md)
 
 
 ## Modelling {#modelling}
@@ -142,6 +155,7 @@ finished!
 
 ### Units
 
+1. [Generating multiple reports](report-generation.md)
 1. [Reprexes](reprexes.md)
 1. [Exporting data](export.md)
 

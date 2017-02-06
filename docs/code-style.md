@@ -5,6 +5,7 @@ title: Code style
 <!-- Generated automatically from code-style.yml. Do not edit by hand -->
 
 # Code style
+<small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Reprexes](reprexes.md))</small>
 
 Code style is simultaneously incredibly important and utterly trivial.

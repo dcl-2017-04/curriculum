@@ -1,0 +1,12 @@
+title: window-functions
+desc: |
+  Window functions are an important family of functions; they're analogous
+  to the summary functions that you already know about, but are work with
+  grouped `mutate()`s and `filter()`s, rather than grouped `summarise()`s.
+needs: [manip-basics]
+
+readings:
+- book: r4ds-5.7
+
+- href: https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html
+  title: Window functions
