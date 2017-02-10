@@ -1,10 +1,10 @@
 ---
-title: `summarise()` and `mutate()` helpers
+title: Summarise and mutate helpers
 ---
 
 <!-- Generated automatically from manip-helpers.yml. Do not edit by hand -->
 
-# `summarise()` and `mutate()` helpers
+# Summarise and mutate helpers
 <small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
 
 Grouped summaries and mutates are such a commonly used technique that dplyr

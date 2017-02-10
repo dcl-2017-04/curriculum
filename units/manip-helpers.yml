@@ -1,4 +1,4 @@
-title: "`summarise()` and `mutate()` helpers"
+title: Summarise and mutate helpers
 desc: |
   Grouped summaries and mutates are such a commonly used technique that dplyr
   comes with a number of helpers to save you some typing:
