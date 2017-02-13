@@ -124,7 +124,7 @@ somehow slipped Hadley's mind.
 1. [Select and arrange](select-arrange.md)
 1. [Summarise and mutate helpers](manip-helpers.md)
 1. [Window functions](window-functions.md)
-1. [Semi and anti joins](filter-joins.md)
+1. [Semi- and anti-joins](filter-joins.md)
 1. [Debugging joins](joins-debugging.md)
 
 

@@ -12,7 +12,7 @@ comes with a number of helpers to save you some typing:
 
 * `count()` simplifies the process of counting the number of cases in
   each group. `df %>% count(df, x)` is shorthand for
-  `df %>% group_by(x) %>% n = n()`. It can also perform weighted
+  `df %>% group_by(x) %>% summarise(n = n())`. It can also perform weighted
   sums if you provide the `wt` argument.
 
 * `transmute()` works like `mutate()`, but doesn't carry across

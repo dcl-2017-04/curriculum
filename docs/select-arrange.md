@@ -11,7 +11,7 @@ We haven't talked about two useful functions from dplyr:
 
 * `select()` allows you pick variables based on their name
 
-* `arrange()` allows you to range the order of the rows.
+* `arrange()` allows you to arrange the order of the rows.
 
 ## Readings
 
