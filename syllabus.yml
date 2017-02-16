@@ -105,10 +105,15 @@
 
 - title: Modelling
   slug: modelling
+  desc: >
+    Models are a useful tool for partitioning data into structure and
+    what remains (the residuals). Here you'll learn the basics of modelling
+    and how you can apply them to make sense of complex datasets.
 
-  # units:
-  # - model-basics
-  # - model-building
+  units:
+  - model-basics
+  - model-vis
+  - model-multivariate
 
 - title: Hierarchical data with purrr
   slug: data-hierarchical

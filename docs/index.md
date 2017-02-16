@@ -130,7 +130,15 @@ somehow slipped Hadley's mind.
 
 ## Modelling {#modelling}
 
+Models are a useful tool for partitioning data into structure and what remains
+(the residuals). Here you'll learn the basics of modelling and how you can
+apply them to make sense of complex datasets.
 
+### Units
+
+1. [Model intuition](model-basics.md)
+1. [Visualising models](model-vis.md)
+1. [Models with multiple variables](model-multivariate.md)
 
 
 ## Hierarchical data with purrr {#data-hierarchical}

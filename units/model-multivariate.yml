@@ -1,0 +1,13 @@
+title: Models with multiple variables
+
+desc: |
+  Models with a single variable can be useful (if you want to remove a single
+  strong trend), but almost every real model contains multiple variables. In
+  this unit, you'll learn how to visualise these more complicated models,
+  including models for categorical data (i.e. factors).
+
+needs: [model-vis]
+
+readings:
+- book: r4ds-23.4
+
