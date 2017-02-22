@@ -13,7 +13,7 @@ courses. We're not going to rigorously covering the mathematical foundation
 of models. Instead, you'll get some intution about what a model does,
 and then learn some computation tools for exploring fitted models.
 
-In this unit, you'll build up your intuition for a model does, and what
+In this unit, you'll build up your intuition for what a model does, and what
 it tells you about a dataset.
 
 ## Readings

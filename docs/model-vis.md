@@ -15,8 +15,8 @@ to take that approach here for two reasons:
 * It requires many months of study to interpret the coefficients of even
   fairly simple model classes like logistic regression or survival analysis.
 
-* Many modern classes of model have large numbers of weakly interpretible
-  coefficients which are hard to interpret
+* Many modern classes of model have large numbers coefficients,
+  which are hard to interpret.
 
 Instead, we'll understand a model by looking at it's predictions. This
 doesn't cover every possible model (because not every model makes predictions)
