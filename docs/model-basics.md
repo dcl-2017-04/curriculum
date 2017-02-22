@@ -6,7 +6,7 @@ title: Model intuition
 
 # Model intuition
 <small>(Builds on: [Setup](setup.md))</small>  
-<small>(Leads to: [Visualising models](model-vis.md))</small>
+<small>(Leads to: [Many models](model-many.md), [Visualising models](model-vis.md))</small>
 
 This course approaches modelling a little differently to most statistics
 courses. We're not going to rigorously covering the mathematical foundation

@@ -1,0 +1,14 @@
+title: List columns
+
+needs: [iteration]
+
+desc: |
+  List columns are a powerful way to extend data frames to contain arbitrary
+  data types. Data frames are useful because they keep together related
+  data; list-columns allow you to continue to use data frames even as
+  you start to get more complicated data structures like linear models.
+
+readings:
+- book: r4ds-25.3
+- book: r4ds-25.4
+- book: r4ds-25.5

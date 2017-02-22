@@ -141,9 +141,19 @@ apply them to make sense of complex datasets.
 1. [Models with multiple variables](model-multivariate.md)
 
 
-## Hierarchical data with purrr {#data-hierarchical}
+## List columns {#list-cols}
 
+Data frames are an extremely useful data structure, but so far have been
+limited to containing atomic vectors. However, data frames can also contain
+lists, and since you can put anything in a list, these allow you to extend the
+data frame to contain any data structure. Here you'll learn the principles and
+then see two applications.
 
+### Units
+
+1. [List columns](list-cols.md)
+1. [Many models](model-many.md)
+1. [Generating multiple reports](report-generation.md)
 
 
 ## Text data with tidytext {#data-text}
@@ -163,7 +173,6 @@ finished!
 
 ### Units
 
-1. [Generating multiple reports](report-generation.md)
 1. [Reprexes](reprexes.md)
 1. [Exporting data](export.md)
 

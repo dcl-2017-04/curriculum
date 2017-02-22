@@ -115,10 +115,19 @@
   - model-vis
   - model-multivariate
 
-- title: Hierarchical data with purrr
-  slug: data-hierarchical
-  # units:
-  # - case-study-hierarchical
+- title: List columns
+  slug: list-cols
+  desc: >
+    Data frames are an extremely useful data structure, but so far have been
+    limited to containing atomic vectors. However, data frames can also
+    contain lists, and since you can put anything in a list, these allow
+    you to extend the data frame to contain any data structure. Here you'll
+    learn the principles and then see two applications.
+
+  units:
+  - list-cols
+  - model-many
+  - report-generation
 
 - title: Text data with tidytext
   slug: data-text
@@ -136,6 +145,5 @@
     These units don't have a home yet, but hopefully will by the time
     class is finished!
   units:
-  - report-generation
   - reprexes
   - export
