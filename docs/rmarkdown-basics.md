@@ -6,7 +6,7 @@ title: R Markdown basics
 
 # R Markdown basics
 <small>(Builds on: [Setup](setup.md))</small>  
-<small>(Leads to: [Generating multiple reports](report-generation.md))</small>
+<small>(Leads to: [Generating multiple reports](report-generation.md), [R Markdown presentations](rmarkdown-formats.md))</small>
 
 Experience the full data science workflow by creating an RMarkdown file that includes prose and code. __Knit__ the file to create output that intermingles your text and the results of the code. This is an authentic workflow: the only difference between this and what you'll use as a data scientist is that in this class you'll always show your code so we can give you feedback on both your results _and_ your process.
 

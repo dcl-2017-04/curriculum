@@ -156,25 +156,29 @@ then see two applications.
 1. [Generating multiple reports](report-generation.md)
 
 
-## Text data with tidytext {#data-text}
+## Spatial data {#data-spatial}
 
-
-
-
-## Spatial data with sf {#data-spatial}
-
-
-
-
-## TBD {#tbd}
-
-These units don't have a home yet, but hopefully will by the time class is
-finished!
+Spatial data is not covered in R4DS, but it comes up in many analyses and it's
+important to know the basics. This week you'll learn about the sf package and
+how it interacts with the tidy tools you've learned so far.
 
 ### Units
 
-1. [Reprexes](reprexes.md)
+1. [Spatial data basics](spatial-basics.md)
+1. [Spatial visualisation](spatial-vis.md)
+
+
+## Moving on {#onwards}
+
+To finish up, we have a grab bag of topics that will help you share your data,
+results, and problems with others. These tools will stand you in good stead as
+you continue to master data science outside of this class.
+
+### Units
+
 1. [Exporting data](export.md)
+1. [R Markdown presentations](rmarkdown-formats.md)
+1. [Reprexes](reprexes.md)
 
 
 

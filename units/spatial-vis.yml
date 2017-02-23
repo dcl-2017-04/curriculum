@@ -1,0 +1,19 @@
+title: Spatial visualisation
+
+needs: [spatial-basics]
+
+desc: |
+  This currently requires the development version of ggplot2. You can
+  install it from GitHub by using the devtools package:
+
+  ```{r, eval = FALSE}
+  # install.packages("devtools")
+  devtools::install_github("tidyverse/ggplot2")
+  ```
+
+  (If you have an issues during the install, restart R so that you
+  have a clean session. Installing ggplot2 is tricky if you already have it
+  loaded!)
+
+readings:
+- text: The documentation for `geom_sf()`

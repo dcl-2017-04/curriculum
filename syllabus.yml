@@ -109,7 +109,6 @@
     Models are a useful tool for partitioning data into structure and
     what remains (the residuals). Here you'll learn the basics of modelling
     and how you can apply them to make sense of complex datasets.
-
   units:
   - model-basics
   - model-vis
@@ -123,27 +122,30 @@
     contain lists, and since you can put anything in a list, these allow
     you to extend the data frame to contain any data structure. Here you'll
     learn the principles and then see two applications.
-
   units:
   - list-cols
   - model-many
   - report-generation
 
-- title: Text data with tidytext
-  slug: data-text
-  # units:
-  # - case-study-text
-
-- title: Spatial data with sf
-  slug: data-spatial
-  # units:
-  # - case-study-spatial
-
-- title: TBD
-  slug: tbd
+- title: Spatial data
   desc: >
-    These units don't have a home yet, but hopefully will by the time
-    class is finished!
+    Spatial data is not covered in R4DS, but it comes up in many analyses
+    and it's important to know the basics. This week you'll learn about
+    the sf package and how it interacts with the tidy tools you've learned
+    so far.
+  slug: data-spatial
   units:
-  - reprexes
+  - spatial-basics
+  - spatial-vis
+
+- title: Moving on
+  slug: onwards
+  desc: >
+    To finish up, we have a grab bag of topics that will help you share
+    your data, results, and problems with others. These tools will stand
+    you in good stead as you continue to master data science outside of
+    this class.
+  units:
   - export
+  - rmarkdown-formats
+  - reprexes

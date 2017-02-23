@@ -6,10 +6,12 @@ title: List columns
 
 # List columns
 <small>(Builds on: [Iteration](iteration.md))</small>  
-<small>(Leads to: [Many models](model-many.md), [Generating multiple reports](report-generation.md))</small>
+<small>(Leads to: [Many models](model-many.md), [Generating multiple reports](report-generation.md), [Spatial data basics](spatial-basics.md))</small>
 
 List columns are a powerful way to extend data frames to contain arbitrary
-data types. This is an extremely useful way of keeping together related
+data types. Data frames are useful because they keep together related
+data; list-columns allow you to continue to use data frames even as
+you start to get more complicated data structures like linear models.
 
 ## Readings
 
