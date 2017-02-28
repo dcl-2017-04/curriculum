@@ -1,0 +1,149 @@
+---
+title: "Spatial basics"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+## Spatial packages
+
+In R, there are two main lineages of tools for dealing with spatial data: sp and sf. 
+
+* sp has been around for a while (the first release was in 2005), and it has a
+  rich ecosystem of tools built around it. However, it uses a rather 
+  complicated object design which makes it hard to use. 
+  
+*  sf is newer (first released in October 2016!) so it doesn't have such a 
+   rich ecosystem. However, it's much easier to use and fits in very naturally 
+   with the tidyverse, and the ecosystem around it will grow rapidly.
+   
+In this class, we're going to use sf, so start by installing it:
+
+```{r, eval = FALSE}
+install.packages("sf")
+```
+
+## Loading data
+
+To read spatial data in R, use `read_sf()`. The following example reads an example dataset built into the sf package:
+
+```{r, message = FALSE}
+library(tidyverse)
+library(sf)
+
+# The counties of North Carolina
+nc <- read_sf(system.file("shape/nc.shp", package = "sf"), 
+  quiet = TRUE,  
+  stringsAsFactors = FALSE
+)
+```
+
+I recommend always setting `quiet = TRUE` and `stringsAsFactors = FALSE`. 
+
+Here we're loading from __shapefile__ which is the way spatial data is most commonly stored. Typically you'll have four files:
+
+* `.shp` contains the geometry, and `.shx` contains an index into that geometry.
+
+* `.dbf` contains the other columns in the data frame
+
+* `.prf` gives the coordinate system and projection information. You'll 
+  learn more about that shortly.
+
+`read_sf()` can read in the majority of spatial file formats, so don't worry if your data is in this format.
+
+## Converting data
+
+If you get a spatial object created by the sp package, us `st_as_sf()` to convert it to sf. For example, you can take data from the maps package (included in base R) and convert it to sf:
+
+```{r}
+library(maps)
+nz_map <- map("nz", plot = FALSE)
+nz_sf <- st_as_sf(nz_map)
+```
+
+## Data structure
+
+`nc` is a data frame, and not a tibble, so when printing, it's a good idea to use `head()` so you only see the first few rows:
+
+```{r}
+head(nc)
+head(nz_sf)
+```
+
+This is an ordinary data frame, with one exception: the __geometry__ column. This column contains simple "features", a standard way of representing two dimesional geometries like points, lines, polygons, multilines, and multipolygons. Multilines and multipolygons are nededed to represent geographic phenomena like a river with multiple branches, or a state made up of multiple islands.
+
+```{r}
+nc$geometry
+```
+
+We can get a simple visualisation use `plot()`. In the next unit, we'll learn how to use ggplot2 for more complex data visualisations, but this simple plot is a great diagnostic tool
+
+```{r nc-plot}
+plot(nc$geometry)
+```
+
+## Manipulating with dplyr
+
+Since an sf object is just a data frame, you can manipulate it with dplyr. The following example gives you a taste:
+
+```{r}
+nz_sf %>%
+  mutate(area = as.numeric(st_area(geometry))) %>%
+  filter(area > 1e10)
+```
+
+(`st_area()` returns an object with units, which is annoying to work with. I used `as.numeric()` to convert to a regular numeric vector)
+
+## Geometry
+
+The geometry column is a list-column, and it's worthwhile to pull out one piece so you can see what's going on under the hood:
+
+```{r}
+str(nc$geometry[[1]])
+plot(nc$geometry[[1]])
+```
+
+This is list of lists of matrices:
+
+*   The top-level list has one element for each "landmass" in the county. We
+    can find a more interesting case:
+  
+    ```{r}
+    n <- nc$geometry %>% map_int(length)
+    table(n)
+    
+    interesting <- nc$geometry[n == 3][[1]]
+    plot(interesting)
+    str(interesting)
+    ```
+
+*   The second-level list is not used in this dataset, but is needed when 
+    you have a landmass that contains an lake. (Or a landmass that contains
+    an lake which has an island which has a pond).
+    
+*   The matrix is gives the location of each point on the boundary of the
+    polygon.
+
+## Coordinate system
+
+To correctly plot spatial data, you need know exactly what the positions mean, you need to know what the __coordinate reference system__ is. Often spatial data is described in terms of latitude and longitude. You can check this with `st_is_longlat()`:
+
+```{r}
+st_is_longlat(nc)
+```
+
+You might think that if you know the latitude and longitude of a point, you know exactly where it is on the Earth. However, things are not quite so simple, because latitude and longitude assume that the Earth is a smooth ellipsoid, which is not true. Because different approximations to the sphere work better in differently places, most countries have their own approximation: this is called the __datum__.
+
+Take two minutes and watch this simple explanation of the datum: https://www.youtube.com/watch?v=xKGlMp__jog
+
+To get the datum and other coordinate system metadata, use `st_crs()`:
+
+```{r}
+st_crs(nc)
+```
+
+Here the datum is "NAD27", the [North American Datum](https://en.wikipedia.org/wiki/North_American_Datum) of 1927 (NAD27)
+
+In this class, you won't have to worry too much about the datum as sf and ggplot2 will take care of the details for you. But it's good to know why it exists and how to identify it if something goes wrong.

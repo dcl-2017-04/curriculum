@@ -34,6 +34,14 @@ units %>%
   map2_chr(names(units), md_unit, supp_index = supplements, unit_index = units) %>%
   walk2(out_path, writeLines)
 
+message("Copying notes ------------------------------")
+
+dir.create("docs/notes")
+
+notes <- dir("notes/", pattern = "(_files|\\.md)$", full.names = TRUE)
+notes %>% walk(file.copy, to = "docs/notes", recursive = TRUE)
+
+
 message("Building overview ------------------------------")
 source("overview.R")
 
