@@ -16,6 +16,7 @@ key_books <- books %>%
 
 readings <- load_units() %>%
   map("readings") %>%
+  discard(is.null) %>%
   map(. %>% keep(has_name, "book") %>% map_chr("book")) %>%
   enframe(name = "unit", value = "book_id") %>%
   unnest(book_id) %>%

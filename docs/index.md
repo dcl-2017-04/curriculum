@@ -179,6 +179,7 @@ you continue to master data science outside of this class.
 1. [Exporting data](export.md)
 1. [R Markdown presentations](rmarkdown-formats.md)
 1. [Reprexes](reprexes.md)
+1. [Learning more](learning-more.md)
 
 
 
