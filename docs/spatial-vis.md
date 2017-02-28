@@ -7,21 +7,13 @@ title: Spatial visualisation
 # Spatial visualisation
 <small>(Builds on: [Spatial data basics](spatial-basics.md))</small>
 
-This currently requires the development version of ggplot2. You can
-install it from GitHub by using the devtools package:
-
-```{r, eval = FALSE}
-# install.packages("devtools")
-devtools::install_github("tidyverse/ggplot2")
-```
-
-(If you have an issues during the install, restart R so that you
-have a clean session. Installing ggplot2 is tricky if you already have it
-loaded!)
+The development version of ggplot2 makes it easy to visualise spatial
+data from the sf package. In this unit, you'll learn how to combine
+sf with the ggplot2 techniques that you're already familiar with.
 
 ## Readings
 
-The documentation for `geom_sf()`
+  * [notes/spatial-vis.html](notes/spatial-vis.html)
 
 
 
