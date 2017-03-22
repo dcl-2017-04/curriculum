@@ -123,8 +123,8 @@ This is list of lists of matrices:
     you have a landmass that contains an lake. (Or a landmass that contains
     an lake which has an island which has a pond).
     
-*   The matrix is gives the location of each point on the boundary of the
-    polygon.
+*   Each row of the matrix gives the location of a point on the boundary of 
+    the polygon.
 
 ## Coordinate system
 

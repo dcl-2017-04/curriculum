@@ -16,10 +16,9 @@ formats that you should know about:
   this produces a stand-alone HTML document that you can easily share over
   email.
 
-* [`xaringan::moon_reader`](https://slides.yihui.name/xaringan): this makes
-  an HTML presentation which you can use when you need to present your data
-  to a live audience. (This is not mentioned in R4DS beacause it's so new,
-  but it's already become quite popular.)
+* [`revealjs::revealjs_presentation`](http://rmarkdown.rstudio.com/revealjs_presentation_format.html):
+  this makes an HTML presentation which you can use when you need to present
+  your data to a live audience.
 
 * [`flexdashboard::flex_dashboard`](http://rmarkdown.rstudio.com/flexdashboard/):
   this makes dashboards which can be convenient way to lay out multiple plots

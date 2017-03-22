@@ -138,15 +138,9 @@ Since an sf object is just a data frame, you can manipulate it with dplyr. The f
 nz_sf %>%
   mutate(area = as.numeric(st_area(geometry))) %>%
   filter(area > 1e10)
-#> Simple feature collection with 2 features and 2 fields
-#> geometry type:  POLYGON
-#> dimension:      XY
-#> bbox:           xmin: 166.3961 ymin: -47.40573 xmax: 178.5629 ymax: -34.39895
-#> epsg (SRID):    4326
-#> proj4string:    +proj=longlat +datum=WGS84 +no_defs
-#>              ID         area                       geometry
-#> 1 North.Island  113469632351 POLYGON((172.74333190918 -3...
-#> 2 South.Island  150444467051 POLYGON((172.639053344727 -...
+#>                         geometry            ID         area
+#> 1 POLYGON((172.74333190918 -3... North.Island  113469632351
+#> 2 POLYGON((172.639053344727 -... South.Island  150444467051
 ```
 
 (`st_area()` returns an object with units, which is annoying to work with. I used `as.numeric()` to convert to a regular numeric vector)
@@ -198,7 +192,7 @@ This is list of lists of matrices:
 
 -   The second-level list is not used in this dataset, but is needed when you have a landmass that contains an lake. (Or a landmass that contains an lake which has an island which has a pond).
 
--   The matrix is gives the location of each point on the boundary of the polygon.
+-   Each row of the matrix gives the location of a point on the boundary of the polygon.
 
 Coordinate system
 -----------------
