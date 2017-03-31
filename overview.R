@@ -48,27 +48,24 @@ key_books %>%
 
 # Graph -------------------------------------------------------------------
 
-weeks <- load_syllabus() %>%
-  map("units") %>%
-  discard(is.null) %>%
-  enframe(name = "week", value = "name") %>%
-  unnest(name) %>%
-  select(name, week) %>% # igraph expects first column to be node name
-  mutate(label = gsub("-", "\n", name))
+raw_units <- load_units()
+units <- tibble(
+  name = raw_units %>% names(),
+  label = gsub("-", "\n", name),
+  theme = raw_units %>% map_chr("theme"),
+  needs = raw_units %>% map("needs")
+)
 
-needs <- load_units() %>%
-  map("needs") %>%
-  discard(is.null) %>%
-  enframe() %>%
-  unnest(value)
+needs <- units %>% select(name, needs) %>% unnest(needs)
 
-needs_graph <- igraph::graph_from_data_frame(needs, vertices = weeks)
+needs_graph <- igraph::graph_from_data_frame(needs, vertices = units)
 
 ggraph(needs_graph, layout = "sugiyama") +
   geom_edge_diagonal() +
-  geom_node_label(aes(label = label), size = 3) +
+  geom_node_label(aes(label = label, fill = theme), size = 3) +
   scale_y_reverse() +
-  theme_void()
+  theme_void() +
+  scale_fill_brewer(palette = "Set2")
 
 ggsave("overview.png", width = 14, height = 6, dpi = 96)
 
