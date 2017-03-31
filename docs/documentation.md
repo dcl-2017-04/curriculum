@@ -9,7 +9,7 @@ title: Documentation
 <small>(Leads to: [Getting help](getting-help.md))</small>
 
 R comes with rich built-in documentation that you can access by typing
-`?` before the name of a function.  The documentation isn't always
+`?` before the name of a function. The documentation isn't always
 aimed at newcomers, and may use terminology that you're not familiar with.
 But don't despair! Ignore what you don't understand, and persevere.
 Often you'll find what you need in the examples at the bottom of the help
@@ -17,13 +17,17 @@ page.
 
 There are three commands in R that you should be familiar with:
 
-* `?function_name` opens the help for `function_name()`.
-
-* `help(package = "package_name")` lists all the functions available in
-  a package with links to their help pages.
+* `?function_name` opens the help for `function_name()`. If you know
+  the name of the function, this will tell you how it works and how you
+  can control its operation.
 
 * `browseVignettes(package = "package_name")` lists all the "vignettes"
-  (long form documentation) available for a package.
+  (long form documentation) available for a package. Many packages include
+  an introductory vignette that give you the lay of the land.
+
+* `help(package = "package_name")` lists all the functions available in
+  a package with links to their help pages. This mostly useful for packages
+  that don't have a vignette.
 
 There are also some useful websites that you'll learn about below.
 

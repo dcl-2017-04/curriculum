@@ -8,9 +8,8 @@ desc: >
   difference between this and what you'll use as a data scientist is that in
   this class you'll always show your code so we can give you feedback on both
   your results _and_ your process.
-needs: [setup]
 
-tags: [workflow]
+needs: [setup]
 
 readings:
 - book: r4ds-27.1

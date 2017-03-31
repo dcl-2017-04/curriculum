@@ -9,6 +9,7 @@ title: Data manipulation basics
 <small>(Leads to: [Exploratory data analysis](eda.md), [Summarise and mutate helpers](manip-helpers.md), [Select and arrange](select-arrange.md), [Window functions](window-functions.md))</small>
 
 Some basic data manipulation is essential for many visualisations. Here you'll the learn the most important dplyr functions: `filter()`, `mutate()`, and `group_by()` + `summarise()`.
+Don't try and memorise the details of every verb, and the vector functions that you might use with them. Instead, focus on the big picture, and make sure you've familiarised yourself with the cheatsheet so that you can get the details (with `?`) when you need them.
 
 ## Readings
 

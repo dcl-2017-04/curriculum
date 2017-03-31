@@ -5,13 +5,11 @@ desc: >
   Data visualisation is one of the most important tools of data science.
   It's also a great place to start learning a programming language because
   you get an immediate payoff that will help you keep motivated as you push
-  through initial frustrations
-tags: [vis]
+  through initial frustrations.
 
 needs: [data-basics]
 
 readings:
-
 - text: >
     These sections will give you the basics of ggplot2, allowing to create
     simple, but informative, plots.
