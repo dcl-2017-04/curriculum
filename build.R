@@ -17,13 +17,17 @@ syllabus <- load_syllabus()
 units <- load_units()
 supplements <- load_supplements()
 
-syllabus %>%
-  syllabus_index(units, supplements) %>%
+units %>%
+  theme_index() %>%
   writeLines("docs/index.md")
 
-syllabus %>%
-  syllabus_toc() %>%
-  writeLines("docs/_includes/toc.html")
+# syllabus %>%
+#   syllabus_index(units, supplements) %>%
+#
+#
+# syllabus %>%
+#   syllabus_toc() %>%
+#   writeLines("docs/_includes/toc.html")
 
 supplements %>%
   supplements_index() %>%

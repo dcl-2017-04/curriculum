@@ -1,6 +1,38 @@
 library(yaml)
 library(tidyverse)
+library(glue)
 source("utils.R")
+
+# Theme index -------------------------------------------------------------
+
+theme_index <- function(units) {
+  unit_df <- tibble(
+    unit = units %>% names(),
+    title = units %>% map_chr("title"),
+    theme = units %>% map_chr("theme"),
+    link = glue::glue("* [{unit}.html]({title})")
+  ) %>% arrange(theme, title)
+
+  themes <- c("Explore", "Wrangle", "Program", "Communicate", "Workflow")
+
+  theme_units <- themes %>% tolower() %>% map(~ filter(unit_df, theme == .))
+
+  theme_links <- theme_units %>% map(~ paste(.$link, collapse = "\n"))
+
+  paste0(
+    "---\n",
+    "title: Syllabus\n",
+    "---\n",
+
+    glue::glue("
+      ## {themes} {{#{tolower(themes)}}}
+
+      {theme_links}
+    ") %>% collapse("\n\n")
+  )
+}
+
+
 
 # Syllabus index -------------------------------------------------------
 # lists each week, along with description
