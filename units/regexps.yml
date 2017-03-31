@@ -1,4 +1,5 @@
 title: Regular expressions
+theme: wrangle
 
 desc: |
   Regular expressions are a extremely concise language for describing patterns

@@ -1,4 +1,6 @@
 title: Exporting data
+theme: wrangle
+
 desc: |
   There are three main reasons you might want to export a tibble from R:
 

@@ -1,4 +1,5 @@
 title: Essentials of relational data
+theme: wrangle
 
 desc: |
   It is extremely rare to only require a single table of data for an analysis.

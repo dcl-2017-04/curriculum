@@ -1,5 +1,5 @@
 title: Grouped summaries
-tags: [wrangle]
+theme: explore
 
 desc: >
   Summary functions take a vector of data and return a single number; you

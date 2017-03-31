@@ -1,4 +1,6 @@
 title: Window functions
+theme: wrangle
+
 desc: |
   Window functions are an important family of functions; they're analogous
   to the summary functions that you already know about, but are work with

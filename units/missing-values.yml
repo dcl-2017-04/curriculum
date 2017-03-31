@@ -1,4 +1,6 @@
 title: Missing values
+theme: wrangle
+
 desc: >
   R uses `NA` to present unknown, but potentially measurable variables.
 

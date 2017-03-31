@@ -1,4 +1,6 @@
 title: Semi- and anti-joins
+theme: wrangle
+
 desc: |
   So far you've learned about the "mutating" joins, so called because their
   primary impact is to add new columns, like a `mutate()`. It's also

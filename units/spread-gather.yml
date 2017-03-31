@@ -1,4 +1,5 @@
 title: Spreading and gathering
+theme: wrangle
 
 needs: [tidy-tibbles]
 

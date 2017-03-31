@@ -1,4 +1,5 @@
 title: Documentation
+theme: workflow
 needs: [setup]
 
 desc: |

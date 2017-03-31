@@ -1,4 +1,6 @@
 title: Vector functions
+theme: program
+
 desc: |
   Functions are powerful tool for reducing the amount of duplication in your
   code. Reducing duplicationg is a good principle because it means that

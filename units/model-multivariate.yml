@@ -1,4 +1,5 @@
 title: Models with multiple variables
+theme: model
 
 desc: |
   Models with a single variable can be useful (if you want to remove a single

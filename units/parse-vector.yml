@@ -1,5 +1,5 @@
 title: Parsing vectors
-tags: [wrangle]
+theme: wrangle
 needs: [eda]
 
 desc: |

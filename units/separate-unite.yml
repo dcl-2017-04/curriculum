@@ -1,4 +1,5 @@
 title: Separate and unite
+theme: wrangle
 
 needs: [tidy-tibbles, regexps]
 

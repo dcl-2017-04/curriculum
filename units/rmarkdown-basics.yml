@@ -1,4 +1,6 @@
 title: R Markdown basics
+theme: communicate
+
 desc: >
   Experience the full data science workflow by creating an RMarkdown file that
   includes prose and code. __Knit__ the file to create output that intermingles

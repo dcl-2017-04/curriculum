@@ -1,4 +1,6 @@
 title: Data manipulation basics
+theme: wrangle
+
 desc: >
   Some basic data manipulation is essential for many visualisations. Here
   you'll the learn the most important dplyr functions: `filter()`,
