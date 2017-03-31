@@ -7,7 +7,10 @@ title: Project organisation
 # Project organisation
 
 
-Now that we're at week 3, it's worth reviewing how you're organising your code. Good organisation is critical now and in the future, because it's much easier to re-solve a problem you've seen before if you can easily locate the code you used to solve it the last time.
+Now that we're at week 3, it's worth reviewing how you're organising your
+code. Good organisation is critical now and in the future, because it's
+much easier to re-solve a problem you've seen before if you can easily
+locate the code you used to solve it the last time.
 
 ## Readings
 

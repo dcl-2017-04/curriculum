@@ -7,8 +7,15 @@ title: Visual transformations
 # Visual transformations
 <small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
 
-You've already learned about transformation functions that you use with `dplyr::mutate()`. They take one (or more) vectors and return a transformed vector of the same length. The ggplot2 equivalent of transformation functions are the scales. They take variables (numeric, character, ...) and convert them to visual properties (colour, shape, ...).
-Scales also control the axes and legends which help the reader understand the plot. Mastering this aspect of scales is important when creating plots for others to understand. We'll come back to this idea later.
+You've already learned about transformation functions that you use with
+`dplyr::mutate()`. They take one (or more) vectors and return a transformed
+vector of the same length. The ggplot2 equivalent of transformation
+functions are the scales. They take variables (numeric, character, ...)
+and convert them to visual properties (colour, shape, ...).
+
+Scales also control the axes and legends which help the reader understand
+the plot. Mastering this aspect of scales is important when creating plots
+for others to understand. We'll come back to this idea later.
 
 ## Readings
 

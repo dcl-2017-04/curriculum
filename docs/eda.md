@@ -8,7 +8,8 @@ title: Exploratory data analysis
 <small>(Builds on: [Data vis basics](vis-basics.md), [Data manipulation basics](manip-basics.md))</small>  
 <small>(Leads to: [Date/time basics](datetime-basics.md), [Missing values](missing-values.md), [Visualising models](model-vis.md), [Parsing vectors](parse-vector.md), [Essentials of relational data](relational-basics.md), [String basics](string-basics.md), [Tidy tibbles](tidy-tibbles.md), [Vector functions](vector-functions.md), [Labelling your graphics](vis-labelling.md), [The grammar of graphics](vis-theory.md))</small>
 
-Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.
+Exploratory data analysis is partly a set of techniques, but is mostly a
+mindset: you want to remain open to what the data is telling you.
 
 ## Readings
 

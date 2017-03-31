@@ -8,7 +8,11 @@ title: Atomic vectors
 <small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Lists](lists.md), [Vector functions](vector-functions.md))</small>
 
-The tidyverse functions that you've focussed on so far are holistic: they take a complete data frame and perform various transformations on it. When writing your own functions it's better to start with functions that work with vectors because they are much simpler. You've used vectors quite a bit, but we haven't yet discussed them in detail.
+The tidyverse functions that you've focussed on so far are holistic:
+they take a complete data frame and perform various transformations on it.
+When writing your own functions it's better to start with functions that
+work with vectors because they are much simpler. You've used vectors quite
+a bit, but we haven't yet discussed them in detail.
 
 ## Readings
 

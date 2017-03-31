@@ -8,7 +8,9 @@ title: Missing values
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 R uses `NA` to present unknown, but potentially measurable variables.
-The pattern of missingness in a dataset is often informative, so you should never silently ignore missing values.
+
+The pattern of missingness in a dataset is often informative, so you
+should never silently ignore missing values.
 
 ## Readings
 

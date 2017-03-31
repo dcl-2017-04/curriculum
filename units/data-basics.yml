@@ -1,7 +1,7 @@
 title: Data basics
 theme: explore
 
-desc: >
+desc: |
   Learn what a data frame looks like when printed, and identify its variables
   and their types. We're going to use the `mpg` and `flights` datasets
   frequently, so you'll start by familiarising yourself with them.

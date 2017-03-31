@@ -8,7 +8,10 @@ title: Tidy tibbles
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Parsing files](parse-file.md), [Separate and unite](separate-unite.md), [Spreading and gathering](spread-gather.md))</small>
 
-Tidy data has variables in columns, and cases (or observations) in rows. So far you've only worked with carefully prepared tidy tibbles. Now it's time to learn more about the theory behind tidy data, and what exactly a tibble is.
+Tidy data has variables in columns, and cases (or observations) in rows.
+So far you've only worked with carefully prepared tidy tibbles. Now it's time
+to learn more about the theory behind tidy data, and what exactly a tibble
+is.
 
 ## Readings
 
