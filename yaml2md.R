@@ -10,7 +10,7 @@ theme_index <- function(units) {
     unit = units %>% names(),
     title = units %>% map_chr("title"),
     theme = units %>% map_chr("theme"),
-    link = glue::glue("* [{unit}.html]({title})")
+    link = glue::glue("* [{title}]({unit}.html)")
   ) %>% arrange(theme, title)
 
   themes <- c("Explore", "Wrangle", "Program", "Communicate", "Workflow")
