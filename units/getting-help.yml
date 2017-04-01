@@ -9,11 +9,4 @@ desc: |
 needs: [documentation]
 
 readings:
-- book: r4ds-1.6
-  text: Getting help and learning more
-  desc: Start with this basic overview of your options for getting help
-
-- href: http://stat545.com/help-general.html
-  text: How to get unstuck
-  author: Jenny Bryan
-  desc: General tips and tricks for getting unstuck in R
+- href: notes/getting-help.html

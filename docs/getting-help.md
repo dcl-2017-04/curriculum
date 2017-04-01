@@ -14,11 +14,7 @@ StackOverflow most effectively when you get stuck.
 
 ## Readings
 
-  * [Getting help and learning more](http://r4ds.had.co.nz/introduction.html#getting-help-and-learning-more) [r4ds-1.6].
-    Start with this basic overview of your options for getting help
-
-  * [How to get unstuck](http://stat545.com/help-general.html).
-    General tips and tricks for getting unstuck in R
+  * [notes/getting-help.html](notes/getting-help.html)
 
 
 
