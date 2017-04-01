@@ -43,6 +43,13 @@ title: Syllabus
 * [Lists](lists.html)
 * [Vector functions](vector-functions.html)
 
+## Model {#model}
+
+* [Many models](model-many.html)
+* [Model intuition](model-basics.html)
+* [Models with multiple variables](model-multivariate.html)
+* [Visualising models](model-vis.html)
+
 ## Communicate {#communicate}
 
 * [Generating multiple reports](report-generation.html)
