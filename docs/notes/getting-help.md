@@ -5,11 +5,11 @@ Jenny Bryan and Hadley Wickham
 Help yourself
 -------------
 
+![](https://imgs.xkcd.com/comics/tech_support_cheat_sheet.png)
+
 -   Carefully read the error message. Often it won't help, but sometimes there are hints that will help you get started.
 
--   [Google is your friend](http://xkcd.com/627/). Google is your friend. Google is your friend.
-
-    If you encounter an error message you don't understand, strip anything highly specific (like your object or variable names), surround it with quotes and google it!
+-   If you encounter an error message you don't understand, strip anything highly specific (like your object or variable names), surround it with quotes and **google** it!
 
     (If the error message isn't in English, run `Sys.setenv(LANGUAGE = "en")` and re-run the code; you're more likely to find help for English error messages.)
 
