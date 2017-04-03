@@ -156,3 +156,5 @@ col.theme {width: 11.85%;}
 @media print, screen and (max-width: 650px) {
   .wrapper {width: 100%;}
 }
+
+footer {margin-top: 5em; border-top 2px solid #e5e5e5}
