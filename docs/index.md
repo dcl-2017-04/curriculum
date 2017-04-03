@@ -7,7 +7,6 @@ title: Syllabus
 * [Data vis basics](vis-basics.html)
 * [Exploratory data analysis](eda.html)
 * [Grouped summaries](vis-summaries.html)
-* [Labelling your graphics](vis-labelling.html)
 * [Perception](vis-perception.html)
 * [Spatial visualisation](spatial-vis.html)
 * [The grammar of graphics](vis-theory.html)
@@ -53,6 +52,7 @@ title: Syllabus
 ## Communicate {#communicate}
 
 * [Generating multiple reports](report-generation.html)
+* [Labelling your graphics](vis-labelling.html)
 * [R Markdown basics](rmarkdown-basics.html)
 * [R Markdown presentations](rmarkdown-formats.html)
 
