@@ -4,7 +4,7 @@ title: Atomic vectors
 
 <!-- Generated automatically from vectors.yml. Do not edit by hand -->
 
-# Atomic vectors <small class='program'>program</small>
+# Atomic vectors <small class='program'>[program]</small>
 <small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Lists](lists.md), [Vector functions](vector-functions.md))</small>
 

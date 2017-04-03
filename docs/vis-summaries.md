@@ -4,7 +4,7 @@ title: Grouped summaries
 
 <!-- Generated automatically from vis-summaries.yml. Do not edit by hand -->
 
-# Grouped summaries <small class='explore'>explore</small>
+# Grouped summaries <small class='explore'>[explore]</small>
 <small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
 
 Summary functions take a vector of data and return a single number; you

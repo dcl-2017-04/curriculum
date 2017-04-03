@@ -4,7 +4,7 @@ title: Data manipulation basics
 
 <!-- Generated automatically from manip-basics.yml. Do not edit by hand -->
 
-# Data manipulation basics <small class='wrangle'>wrangle</small>
+# Data manipulation basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Data basics](data-basics.md))</small>  
 <small>(Leads to: [Exploratory data analysis](eda.md), [Summarise and mutate helpers](manip-helpers.md), [Select and arrange](select-arrange.md), [Window functions](window-functions.md))</small>
 

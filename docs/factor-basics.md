@@ -4,7 +4,7 @@ title: Factor basics
 
 <!-- Generated automatically from factor-basics.yml. Do not edit by hand -->
 
-# Factor basics <small class='wrangle'>wrangle</small>
+# Factor basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [String basics](string-basics.md))</small>
 
 Factors are similar to strings, but are used for data that has a fixed

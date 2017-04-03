@@ -4,7 +4,7 @@ title: String basics
 
 <!-- Generated automatically from string-basics.yml. Do not edit by hand -->
 
-# String basics <small class='wrangle'>wrangle</small>
+# String basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Factor basics](factor-basics.md), [Regular expressions](regexps.md))</small>
 

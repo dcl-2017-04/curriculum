@@ -11,10 +11,10 @@ unit_row <- function(unit, title, theme, week = "", n = 2) {
   left <- if (start_col > 1)   glue('  <td colspan="{start_col - 1}"></td>')
   right <- if (end_col < ncol) glue('  <td colspan="{ncol - end_col}"></td>')
 
-  data <- glue('  <td colspan="{n + 1}"><a href="{unit}.html">{title}</a></td>')
+  data <- glue('  <td colspan="{n + 1}"><a class="{theme}" href="{unit}.html">{title}</a></td>')
 
   paste0(c(
-    glue('<tr class="{theme}">'),
+    glue('<tr>'),
     week,
     left,
     data,

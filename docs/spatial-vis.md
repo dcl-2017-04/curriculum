@@ -4,7 +4,7 @@ title: Spatial visualisation
 
 <!-- Generated automatically from spatial-vis.yml. Do not edit by hand -->
 
-# Spatial visualisation <small class='explore'>explore</small>
+# Spatial visualisation <small class='explore'>[explore]</small>
 <small>(Builds on: [Spatial data basics](spatial-basics.md))</small>
 
 The development version of ggplot2 makes it easy to visualise spatial

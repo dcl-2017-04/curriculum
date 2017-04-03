@@ -4,7 +4,7 @@ title: Reprexes
 
 <!-- Generated automatically from reprexes.yml. Do not edit by hand -->
 
-# Reprexes <small class='workflow'>workflow</small>
+# Reprexes <small class='workflow'>[workflow]</small>
 <small>(Builds on: [Getting help](getting-help.md), [Code style](code-style.md))</small>
 
 When you get stuck, first try and solve the problem yourself. A really

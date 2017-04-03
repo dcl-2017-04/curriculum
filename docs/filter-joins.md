@@ -4,7 +4,7 @@ title: Semi- and anti-joins
 
 <!-- Generated automatically from filter-joins.yml. Do not edit by hand -->
 
-# Semi- and anti-joins <small class='wrangle'>wrangle</small>
+# Semi- and anti-joins <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Essentials of relational data](relational-basics.md))</small>  
 <small>(Leads to: [Debugging joins](joins-debugging.md))</small>
 

@@ -4,7 +4,7 @@ title: The grammar of graphics
 
 <!-- Generated automatically from vis-theory.yml. Do not edit by hand -->
 
-# The grammar of graphics <small class='explore'>explore</small>
+# The grammar of graphics <small class='explore'>[explore]</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Perception](vis-perception.md), [Grouped summaries](vis-summaries.md), [Visual transformations](vis-transformation.md))</small>
 

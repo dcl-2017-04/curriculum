@@ -136,12 +136,12 @@ table.syllabus a {
   color: #000;
 }
 
-.workflow a {background-color: #66C2A5;}
-.explore a {background-color: #FC8D62;}
-.wrangle a {background-color: #8DA0CB;}
-.program a {background-color: #E78AC3;}
-.model a {background-color: #A6D854;}
-.communicate a {background-color: #FFD92F;}
+.workflow {background-color: #66C2A5;}
+.explore {background-color: #FC8D62;}
+.wrangle {background-color: #8DA0CB;}
+.program {background-color: #E78AC3;}
+.model {background-color: #A6D854;}
+.communicate {background-color: #FFD92F;}
 
 col.week {width: 5%;}
 col.theme {width: 11.85%;}
@@ -156,4 +156,4 @@ col.theme {width: 11.85%;}
 
 footer {margin-top: 2em; border-top: 2px solid #e5e5e5; padding-top: 1em;}
 header {margin-bottom: 2em; border-bottom: 2px solid #e5e5e5;}
-header h1 {font-size: 20px; margin-bottom: 1em;}
+header h1 {font-size: 20px; margin-bottom: 0.5em;}

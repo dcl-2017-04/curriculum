@@ -4,7 +4,7 @@ title: Iteration
 
 <!-- Generated automatically from iteration.yml. Do not edit by hand -->
 
-# Iteration <small class='program'>program</small>
+# Iteration <small class='program'>[program]</small>
 <small>(Builds on: [Lists](lists.md), [Vector functions](vector-functions.md))</small>  
 <small>(Leads to: [List columns](list-cols.md))</small>
 

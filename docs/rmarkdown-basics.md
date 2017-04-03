@@ -4,7 +4,7 @@ title: R Markdown basics
 
 <!-- Generated automatically from rmarkdown-basics.yml. Do not edit by hand -->
 
-# R Markdown basics <small class='communicate'>communicate</small>
+# R Markdown basics <small class='communicate'>[communicate]</small>
 <small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Generating multiple reports](report-generation.md), [R Markdown presentations](rmarkdown-formats.md))</small>
 

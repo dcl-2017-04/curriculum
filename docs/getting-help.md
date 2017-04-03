@@ -4,7 +4,7 @@ title: Getting help
 
 <!-- Generated automatically from getting-help.yml. Do not edit by hand -->
 
-# Getting help <small class='workflow'>workflow</small>
+# Getting help <small class='workflow'>[workflow]</small>
 <small>(Builds on: [Documentation](documentation.md))</small>  
 <small>(Leads to: [Learning more](learning-more.md), [Reprexes](reprexes.md))</small>
 

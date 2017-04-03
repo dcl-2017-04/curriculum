@@ -4,7 +4,7 @@ title: Summarise and mutate helpers
 
 <!-- Generated automatically from manip-helpers.yml. Do not edit by hand -->
 
-# Summarise and mutate helpers <small class='wrangle'>wrangle</small>
+# Summarise and mutate helpers <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
 
 Grouped summaries and mutates are such a commonly used technique that dplyr

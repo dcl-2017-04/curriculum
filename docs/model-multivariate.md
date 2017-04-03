@@ -4,7 +4,7 @@ title: Models with multiple variables
 
 <!-- Generated automatically from model-multivariate.yml. Do not edit by hand -->
 
-# Models with multiple variables <small class='model'>model</small>
+# Models with multiple variables <small class='model'>[model]</small>
 <small>(Builds on: [Visualising models](model-vis.md))</small>
 
 Models with a single variable can be useful (if you want to remove a single

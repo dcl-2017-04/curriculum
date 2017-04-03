@@ -4,7 +4,7 @@ title: Data vis basics
 
 <!-- Generated automatically from vis-basics.yml. Do not edit by hand -->
 
-# Data vis basics <small class='explore'>explore</small>
+# Data vis basics <small class='explore'>[explore]</small>
 <small>(Builds on: [Data basics](data-basics.md))</small>  
 <small>(Leads to: [Exploratory data analysis](eda.md))</small>
 
