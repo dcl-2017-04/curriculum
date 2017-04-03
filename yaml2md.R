@@ -5,6 +5,9 @@ source("utils.R")
 
 # Theme index -------------------------------------------------------------
 
+themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
+
+
 theme_index <- function(units) {
   unit_df <- tibble(
     unit = units %>% names(),
@@ -13,7 +16,6 @@ theme_index <- function(units) {
     link = glue::glue("* [{title}]({unit}.html)")
   ) %>% arrange(theme, title)
 
-  themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
 
   theme_units <- themes %>% tolower() %>% map(~ filter(unit_df, theme == .))
 

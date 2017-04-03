@@ -26,6 +26,8 @@ load_supplements <- function() {
   set_names(x, map_chr(x, "slug"))
 }
 
+themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
+
 
 has_name <- function(x, nm) {
   if (is.null(names(x)))
@@ -37,7 +39,7 @@ has_name <- function(x, nm) {
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
 
-books <- read_csv(
+books <- readr::read_csv(
   "books/books.csv",
   col_types = cols(
     id = col_character(),

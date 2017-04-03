@@ -88,8 +88,28 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
+}
+
+th, tbody{
   border-bottom:1px solid #e5e5e5;
 }
+
+table.syllabus a {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+}
+
+.workflow a {background-color: #66C2A5;}
+.explore a {background-color: #FC8D62;}
+.wrangle a {background-color: #8DA0CB;}
+.program a {background-color: #E78AC3;}
+.model a {background-color: #A6D854;}
+.communicate a {background-color: #FFD92F;}
+
+col.week {width: 5%;}
+col.theme {width: 11%;}
 
 dt {
   color:#444;

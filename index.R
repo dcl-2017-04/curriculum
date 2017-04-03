@@ -1,0 +1,90 @@
+library(tidyverse)
+library(glue)
+source("utils.R")
+
+syllabus <- load_syllabus()
+units <- load_units()
+
+unit_row <- function(unit, title, theme, week = "") {
+  ncol <- length(themes) + 1
+  start_col <- match(theme, tolower(themes))
+  end_col <- start_col + 1
+
+  week <- glue(  "<td>{week}</td>")
+  left <- if (start_col > 1)   glue('  <td colspan="{start_col - 1}"></td>')
+  right <- if (end_col < ncol) glue('  <td colspan="{ncol - end_col}"></td>')
+
+  data <- glue('  <td colspan="2"><a href="{unit}.html">{title}</a></td>')
+
+  paste0(c(
+    glue('<tr class="{theme}">'),
+    week,
+    left,
+    data,
+    right,
+    "</tr>"
+  ), collapse = "\n")
+}
+
+week_tbody <- function(week_num,
+                       unit_index = load_units(),
+                       syllabus_index = load_syllabus()) {
+  week <- syllabus_index[[week_num]]
+
+  units <- unit_index[week$units]
+  units_df <- tibble(
+    unit = names(units),
+    title = units %>% map_chr("title"),
+    theme = units %>% map_chr("theme"),
+    week = c(week_num, rep("", length(units) - 1))
+  )
+
+  rows <- pmap_chr(units_df, unit_row)
+  paste0(c("<tbody>", rows, "</tbody>"), collapse = "\n")
+
+}
+
+syllabus_table <- function() {
+  unit_index <- load_units()
+  syllabus_index <- load_syllabus()
+
+  row_groups <- map(
+    seq_along(syllabus_index),
+    week_tbody,
+    unit_index = unit_index,
+    syllabus_index = syllabus_index
+  )
+
+  theme_headers <- paste(glue('  <th>{themes}</th>'), collapse = "\n")
+  header <- glue('
+    ---
+    title: Theme index
+    ---
+
+    <table class="syllabus">
+    <colgroup>
+      <col class="week" />
+      <col class="theme" />
+      <col class="theme" />
+      <col class="theme" />
+      <col class="theme" />
+      <col class="theme" />
+      <col class="theme" />
+      <col class="theme" />
+    </colgroup>
+
+    <thead>
+    <tr>
+      <th></th>
+    {theme_headers}
+      <th></th>
+    </tr>
+    </thread>
+  ')
+
+  paste(c(header, row_groups, "</table>"), collapse = "\n")
+
+}
+
+
+cat(syllabus_table(), file = "docs/index-theme.md")

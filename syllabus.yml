@@ -1,9 +1,4 @@
-- title: Foundations
-  slug: foundations
-  desc: >
-    Learn the absolute essentials of data science as quickly as possible,
-    so that you can start performing authentic (if simple) analyses.
-  units:
+- units:
   - setup
   - data-basics
   - vis-basics
@@ -17,14 +12,7 @@
   - woo-vis
   - keifer-blog
 
-- title: Exploratory data analysis
-  slug: eda
-  desc: >
-    Good data analysis involves fluid transitions between transformation and
-    visualisation. This week you'll first learn about the overall philosophy of
-    exploratory data analysis (EDA), and dive into the details of visual
-    summaries and transformations.
-  units:
+- units:
   - eda
   - missing-values
   - vis-theory
@@ -36,16 +24,7 @@
   - schneider-bikes
   - schneider-taxis
 
-- title: Data essentials
-  slug: data-essentials
-  desc: >
-    This week is a grab bag of important data types and tools that will let you
-    explore more datasets. You'll get a broad overview of the most
-    important augmented vectors (date-times, strings, and factors),
-    learn more about tidy tibbles, master two important tools for tidying
-    messy data, and learn about joins, which allow you to combine multiple
-    datasets.
-  units:
+- units:
   - datetime-basics
   - string-basics
   - factor-basics
@@ -57,15 +36,7 @@
   - leek-non-tidy
   - wickham-tidy-data
 
-- title: Deepening your data skills
-  slug: deepening
-  desc: >
-    So far you've used tidy data that we've provided you. This will __never__
-    happen in real life, so this week you'll learn how to load data from a
-    flat files on disk, and more skills for working with data stored as
-    text. We'll also give you some skills for annotating and labelling your
-    plots
-  units:
+- units:
   - parse-vector
   - parse-file
   - regexps
@@ -75,14 +46,7 @@
   supplements:
   - happy-graphing
 
-- title: Functions and iteration
-  slug: programming
-  desc: >
-    R is a programming language, and mastering the basics of programming
-    will give you powerful tools for automating your work. We've touched on
-    basic functions already, but this week, we'll focus on them, learning
-    important skills for automating your workflow.
-  units:
+- units:
   - vectors
   - vector-functions
   - lists
@@ -91,61 +55,28 @@
   supplements:
   - wickham-purrr
 
-- title: Miscellania
-  slug: misc
-  desc: >
-    A grab bag of things that we probably should've told you about previously
-    but somehow slipped Hadley's mind.
-  units:
+- units:
   - select-arrange
   - manip-helpers
   - window-functions
   - filter-joins
   - joins-debugging
 
-- title: Modelling
-  slug: modelling
-  desc: >
-    Models are a useful tool for partitioning data into structure and
-    what remains (the residuals). Here you'll learn the basics of modelling
-    and how you can apply them to make sense of complex datasets.
-  units:
+- units:
   - model-basics
   - model-vis
   - model-multivariate
 
-- title: List columns
-  slug: list-cols
-  desc: >
-    Data frames are an extremely useful data structure, but so far have been
-    limited to containing atomic vectors. However, data frames can also
-    contain lists, and since you can put anything in a list, these allow
-    you to extend the data frame to contain any data structure. Here you'll
-    learn the principles and then see two applications.
-  units:
+- units:
   - list-cols
   - model-many
   - report-generation
 
-- title: Spatial data
-  desc: >
-    Spatial data is not covered in R4DS, but it comes up in many analyses
-    and it's important to know the basics. This week you'll learn about
-    the sf package and how it interacts with the tidy tools you've learned
-    so far.
-  slug: data-spatial
-  units:
+- units:
   - spatial-basics
   - spatial-vis
 
-- title: Moving on
-  slug: onwards
-  desc: >
-    To finish up, we have a grab bag of topics that will help you share
-    your data, results, and problems with others. These tools will stand
-    you in good stead as you continue to master data science outside of
-    this class.
-  units:
+- units:
   - export
   - rmarkdown-formats
   - reprexes
