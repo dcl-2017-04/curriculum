@@ -4,7 +4,7 @@ title: Window functions
 
 <!-- Generated automatically from window-functions.yml. Do not edit by hand -->
 
-# Window functions
+# Window functions <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
 
 Window functions are an important family of functions; they're analogous

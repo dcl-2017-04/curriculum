@@ -4,7 +4,7 @@ title: Select and arrange
 
 <!-- Generated automatically from select-arrange.yml. Do not edit by hand -->
 
-# Select and arrange
+# Select and arrange <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
 
 We haven't talked about two useful functions from dplyr:

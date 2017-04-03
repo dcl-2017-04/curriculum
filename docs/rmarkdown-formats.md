@@ -4,7 +4,7 @@ title: R Markdown presentations
 
 <!-- Generated automatically from rmarkdown-formats.yml. Do not edit by hand -->
 
-# R Markdown presentations
+# R Markdown presentations <small class='communicate'>communicate</small>
 <small>(Builds on: [R Markdown basics](rmarkdown-basics.md))</small>
 
 We've only touched briefly on RMarkdown's capability to produce different

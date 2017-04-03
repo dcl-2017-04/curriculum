@@ -4,7 +4,7 @@ title: Tidy tibbles
 
 <!-- Generated automatically from tidy-tibbles.yml. Do not edit by hand -->
 
-# Tidy tibbles
+# Tidy tibbles <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Parsing files](parse-file.md), [Separate and unite](separate-unite.md), [Spreading and gathering](spread-gather.md))</small>
 

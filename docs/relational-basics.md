@@ -4,7 +4,7 @@ title: Essentials of relational data
 
 <!-- Generated automatically from relational-basics.yml. Do not edit by hand -->
 
-# Essentials of relational data
+# Essentials of relational data <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Semi- and anti-joins](filter-joins.md))</small>
 

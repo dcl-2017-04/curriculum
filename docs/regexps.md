@@ -4,7 +4,7 @@ title: Regular expressions
 
 <!-- Generated automatically from regexps.yml. Do not edit by hand -->
 
-# Regular expressions
+# Regular expressions <small class='wrangle'>wrangle</small>
 <small>(Builds on: [String basics](string-basics.md))</small>  
 <small>(Leads to: [Separate and unite](separate-unite.md))</small>
 

@@ -4,7 +4,7 @@ title: Parsing vectors
 
 <!-- Generated automatically from parse-vector.yml. Do not edit by hand -->
 
-# Parsing vectors
+# Parsing vectors <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>  
 <small>(Leads to: [Parsing files](parse-file.md))</small>
 

@@ -4,7 +4,7 @@ title: Parsing files
 
 <!-- Generated automatically from parse-file.yml. Do not edit by hand -->
 
-# Parsing files
+# Parsing files <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Parsing vectors](parse-vector.md), [Tidy tibbles](tidy-tibbles.md))</small>  
 <small>(Leads to: [Exporting data](export.md))</small>
 

@@ -4,7 +4,7 @@ title: Lists
 
 <!-- Generated automatically from lists.yml. Do not edit by hand -->
 
-# Lists
+# Lists <small class='program'>program</small>
 <small>(Builds on: [Atomic vectors](vectors.md))</small>  
 <small>(Leads to: [Iteration](iteration.md))</small>
 

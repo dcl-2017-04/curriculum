@@ -4,7 +4,7 @@ title: Code style
 
 <!-- Generated automatically from code-style.yml. Do not edit by hand -->
 
-# Code style
+# Code style <small class='workflow'>workflow</small>
 <small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Reprexes](reprexes.md))</small>
 

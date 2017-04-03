@@ -4,7 +4,7 @@ title: List columns
 
 <!-- Generated automatically from list-cols.yml. Do not edit by hand -->
 
-# List columns
+# List columns <small class='program'>program</small>
 <small>(Builds on: [Iteration](iteration.md))</small>  
 <small>(Leads to: [Many models](model-many.md), [Generating multiple reports](report-generation.md), [Spatial data basics](spatial-basics.md))</small>
 

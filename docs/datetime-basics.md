@@ -4,7 +4,7 @@ title: Date/time basics
 
 <!-- Generated automatically from datetime-basics.yml. Do not edit by hand -->
 
-# Date/time basics
+# Date/time basics <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 Date/time data includes dates, date-times, and times, but we'll mostly

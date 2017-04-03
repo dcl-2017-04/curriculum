@@ -4,7 +4,7 @@ title: Learning more
 
 <!-- Generated automatically from learning-more.yml. Do not edit by hand -->
 
-# Learning more
+# Learning more <small class='workflow'>workflow</small>
 <small>(Builds on: [Getting help](getting-help.md))</small>
 
 In this class, you have mastered the basics of data science in R,

@@ -4,7 +4,7 @@ title: Perception
 
 <!-- Generated automatically from vis-perception.yml. Do not edit by hand -->
 
-# Perception
+# Perception <small class='explore'>explore</small>
 <small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
 
 To construct effective graphics, you must understand the basics of how

@@ -4,7 +4,7 @@ title: Labelling your graphics
 
 <!-- Generated automatically from vis-labelling.yml. Do not edit by hand -->
 
-# Labelling your graphics
+# Labelling your graphics <small class='communicate'>communicate</small>
 <small>(Builds on: [Exploratory data analysis](eda.md))</small>
 
 Good label make visualisations much easier to understand for newcomers to

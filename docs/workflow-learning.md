@@ -4,7 +4,7 @@ title: Learning workflow
 
 <!-- Generated automatically from workflow-learning.yml. Do not edit by hand -->
 
-# Learning workflow
+# Learning workflow <small class='workflow'>workflow</small>
 
 
 You will get the most out of this class if you learn some tools and

@@ -203,7 +203,7 @@ md_unit <- function(unit, unit_name, unit_index, supp_index) {
     "---\n",
     "\n",
     md_generated_by(paste0(unit_name, ".yml")),
-    "# ", unit$title, "\n",
+    "# ", unit$title, " <small class='", tolower(unit$theme), "'>[", unit$theme, "]</small>\n",
     paste0(
       c(md_needs(unit$needs, unit_index), md_leads(unit_name, unit_index)),
       collapse = "  \n"

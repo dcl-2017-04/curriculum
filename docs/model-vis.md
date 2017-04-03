@@ -4,7 +4,7 @@ title: Visualising models
 
 <!-- Generated automatically from model-vis.yml. Do not edit by hand -->
 
-# Visualising models
+# Visualising models <small class='model'>model</small>
 <small>(Builds on: [Exploratory data analysis](eda.md), [Model intuition](model-basics.md))</small>  
 <small>(Leads to: [Models with multiple variables](model-multivariate.md))</small>
 

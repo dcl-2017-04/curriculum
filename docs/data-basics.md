@@ -4,7 +4,7 @@ title: Data basics
 
 <!-- Generated automatically from data-basics.yml. Do not edit by hand -->
 
-# Data basics
+# Data basics <small class='explore'>explore</small>
 <small>(Builds on: [Setup](setup.md))</small>  
 <small>(Leads to: [Data manipulation basics](manip-basics.md), [Data vis basics](vis-basics.md))</small>
 

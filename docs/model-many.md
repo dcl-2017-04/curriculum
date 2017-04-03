@@ -4,7 +4,7 @@ title: Many models
 
 <!-- Generated automatically from model-many.yml. Do not edit by hand -->
 
-# Many models
+# Many models <small class='model'>model</small>
 <small>(Builds on: [Model intuition](model-basics.md), [List columns](list-cols.md))</small>
 
 Instead of using one big, complicated visualisations, it's often better to

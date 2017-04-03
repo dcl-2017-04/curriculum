@@ -4,7 +4,7 @@ title: Separate and unite
 
 <!-- Generated automatically from separate-unite.yml. Do not edit by hand -->
 
-# Separate and unite
+# Separate and unite <small class='wrangle'>wrangle</small>
 <small>(Builds on: [Tidy tibbles](tidy-tibbles.md), [Regular expressions](regexps.md))</small>
 
 `tidyr::separate()` is a useful tool for handling another common type of

@@ -4,7 +4,7 @@ title: Visual transformations
 
 <!-- Generated automatically from vis-transformation.yml. Do not edit by hand -->
 
-# Visual transformations
+# Visual transformations <small class='explore'>explore</small>
 <small>(Builds on: [The grammar of graphics](vis-theory.md))</small>
 
 You've already learned about transformation functions that you use with

@@ -4,7 +4,7 @@ title: Generating multiple reports
 
 <!-- Generated automatically from report-generation.yml. Do not edit by hand -->
 
-# Generating multiple reports
+# Generating multiple reports <small class='communicate'>communicate</small>
 <small>(Builds on: [List columns](list-cols.md), [R Markdown basics](rmarkdown-basics.md))</small>
 
 So far you've turned `.Rmd` files into fully-fleshed reports using
