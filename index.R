@@ -2,9 +2,6 @@ library(tidyverse)
 library(glue)
 source("utils.R")
 
-syllabus <- load_syllabus()
-units <- load_units()
-
 unit_row <- function(unit, title, theme, week = "", n = 2) {
   ncol <- length(themes) + n
   start_col <- match(theme, tolower(themes))
@@ -44,9 +41,7 @@ week_tbody <- function(week_num,
 
 }
 
-syllabus_table <- function() {
-  unit_index <- load_units()
-  syllabus_index <- load_syllabus()
+theme_index <- function(syllabus_index = load_syllabus(), unit_index = load_units()) {
 
   row_groups <- map(
     seq_along(syllabus_index),
@@ -87,6 +82,3 @@ syllabus_table <- function() {
   paste(c(header, row_groups, "</table>"), collapse = "\n")
 
 }
-
-
-cat(syllabus_table(), file = "docs/index-theme.md")

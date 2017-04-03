@@ -8,6 +8,7 @@ suppressWarnings(suppressMessages(library(yaml)))
 
 source("books/books.R")
 source("yaml2md.R")
+source("index.R")
 
 old <- dir("docs", pattern = "^[^_]", full.names = TRUE)
 old <- setdiff(old, "docs/style.css")
@@ -17,7 +18,7 @@ syllabus <- load_syllabus()
 units <- load_units()
 supplements <- load_supplements()
 
-units %>%
+syllabus %>%
   theme_index() %>%
   writeLines("docs/index.md")
 
