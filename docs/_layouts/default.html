@@ -14,8 +14,10 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p><small><a href="{{ '/' | relative_url }}">Home</a></small></p>
+        <h1>
+          {{ site.title | default: site.github.repository_name }}
+          <small><a href="{{ '/' | relative_url }}">Home</a></small>
+        </h1>
       </header>
 
       <section>
@@ -24,8 +26,7 @@
 
       <footer>
         <p><small>
-          Hosted on GitHub Pages <br />
-          <a href="{{ site.github.repository_url }}">View source on GitHub</a><br />
+          Hosted on GitHub Pages. <a href="{{ site.github.repository_url }}">View source</a>.<br />
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
              <img alt="CC-BY-NC" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
           </a>
