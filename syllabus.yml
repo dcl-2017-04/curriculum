@@ -12,72 +12,73 @@
   - woo-vis
   - keifer-blog
 
-- units:
-  - eda
-  - missing-values
-  - vis-theory
-  - vis-summaries
-  - vis-transformation
-  - getting-help
-  supplements:
-  - rauser-how-humans-see
-  - schneider-bikes
-  - schneider-taxis
-
-- units:
-  - datetime-basics
-  - string-basics
-  - factor-basics
-  - tidy-tibbles
-  - relational-basics
-  - spread-gather
-  supplements:
-  - biobroom
-  - leek-non-tidy
-  - wickham-tidy-data
-
-- units:
-  - parse-vector
-  - parse-file
-  - regexps
-  - separate-unite
-  - vis-labelling
-  - vis-perception
-  supplements:
-  - happy-graphing
-
-- units:
-  - vectors
-  - vector-functions
-  - lists
-  - iteration
-
-  supplements:
-  - wickham-purrr
-
-- units:
-  - select-arrange
-  - manip-helpers
-  - window-functions
-  - filter-joins
-  - joins-debugging
-
-- units:
-  - model-basics
-  - model-vis
-  - model-multivariate
-
-- units:
-  - list-cols
-  - model-many
-  - report-generation
-
-- units:
-  - spatial-basics
-  - spatial-vis
-
-- units:
-  - export
-  - rmarkdown-formats
-  - reprexes
-  - learning-more
+# - units:
+#   - eda
+#   - missing-values
+#   - vis-theory
+#   - vis-summaries
+#   - vis-transformation
+#   - getting-help
+#   supplements:
+#   - rauser-how-humans-see
+#   - schneider-bikes
+#   - schneider-taxis
+#
+# - units:
+#   - datetime-basics
+#   - string-basics
+#   - factor-basics
+#   - tidy-tibbles
+#   - relational-basics
+#   - spread-gather
+#   supplements:
+#   - biobroom
+#   - leek-non-tidy
+#   - wickham-tidy-data
+#
+# - units:
+#   - parse-vector
+#   - parse-file
+#   - regexps
+#   - separate-unite
+#   - vis-labelling
+#   - vis-perception
+#   supplements:
+#   - happy-graphing
+#
+# - units:
+#   - vectors
+#   - vector-functions
+#   - lists
+#   - iteration
+#
+#   supplements:
+#   - wickham-purrr
+#
+# - units:
+#   - select-arrange
+#   - manip-helpers
+#   - window-functions
+#   - filter-joins
+#   - joins-debugging
+#
+# - units:
+#   - model-basics
+#   - model-vis
+#   - model-multivariate
+#
+# - units:
+#   - list-cols
+#   - model-many
+#   - report-generation
+#
+# - units:
+#   - spatial-basics
+#   - spatial-vis
+#
+# - units:
+#   - export
+#   - rmarkdown-formats
+#   - reprexes
+#   - learning-more
+#
