@@ -79,7 +79,7 @@ syllabus_table <- function() {
     {theme_headers}
       <th></th>
     </tr>
-    </thread>
+    </thead>
   ')
 
   paste(c(header, row_groups, "</table>"), collapse = "\n")

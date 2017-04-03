@@ -25,7 +25,7 @@ title: Theme index
   <th>Workflow</th>
   <th></th>
 </tr>
-</thread>
+</thead>
 <tbody>
 <tr class="workflow">
 <td>1</td>
