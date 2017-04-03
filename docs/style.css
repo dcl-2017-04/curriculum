@@ -94,6 +94,7 @@ strong {
 small {
   font-size:13px;
 }
+h1 small {font-weight: normal;}
 
 hr {
   border:0;
