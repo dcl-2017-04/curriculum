@@ -1,11 +1,11 @@
 - units:
   - setup
+  - code-style
+  - documentation
   - data-basics
   - vis-basics
   - manip-basics
   - rmarkdown-basics
-  - code-style
-  - documentation
   supplements:
   - happy-git
   - grolemund-wrangle
