@@ -1,3 +1,5 @@
+/* Layout ------------------------------------------------*/
+
 body {
   background-color: #fff;
   padding:50px;
@@ -11,10 +13,6 @@ h1, h2, h3, h4, h5, h6 {
   margin:0 0 20px;
 }
 
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
 h1, h2, h3 {
   line-height:1.1;
 }
@@ -22,6 +20,7 @@ h1, h2, h3 {
 h1 {
   font-size:28px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -33,6 +32,11 @@ h3, h4, h5, h6 {
   color:#494949;
   font-weight: 500;
 }
+
+p, ul, ol, table, pre, dl {
+  margin:0 0 20px;
+}
+
 
 a {
   color:#39c;
@@ -80,6 +84,34 @@ pre {
   overflow-x: auto;
 }
 
+dt {
+  color:#444;
+  font-weight:500;
+}
+
+strong {
+  color:#222;
+  font-weight:500;
+}
+
+small {
+  font-size:13px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+img {
+  max-width:100%;
+}
+
+
+/* Table -------------------------------------------------- */
+
 table {
   width:100%;
   border-collapse:collapse;
@@ -90,9 +122,15 @@ th, td {
   padding:5px 10px;
 }
 
+th {
+  color:#444;
+}
+
 th, tbody {
   border-bottom:1px solid #e5e5e5;
 }
+
+/* Index -------------------------------------------------- */
 
 table.syllabus {margin: 0;}
 table.syllabus a {
@@ -112,18 +150,7 @@ table.syllabus a {
 col.week {width: 5%;}
 col.theme {width: 11.85%;}
 
-dt {
-  color:#444;
-  font-weight:500;
-}
-
-th {
-  color:#444;
-}
-
-img {
-  max-width:100%;
-}
+/* Layout ------------------------------------------------*/
 
 header {
   width:270px;
@@ -132,30 +159,10 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-h1 {
-  margin-bottom: 0;
-}
-
-strong {
-  color:#222;
-  font-weight:500;
-}
-
 section {
   width:500px;
   float:right;
   padding-bottom:50px;
-}
-
-small {
-  font-size:13px;
-}
-
-hr {
-  border:0;
-  background:#e5e5e5;
-  height:1px;
-  margin:0 0 20px;
 }
 
 footer {
