@@ -5,16 +5,16 @@ source("utils.R")
 syllabus <- load_syllabus()
 units <- load_units()
 
-unit_row <- function(unit, title, theme, week = "") {
-  ncol <- length(themes) + 1
+unit_row <- function(unit, title, theme, week = "", n = 2) {
+  ncol <- length(themes) + n
   start_col <- match(theme, tolower(themes))
-  end_col <- start_col + 1
+  end_col <- start_col + n
 
   week <- glue(  "<td>{week}</td>")
   left <- if (start_col > 1)   glue('  <td colspan="{start_col - 1}"></td>')
   right <- if (end_col < ncol) glue('  <td colspan="{ncol - end_col}"></td>')
 
-  data <- glue('  <td colspan="2"><a href="{unit}.html">{title}</a></td>')
+  data <- glue('  <td colspan="{n + 1}"><a href="{unit}.html">{title}</a></td>')
 
   paste0(c(
     glue('<tr class="{theme}">'),
@@ -71,12 +71,14 @@ syllabus_table <- function() {
       <col class="theme" />
       <col class="theme" />
       <col class="theme" />
+      <col class="theme" />
     </colgroup>
 
     <thead>
     <tr>
       <th></th>
     {theme_headers}
+      <th></th>
       <th></th>
     </tr>
     </thead>
