@@ -157,4 +157,5 @@ col.theme {width: 11.85%;}
   .wrapper {width: 100%;}
 }
 
-footer {margin-top: 5em; border-top 2px solid #e5e5e5}
+footer {margin-top: 5em; border-top: 2px solid #e5e5e5;}
+header {margin-bottom: 3em; border-bottom: 2px solid #e5e5e5;}
