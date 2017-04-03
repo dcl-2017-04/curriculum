@@ -90,10 +90,11 @@ th, td {
   padding:5px 10px;
 }
 
-th, tbody{
+th, tbody {
   border-bottom:1px solid #e5e5e5;
 }
 
+table.syllabus {margin: 0;}
 table.syllabus a {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -109,7 +110,7 @@ table.syllabus a {
 .communicate a {background-color: #FFD92F;}
 
 col.week {width: 5%;}
-col.theme {width: 9.5%;}
+col.theme {width: 11.85%;}
 
 dt {
   color:#444;
