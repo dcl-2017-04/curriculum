@@ -12,8 +12,8 @@ mindset: you want to remain open to what the data is telling you.
 
 ## Readings
 
-  * [Variation](http://r4ds.had.co.nz/exploratory-data-analysis.html#variation) [r4ds-7.3]
-
   * [Covariation](http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation) [r4ds-7.5]
+
+  * [Patterns and models](http://r4ds.had.co.nz/exploratory-data-analysis.html#patterns-and-models) [r4ds-7.6]
 
 

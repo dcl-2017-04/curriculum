@@ -17,4 +17,6 @@ mindset: you want to remain open to what the data is telling you.
 
   * [Questions](http://r4ds.had.co.nz/exploratory-data-analysis.html#questions) [r4ds-7.2]
 
+  * [Variation](http://r4ds.had.co.nz/exploratory-data-analysis.html#variation) [r4ds-7.3]
+
 
