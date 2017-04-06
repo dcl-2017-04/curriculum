@@ -1,0 +1,44 @@
+title: Data structure basics
+theme: program
+needs: setup
+desc: "\nIt's helpful to know a little bit about how data structures are organised
+  in R. The simplest data structure in R is the vector, which can be broken up in
+  to atomic vectors and augmented vectors. Vectors of related data are organised together
+  in tibbles and data.frames.\n\n``` r\nlibrary(tidyverse)\n```\n\nAtomic vectors\n--------------\n\nThe
+  atomic vectors are the \"atoms\" of R, the simple building blocks upon which all
+  else is built. There are four types of atomic vector that are important for data
+  analysis:\n\n-   **logical** vectors (lgl) contain `TRUE` or `FALSE`.\n-   **integer**
+  vectors (int) contain integers.\n-   **double** vectors (dbl) contain real numbers.\n-
+  \  **character** vector (chr) contain strings made with `\"\"`.\n\nAll vectors can
+  also contain the missing value `NA`. You'll learn more about missing values later
+  on. Collectively integer and double vectors are known as **numeric** vectors. The
+  difference is rarely important in R.\n\nYou create atomic vectors by hand with the
+  `c()` function:\n\n``` r\nlogical <- c(TRUE, FALSE, FALSE)\n\n# The difference between
+  the real number 1 and the integer 1 is not \n# usually important, but soemtimes
+  it comes up in base R code. R uses\n# the suffix \"L\" to indicate that a number
+  is an integer.\ninteger <- c(1L, 2L, 3L)\n\ndouble <- c(1.5, 2.8, pi)\n\ncharacter
+  <- c(\"this\", \"is\", \"a character\", \"vector\")\n```\n\nAugmented\n---------\n\nAugmented
+  vectors are atomic vectors with additional metadata. There are four important augmented
+  vectors:\n\n-   factors (fct), which are used to represent categorical variables
+  can take one of a fixed and known set of possible values (called the levels).\n\n-
+  \  ordered factors (ord), which are like factors but where the level have an intrinsic
+  ordering (i.e. it's reasonable to say that one level is \"less than\" or \"greater
+  than\" another variable).\n\n-   dates (dt), which represe\n\n-   date/times also
+  known as POSIXct (dttm)\n\nFor now, you just need to recognise these when you encounter
+  them. You'll learn how to create each type of augmented vector later in the course.\n\nData
+  frames/tibbles\n-------------------\n\nRelated vectors (both atomic and augment)
+  are collected together into data frames or tibbles. Later you'll learn the precise
+  different between data.frames and tibbles, but don't worry about it for now. There
+  are two ways to create tibbles by hand:\n\n1.  From individual vectors, each representing
+  a column:\n\n    ``` r\n    my_tibble <- tibble(\n      x = c(1, 9, 5),\n      y
+  = c(TRUE, FALSE, FALSE),\n      z = c(\"apple\", \"pear\", \"banana\")\n    )\n
+  \   my_tibble\n    ```\n\n        ## # A tibble: 3 × 3\n        ##       x     y
+  \     z\n        ##   <dbl> <lgl>  <chr>\n        ## 1     1  TRUE  apple\n        ##
+  2     9 FALSE   pear\n        ## 3     5 FALSE banana\n\n2.  From individual values,
+  organised in rows:\n\n    ``` r\n    my_tibble <- tribble(\n      ~x, ~y,    ~z,\n
+  \     1,  TRUE,  \"apple\",\n      9,  FALSE, \"pear\",\n      5,  FALSE, \"banana\"\n
+  \   )\n    my_tibble\n    ```\n\n        ## # A tibble: 3 × 3\n        ##       x
+  \    y      z\n        ##   <dbl> <lgl>  <chr>\n        ## 1     1  TRUE  apple\n
+  \       ## 2     9 FALSE   pear\n        ## 3     5 FALSE banana\n\nTypically it
+  will be obvious whether you need to use `tibble()` or `tribble()`. One representation
+  will either be much shorter or much clearer than the other.\n"
