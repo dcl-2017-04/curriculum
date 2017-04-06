@@ -17,14 +17,6 @@ units %>%
   theme_index() %>%
   writeLines("docs/index.md")
 
-# syllabus %>%
-#   syllabus_index(units, supplements) %>%
-#
-#
-# syllabus %>%
-#   syllabus_toc() %>%
-#   writeLines("docs/_includes/toc.html")
-
 supplements %>%
   supplements_index() %>%
   writeLines("docs/supplements.md")
