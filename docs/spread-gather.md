@@ -20,4 +20,3 @@ tidyr package.
   * [Spreading and gathering](http://r4ds.had.co.nz/tidy-data.html#spreading-and-gathering) [r4ds-12.3]
 
 
-

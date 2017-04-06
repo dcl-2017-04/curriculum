@@ -33,4 +33,3 @@ are two common types:
   * [Functions are for humans and computers](http://r4ds.had.co.nz/functions.html#functions-are-for-humans-and-computers) [r4ds-19.3]
 
 
-

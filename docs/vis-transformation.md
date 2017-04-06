@@ -24,4 +24,3 @@ for others to understand. We'll come back to this idea later.
     about plots for communication.
 
 
-

@@ -22,4 +22,3 @@ is.
   * [Tidy data](http://r4ds.had.co.nz/tidy-data.html#tidy-data-1) [r4ds-12.2]
 
 
-

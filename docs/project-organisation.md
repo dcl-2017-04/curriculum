@@ -23,4 +23,3 @@ locate the code you used to solve it the last time.
   * [R Markdown workflow](http://r4ds.had.co.nz/r-markdown-workflow.html) [r4ds-30]
 
 
-

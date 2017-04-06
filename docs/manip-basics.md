@@ -33,4 +33,3 @@ Skip through this chapter of R4DS focussing on `filter()`, `mutate()` and
     Refer to it when you forget.
 
 
-

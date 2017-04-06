@@ -20,4 +20,3 @@ powerful language for describing and manipulation patterns within a string.
   * [String basics](http://r4ds.had.co.nz/strings.html#string-basics) [r4ds-14.2]
 
 
-

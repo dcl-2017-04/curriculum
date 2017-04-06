@@ -27,4 +27,3 @@ RDS or feather files instead.
   * [Writing to a file](http://r4ds.had.co.nz/data-import.html#writing-to-a-file) [r4ds-11.5]
 
 
-

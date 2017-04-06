@@ -17,4 +17,3 @@ and most other complex object types (e.g. linear models).
   * [Using atomic vectors](http://r4ds.had.co.nz/vectors.html#using-atomic-vectors) [r4ds-20.4]
 
 
-

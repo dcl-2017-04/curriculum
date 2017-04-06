@@ -55,3 +55,14 @@ indent <- function(text, by = 2, first = by, wrap = FALSE) {
     paste(strrep(" ", first), gsub("\n", paste0("\n", strrep(" ", by)), text))
   }
 }
+
+mtime <- function(x) {
+  max(file.info(x)$mtime)
+}
+
+out_of_date <- function(src, dest) {
+  if (!file.exists(dest))
+    return(TRUE)
+
+  mtime(src) > mtime(dest)
+}

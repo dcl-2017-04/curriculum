@@ -57,4 +57,3 @@ encounter a weird file that needs special handling.
   * [Parsing a vector](http://r4ds.had.co.nz/data-import.html#parsing-a-vector) [r4ds-11.3]
 
 
-

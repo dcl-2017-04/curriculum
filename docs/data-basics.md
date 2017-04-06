@@ -19,4 +19,3 @@ frequently, so you'll start by familiarising yourself with them.
   * [Introduction](http://r4ds.had.co.nz/transform.html#introduction-2) [r4ds-5.1]
 
 
-

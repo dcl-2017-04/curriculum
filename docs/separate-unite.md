@@ -23,4 +23,3 @@ that is spread across multiple columns. This happen much less commonly.
   * [Separating and uniting](http://r4ds.had.co.nz/tidy-data.html#separating-and-uniting) [r4ds-12.4]
 
 
-

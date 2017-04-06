@@ -114,4 +114,3 @@ by Kara Woo
 
 A video introduction to ggplot2.
 
-

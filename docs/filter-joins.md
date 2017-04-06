@@ -19,4 +19,3 @@ rows.
   * [Filtering joins](http://r4ds.had.co.nz/relational-data.html#filtering-joins) [r4ds-13.5]
 
 
-

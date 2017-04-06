@@ -23,4 +23,3 @@ we'll mostly focus on the `map()` functions from purrr.
   * [The map functions](http://r4ds.had.co.nz/iteration.html#the-map-functions) [r4ds-21.5]
 
 
-

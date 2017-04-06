@@ -34,4 +34,3 @@ geoms. Come back and read in detail when you actually need to use them.
   * [Data Visualization Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf) [cheatsheets-ggplot2-2.1]
 
 
-

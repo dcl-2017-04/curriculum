@@ -24,4 +24,3 @@ build up a regular practice of
   but the goal is to provide an up-to-date resource for everything
   tidyverse
 
-

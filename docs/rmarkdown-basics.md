@@ -33,4 +33,3 @@ your results _and_ your process.
 * [Getting Started with R Markdown](supplements.html#grolemund-rmarkdown)
 * [RMarkdown homepage](supplements.html#rmarkdown)
 
-

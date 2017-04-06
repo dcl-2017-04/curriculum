@@ -26,4 +26,3 @@ later)
   * [Covariation](http://r4ds.had.co.nz/exploratory-data-analysis.html#covariation) [r4ds-7.5]
 
 
-

@@ -22,4 +22,3 @@ what you've learned.
   * [Common problems](http://r4ds.had.co.nz/data-visualisation.html#common-problems) [r4ds-3.4]
 
 
-

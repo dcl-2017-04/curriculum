@@ -6,9 +6,6 @@ build <- function() {
   message("Building units ----------------------------------")
   build_units()
 
-  message("Copying notes -----------------------------------")
-  build_notes()
-
   message("Building storyboard -----------------------------")
   build_storyboard()
 
@@ -25,6 +22,15 @@ clean <- function() {
 }
 
 build_units <- function() {
+  # Update rmd files
+  units_rmd <- dir("units", pattern = "\\.Rmd$", full.names = TRUE)
+  units_rmd %>%
+    walk(render_rmd)
+
+  # Copy Rmarkdown directories
+  notes <- dir("units/", pattern = "(_files|\\.md)$", full.names = TRUE)
+  notes %>% walk(file.copy, to = "docs", recursive = TRUE)
+
   syllabus <- load_syllabus()
   units <- load_units()
   supplements <- load_supplements()
@@ -41,14 +47,8 @@ build_units <- function() {
   units %>%
     map2_chr(names(units), md_unit, supp_index = supplements, unit_index = units) %>%
     walk2(out_path, write_if_different)
-}
 
 
-build_notes <- function() {
-  dir.create("docs/notes", showWarnings = FALSE)
-
-  notes <- dir("notes/", pattern = "(_files|\\.md)$", full.names = TRUE)
-  notes %>% walk(file.copy, to = "docs/notes", recursive = TRUE)
 }
 
 build_storyboard <- function() {

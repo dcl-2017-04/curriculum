@@ -35,4 +35,3 @@ formats that you should know about:
   * [Dashboards](http://r4ds.had.co.nz/r-markdown-formats.html#dashboards) [r4ds-29.6]
 
 
-

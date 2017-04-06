@@ -17,4 +17,3 @@ including models for categorical data (i.e. factors).
   * [Formulas and model families](http://r4ds.had.co.nz/model-basics.html#formulas-and-model-families) [r4ds-23.4]
 
 
-

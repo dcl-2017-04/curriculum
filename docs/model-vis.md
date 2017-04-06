@@ -31,4 +31,3 @@ model.
   * [Visualising models](http://r4ds.had.co.nz/model-basics.html#visualising-models) [r4ds-23.3]
 
 
-

@@ -19,4 +19,3 @@ new tools that allow you to bend strings to your will.
   * [Tools](http://r4ds.had.co.nz/strings.html#tools) [r4ds-14.4]
 
 
-

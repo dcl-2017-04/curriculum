@@ -20,4 +20,3 @@ We haven't talked about two useful functions from dplyr:
   * [Select columns with select()](http://r4ds.had.co.nz/transform.html#select-columns-with-select) [r4ds-5.4]
 
 
-

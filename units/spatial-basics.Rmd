@@ -1,6 +1,7 @@
 ---
-title: "Spatial basics"
-output: github_document
+unit_title: "Spatial basics"
+theme: wrangle
+needs: [list-cols]
 ---
 
 ```{r setup, include=FALSE}

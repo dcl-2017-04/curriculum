@@ -21,4 +21,3 @@ it tells you about a dataset.
   * [A simple model](http://r4ds.had.co.nz/model-basics.html#a-simple-model) [r4ds-23.2]
 
 
-

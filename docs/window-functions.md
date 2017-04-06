@@ -18,4 +18,3 @@ grouped `mutate()`s and `filter()`s, rather than grouped `summarise()`s.
   * [https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html](https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html)
 
 
-

@@ -28,4 +28,3 @@ parse complete files. This involves two new skills:
   * [Data Import Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/data-import-cheatsheet.pdf) [cheatsheets-data-import]
 
 
-

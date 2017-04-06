@@ -19,4 +19,3 @@ with the theory and learn some useful vocabulary.
   * [Build a plot layer by layer](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_5) [ggplot2-5]
 
 
-

@@ -23,4 +23,3 @@ but consistent patterns more clear).
     some aggregation before visualising the data.
 
 
-

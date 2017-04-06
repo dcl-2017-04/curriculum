@@ -1,13 +1,107 @@
-title: Spatial data basics
+title: Spatial basics
 theme: wrangle
-
-needs: [list-cols]
-
-desc: |
-  Learn the basics of spatial data with the sf package. You'll learn how
-  to load data, and understand how the sf package represents spatial data
-  in R data structures.
-
-readings:
-
-- href: notes/spatial-basics.html
+needs: list-cols
+desc: "\nSpatial packages\n----------------\n\nIn R, there are two main lineages of
+  tools for dealing with spatial data: sp and sf.\n\n-   sp has been around for a
+  while (the first release was in 2005), and it has a rich ecosystem of tools built
+  around it. However, it uses a rather complicated object design which makes it hard
+  to use.\n\n-   sf is newer (first released in October 2016!) so it doesn't have
+  such a rich ecosystem. However, it's much easier to use and fits in very naturally
+  with the tidyverse, and the ecosystem around it will grow rapidly.\n\nIn this class,
+  we're going to use sf, so start by installing it:\n\n``` r\ninstall.packages(\"sf\")\n```\n\nLoading
+  data\n------------\n\nTo read spatial data in R, use `read_sf()`. The following
+  example reads an example dataset built into the sf package:\n\n``` r\nlibrary(tidyverse)\nlibrary(sf)\n\n#
+  The counties of North Carolina\nnc <- read_sf(system.file(\"shape/nc.shp\", package
+  = \"sf\"), \n  quiet = TRUE,  \n  stringsAsFactors = FALSE\n)\n```\n\nI recommend
+  always setting `quiet = TRUE` and `stringsAsFactors = FALSE`.\n\nHere we're loading
+  from **shapefile** which is the way spatial data is most commonly stored. Typically
+  you'll have four files:\n\n-   `.shp` contains the geometry, and `.shx` contains
+  an index into that geometry.\n\n-   `.dbf` contains the other columns in the data
+  frame\n\n-   `.prf` gives the coordinate system and projection information. You'll
+  learn more about that shortly.\n\n`read_sf()` can read in the majority of spatial
+  file formats, so don't worry if your data is in this format.\n\nConverting data\n---------------\n\nIf
+  you get a spatial object created by the sp package, us `st_as_sf()` to convert it
+  to sf. For example, you can take data from the maps package (included in base R)
+  and convert it to sf:\n\n``` r\nlibrary(maps)\n#> \n#> Attaching package: 'maps'\n#>
+  The following object is masked from 'package:purrr':\n#> \n#>     map\nnz_map <-
+  map(\"nz\", plot = FALSE)\nnz_sf <- st_as_sf(nz_map)\n```\n\nData structure\n--------------\n\n`nc`
+  is a data frame, and not a tibble, so when printing, it's a good idea to use `head()`
+  so you only see the first few rows:\n\n``` r\nhead(nc)\n#> Simple feature collection
+  with 6 features and 14 fields\n#> geometry type:  MULTIPOLYGON\n#> dimension:      XY\n#>
+  bbox:           xmin: -81.74107 ymin: 36.07282 xmax: -75.77316 ymax: 36.58965\n#>
+  epsg (SRID):    4267\n#> proj4string:    +proj=longlat +datum=NAD27 +no_defs\n#>
+  \   AREA PERIMETER CNTY_ CNTY_ID        NAME  FIPS FIPSNO CRESS_ID BIR74\n#> 1 0.114
+  \    1.442  1825    1825        Ashe 37009  37009        5  1091\n#> 2 0.061     1.231
+  \ 1827    1827   Alleghany 37005  37005        3   487\n#> 3 0.143     1.630  1828
+  \   1828       Surry 37171  37171       86  3188\n#> 4 0.070     2.968  1831    1831
+  \  Currituck 37053  37053       27   508\n#> 5 0.153     2.206  1832    1832 Northampton
+  37131  37131       66  1421\n#> 6 0.097     1.670  1833    1833    Hertford 37091
+  \ 37091       46  1452\n#>   SID74 NWBIR74 BIR79 SID79 NWBIR79                       geometry\n#>
+  1     1      10  1364     0      19 MULTIPOLYGON(((-81.47275543...\n#> 2     0      10
+  \  542     3      12 MULTIPOLYGON(((-81.23989105...\n#> 3     5     208  3616     6
+  \    260 MULTIPOLYGON(((-80.45634460...\n#> 4     1     123   830     2     145
+  MULTIPOLYGON(((-76.00897216...\n#> 5     9    1066  1606     3    1197 MULTIPOLYGON(((-77.21766662...\n#>
+  6     7     954  1838     5    1237 MULTIPOLYGON(((-76.74506378...\nhead(nz_sf)\n#>
+  Simple feature collection with 6 features and 1 field\n#> geometry type:  POLYGON\n#>
+  dimension:      XY\n#> bbox:           xmin: 166.458 ymin: -46.91705 xmax: 175.552
+  ymax: -36.09273\n#> epsg (SRID):    4326\n#> proj4string:    +proj=longlat +datum=WGS84
+  +no_defs\n#>                         geometry                    ID\n#> 1 POLYGON((166.457992553711
+  -...        Anchor.Island \n#> 2 POLYGON((174.259948730469 -...       Arapawa.Island
+  \n#> 3 POLYGON((166.580032348633 -...          Coal.Island \n#> 4 POLYGON((167.579833984375
+  -...       Codfish.Island \n#> 5 POLYGON((173.906433105469 -...     D'Urville.Island
+  \n#> 6 POLYGON((175.535934448242 -... Great.Barrier.Island\n```\n\nThis is an ordinary
+  data frame, with one exception: the **geometry** column. This column contains simple
+  \"features\", a standard way of representing two dimesional geometries like points,
+  lines, polygons, multilines, and multipolygons. Multilines and multipolygons are
+  nededed to represent geographic phenomena like a river with multiple branches, or
+  a state made up of multiple islands.\n\n``` r\nnc$geometry\n#> Geometry set for
+  100 features \n#> geometry type:  MULTIPOLYGON\n#> dimension:      XY\n#> bbox:
+  \          xmin: -84.32385 ymin: 33.88199 xmax: -75.45698 ymax: 36.58965\n#> epsg
+  (SRID):    4267\n#> proj4string:    +proj=longlat +datum=NAD27 +no_defs\n#> First
+  5 geometries:\n#> MULTIPOLYGON(((-81.4727554321289 36.23435592651...\n#> MULTIPOLYGON(((-81.2398910522461
+  36.36536407470...\n#> MULTIPOLYGON(((-80.4563446044922 36.24255752563...\n#> MULTIPOLYGON(((-76.0089721679688
+  36.31959533691...\n#> MULTIPOLYGON(((-77.2176666259766 36.24098205566...\n```\n\nWe
+  can get a simple visualisation use `plot()`. In the next unit, we'll learn how to
+  use ggplot2 for more complex data visualisations, but this simple plot is a great
+  diagnostic tool\n\n``` r\nplot(nc$geometry)\n```\n\n![](spatial-basics_files/figure-markdown_github/nc-plot-1.png)\n\nManipulating
+  with dplyr\n-----------------------\n\nSince an sf object is just a data frame,
+  you can manipulate it with dplyr. The following example gives you a taste:\n\n```
+  r\nnz_sf %>%\n  mutate(area = as.numeric(st_area(geometry))) %>%\n  filter(area
+  > 1e10)\n#>                         geometry            ID         area\n#> 1 POLYGON((172.74333190918
+  -3... North.Island  113469632351\n#> 2 POLYGON((172.639053344727 -... South.Island
+  \ 150444467051\n```\n\n(`st_area()` returns an object with units, which is annoying
+  to work with. I used `as.numeric()` to convert to a regular numeric vector)\n\nGeometry\n--------\n\nThe
+  geometry column is a list-column, and it's worthwhile to pull out one piece so you
+  can see what's going on under the hood:\n\n``` r\nstr(nc$geometry[[1]])\n#> List
+  of 1\n#>  $ :List of 1\n#>   ..$ : num [1:27, 1:2] -81.5 -81.5 -81.6 -81.6 -81.7
+  ...\n#>  - attr(*, \"class\")= chr [1:3] \"XY\" \"MULTIPOLYGON\" \"sfg\"\nplot(nc$geometry[[1]])\n```\n\n![](spatial-basics_files/figure-markdown_github/unnamed-chunk-7-1.png)\n\nThis
+  is list of lists of matrices:\n\n-   The top-level list has one element for each
+  \"landmass\" in the county. We can find a more interesting case:\n\n    ``` r\n
+  \   n <- nc$geometry %>% map_int(length)\n    table(n)\n    #> n\n    #>  1  2  3
+  \n    #> 94  4  2\n\n    interesting <- nc$geometry[n == 3][[1]]\n    plot(interesting)\n
+  \   ```\n\n    ![](spatial-basics_files/figure-markdown_github/unnamed-chunk-8-1.png)\n\n
+  \   ``` r\n    str(interesting)\n    #> List of 3\n    #>  $ :List of 1\n    #>
+  \  ..$ : num [1:26, 1:2] -76 -76 -76 -76 -76.1 ...\n    #>  $ :List of 1\n    #>
+  \  ..$ : num [1:7, 1:2] -76 -76 -75.9 -75.9 -76 ...\n    #>  $ :List of 1\n    #>
+  \  ..$ : num [1:5, 1:2] -75.9 -75.9 -75.8 -75.8 -75.9 ...\n    #>  - attr(*, \"class\")=
+  chr [1:3] \"XY\" \"MULTIPOLYGON\" \"sfg\"\n    ```\n\n-   The second-level list
+  is not used in this dataset, but is needed when you have a landmass that contains
+  an lake. (Or a landmass that contains an lake which has an island which has a pond).\n\n-
+  \  Each row of the matrix gives the location of a point on the boundary of the polygon.\n\nCoordinate
+  system\n-----------------\n\nTo correctly plot spatial data, you need know exactly
+  what the positions mean, you need to know what the **coordinate reference system**
+  is. Often spatial data is described in terms of latitude and longitude. You can
+  check this with `st_is_longlat()`:\n\n``` r\nst_is_longlat(nc)\n#> [1] TRUE\n```\n\nYou
+  might think that if you know the latitude and longitude of a point, you know exactly
+  where it is on the Earth. However, things are not quite so simple, because latitude
+  and longitude assume that the Earth is a smooth ellipsoid, which is not true. Because
+  different approximations to the sphere work better in differently places, most countries
+  have their own approximation: this is called the **datum**.\n\nTake two minutes
+  and watch this simple explanation of the datum: <https://www.youtube.com/watch?v=xKGlMp__jog>\n\nTo
+  get the datum and other coordinate system metadata, use `st_crs()`:\n\n``` r\nst_crs(nc)\n#>
+  $epsg\n#> [1] 4267\n#> \n#> $proj4string\n#> [1] \"+proj=longlat +datum=NAD27 +no_defs\"\n#>
+  \n#> attr(,\"class\")\n#> [1] \"crs\"\n```\n\nHere the datum is \"NAD27\", the [North
+  American Datum](https://en.wikipedia.org/wiki/North_American_Datum) of 1927 (NAD27)\n\nIn
+  this class, you won't have to worry too much about the datum as sf and ggplot2 will
+  take care of the details for you. But it's good to know why it exists and how to
+  identify it if something goes wrong.\n"

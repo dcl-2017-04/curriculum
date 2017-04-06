@@ -20,4 +20,3 @@ fit many simple models to a single dataset.
   * [gapminder](http://r4ds.had.co.nz/many-models.html#gapminder) [r4ds-25.2]
 
 
-

@@ -1,7 +1,8 @@
 ---
-title: "What to do when you are stuck"
+unit_title: Getting help
+theme: workflow
+needs: [documentation]
 author: Jenny Bryan and Hadley Wickham
-output: github_document
 ---
 
 ```{r setup, include=FALSE}

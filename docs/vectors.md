@@ -23,4 +23,3 @@ a bit, but we haven't yet discussed them in detail.
   * [Recursive vectors (lists)](http://r4ds.had.co.nz/vectors.html#lists) [r4ds-20.5]
 
 
-

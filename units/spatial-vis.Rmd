@@ -1,6 +1,7 @@
 ---
-title: "Spatial visualisation"
-output: github_document
+unit_title: "Spatial visualisation"
+theme: explore
+needs: [spatial-basics]
 ---
 
 ```{r setup, include=FALSE}

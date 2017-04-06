@@ -28,4 +28,3 @@ dataset.
   * [Mutating joins](http://r4ds.had.co.nz/relational-data.html#mutating-joins) [r4ds-13.4]
 
 
-
