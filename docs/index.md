@@ -70,6 +70,11 @@ title: Theme index
 <tbody>
 <tr>
 <td>2</td>
+  <td colspan="3"><a class="explore" href="vis-basics-2.html">vis basics 2</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="select-arrange.html">Select and arrange</a></td>
   <td colspan="4"></td>
