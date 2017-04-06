@@ -31,17 +31,16 @@ build_units <- function() {
 
   syllabus %>%
     theme_index(units) %>%
-    writeLines("docs/index.md")
+    write_if_different("docs/index.md")
 
   supplements %>%
     supplements_index() %>%
-    writeLines("docs/supplements.md")
+    write_if_different("docs/supplements.md")
 
   out_path <- paste0("docs/", names(units), ".md")
   units %>%
     map2_chr(names(units), md_unit, supp_index = supplements, unit_index = units) %>%
-    walk2(out_path, writeLines)
-
+    walk2(out_path, write_if_different)
 }
 
 
