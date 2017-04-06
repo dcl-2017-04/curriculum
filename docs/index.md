@@ -70,6 +70,11 @@ title: Theme index
 <tbody>
 <tr>
 <td>2</td>
+  <td colspan="3"><a class="explore" href="eda.html">Exploratory data analysis</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
 </tr>
