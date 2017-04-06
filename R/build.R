@@ -1,3 +1,7 @@
+
+themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
+
+
 build <- function() {
   message("Building units ----------------------------------")
   build_units()
@@ -25,8 +29,8 @@ build_units <- function() {
   units <- load_units()
   supplements <- load_supplements()
 
-  units %>%
-    theme_index() %>%
+  syllabus %>%
+    theme_index(units) %>%
     writeLines("docs/index.md")
 
   supplements %>%

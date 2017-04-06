@@ -1,35 +1,3 @@
-
-themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
-
-
-theme_index <- function(units) {
-  unit_df <- tibble(
-    unit = units %>% names(),
-    title = units %>% map_chr("title"),
-    theme = units %>% map_chr("theme"),
-    link = glue::glue("* [{title}]({unit}.html)")
-  ) %>% arrange(theme, title)
-
-
-  theme_units <- themes %>% tolower() %>% map(~ filter(unit_df, theme == .))
-
-  theme_links <- theme_units %>% map(~ paste(.$link, collapse = "\n"))
-
-  paste0(
-    "---\n",
-    "title: Syllabus\n",
-    "---\n",
-
-    glue::glue("
-      ## {themes} {{#{tolower(themes)}}}
-
-      {theme_links}
-    ") %>% collapse("\n\n")
-  )
-}
-
-# Supplements -------------------------------------------------------------
-
 supplements_index <- function(x) {
   slug <- x %>% map_chr("slug")
   supplements <- x %>%

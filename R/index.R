@@ -76,5 +76,5 @@ theme_index <- function(syllabus_index = load_syllabus(), unit_index = load_unit
   ')
 
   paste(c(header, row_groups, "</table>"), collapse = "\n")
-
 }
+
