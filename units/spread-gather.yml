@@ -1,7 +1,7 @@
 title: Spreading and gathering
 theme: wrangle
 
-needs: [tidy-tibbles]
+needs: [tidy-data]
 
 desc: |
   The two most common ways for data to be messy are to have:

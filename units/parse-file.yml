@@ -1,6 +1,6 @@
 title: Parsing files
 theme: wrangle
-needs: [parse-vector, tidy-tibbles]
+needs: [parse-vector, tidy-data]
 
 desc: |
   Now that you know how to parse character vectors, you can learn how to

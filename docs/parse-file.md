@@ -5,7 +5,7 @@ title: Parsing files
 <!-- Generated automatically from parse-file.yml. Do not edit by hand -->
 
 # Parsing files <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Parsing vectors](parse-vector.md), [Tidy tibbles](tidy-tibbles.md))</small>  
+<small>(Builds on: [Parsing vectors](parse-vector.md), [Tidy data](tidy-data.md))</small>  
 <small>(Leads to: [Exporting data](export.md))</small>
 
 Now that you know how to parse character vectors, you can learn how to

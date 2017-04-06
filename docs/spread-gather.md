@@ -5,7 +5,7 @@ title: Spreading and gathering
 <!-- Generated automatically from spread-gather.yml. Do not edit by hand -->
 
 # Spreading and gathering <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Tidy tibbles](tidy-tibbles.md))</small>
+<small>(Builds on: [Tidy data](tidy-data.md))</small>
 
 The two most common ways for data to be messy are to have:
 

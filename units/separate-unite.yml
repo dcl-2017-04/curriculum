@@ -1,7 +1,7 @@
 title: Separate and unite
 theme: wrangle
 
-needs: [tidy-tibbles, regexps]
+needs: [tidy-data, regexps]
 
 desc: |
   `tidyr::separate()` is a useful tool for handling another common type of
