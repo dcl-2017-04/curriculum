@@ -1,14 +1,9 @@
 #! /usr/local/bin/Rscript
 
+load_all()
+
 message("Building md files -------------------------------")
 # Update everything
-
-suppressWarnings(suppressMessages(library(tidyverse)))
-suppressWarnings(suppressMessages(library(yaml)))
-
-source("books/books.R")
-source("yaml2md.R")
-source("index.R")
 
 old <- dir("docs", pattern = "^[^_]", full.names = TRUE)
 old <- setdiff(old, "docs/style.css")
@@ -18,7 +13,7 @@ syllabus <- load_syllabus()
 units <- load_units()
 supplements <- load_supplements()
 
-syllabus %>%
+units %>%
   theme_index() %>%
   writeLines("docs/index.md")
 
@@ -39,7 +34,7 @@ units %>%
   map2_chr(names(units), md_unit, supp_index = supplements, unit_index = units) %>%
   walk2(out_path, writeLines)
 
-message("Copying notes ------------------------------")
+message("Copying notes -----------------------------------")
 
 dir.create("docs/notes")
 
@@ -47,9 +42,69 @@ notes <- dir("notes/", pattern = "(_files|\\.md)$", full.names = TRUE)
 notes %>% walk(file.copy, to = "docs/notes", recursive = TRUE)
 
 
-message("Building overview ------------------------------")
-source("overview.R")
+message("Building storyboard -----------------------------")
 
-message("------------------------------------------------")
+key_books <- books %>%
+  filter(is.na(depth) | depth < 3) %>%
+  transmute(
+    book_id = forcats::fct_inorder(id),
+    title
+  )
+
+readings <- load_units() %>%
+  map("readings") %>%
+  discard(is.null) %>%
+  map(. %>% keep(has_name, "book") %>% map_chr("book")) %>%
+  enframe(name = "unit", value = "book_id") %>%
+  unnest(book_id) %>%
+  mutate(book_id = factor(book_id, levels = levels(key_books$book_id)))
+
+unit_link <- function(x) {
+  sprintf("[%s](https://dcl-2017-01.github.io/curriculum/%s.html)", x, x)
+}
+
+unit_readings <- load_syllabus() %>%
+  map("units") %>%
+  enframe("week", "unit") %>%
+  mutate(week = sprintf("week%02d", week)) %>%
+  unnest(unit) %>%
+  left_join(readings, by = "unit") %>%
+  group_by(week, book_id) %>%
+  summarise(units = paste0(unit_link(unit), collapse = ", "))
+
+key_books %>%
+  expand(book_id, week = sprintf("week%02d", 1:10)) %>%
+  left_join(unit_readings, by = c("book_id", "week")) %>%
+  replace_na(list(units = "")) %>%
+  left_join(key_books, by = "book_id") %>%
+  select(book_id, title, everything()) %>%
+  spread(week, units) %>%
+  knitr::kable() %>%
+  cat(file = "storyboard.md", sep = "\n")
+
+message("Building overview graph -------------------------")
+
+raw_units <- load_units()
+units <- tibble(
+  name = raw_units %>% names(),
+  label = gsub("-", "\n", name),
+  theme = raw_units %>% map_chr("theme"),
+  needs = raw_units %>% map("needs")
+)
+
+needs <- units %>% select(name, needs) %>% unnest(needs)
+
+needs_graph <- igraph::graph_from_data_frame(needs, vertices = units)
+
+ggraph(needs_graph, layout = "sugiyama") +
+  geom_edge_diagonal() +
+  geom_node_label(aes(label = label, fill = theme), size = 3) +
+  scale_y_reverse() +
+  theme_void() +
+  scale_fill_brewer(palette = "Set2")
+
+ggsave("overview.png", width = 14, height = 6, dpi = 96)
+
+message("-------------------------------------------------")
 message("DONE")
 

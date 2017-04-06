@@ -38,17 +38,6 @@ has_name <- function(x, nm) {
 
 `%||%` <- function(x, y) if (is.null(x)) y else x
 
-
-books <- readr::read_csv(
-  "books/books.csv",
-  col_types = cols(
-    id = col_character(),
-    title = col_character(),
-    href = col_character(),
-    depth = col_integer()
-  )
-)
-
 find_book <- function(x) {
   match <- books$id == x
   if (!any(match)) {

@@ -1,7 +1,3 @@
-library(tidyverse)
-library(glue)
-source("utils.R")
-
 unit_row <- function(unit, title, theme, week = "", n = 2) {
   ncol <- length(themes) + n
   start_col <- match(theme, tolower(themes))

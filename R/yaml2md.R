@@ -1,8 +1,3 @@
-library(yaml)
-library(tidyverse)
-library(glue)
-source("utils.R")
-
 # Theme index -------------------------------------------------------------
 
 themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")

@@ -1,0 +1,18 @@
+Package: curriculum
+Version: 0.0.0.9000
+Title: Curriclum for Stanford Data Lab
+Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
+    person("RStudio", role = "cph")
+  )
+Depends: 
+  tidyverse,
+  rvest,
+  stringr,
+  glue,
+  ggraph,
+  yaml
+License: GPL-3
+Encoding: UTF-8
+LazyData: true

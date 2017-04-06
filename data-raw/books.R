@@ -1,7 +1,6 @@
 library(tidyverse)
 
-paths <- dir("books", pattern = "\\.csv$", full.names = TRUE)
-paths <- setdiff(paths, "books/books.csv")
+paths <- dir("data-raw/", pattern = "\\.csv$", full.names = TRUE)
 
 paths <- paths %>%
   basename() %>%
@@ -16,4 +15,4 @@ books <- paths %>%
     depth = as.integer(depth)
   )
 
-write_csv(books, "books/books.csv")
+devtools::use_data(books)

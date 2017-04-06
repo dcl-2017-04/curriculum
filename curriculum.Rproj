@@ -15,5 +15,6 @@ LaTeX: XeLaTeX
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
 
-BuildType: Custom
-CustomScriptPath: build.R
+BuildType: Package
+PackageUseDevtools: Yes
+PackageInstallArgs: --no-multiarch --with-keep.source

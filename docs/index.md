@@ -1,70 +1,68 @@
 ---
-title: Theme index
+title: Syllabus
 ---
+## Explore {#explore}
 
-<table class="syllabus">
-<colgroup>
-  <col class="week" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-  <col class="theme" />
-</colgroup>
+* [Data basics](data-basics.html)
+* [Data vis basics](vis-basics.html)
+* [Exploratory data analysis](eda.html)
+* [Grouped summaries](vis-summaries.html)
+* [Perception](vis-perception.html)
+* [Spatial visualisation](spatial-vis.html)
+* [The grammar of graphics](vis-theory.html)
+* [Visual transformations](vis-transformation.html)
 
-<thead>
-<tr>
-  <th></th>
-  <th>Explore</th>
-  <th>Wrangle</th>
-  <th>Program</th>
-  <th>Model</th>
-  <th>Communicate</th>
-  <th>Workflow</th>
-  <th></th>
-  <th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="setup.html">Setup</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="code-style.html">Code style</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="documentation.html">Documentation</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="data-basics.html">Data basics</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="vis-basics.html">Data vis basics</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="manip-basics.html">Data manipulation basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="rmarkdown-basics.html">R Markdown basics</a></td>
-  <td colspan="1"></td>
-</tr>
-</tbody>
-</table>
+## Wrangle {#wrangle}
+
+* [Data manipulation basics](manip-basics.html)
+* [Date/time basics](datetime-basics.html)
+* [Debugging joins](joins-debugging.html)
+* [Essentials of relational data](relational-basics.html)
+* [Exporting data](export.html)
+* [Factor basics](factor-basics.html)
+* [Missing values](missing-values.html)
+* [Parsing files](parse-file.html)
+* [Parsing vectors](parse-vector.html)
+* [Regular expressions](regexps.html)
+* [Select and arrange](select-arrange.html)
+* [Semi- and anti-joins](filter-joins.html)
+* [Separate and unite](separate-unite.html)
+* [Spatial data basics](spatial-basics.html)
+* [Spreading and gathering](spread-gather.html)
+* [String basics](string-basics.html)
+* [Summarise and mutate helpers](manip-helpers.html)
+* [Tidy tibbles](tidy-tibbles.html)
+* [Window functions](window-functions.html)
+
+## Program {#program}
+
+* [Atomic vectors](vectors.html)
+* [Iteration](iteration.html)
+* [List columns](list-cols.html)
+* [Lists](lists.html)
+* [Vector functions](vector-functions.html)
+
+## Model {#model}
+
+* [Many models](model-many.html)
+* [Model intuition](model-basics.html)
+* [Models with multiple variables](model-multivariate.html)
+* [Visualising models](model-vis.html)
+
+## Communicate {#communicate}
+
+* [Generating multiple reports](report-generation.html)
+* [Labelling your graphics](vis-labelling.html)
+* [R Markdown basics](rmarkdown-basics.html)
+* [R Markdown presentations](rmarkdown-formats.html)
+
+## Workflow {#workflow}
+
+* [Code style](code-style.html)
+* [Documentation](documentation.html)
+* [Getting help](getting-help.html)
+* [Learning more](learning-more.html)
+* [Learning workflow](workflow-learning.html)
+* [Project organisation](project-organisation.html)
+* [Reprexes](reprexes.html)
+* [Setup](setup.html)
