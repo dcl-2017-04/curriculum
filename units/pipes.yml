@@ -1,0 +1,14 @@
+title: Pipes
+theme: program
+needs: [manip-basics]
+
+desc: |
+  As you dive deeper into dplyr, you'll find yourself creating increasingly
+  sophisticated pipelines of operations. It's a good idea to learn a bit about
+  the pipe, its strengths and weakensses, and when you should avoid it.
+
+readings:
+- book: r4ds-18.1
+- book: r4ds-18.2
+- book: r4ds-18.3
+- book: r4ds-18.4
