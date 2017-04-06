@@ -15,8 +15,10 @@
 - units:
   - eda
   - getting-help
-  - select-arrange
   - data-structure-basics
+  - tidy-data
+  - select-arrange
+  - pipes
 
 # - units:
 #   - eda
@@ -34,7 +36,6 @@
 #   - datetime-basics
 #   - string-basics
 #   - factor-basics
-#   - tidy-tibbles
 #   - relational-basics
 #   - spread-gather
 #   supplements:

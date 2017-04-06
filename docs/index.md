@@ -80,6 +80,18 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="data-structure-basics.html">Data structure basics</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="tidy-data.html">Tidy data</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="select-arrange.html">Select and arrange</a></td>
   <td colspan="4"></td>
@@ -87,7 +99,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="data-structure-basics.html">Data structure basics</a></td>
+  <td colspan="3"><a class="program" href="pipes.html">Pipes</a></td>
   <td colspan="3"></td>
 </tr>
 </tbody>
