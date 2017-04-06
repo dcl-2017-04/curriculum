@@ -4,6 +4,11 @@ theme: program
 needs: [setup]
 ---
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+
 It's helpful to know a little bit about how data structures are organised in R. The simplest data structure in R is the vector, which can be broken up in to atomic vectors and augmented vectors. Vectors of related data are organised together in tibbles and data.frames.
 
 ```{r setup, message = FALSE}
@@ -14,10 +19,10 @@ library(tidyverse)
 
 The atomic vectors are the "atoms" of R, the simple building blocks upon which all else is built.  There are four types of atomic vector that are important for data analysis:
 
-* __logical__ vectors (lgl) contain `TRUE` or `FALSE`.
-* __integer__ vectors (int) contain integers.
-* __double__ vectors (dbl) contain real numbers. 
-* __character__ vector (chr) contain strings made with `""`.
+* __logical__ vectors `<lgl>` contain `TRUE` or `FALSE`.
+* __integer__ vectors `<int>` contain integers.
+* __double__ vectors `<dbl>` contain real numbers. 
+* __character__ vector `<chr>` contain strings made with `""`.
 
 All vectors can also contain the missing value `NA`. You'll learn more about missing values later on. Collectively integer and double vectors are known as __numeric__ vectors. The difference is rarely important in R.
 
@@ -40,16 +45,17 @@ character <- c("this", "is", "a character", "vector")
 
 Augmented vectors are atomic vectors with additional metadata. There are four important augmented vectors:
 
-* factors (fct), which are used to represent categorical variables can take
+* __factors__ `<fct>`, which are used to represent categorical variables can take
   one of a fixed and known set of possible values (called the levels).
   
-* ordered factors (ord), which are like factors but where the level have an
+* __ordered factors__ `<ord>`, which are like factors but where the level have an
   intrinsic ordering (i.e. it's reasonable to say that one level is "less than"
   or "greater than" another variable).
   
-* dates (dt), which represe
+* __dates__ `<dt>`, record a date.
 
-* date/times also known as POSIXct (dttm)
+* __date-times__ `<dttm>`, which are also known as POSIXct, record a date
+  and a time.
 
 For now, you just need to recognise these when you encounter them. You'll learn how to create each type of augmented vector later in the course.
 
@@ -81,3 +87,20 @@ Related vectors (both atomic and augment) are collected together into data frame
     ```
 
 Typically it will be obvious whether you need to use `tibble()` or `tribble()`. One representation will either be much shorter or much clearer than the other.
+
+### Dimensions
+
+When you print a tibble it tell you its dimensions:
+
+```{r}
+diamonds
+```
+
+If you want to get access dimensions directly, you have three options:
+
+```{r}
+dim(diamonds)
+nrow(diamonds)
+ncol(diamonds)
+```
+

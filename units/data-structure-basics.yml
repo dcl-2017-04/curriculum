@@ -7,38 +7,53 @@ desc: "\nIt's helpful to know a little bit about how data structures are organis
   in tibbles and data.frames.\n\n``` r\nlibrary(tidyverse)\n```\n\nAtomic vectors\n--------------\n\nThe
   atomic vectors are the \"atoms\" of R, the simple building blocks upon which all
   else is built. There are four types of atomic vector that are important for data
-  analysis:\n\n-   **logical** vectors (lgl) contain `TRUE` or `FALSE`.\n-   **integer**
-  vectors (int) contain integers.\n-   **double** vectors (dbl) contain real numbers.\n-
-  \  **character** vector (chr) contain strings made with `\"\"`.\n\nAll vectors can
-  also contain the missing value `NA`. You'll learn more about missing values later
-  on. Collectively integer and double vectors are known as **numeric** vectors. The
-  difference is rarely important in R.\n\nYou create atomic vectors by hand with the
-  `c()` function:\n\n``` r\nlogical <- c(TRUE, FALSE, FALSE)\n\n# The difference between
-  the real number 1 and the integer 1 is not \n# usually important, but soemtimes
+  analysis:\n\n-   **logical** vectors `<lgl>` contain `TRUE` or `FALSE`.\n-   **integer**
+  vectors `<int>` contain integers.\n-   **double** vectors `<dbl>` contain real numbers.\n-
+  \  **character** vector `<chr>` contain strings made with `\"\"`.\n\nAll vectors
+  can also contain the missing value `NA`. You'll learn more about missing values
+  later on. Collectively integer and double vectors are known as **numeric** vectors.
+  The difference is rarely important in R.\n\nYou create atomic vectors by hand with
+  the `c()` function:\n\n``` r\nlogical <- c(TRUE, FALSE, FALSE)\n\n# The difference
+  between the real number 1 and the integer 1 is not \n# usually important, but soemtimes
   it comes up in base R code. R uses\n# the suffix \"L\" to indicate that a number
   is an integer.\ninteger <- c(1L, 2L, 3L)\n\ndouble <- c(1.5, 2.8, pi)\n\ncharacter
   <- c(\"this\", \"is\", \"a character\", \"vector\")\n```\n\nAugmented\n---------\n\nAugmented
   vectors are atomic vectors with additional metadata. There are four important augmented
-  vectors:\n\n-   factors (fct), which are used to represent categorical variables
+  vectors:\n\n-   **factors** `<fct>`, which are used to represent categorical variables
   can take one of a fixed and known set of possible values (called the levels).\n\n-
-  \  ordered factors (ord), which are like factors but where the level have an intrinsic
-  ordering (i.e. it's reasonable to say that one level is \"less than\" or \"greater
-  than\" another variable).\n\n-   dates (dt), which represe\n\n-   date/times also
-  known as POSIXct (dttm)\n\nFor now, you just need to recognise these when you encounter
-  them. You'll learn how to create each type of augmented vector later in the course.\n\nData
-  frames/tibbles\n-------------------\n\nRelated vectors (both atomic and augment)
-  are collected together into data frames or tibbles. Later you'll learn the precise
-  different between data.frames and tibbles, but don't worry about it for now. There
-  are two ways to create tibbles by hand:\n\n1.  From individual vectors, each representing
-  a column:\n\n    ``` r\n    my_tibble <- tibble(\n      x = c(1, 9, 5),\n      y
-  = c(TRUE, FALSE, FALSE),\n      z = c(\"apple\", \"pear\", \"banana\")\n    )\n
-  \   my_tibble\n    ```\n\n        ## # A tibble: 3 × 3\n        ##       x     y
-  \     z\n        ##   <dbl> <lgl>  <chr>\n        ## 1     1  TRUE  apple\n        ##
-  2     9 FALSE   pear\n        ## 3     5 FALSE banana\n\n2.  From individual values,
-  organised in rows:\n\n    ``` r\n    my_tibble <- tribble(\n      ~x, ~y,    ~z,\n
-  \     1,  TRUE,  \"apple\",\n      9,  FALSE, \"pear\",\n      5,  FALSE, \"banana\"\n
-  \   )\n    my_tibble\n    ```\n\n        ## # A tibble: 3 × 3\n        ##       x
-  \    y      z\n        ##   <dbl> <lgl>  <chr>\n        ## 1     1  TRUE  apple\n
-  \       ## 2     9 FALSE   pear\n        ## 3     5 FALSE banana\n\nTypically it
-  will be obvious whether you need to use `tibble()` or `tribble()`. One representation
-  will either be much shorter or much clearer than the other.\n"
+  \  **ordered factors** `<ord>`, which are like factors but where the level have
+  an intrinsic ordering (i.e. it's reasonable to say that one level is \"less than\"
+  or \"greater than\" another variable).\n\n-   **dates** `<dt>`, record a date.\n\n-
+  \  **date-times** `<dttm>`, which are also known as POSIXct, record a date and a
+  time.\n\nFor now, you just need to recognise these when you encounter them. You'll
+  learn how to create each type of augmented vector later in the course.\n\nData frames/tibbles\n-------------------\n\nRelated
+  vectors (both atomic and augment) are collected together into data frames or tibbles.
+  Later you'll learn the precise different between data.frames and tibbles, but don't
+  worry about it for now. There are two ways to create tibbles by hand:\n\n1.  From
+  individual vectors, each representing a column:\n\n    ``` r\n    my_tibble <- tibble(\n
+  \     x = c(1, 9, 5),\n      y = c(TRUE, FALSE, FALSE),\n      z = c(\"apple\",
+  \"pear\", \"banana\")\n    )\n    my_tibble\n    #> # A tibble: 3 × 3\n    #>       x
+  \    y      z\n    #>   <dbl> <lgl>  <chr>\n    #> 1     1  TRUE  apple\n    #>
+  2     9 FALSE   pear\n    #> 3     5 FALSE banana\n    ```\n\n2.  From individual
+  values, organised in rows:\n\n    ``` r\n    my_tibble <- tribble(\n      ~x, ~y,
+  \   ~z,\n      1,  TRUE,  \"apple\",\n      9,  FALSE, \"pear\",\n      5,  FALSE,
+  \"banana\"\n    )\n    my_tibble\n    #> # A tibble: 3 × 3\n    #>       x     y
+  \     z\n    #>   <dbl> <lgl>  <chr>\n    #> 1     1  TRUE  apple\n    #> 2     9
+  FALSE   pear\n    #> 3     5 FALSE banana\n    ```\n\nTypically it will be obvious
+  whether you need to use `tibble()` or `tribble()`. One representation will either
+  be much shorter or much clearer than the other.\n\n### Dimensions\n\nWhen you print
+  a tibble it tell you its dimensions:\n\n``` r\ndiamonds\n#> # A tibble: 53,940 ×
+  10\n#>    carat       cut color clarity depth table price     x     y     z\n#>
+  \   <dbl>     <ord> <ord>   <ord> <dbl> <dbl> <int> <dbl> <dbl> <dbl>\n#> 1   0.23
+  \    Ideal     E     SI2  61.5    55   326  3.95  3.98  2.43\n#> 2   0.21   Premium
+  \    E     SI1  59.8    61   326  3.89  3.84  2.31\n#> 3   0.23      Good     E
+  \    VS1  56.9    65   327  4.05  4.07  2.31\n#> 4   0.29   Premium     I     VS2
+  \ 62.4    58   334  4.20  4.23  2.63\n#> 5   0.31      Good     J     SI2  63.3
+  \   58   335  4.34  4.35  2.75\n#> 6   0.24 Very Good     J    VVS2  62.8    57
+  \  336  3.94  3.96  2.48\n#> 7   0.24 Very Good     I    VVS1  62.3    57   336
+  \ 3.95  3.98  2.47\n#> 8   0.26 Very Good     H     SI1  61.9    55   337  4.07
+  \ 4.11  2.53\n#> 9   0.22      Fair     E     VS2  65.1    61   337  3.87  3.78
+  \ 2.49\n#> 10  0.23 Very Good     H     VS1  59.4    61   338  4.00  4.05  2.39\n#>
+  # ... with 53,930 more rows\n```\n\nIf you want to get access dimensions directly,
+  you have three options:\n\n``` r\ndim(diamonds)\n#> [1] 53940    10\nnrow(diamonds)\n#>
+  [1] 53940\nncol(diamonds)\n#> [1] 10\n```\n"

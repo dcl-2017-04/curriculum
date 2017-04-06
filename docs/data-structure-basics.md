@@ -19,10 +19,10 @@ Atomic vectors
 
 The atomic vectors are the "atoms" of R, the simple building blocks upon which all else is built. There are four types of atomic vector that are important for data analysis:
 
--   **logical** vectors (lgl) contain `TRUE` or `FALSE`.
--   **integer** vectors (int) contain integers.
--   **double** vectors (dbl) contain real numbers.
--   **character** vector (chr) contain strings made with `""`.
+-   **logical** vectors `<lgl>` contain `TRUE` or `FALSE`.
+-   **integer** vectors `<int>` contain integers.
+-   **double** vectors `<dbl>` contain real numbers.
+-   **character** vector `<chr>` contain strings made with `""`.
 
 All vectors can also contain the missing value `NA`. You'll learn more about missing values later on. Collectively integer and double vectors are known as **numeric** vectors. The difference is rarely important in R.
 
@@ -46,13 +46,13 @@ Augmented
 
 Augmented vectors are atomic vectors with additional metadata. There are four important augmented vectors:
 
--   factors (fct), which are used to represent categorical variables can take one of a fixed and known set of possible values (called the levels).
+-   **factors** `<fct>`, which are used to represent categorical variables can take one of a fixed and known set of possible values (called the levels).
 
--   ordered factors (ord), which are like factors but where the level have an intrinsic ordering (i.e. it's reasonable to say that one level is "less than" or "greater than" another variable).
+-   **ordered factors** `<ord>`, which are like factors but where the level have an intrinsic ordering (i.e. it's reasonable to say that one level is "less than" or "greater than" another variable).
 
--   dates (dt), which represe
+-   **dates** `<dt>`, record a date.
 
--   date/times also known as POSIXct (dttm)
+-   **date-times** `<dttm>`, which are also known as POSIXct, record a date and a time.
 
 For now, you just need to recognise these when you encounter them. You'll learn how to create each type of augmented vector later in the course.
 
@@ -70,14 +70,13 @@ Related vectors (both atomic and augment) are collected together into data frame
       z = c("apple", "pear", "banana")
     )
     my_tibble
+    #> # A tibble: 3 × 3
+    #>       x     y      z
+    #>   <dbl> <lgl>  <chr>
+    #> 1     1  TRUE  apple
+    #> 2     9 FALSE   pear
+    #> 3     5 FALSE banana
     ```
-
-        ## # A tibble: 3 × 3
-        ##       x     y      z
-        ##   <dbl> <lgl>  <chr>
-        ## 1     1  TRUE  apple
-        ## 2     9 FALSE   pear
-        ## 3     5 FALSE banana
 
 2.  From individual values, organised in rows:
 
@@ -89,14 +88,46 @@ Related vectors (both atomic and augment) are collected together into data frame
       5,  FALSE, "banana"
     )
     my_tibble
+    #> # A tibble: 3 × 3
+    #>       x     y      z
+    #>   <dbl> <lgl>  <chr>
+    #> 1     1  TRUE  apple
+    #> 2     9 FALSE   pear
+    #> 3     5 FALSE banana
     ```
 
-        ## # A tibble: 3 × 3
-        ##       x     y      z
-        ##   <dbl> <lgl>  <chr>
-        ## 1     1  TRUE  apple
-        ## 2     9 FALSE   pear
-        ## 3     5 FALSE banana
-
 Typically it will be obvious whether you need to use `tibble()` or `tribble()`. One representation will either be much shorter or much clearer than the other.
+
+### Dimensions
+
+When you print a tibble it tell you its dimensions:
+
+``` r
+diamonds
+#> # A tibble: 53,940 × 10
+#>    carat       cut color clarity depth table price     x     y     z
+#>    <dbl>     <ord> <ord>   <ord> <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+#> 1   0.23     Ideal     E     SI2  61.5    55   326  3.95  3.98  2.43
+#> 2   0.21   Premium     E     SI1  59.8    61   326  3.89  3.84  2.31
+#> 3   0.23      Good     E     VS1  56.9    65   327  4.05  4.07  2.31
+#> 4   0.29   Premium     I     VS2  62.4    58   334  4.20  4.23  2.63
+#> 5   0.31      Good     J     SI2  63.3    58   335  4.34  4.35  2.75
+#> 6   0.24 Very Good     J    VVS2  62.8    57   336  3.94  3.96  2.48
+#> 7   0.24 Very Good     I    VVS1  62.3    57   336  3.95  3.98  2.47
+#> 8   0.26 Very Good     H     SI1  61.9    55   337  4.07  4.11  2.53
+#> 9   0.22      Fair     E     VS2  65.1    61   337  3.87  3.78  2.49
+#> 10  0.23 Very Good     H     VS1  59.4    61   338  4.00  4.05  2.39
+#> # ... with 53,930 more rows
+```
+
+If you want to get access dimensions directly, you have three options:
+
+``` r
+dim(diamonds)
+#> [1] 53940    10
+nrow(diamonds)
+#> [1] 53940
+ncol(diamonds)
+#> [1] 10
+```
 
