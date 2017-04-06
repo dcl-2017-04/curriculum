@@ -13,12 +13,13 @@
   - keifer-blog
 
 - units:
-  - eda
-  - getting-help
-  - data-structure-basics
-  - tidy-data
   - select-arrange
   - pipes
+  - eda
+  - data-structure-basics
+  - tidy-data
+  - vis-labelling
+  - getting-help
 
 # - units:
 #   - eda

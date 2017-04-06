@@ -70,13 +70,20 @@ title: Theme index
 <tbody>
 <tr>
 <td>2</td>
-  <td colspan="3"><a class="explore" href="eda.html">Exploratory data analysis</a></td>
-  <td colspan="5"></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="select-arrange.html">Select and arrange</a></td>
+  <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="pipes.html">Pipes</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="eda.html">Exploratory data analysis</a></td>
   <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
 </tr>
 <tr>
 <td></td>
@@ -92,15 +99,14 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="select-arrange.html">Select and arrange</a></td>
   <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labelling your graphics</a></td>
+  <td colspan="1"></td>
 </tr>
 <tr>
 <td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="pipes.html">Pipes</a></td>
-  <td colspan="3"></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
 </tr>
 </tbody>
 </table>
