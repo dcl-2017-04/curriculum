@@ -5,7 +5,7 @@ title: Setup
 <!-- Generated automatically from setup.yml. Do not edit by hand -->
 
 # Setup <small class='workflow'>[workflow]</small>
-<small>(Leads to: [Code style](code-style.md), [Data basics](data-basics.md), [Data structure basics](data-structure-basics.md), [Documentation](documentation.md), [Model intuition](model-basics.md), [R Markdown basics](rmarkdown-basics.md), [Atomic vectors](vectors.md))</small>
+<small>(Leads to: [Code style](code-style.md), [Data basics](data-basics.md), [Data structure basics](data-structure-basics.md), [Documentation](documentation.md), [Model intuition](model-basics.md), [R Markdown basics](rmarkdown-basics.md), [Atomic vectors](vectors.md), [RMarkdown workflow](workflow-rmarkdown.md))</small>
 
 Ensure that you have all the tools you need for this class. You should
 have done this before the first day.

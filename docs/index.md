@@ -113,5 +113,10 @@ title: Theme index
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
 </tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown workflow</a></td>
+</tr>
 </tbody>
 </table>

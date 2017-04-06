@@ -21,10 +21,17 @@
   - tidy-data
   - vis-labelling
   - getting-help
+  - workflow-rmarkdown
 
 # - units:
-#   - eda
+#   - manip-one-table
+#   - eda-2
 #   - missing-values
+#   - spread-gather
+#   - vector-functions
+#
+# - units:
+#   - eda
 #   - vis-theory
 #   - vis-summaries
 #   - vis-transformation
@@ -39,7 +46,7 @@
 #   - string-basics
 #   - factor-basics
 #   - relational-basics
-#   - spread-gather
+#
 #   supplements:
 #   - biobroom
 #   - leek-non-tidy
@@ -50,14 +57,13 @@
 #   - parse-file
 #   - regexps
 #   - separate-unite
-#   - vis-labelling
 #   - vis-perception
 #   supplements:
 #   - happy-graphing
 #
 # - units:
 #   - vectors
-#   - vector-functions
+#
 #   - lists
 #   - iteration
 #
