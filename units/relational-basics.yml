@@ -11,7 +11,7 @@ desc: |
   the __mutating joins__, the first set of tools for working with related
   dataset.
 
-needs: [eda]
+needs: [eda-1d]
 
 readings:
 - book: r4ds-13.1

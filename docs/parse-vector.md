@@ -5,7 +5,7 @@ title: Parsing vectors
 <!-- Generated automatically from parse-vector.yml. Do not edit by hand -->
 
 # Parsing vectors <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Exploratory data analysis](eda.md))</small>  
+<small>(Builds on: [Exploratory data analysis (1D)](eda-1d.md))</small>  
 <small>(Leads to: [Parsing files](parse-file.md))</small>
 
 Importing a file takes place in two steps:

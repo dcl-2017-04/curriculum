@@ -14,38 +14,36 @@
 
 - units:
   - vis-basics-2
-  - select-arrange
+  - manip-one-table
   - pipes
-  - eda
+  - eda-1d
   - data-structure-basics
   - tidy-data
   - vis-labelling
   - getting-help
-  - workflow-rmarkdown
 
 # - units:
-#   - manip-one-table
-#   - eda-2
+#   - eda-2d
 #   - missing-values
-#   - spread-gather
+#   - datetime-basics
 #   - vector-functions
+#   - workflow-rmarkdown
+#   - summaries-are-models
 #
 # - units:
-#   - eda
-#   - vis-theory
+#   - parse-vector
+#   - parse-file
+#   - spread-gather
 #   - vis-summaries
 #   - vis-transformation
-#   - getting-help
-#   supplements:
-#   - rauser-how-humans-see
-#   - schneider-bikes
-#   - schneider-taxis
+#   - iteration
+#   - workflow-projects
 #
 # - units:
-#   - datetime-basics
 #   - string-basics
+#   - regexps
+#   - separate-unite
 #   - factor-basics
-#   - relational-basics
 #
 #   supplements:
 #   - biobroom
@@ -53,26 +51,19 @@
 #   - wickham-tidy-data
 #
 # - units:
-#   - parse-vector
-#   - parse-file
-#   - regexps
-#   - separate-unite
+#   - relational-basics
 #   - vis-perception
 #   supplements:
 #   - happy-graphing
 #
 # - units:
 #   - vectors
-#
 #   - lists
-#   - iteration
 #
 #   supplements:
 #   - wickham-purrr
 #
 # - units:
-#   - select-arrange
-#   - manip-helpers
 #   - window-functions
 #   - filter-joins
 #   - joins-debugging

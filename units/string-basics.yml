@@ -7,7 +7,7 @@ desc: |
   locations. Later we'll come back to regular expressions, which give you a
   powerful language for describing and manipulation patterns within a string.
 
-needs: [eda]
+needs: [eda-1d]
 
 readings:
 - book: r4ds-14.1

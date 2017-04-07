@@ -6,7 +6,7 @@ title: Iteration
 
 # Iteration <small class='program'>[program]</small>
 <small>(Builds on: [Lists](lists.md), [Vector functions](vector-functions.md))</small>  
-<small>(Leads to: [List columns](list-cols.md))</small>
+<small>(Leads to: [List columns](list-cols.md), [Programming dplyr](manip-programming.md))</small>
 
 Functions allow you to eliminate one type of duplication. The tools
 of iteration, for loops and functional programming, allow you to eliminate

@@ -8,7 +8,7 @@ desc: |
   to present your findings as they allow the viewer to quickly situate
   themselves in the context of the data
 
-needs: [eda]
+needs: [vis-basics-2]
 
 readings:
 - book: r4ds-28.2

@@ -90,7 +90,7 @@ Typically it will be obvious whether you need to use `tibble()` or `tribble()`. 
 
 ### Dimensions
 
-When you print a tibble it tell you its dimensions:
+When you print a tibble it tell you its column names and the overall dimensions:
 
 ```{r}
 diamonds
@@ -103,4 +103,18 @@ dim(diamonds)
 nrow(diamonds)
 ncol(diamonds)
 ```
+
+To get the variable names, use `names()`:
+
+```{r}
+names(diamonds)
+```
+
+There isn't currently a convenient way to get the variable types, but you can use `purrr::map_chr()` to apply `type_sum()` (short for type summary) to each variable.
+
+```{r}
+type_sum(diamonds)
+map_chr(diamonds, type_sum)
+```
+
 

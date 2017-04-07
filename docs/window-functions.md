@@ -5,7 +5,7 @@ title: Window functions
 <!-- Generated automatically from window-functions.yml. Do not edit by hand -->
 
 # Window functions <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
+<small>(Builds on: [Manipulation basics](manip-basics.md))</small>
 
 Window functions are an important family of functions; they're analogous
 to the summary functions that you already know about, but are work with

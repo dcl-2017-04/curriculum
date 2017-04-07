@@ -5,7 +5,7 @@ title: Pipes
 <!-- Generated automatically from pipes.yml. Do not edit by hand -->
 
 # Pipes <small class='program'>[program]</small>
-<small>(Builds on: [Data manipulation basics](manip-basics.md))</small>
+<small>(Builds on: [Manipulation basics](manip-basics.md))</small>
 
 As you dive deeper into dplyr, you'll find yourself creating increasingly
 sophisticated pipelines of operations. It's a good idea to learn a bit about

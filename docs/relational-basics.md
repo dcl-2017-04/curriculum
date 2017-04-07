@@ -5,7 +5,7 @@ title: Essentials of relational data
 <!-- Generated automatically from relational-basics.yml. Do not edit by hand -->
 
 # Essentials of relational data <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Exploratory data analysis](eda.md))</small>  
+<small>(Builds on: [Exploratory data analysis (1D)](eda-1d.md))</small>  
 <small>(Leads to: [Semi- and anti-joins](filter-joins.md))</small>
 
 It is extremely rare to only require a single table of data for an analysis.

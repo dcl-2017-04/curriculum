@@ -1,0 +1,8 @@
+---
+unit_title: Programming dplyr
+needs: [iteration, manip-basics]
+theme: program
+---
+
+* colwise helpers
+* quasiquotation

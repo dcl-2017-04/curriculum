@@ -1,0 +1,67 @@
+---
+unit_title: Exploratory data analysis (1D)
+theme: explore
+needs: [vis-basics, manip-basics]
+readings:
+- book: r4ds-7.1
+- book: r4ds-7.2
+- book: r4ds-7.3
+---
+
+Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.
+
+```{r setup, message = FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+Whenever you start working with a new variable, it's a really good idea to first take a look at the variable by itself, before you start combining it with other variables. As well as the visual techniques you'll learn in the readings, another quick and dirty function is `count()`. 
+
+`df %>% count(grp)` is shorthand for `df %>% group_by(grp) %>% summarise(n = n())`. 
+
+```{r}
+flights %>% count(carrier)
+```
+
+It has two convenient arguments: 
+
+*   `sort = TRUE` automatically arranges the result so the most common values are 
+    at the top
+
+    ```{r}
+    flights %>% count(dest, sort = TRUE)
+    ```
+
+*  `wt = my_variable` switches from a count to a weight sum of `my_variable`.
+   For example, the following code gives the total amount distance traveled by
+   each carrier. It is particularly useful if you have data that has already 
+   been aggregated.
+
+    ```{r}
+    flights %>% count(carrier, wt = distance)
+    ```
+
+You can also `count()` the value of expression. This is a useful technique to get a quick count of how many missing values there are:
+
+```{r}
+flights %>% count(is.na(dep_delay))
+
+flights %>% count(
+  dep_missing = is.na(dep_time), 
+  arr_missing = is.na(arr_time)
+)
+```
+
+You can combine `count()` with the `cut_*` functions from ggplot2 to compute histograms "by hand":
+
+```{r}
+# five bins of equal widths
+flights %>% count(cut_interval(arr_delay, 5))
+
+# five bins with approximately equal numbers of points
+flights %>% count(cut_number(arr_delay, 5))
+
+# hourly bins
+flights %>% count(cut_width(arr_delay, 60, boundary = 0))
+```
+

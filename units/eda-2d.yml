@@ -1,12 +1,11 @@
-title: Exploratory data analysis
+title: Exploratory data analysis (2D)
 theme: explore
-needs: [vis-basics, manip-basics]
+needs: [eda-1d]
 
 desc: |
   Exploratory data analysis is partly a set of techniques, but is mostly a
   mindset: you want to remain open to what the data is telling you.
 
 readings:
-- book: r4ds-7.1
-- book: r4ds-7.2
-- book: r4ds-7.3
+- book: r4ds-7.5
+- book: r4ds-7.6

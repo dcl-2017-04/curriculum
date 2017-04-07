@@ -20,7 +20,7 @@ desc: |
   In this unit, you'll learn the basic approach, visualising a very simple
   model.
 
-needs: [eda, model-basics]
+needs: [eda-2d, model-basics]
 
 readings:
 - book: r4ds-23.3

@@ -1,11 +1,12 @@
 ---
-title: vis basics 2
+title: Visualisation basics (2)
 ---
 
 <!-- Generated automatically from vis-basics-2.yml. Do not edit by hand -->
 
-# vis basics 2 <small class='explore'>[explore]</small>
-<small>(Builds on: [Data vis basics](vis-basics.md))</small>
+# Visualisation basics (2) <small class='explore'>[explore]</small>
+<small>(Builds on: [Visualisation basics](vis-basics.md))</small>  
+<small>(Leads to: [Labelling your graphics](vis-labelling.md), [The grammar of graphics](vis-theory.md))</small>
 
 Now it's time to learn some more of the components that make up ggplot2.
 

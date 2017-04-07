@@ -1,12 +1,12 @@
 ---
-title: Data manipulation basics
+title: Manipulation basics
 ---
 
 <!-- Generated automatically from manip-basics.yml. Do not edit by hand -->
 
-# Data manipulation basics <small class='wrangle'>[wrangle]</small>
+# Manipulation basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Data basics](data-basics.md))</small>  
-<small>(Leads to: [Exploratory data analysis](eda.md), [Summarise and mutate helpers](manip-helpers.md), [Pipes](pipes.md), [Select and arrange](select-arrange.md), [Window functions](window-functions.md))</small>
+<small>(Leads to: [Exploratory data analysis (1D)](eda-1d.md), [Other single table verbs](manip-one-table.md), [Programming dplyr](manip-programming.md), [Pipes](pipes.md), [Window functions](window-functions.md))</small>
 
 Some basic data manipulation is essential for many visualisations. Here
 you'll the learn the most important dplyr functions: `filter()`,

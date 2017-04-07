@@ -5,7 +5,7 @@ title: String basics
 <!-- Generated automatically from string-basics.yml. Do not edit by hand -->
 
 # String basics <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Exploratory data analysis](eda.md))</small>  
+<small>(Builds on: [Exploratory data analysis (1D)](eda-1d.md))</small>  
 <small>(Leads to: [Factor basics](factor-basics.md), [Regular expressions](regexps.md))</small>
 
 The basics of string manipulation will give you the ability to create new

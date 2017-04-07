@@ -1,0 +1,10 @@
+title: Programming dplyr
+theme: program
+needs:
+- iteration
+- manip-basics
+readings: ~
+desc: |2
+
+  -   colwise helpers
+  -   quasiquotation

@@ -6,7 +6,7 @@ desc: |
   focus on dates and date-times. This unit gives you the basic tools you'll
   need to filter and summarise temporal data.
 
-needs: [eda]
+needs: [eda-2d]
 
 readings:
 - book: r4ds-16.1

@@ -1,6 +1,6 @@
 title: Parsing vectors
 theme: wrangle
-needs: [eda]
+needs: [eda-1d]
 
 desc: |
   Importing a file takes place in two steps:
