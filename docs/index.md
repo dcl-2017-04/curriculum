@@ -87,12 +87,6 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="pipes.html">Pipes</a></td>
-  <td colspan="3"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="3"><a class="explore" href="eda-1d.html">Exploratory data analysis (1D)</a></td>
   <td colspan="5"></td>
 </tr>
