@@ -51,7 +51,7 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="3"><a class="explore" href="vis-basics.html">Visualisation basics</a></td>
+  <td colspan="3"><a class="explore" href="vis-basics.html">Visualisation basics (1)</a></td>
   <td colspan="5"></td>
 </tr>
 <tr>
@@ -72,6 +72,12 @@ title: Theme index
 <td>2</td>
   <td colspan="3"><a class="explore" href="vis-basics-2.html">Visualisation basics (2)</a></td>
   <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labelling your graphics</a></td>
+  <td colspan="1"></td>
 </tr>
 <tr>
 <td></td>
@@ -104,44 +110,8 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labelling your graphics</a></td>
-  <td colspan="1"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td>3</td>
-  <td colspan="3"><a class="explore" href="eda-2d.html">Exploratory data analysis (2D)</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="missing-values.html">Missing values</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="vector-functions.html">Vector functions</a></td>
-  <td colspan="3"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown workflow</a></td>
 </tr>
 </tbody>
 </table>

@@ -6,7 +6,7 @@ title: Data basics
 
 # Data basics <small class='explore'>[explore]</small>
 <small>(Builds on: [Setup](setup.md))</small>  
-<small>(Leads to: [Manipulation basics](manip-basics.md), [Visualisation basics](vis-basics.md))</small>
+<small>(Leads to: [Manipulation basics](manip-basics.md), [Visualisation basics (1)](vis-basics.md))</small>
 
 Learn what a data frame looks like when printed, and identify its variables
 and their types. We're going to use the `mpg` and `flights` datasets

@@ -1,10 +1,10 @@
 ---
-title: Visualisation basics
+title: Visualisation basics (1)
 ---
 
 <!-- Generated automatically from vis-basics.yml. Do not edit by hand -->
 
-# Visualisation basics <small class='explore'>[explore]</small>
+# Visualisation basics (1) <small class='explore'>[explore]</small>
 <small>(Builds on: [Data basics](data-basics.md))</small>  
 <small>(Leads to: [Exploratory data analysis (1D)](eda-1d.md), [Visualisation basics (2)](vis-basics-2.md))</small>
 

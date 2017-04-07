@@ -19,7 +19,4 @@ themselves in the context of the data
 
   * [Annotations](http://r4ds.had.co.nz/graphics-for-communication.html#annotations) [r4ds-28.3]
 
-  * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
-    Focus on §3.3 and §3.4
-
 

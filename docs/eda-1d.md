@@ -5,7 +5,7 @@ title: Exploratory data analysis (1D)
 <!-- Generated automatically from eda-1d.yml. Do not edit by hand -->
 
 # Exploratory data analysis (1D) <small class='explore'>[explore]</small>
-<small>(Builds on: [Visualisation basics](vis-basics.md), [Manipulation basics](manip-basics.md))</small>  
+<small>(Builds on: [Visualisation basics (1)](vis-basics.md), [Manipulation basics](manip-basics.md))</small>  
 <small>(Leads to: [Exploratory data analysis (2D)](eda-2d.md), [Parsing vectors](parse-vector.md), [Essentials of relational data](relational-basics.md), [String basics](string-basics.md), [Tidy data](tidy-data.md), [Vector functions](vector-functions.md))</small>
 
 

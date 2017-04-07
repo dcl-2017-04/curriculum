@@ -13,5 +13,3 @@ needs: [vis-basics-2]
 readings:
 - book: r4ds-28.2
 - book: r4ds-28.3
-- book: ggplot2-3
-  desc: Focus on §3.3 and §3.4
