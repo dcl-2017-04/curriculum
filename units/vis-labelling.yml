@@ -2,7 +2,7 @@ title: Labelling your graphics
 theme: communicate
 
 desc: |
-  Good label make visualisations much easier to understand for newcomers to
+  Good labels make visualisations much easier to understand for newcomers to
   the data. They are not so important while you're doing an analysis
   (as you're deeply familiar with the data), but are crucial when you go
   to present your findings as they allow the viewer to quickly situate
@@ -12,4 +12,3 @@ needs: [vis-basics-2]
 
 readings:
 - book: r4ds-28.2
-- book: r4ds-28.3
