@@ -105,12 +105,18 @@ build_overview <- function() {
 
   needs_graph <- igraph::graph_from_data_frame(needs, vertices = units)
 
-  ggraph(needs_graph, layout = "sugiyama") +
-    geom_edge_diagonal() +
+  ggraph(needs_graph, layout = "nicely") +
+    geom_edge_link(
+      aes(
+        start_cap = label_rect(node1.label),
+        end_cap = label_rect(node2.label)
+      ),
+      arrow = arrow(length = unit(2, "mm"))
+    ) +
     geom_node_label(aes(label = label, fill = theme), size = 3) +
     scale_y_reverse() +
     theme_void() +
     scale_fill_brewer(palette = "Set2")
 
-  ggsave("overview.png", width = 14, height = 6, dpi = 96)
+  ggsave("overview.png", width = 12, height = 8, dpi = 96)
 }

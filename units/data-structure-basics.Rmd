@@ -1,7 +1,7 @@
 ---
 unit_title: Data structure basics
 theme: program
-needs: [setup]
+needs: [manip-basics]
 ---
 
 ```{r, include = FALSE}

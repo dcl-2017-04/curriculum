@@ -1,6 +1,6 @@
 title: Data structure basics
 theme: program
-needs: setup
+needs: manip-basics
 readings: ~
 desc: "\nIt's helpful to know a little bit about how data structures are organised
   in R. The simplest data structure in R is the vector, which can be broken up in

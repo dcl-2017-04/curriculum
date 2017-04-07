@@ -8,7 +8,7 @@ desc: |
   work with vectors because they are much simpler. You've used vectors quite
   a bit, but we haven't yet discussed them in detail.
 
-needs: [setup]
+needs: [data-structure-basics]
 
 readings:
 - book: r4ds-20.2
