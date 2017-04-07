@@ -5,15 +5,9 @@ write_if_different <- function(contents, path, check = TRUE) {
 
   if (same_contents(path, contents)) return(FALSE)
 
-  name <- basename(path)
-  if (!str_detect(name, "^[a-zA-Z][a-zA-Z0-9_.-]*$")) {
-    cat("Skipping invalid path: ", name, "\n")
-    FALSE
-  } else {
-    cat(sprintf('Writing %s\n', name))
-    write_file(contents, path)
-    TRUE
-  }
+  message('Writing ', basename(path))
+  write_file(contents, path)
+  TRUE
 }
 
 same_contents <- function(path, contents) {

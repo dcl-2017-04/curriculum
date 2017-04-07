@@ -11,4 +11,4 @@ readings:
 - book: r4ds-5.7
 
 - href: http://dplyr.tidyverse.org/articles/window-functions.html
-  title: Window functions
+  text: Window functions vignette
