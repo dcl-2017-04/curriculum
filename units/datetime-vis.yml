@@ -1,0 +1,10 @@
+title: Date/time visualisation
+theme: explore
+
+needs: [datetime-basics, eda-2d]
+
+readings:
+- book: ggplot2-6
+  desc: >
+    Read only §6.6.1 focussing on date/time scales. This will allow you
+    to optimise the visualisation of date/time data, if needed.

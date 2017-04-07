@@ -10,5 +10,5 @@ needs: [manip-basics]
 readings:
 - book: r4ds-5.7
 
-- href: https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html
+- href: http://dplyr.tidyverse.org/articles/window-functions.html
   title: Window functions

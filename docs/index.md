@@ -122,6 +122,12 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-transformation.html">Scales</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="spread-gather.html">Spreading and gathering</a></td>
   <td colspan="4"></td>

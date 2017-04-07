@@ -24,6 +24,7 @@
 - units:
   - missing-values
   - eda-2d
+  - vis-transformation
   - spread-gather
   - datetime-basics
   - vector-functions

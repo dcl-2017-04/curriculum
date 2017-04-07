@@ -6,7 +6,7 @@ desc: |
   focus on dates and date-times. This unit gives you the basic tools you'll
   need to filter and summarise temporal data.
 
-needs: [eda-2d]
+needs: [data-structure-basics]
 
 readings:
 - book: r4ds-16.1
@@ -16,7 +16,3 @@ readings:
     Read only §16.3.1 (getting components) and §16.3.2 (rounding).
     These are both important for when you want to group by and summarise
     longer time periods.
-- book: ggplot2-6
-  desc: >
-    Read only §6.6.1 focussing on date/time scales. This will allow you
-    to optimise the visualisation of date/time data, if needed.

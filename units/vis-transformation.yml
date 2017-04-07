@@ -1,5 +1,5 @@
-title: Visual transformations
-theme: explore
+title: Scales
+theme: communicate
 
 desc: |
   You've already learned about transformation functions that you use with
@@ -12,11 +12,8 @@ desc: |
   the plot. Mastering this aspect of scales is important when creating plots
   for others to understand. We'll come back to this idea later.
 
-needs: [vis-theory]
+needs: [vis-basics-2]
 
 readings:
 
-- book: ggplot2-6
-  desc: >
-    You can skip §6.3 and §6.4: we'll discuss them in detail when we talk
-    more about plots for communication.
+- book: r4ds-28.4

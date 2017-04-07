@@ -15,6 +15,6 @@ grouped `mutate()`s and `filter()`s, rather than grouped `summarise()`s.
 
   * [Grouped mutates (and filters)](http://r4ds.had.co.nz/transform.html#grouped-mutates-and-filters) [r4ds-5.7]
 
-  * [https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html](https://cran.r-project.org/web/packages/dplyr/vignettes/window-functions.html)
+  * [http://dplyr.tidyverse.org/articles/window-functions.html](http://dplyr.tidyverse.org/articles/window-functions.html)
 
 

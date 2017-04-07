@@ -6,7 +6,7 @@ title: Exploratory data analysis (2D)
 
 # Exploratory data analysis (2D) <small class='explore'>[explore]</small>
 <small>(Builds on: [Exploratory data analysis (1D)](eda-1d.md))</small>  
-<small>(Leads to: [Date/time basics](datetime-basics.md), [Missing values](missing-values.md), [Visualising models](model-vis.md))</small>
+<small>(Leads to: [Date/time visualisation](datetime-vis.md), [Missing values](missing-values.md), [Visualising models](model-vis.md))</small>
 
 Exploratory data analysis is partly a set of techniques, but is mostly a
 mindset: you want to remain open to what the data is telling you.
