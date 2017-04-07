@@ -12,5 +12,16 @@ desc: |
   To fix these problems you need `spread()` and `gather()` from the
   tidyr package.
 
+  `spread()` and `gather()` also illustrate a new type of missingness.
+  So far we've discussed explicit missing values (`NA`), but it's also
+  possible for missing values to be simply absent from the data.
+
 readings:
 - book: r4ds-12.3
+
+- book: r4ds-12.5
+  desc: >
+    (explicit vs implicit).
+    We haven't covered the vocabulary of "tidy data" yet, but be aware that
+    different ways of organisation the same data may make explicit missing
+    values that were previously implicit in the data.

@@ -107,6 +107,11 @@ title: Theme index
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="getting-help.html">Getting help</a></td>
 </tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="vis-calls.html">ggplot2 calls</a></td>
+  <td colspan="5"></td>
+</tr>
 </tbody>
 <tbody>
 <tr>

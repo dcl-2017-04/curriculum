@@ -6,7 +6,7 @@ title: Visualisation basics (2)
 
 # Visualisation basics (2) <small class='explore'>[explore]</small>
 <small>(Builds on: [Visualisation basics (1)](vis-basics.md))</small>  
-<small>(Leads to: [Labelling your graphics](vis-labelling.md), [Scales](vis-scales.md), [The grammar of graphics](vis-theory.md))</small>
+<small>(Leads to: [ggplot2 calls](vis-calls.md), [Labelling your graphics](vis-labelling.md), [Scales](vis-scales.md), [The grammar of graphics](vis-theory.md))</small>
 
 Now it's time to learn some more of the components that make up ggplot2.
 
@@ -36,7 +36,5 @@ use throughout the rest of the course.
   * [Coordinate systems](http://r4ds.had.co.nz/data-visualisation.html#coordinate-systems) [r4ds-3.9]
 
   * [The layered grammar of graphics](http://r4ds.had.co.nz/data-visualisation.html#the-layered-grammar-of-graphics) [r4ds-3.10]
-
-  * [ggplot2 calls](http://r4ds.had.co.nz/exploratory-data-analysis.html#ggplot2-calls) [r4ds-7.7]
 
 

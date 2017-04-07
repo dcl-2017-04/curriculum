@@ -1,0 +1,13 @@
+title: ggplot2 calls
+theme: explore
+needs: [vis-basics-2]
+
+desc: |
+  As you get more familiar with ggplot2, you can start to rely more
+  on the position of arguments and less on explicit names. This allows
+  you to create visualisations more quickly, with only a short-term
+  loss of clarity before you internalise the most important argument
+  names.
+
+readings:
+- book: r4ds-7.7
