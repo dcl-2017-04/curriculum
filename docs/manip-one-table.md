@@ -15,8 +15,8 @@ library(tidyverse)
 library(nycflights13)
 ```
 
-`select()`
-----------
+Select
+------
 
 Most of the datasets you'll work with in this class only have a relatively small number of variables, and generally you don't need to reduce further. In real life, you'll sometimes encounter datasets with hundreds or even thousands of variables, and the first challenge is just to narrow down to a useful subset. Solving that problem is the job of `select()`.
 
@@ -93,8 +93,8 @@ flights %>% select(dep_delay, arr_delay, everything())
 #> #   time_hour <dttm>
 ```
 
-`rename()`
-----------
+Rename
+------
 
 To change the name of a variable use `df %>% rename(new_name = old_name)`. If you have trouble remembering which sides old and new go on, remember it's the same order as `mutate()`.
 
@@ -119,8 +119,8 @@ flights %>% rename(tail_num = tailnum)
 #> #   minute <dbl>, time_hour <dttm>
 ```
 
-`transmute()`
--------------
+Transmute
+---------
 
 Transmute is a minor variation of `mutate()`. The main difference is that it drops any variables that you didn't explicitly mention. It's a useful shortcut for `mutate()` + `select()`.
 
@@ -146,8 +146,8 @@ df %>% transmute(z = x + y)
 #> 3     4
 ```
 
-`arrange()`
------------
+Arrange
+-------
 
 `arrange()` lets you change the order of the rows. To put a column in descending order, use `desc()`.
 
@@ -190,8 +190,8 @@ flights %>% arrange(year, month, day)
 #> #   minute <dbl>, time_hour <dttm>
 ```
 
-`distinct()`
-------------
+Distinct
+--------
 
 `distinct()` removes duplicates from a dataset. The result is ordered by first occurence in original dataset.
 
@@ -213,8 +213,8 @@ flights %>% distinct(carrier, flight)
 #> # ... with 5,715 more rows
 ```
 
-`sample_n()` and `sample_frac()`
---------------------------------
+Sample
+------
 
 When working with very large datasets, sometimes it's convenient to reduce to a smaller dataset, just by taking a random sample. That's the job of `sample_n()` and `sample_frac()`. `sample_n()` selects the same number of observations from each group, `sample_frac()` selects the same proportion.
 
@@ -230,16 +230,16 @@ popular_dest %>% sample_n(100)
 #> 
 #>     year month   day dep_time sched_dep_time dep_delay arr_time
 #>    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-#> 1   2013     7     1     1720           1659        21     1934
-#> 2   2013     6    28      558            600        -2      801
-#> 3   2013    11    10     1610           1615        -5     1856
-#> 4   2013     3     8       NA           1411        NA       NA
-#> 5   2013    11     3      743            745        -2      959
-#> 6   2013     4     3     1325           1259        26     1558
-#> 7   2013     4    29     1355           1359        -4     1624
-#> 8   2013     6    26      613            600        13      833
-#> 9   2013     8    12     1713           1659        14     2029
-#> 10  2013     8    29     1947           1950        -3     2204
+#> 1   2013     8     7      811            810         1     1124
+#> 2   2013     5     9     1639           1600        39     1845
+#> 3   2013     8    19     1201           1205        -4     1423
+#> 4   2013    10     2     1641           1645        -4     1901
+#> 5   2013     6    26     1451           1325        86     1731
+#> 6   2013     6    17     2108           2000        68     2336
+#> 7   2013    11     6      630            630         0      919
+#> 8   2013     3     8     1458           1200       178     1711
+#> 9   2013     3    22     1631           1630         1     1851
+#> 10  2013    10    25      855            900        -5     1111
 #> # ... with 5,790 more rows, and 12 more variables: sched_arr_time <int>,
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
@@ -252,24 +252,24 @@ popular_dest %>% sample_frac(0.01)
 #> 
 #>     year month   day dep_time sched_dep_time dep_delay arr_time
 #>    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-#> 1   2013     5    16      736            745        -9      953
-#> 2   2013     8    13     1338           1330         8     1558
-#> 3   2013     2    21      754            759        -5     1027
-#> 4   2013     5     4     1205           1205         0     1517
-#> 5   2013    11     6     1923           1930        -7     2143
-#> 6   2013     7    10     1522           1237       165     1917
-#> 7   2013     9    18     1554           1545         9     1817
-#> 8   2013     1    27      953            955        -2     1215
-#> 9   2013     8    15      558            600        -2      836
-#> 10  2013     7    21      628            630        -2      838
+#> 1   2013     7    16     1544           1459        45     1823
+#> 2   2013    11    26     1306           1300         6     1543
+#> 3   2013     6     7     1214           1205         9     1436
+#> 4   2013     1    21      810            810         0     1033
+#> 5   2013     7    27     1627           1620         7     1856
+#> 6   2013     7     9     1758           1330       268     2046
+#> 7   2013     6     2     1603           1600         3     1836
+#> 8   2013     2     2     1952           2000        -8     2158
+#> 9   2013     7    25     1304           1310        -6     1515
+#> 10  2013     6     6     1522           1520         2     1809
 #> # ... with 3,195 more rows, and 12 more variables: sched_arr_time <int>,
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
 #> #   minute <dbl>, time_hour <dttm>
 ```
 
-`slice()`, `head()`, and `tail()`
----------------------------------
+Slice rows
+----------
 
 `slice()` allows to pick rows by position, by group. `head()` and `tail()` just show the first (or last) few rows of the entire data frame.
 
