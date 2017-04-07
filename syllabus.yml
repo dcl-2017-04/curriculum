@@ -24,7 +24,7 @@
 - units:
   - missing-values
   - eda-2d
-  - vis-transformation
+  - vis-scales
   - spread-gather
   - datetime-basics
   - vector-functions
@@ -35,7 +35,6 @@
 #   - parse-vector
 #   - parse-file
 #   - vis-summaries
-#   - vis-transformation
 #   - iteration
 #   - workflow-projects
 #
