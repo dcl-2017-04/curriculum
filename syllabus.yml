@@ -21,18 +21,18 @@
   - tidy-data
   - getting-help
 
-# - units:
-#   - eda-2d
-#   - missing-values
-#   - datetime-basics
-#   - vector-functions
-#   - workflow-rmarkdown
-#   - summaries-are-models
+- units:
+  - missing-values
+  - eda-2d
+  - spread-gather
+  - datetime-basics
+  - vector-functions
+  - window-functions
+  - workflow-rmarkdown
 #
 # - units:
 #   - parse-vector
 #   - parse-file
-#   - spread-gather
 #   - vis-summaries
 #   - vis-transformation
 #   - iteration

@@ -8,7 +8,7 @@ title: Window functions
 <small>(Builds on: [Manipulation basics](manip-basics.md))</small>
 
 Window functions are an important family of functions; they're analogous
-to the summary functions that you already know about, but are work with
+to the summary functions that you already know about, but work with
 grouped `mutate()`s and `filter()`s, rather than grouped `summarise()`s.
 
 ## Readings
