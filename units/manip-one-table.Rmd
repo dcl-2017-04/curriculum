@@ -101,11 +101,18 @@ popular_dest %>% sample_frac(0.01)
 ```
 
 
-## `slice()`
+## `slice()`, `head()`, and `tail()`
 
-We haven't talked about two useful functions from dplyr:
+`slice()` allows to pick rows by position, by group. `head()` and `tail()` just show the first (or last) few rows of the entire data frame. 
 
-* `select()` allows you pick variables based on their name
+```{r}
+# first flights to each dest
+flights %>% group_by(dest) %>% slice(1:5)
 
-* `arrange()` allows you to arrange the order of the rows.
+# first flights overall
+flights %>% head()
+
+# last flights overall
+flights %>% tail()
+```
 

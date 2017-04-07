@@ -261,16 +261,16 @@ popular_dest %>% sample_n(100)
     ## 
     ##     year month   day dep_time sched_dep_time dep_delay arr_time
     ##    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-    ## 1   2013     9    11     1545           1545         0     1822
-    ## 2   2013     3    15      625            629        -4      823
-    ## 3   2013    11    29     1759           1800        -1     2013
-    ## 4   2013     8    23     1808           1805         3     2033
-    ## 5   2013     9     9     1151           1200        -9     1442
-    ## 6   2013     7     3     1751           1700        51     2025
-    ## 7   2013    12     9      613            615        -2      854
-    ## 8   2013     1    31     1900           1900         0     2143
-    ## 9   2013    10     1     1741           1738         3     1946
-    ## 10  2013     4    15      958           1000        -2     1244
+    ## 1   2013    12    27      947            955        -8       NA
+    ## 2   2013    11    12      627            630        -3      841
+    ## 3   2013     1    14     1953           2000        -7     2246
+    ## 4   2013    12     3     1720           1729        -9     2003
+    ## 5   2013    11    21     1641           1645        -4     1915
+    ## 6   2013     3     6      629            630        -1      852
+    ## 7   2013     8     9     1247           1242         5     1500
+    ## 8   2013     5    24      756            759        -3     1012
+    ## 9   2013    12    29     1815           1659        76     2112
+    ## 10  2013    12    13      855            900        -5     1117
     ## # ... with 5,790 more rows, and 12 more variables: sched_arr_time <int>,
     ## #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
     ## #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
@@ -286,27 +286,86 @@ popular_dest %>% sample_frac(0.01)
     ## 
     ##     year month   day dep_time sched_dep_time dep_delay arr_time
     ##    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-    ## 1   2013     4    29     2021           1929        52     2235
-    ## 2   2013     4    14     1758           1755         3     2049
-    ## 3   2013     7    25     1457           1459        -2     1728
-    ## 4   2013     6     4     1738           1734         4     2026
-    ## 5   2013     6     5      625            630        -5      854
-    ## 6   2013    11    25     1802           1800         2     2040
-    ## 7   2013     4     9      828            830        -2     1102
-    ## 8   2013     8     4     1141           1145        -4     1342
-    ## 9   2013     9     8     1718           1700        18     1921
-    ## 10  2013     2    15     1256           1300        -4     1519
+    ## 1   2013    10    31      623            630        -7      837
+    ## 2   2013    12    21     2052           2100        -8     2321
+    ## 3   2013     1    11     1300           1300         0     1518
+    ## 4   2013     7     6     1312           1310         2     1553
+    ## 5   2013     3    28      827            830        -3     1037
+    ## 6   2013     1    25     1253           1300        -7     1536
+    ## 7   2013    11    16     1833           1615       138     2056
+    ## 8   2013     1    13     1857           1815        42     2117
+    ## 9   2013     1     5      805            810        -5     1039
+    ## 10  2013     4     6      845            830        15     1106
     ## # ... with 3,195 more rows, and 12 more variables: sched_arr_time <int>,
     ## #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
     ## #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
     ## #   minute <dbl>, time_hour <dttm>
 
-`slice()`
----------
+`slice()`, `head()`, and `tail()`
+---------------------------------
 
-We haven't talked about two useful functions from dplyr:
+`slice()` allows to pick rows by position, by group. `head()` and `tail()` just show the first (or last) few rows of the entire data frame.
 
--   `select()` allows you pick variables based on their name
+``` r
+# first flights to each dest
+flights %>% group_by(dest) %>% slice(1:5)
+```
 
--   `arrange()` allows you to arrange the order of the rows.
+    ## Source: local data frame [517 x 19]
+    ## Groups: dest [105]
+    ## 
+    ##     year month   day dep_time sched_dep_time dep_delay arr_time
+    ##    <int> <int> <int>    <int>          <int>     <dbl>    <int>
+    ## 1   2013    10     1     1955           2001        -6     2213
+    ## 2   2013    10     2     2010           2001         9     2230
+    ## 3   2013    10     3     1955           2001        -6     2232
+    ## 4   2013    10     4     2017           2001        16     2304
+    ## 5   2013    10     5     1959           1959         0     2226
+    ## 6   2013    10     1     1149           1159       -10     1245
+    ## 7   2013    10     2     1152           1159        -7     1259
+    ## 8   2013    10     3     1211           1159        12     1316
+    ## 9   2013    10     4      757            800        -3      859
+    ## 10  2013    10     4     1154           1159        -5     1258
+    ## # ... with 507 more rows, and 12 more variables: sched_arr_time <int>,
+    ## #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
+    ## #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
+    ## #   minute <dbl>, time_hour <dttm>
+
+``` r
+# first flights overall
+flights %>% head()
+```
+
+    ## # A tibble: 6 × 19
+    ##    year month   day dep_time sched_dep_time dep_delay arr_time
+    ##   <int> <int> <int>    <int>          <int>     <dbl>    <int>
+    ## 1  2013     1     1      517            515         2      830
+    ## 2  2013     1     1      533            529         4      850
+    ## 3  2013     1     1      542            540         2      923
+    ## 4  2013     1     1      544            545        -1     1004
+    ## 5  2013     1     1      554            600        -6      812
+    ## 6  2013     1     1      554            558        -4      740
+    ## # ... with 12 more variables: sched_arr_time <int>, arr_delay <dbl>,
+    ## #   carrier <chr>, flight <int>, tailnum <chr>, origin <chr>, dest <chr>,
+    ## #   air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>,
+    ## #   time_hour <dttm>
+
+``` r
+# last flights overall
+flights %>% tail()
+```
+
+    ## # A tibble: 6 × 19
+    ##    year month   day dep_time sched_dep_time dep_delay arr_time
+    ##   <int> <int> <int>    <int>          <int>     <dbl>    <int>
+    ## 1  2013     9    30       NA           1842        NA       NA
+    ## 2  2013     9    30       NA           1455        NA       NA
+    ## 3  2013     9    30       NA           2200        NA       NA
+    ## 4  2013     9    30       NA           1210        NA       NA
+    ## 5  2013     9    30       NA           1159        NA       NA
+    ## 6  2013     9    30       NA            840        NA       NA
+    ## # ... with 12 more variables: sched_arr_time <int>, arr_delay <dbl>,
+    ## #   carrier <chr>, flight <int>, tailnum <chr>, origin <chr>, dest <chr>,
+    ## #   air_time <dbl>, distance <dbl>, hour <dbl>, minute <dbl>,
+    ## #   time_hour <dttm>
 
