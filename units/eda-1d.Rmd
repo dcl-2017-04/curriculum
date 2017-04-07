@@ -8,6 +8,10 @@ readings:
 - book: r4ds-7.3
 ---
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
 Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.
 
 ```{r setup, message = FALSE}

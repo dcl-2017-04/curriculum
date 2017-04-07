@@ -4,9 +4,13 @@ theme: wrangle
 needs: [manip-basics]
 ---
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
 You've learned the most important verbs for data analysis: `filter()`, `mutate()`, `group_by()` and `summarise()`. There are a nubmer of other verbs that are not quite as important but still come in handy from time-to-time. The goal of this document is to familiarise you with their purpose and basic operation
 
-```{r setup, messages = FALSE}
+```{r setup, message = FALSE}
 library(tidyverse)
 library(nycflights13)
 ```

@@ -8,7 +8,6 @@ needs: [manip-basics]
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-
 It's helpful to know a little bit about how data structures are organised in R. The simplest data structure in R is the vector, which can be broken up in to atomic vectors and augmented vectors. Vectors of related data are organised together in tibbles and data.frames.
 
 ```{r setup, message = FALSE}
