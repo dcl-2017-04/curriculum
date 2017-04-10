@@ -15,14 +15,14 @@ desc: "\nIt's helpful to know a little bit about how data structures are organis
   later on. Collectively integer and double vectors are known as **numeric** vectors.
   The difference is rarely important in R.\n\nYou create atomic vectors by hand with
   the `c()` function:\n\n``` r\nlogical <- c(TRUE, FALSE, FALSE)\n\n# The difference
-  between the real number 1 and the integer 1 is not \n# usually important, but soemtimes
-  it comes up in base R code. R uses\n# the suffix \"L\" to indicate that a number
-  is an integer.\ninteger <- c(1L, 2L, 3L)\n\ndouble <- c(1.5, 2.8, pi)\n\ncharacter
-  <- c(\"this\", \"is\", \"a character\", \"vector\")\n```\n\nAugmented\n---------\n\nAugmented
+  between the real number 1 and the integer 1 is not \n# usually important, but it
+  sometimes comes up. R uses the suffix \n# \"L\" to indicate that a number is an
+  integer.\ninteger <- c(1L, 2L, 3L)\n\ndouble <- c(1.5, 2.8, pi)\n\ncharacter <-
+  c(\"this\", \"is\", \"a character\", \"vector\")\n```\n\nAugmented\n---------\n\nAugmented
   vectors are atomic vectors with additional metadata. There are four important augmented
   vectors:\n\n-   **factors** `<fct>`, which are used to represent categorical variables
   can take one of a fixed and known set of possible values (called the levels).\n\n-
-  \  **ordered factors** `<ord>`, which are like factors but where the level have
+  \  **ordered factors** `<ord>`, which are like factors but where the levels have
   an intrinsic ordering (i.e. it's reasonable to say that one level is \"less than\"
   or \"greater than\" another variable).\n\n-   **dates** `<dt>`, record a date.\n\n-
   \  **date-times** `<dttm>`, which are also known as POSIXct, record a date and a

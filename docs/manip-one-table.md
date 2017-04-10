@@ -8,7 +8,7 @@ title: Other single table verbs
 <small>(Builds on: [Manipulation basics](manip-basics.md))</small>
 
 
-You've learned the most important verbs for data analysis: `filter()`, `mutate()`, `group_by()` and `summarise()`. There are a nubmer of other verbs that are not quite as important but still come in handy from time-to-time. The goal of this document is to familiarise you with their purpose and basic operation
+You've learned the most important verbs for data analysis: `filter()`, `mutate()`, `group_by()` and `summarise()`. There are a number of other verbs that are not quite as important but still come in handy from time-to-time. The goal of this document is to familiarise you with their purpose and basic operation
 
 ``` r
 library(tidyverse)
@@ -117,6 +117,26 @@ flights %>% rename(tail_num = tailnum)
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tail_num <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
 #> #   minute <dbl>, time_hour <dttm>
+```
+
+If you're selecting and renaming, note that you can also use `select()` to rename. This sometimes allows you to save a step.
+
+``` r
+flights %>% select(year:day, tail_num = tailnum)
+#> # A tibble: 336,776 × 4
+#>     year month   day tail_num
+#>    <int> <int> <int>    <chr>
+#> 1   2013     1     1   N14228
+#> 2   2013     1     1   N24211
+#> 3   2013     1     1   N619AA
+#> 4   2013     1     1   N804JB
+#> 5   2013     1     1   N668DN
+#> 6   2013     1     1   N39463
+#> 7   2013     1     1   N516JB
+#> 8   2013     1     1   N829AS
+#> 9   2013     1     1   N593JB
+#> 10  2013     1     1   N3ALAA
+#> # ... with 336,766 more rows
 ```
 
 Transmute
@@ -230,16 +250,16 @@ popular_dest %>% sample_n(100)
 #> 
 #>     year month   day dep_time sched_dep_time dep_delay arr_time
 #>    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-#> 1   2013     8     7      811            810         1     1124
-#> 2   2013     5     9     1639           1600        39     1845
-#> 3   2013     8    19     1201           1205        -4     1423
-#> 4   2013    10     2     1641           1645        -4     1901
-#> 5   2013     6    26     1451           1325        86     1731
-#> 6   2013     6    17     2108           2000        68     2336
-#> 7   2013    11     6      630            630         0      919
-#> 8   2013     3     8     1458           1200       178     1711
-#> 9   2013     3    22     1631           1630         1     1851
-#> 10  2013    10    25      855            900        -5     1111
+#> 1   2013     4    20     1149           1151        -2     1421
+#> 2   2013     2    28     2017           2020        -3     2248
+#> 3   2013     2    12      805            810        -5     1037
+#> 4   2013     6    25     1147           1145         2     1343
+#> 5   2013     1    13     1857           1900        -3     2146
+#> 6   2013    12    13      612            615        -3      854
+#> 7   2013    11    19      558            600        -2      837
+#> 8   2013     3     8     1652           1415       157     1846
+#> 9   2013    12    20     2057           2100        -3     2319
+#> 10  2013     8    13      613            600        13      910
 #> # ... with 5,790 more rows, and 12 more variables: sched_arr_time <int>,
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,
@@ -252,16 +272,16 @@ popular_dest %>% sample_frac(0.01)
 #> 
 #>     year month   day dep_time sched_dep_time dep_delay arr_time
 #>    <int> <int> <int>    <int>          <int>     <dbl>    <int>
-#> 1   2013     7    16     1544           1459        45     1823
-#> 2   2013    11    26     1306           1300         6     1543
-#> 3   2013     6     7     1214           1205         9     1436
-#> 4   2013     1    21      810            810         0     1033
-#> 5   2013     7    27     1627           1620         7     1856
-#> 6   2013     7     9     1758           1330       268     2046
-#> 7   2013     6     2     1603           1600         3     1836
-#> 8   2013     2     2     1952           2000        -8     2158
-#> 9   2013     7    25     1304           1310        -6     1515
-#> 10  2013     6     6     1522           1520         2     1809
+#> 1   2013     6     9     2029           2035        -6     2248
+#> 2   2013     2    28     1723           1730        -7     1946
+#> 3   2013    10    18     2001           2000         1     2226
+#> 4   2013    10    15     1559           1600        -1     1827
+#> 5   2013     2     7     1306           1216        50     1612
+#> 6   2013    12     8     2000           1930        30     2240
+#> 7   2013    12     9     1456           1500        -4     1748
+#> 8   2013     8    13     1554           1545         9     1812
+#> 9   2013     6     8     2001           1900        61     2207
+#> 10  2013     5    21     1314           1300        14     1528
 #> # ... with 3,195 more rows, and 12 more variables: sched_arr_time <int>,
 #> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum <chr>,
 #> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,

@@ -33,8 +33,8 @@ You create atomic vectors by hand with the `c()` function:
 logical <- c(TRUE, FALSE, FALSE)
 
 # The difference between the real number 1 and the integer 1 is not 
-# usually important, but soemtimes it comes up in base R code. R uses
-# the suffix "L" to indicate that a number is an integer.
+# usually important, but it sometimes comes up. R uses the suffix 
+# "L" to indicate that a number is an integer.
 integer <- c(1L, 2L, 3L)
 
 double <- c(1.5, 2.8, pi)
@@ -49,7 +49,7 @@ Augmented vectors are atomic vectors with additional metadata. There are four im
 
 -   **factors** `<fct>`, which are used to represent categorical variables can take one of a fixed and known set of possible values (called the levels).
 
--   **ordered factors** `<ord>`, which are like factors but where the level have an intrinsic ordering (i.e. it's reasonable to say that one level is "less than" or "greater than" another variable).
+-   **ordered factors** `<ord>`, which are like factors but where the levels have an intrinsic ordering (i.e. it's reasonable to say that one level is "less than" or "greater than" another variable).
 
 -   **dates** `<dt>`, record a date.
 

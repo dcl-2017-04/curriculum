@@ -8,7 +8,7 @@ needs: [manip-basics]
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-You've learned the most important verbs for data analysis: `filter()`, `mutate()`, `group_by()` and `summarise()`. There are a nubmer of other verbs that are not quite as important but still come in handy from time-to-time. The goal of this document is to familiarise you with their purpose and basic operation
+You've learned the most important verbs for data analysis: `filter()`, `mutate()`, `group_by()` and `summarise()`. There are a number of other verbs that are not quite as important but still come in handy from time-to-time. The goal of this document is to familiarise you with their purpose and basic operation
 
 ```{r setup, message = FALSE}
 library(tidyverse)
@@ -55,6 +55,13 @@ To change the name of a variable use `df %>% rename(new_name = old_name)`. If yo
 ```{r}
 flights %>% rename(tail_num = tailnum)
 ```
+
+If you're selecting and renaming, note that you can also use `select()` to rename. This sometimes allows you to save a step.
+
+```{r}
+flights %>% select(year:day, tail_num = tailnum)
+```
+
 
 ## Transmute
 

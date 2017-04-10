@@ -3,7 +3,7 @@ theme: wrangle
 needs: manip-basics
 readings: ~
 desc: "\nYou've learned the most important verbs for data analysis: `filter()`, `mutate()`,
-  `group_by()` and `summarise()`. There are a nubmer of other verbs that are not quite
+  `group_by()` and `summarise()`. There are a number of other verbs that are not quite
   as important but still come in handy from time-to-time. The goal of this document
   is to familiarise you with their purpose and basic operation\n\n``` r\nlibrary(tidyverse)\nlibrary(nycflights13)\n```\n\nSelect\n------\n\nMost
   of the datasets you'll work with in this class only have a relatively small number
@@ -71,7 +71,15 @@ desc: "\nYou've learned the most important verbs for data analysis: `filter()`, 
   10  2013     1     1      558            600        -2      753\n#> # ... with 336,766
   more rows, and 12 more variables: sched_arr_time <int>,\n#> #   arr_delay <dbl>,
   carrier <chr>, flight <int>, tail_num <chr>,\n#> #   origin <chr>, dest <chr>, air_time
-  <dbl>, distance <dbl>, hour <dbl>,\n#> #   minute <dbl>, time_hour <dttm>\n```\n\nTransmute\n---------\n\nTransmute
+  <dbl>, distance <dbl>, hour <dbl>,\n#> #   minute <dbl>, time_hour <dttm>\n```\n\nIf
+  you're selecting and renaming, note that you can also use `select()` to rename.
+  This sometimes allows you to save a step.\n\n``` r\nflights %>% select(year:day,
+  tail_num = tailnum)\n#> # A tibble: 336,776 × 4\n#>     year month   day tail_num\n#>
+  \   <int> <int> <int>    <chr>\n#> 1   2013     1     1   N14228\n#> 2   2013     1
+  \    1   N24211\n#> 3   2013     1     1   N619AA\n#> 4   2013     1     1   N804JB\n#>
+  5   2013     1     1   N668DN\n#> 6   2013     1     1   N39463\n#> 7   2013     1
+  \    1   N516JB\n#> 8   2013     1     1   N829AS\n#> 9   2013     1     1   N593JB\n#>
+  10  2013     1     1   N3ALAA\n#> # ... with 336,766 more rows\n```\n\nTransmute\n---------\n\nTransmute
   is a minor variation of `mutate()`. The main difference is that it drops any variables
   that you didn't explicitly mention. It's a useful shortcut for `mutate()` + `select()`.\n\n```
   r\ndf <- tibble(x = 1:3, y = 3:1)\n\n# mutate() keeps all the variables\ndf %>%
@@ -121,30 +129,30 @@ desc: "\nYou've learned the most important verbs for data analysis: `filter()`, 
   Creates a dataset with the same number of flights to each dest\npopular_dest %>%
   sample_n(100)\n#> Source: local data frame [5,800 x 19]\n#> Groups: dest [58]\n#>
   \n#>     year month   day dep_time sched_dep_time dep_delay arr_time\n#>    <int>
-  <int> <int>    <int>          <int>     <dbl>    <int>\n#> 1   2013     8     7
-  \     811            810         1     1124\n#> 2   2013     5     9     1639           1600
-  \       39     1845\n#> 3   2013     8    19     1201           1205        -4     1423\n#>
-  4   2013    10     2     1641           1645        -4     1901\n#> 5   2013     6
-  \   26     1451           1325        86     1731\n#> 6   2013     6    17     2108
-  \          2000        68     2336\n#> 7   2013    11     6      630            630
-  \        0      919\n#> 8   2013     3     8     1458           1200       178     1711\n#>
-  9   2013     3    22     1631           1630         1     1851\n#> 10  2013    10
-  \   25      855            900        -5     1111\n#> # ... with 5,790 more rows,
+  <int> <int>    <int>          <int>     <dbl>    <int>\n#> 1   2013     4    20
+  \    1149           1151        -2     1421\n#> 2   2013     2    28     2017           2020
+  \       -3     2248\n#> 3   2013     2    12      805            810        -5     1037\n#>
+  4   2013     6    25     1147           1145         2     1343\n#> 5   2013     1
+  \   13     1857           1900        -3     2146\n#> 6   2013    12    13      612
+  \           615        -3      854\n#> 7   2013    11    19      558            600
+  \       -2      837\n#> 8   2013     3     8     1652           1415       157     1846\n#>
+  9   2013    12    20     2057           2100        -3     2319\n#> 10  2013     8
+  \   13      613            600        13      910\n#> # ... with 5,790 more rows,
   and 12 more variables: sched_arr_time <int>,\n#> #   arr_delay <dbl>, carrier <chr>,
   flight <int>, tailnum <chr>,\n#> #   origin <chr>, dest <chr>, air_time <dbl>, distance
   <dbl>, hour <dbl>,\n#> #   minute <dbl>, time_hour <dttm>\n\n# Creates a dataset
   with proportion number of flights to each dest\npopular_dest %>% sample_frac(0.01)\n#>
   Source: local data frame [3,205 x 19]\n#> Groups: dest [58]\n#> \n#>     year month
   \  day dep_time sched_dep_time dep_delay arr_time\n#>    <int> <int> <int>    <int>
-  \         <int>     <dbl>    <int>\n#> 1   2013     7    16     1544           1459
-  \       45     1823\n#> 2   2013    11    26     1306           1300         6     1543\n#>
-  3   2013     6     7     1214           1205         9     1436\n#> 4   2013     1
-  \   21      810            810         0     1033\n#> 5   2013     7    27     1627
-  \          1620         7     1856\n#> 6   2013     7     9     1758           1330
-  \      268     2046\n#> 7   2013     6     2     1603           1600         3     1836\n#>
-  8   2013     2     2     1952           2000        -8     2158\n#> 9   2013     7
-  \   25     1304           1310        -6     1515\n#> 10  2013     6     6     1522
-  \          1520         2     1809\n#> # ... with 3,195 more rows, and 12 more variables:
+  \         <int>     <dbl>    <int>\n#> 1   2013     6     9     2029           2035
+  \       -6     2248\n#> 2   2013     2    28     1723           1730        -7     1946\n#>
+  3   2013    10    18     2001           2000         1     2226\n#> 4   2013    10
+  \   15     1559           1600        -1     1827\n#> 5   2013     2     7     1306
+  \          1216        50     1612\n#> 6   2013    12     8     2000           1930
+  \       30     2240\n#> 7   2013    12     9     1456           1500        -4     1748\n#>
+  8   2013     8    13     1554           1545         9     1812\n#> 9   2013     6
+  \    8     2001           1900        61     2207\n#> 10  2013     5    21     1314
+  \          1300        14     1528\n#> # ... with 3,195 more rows, and 12 more variables:
   sched_arr_time <int>,\n#> #   arr_delay <dbl>, carrier <chr>, flight <int>, tailnum
   <chr>,\n#> #   origin <chr>, dest <chr>, air_time <dbl>, distance <dbl>, hour <dbl>,\n#>
   #   minute <dbl>, time_hour <dttm>\n```\n\nSlice rows\n----------\n\n`slice()` allows
