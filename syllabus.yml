@@ -27,7 +27,7 @@
   - eda-2d
   - vis-scales
   - spread-gather
-  - datetime-basics
+  - relational-basics
   - vector-functions
   - window-functions
   - workflow-rmarkdown
@@ -51,7 +51,7 @@
 #   - wickham-tidy-data
 #
 # - units:
-#   - relational-basics
+#   -
 #   - vis-perception
 #   supplements:
 #   - happy-graphing

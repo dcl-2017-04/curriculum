@@ -140,7 +140,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
+  <td colspan="3"><a class="wrangle" href="relational-basics.html">Essentials of relational data</a></td>
   <td colspan="4"></td>
 </tr>
 <tr>
