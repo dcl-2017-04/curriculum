@@ -24,10 +24,10 @@
 
 - units:
   - missing-values
+  - relational-basics
   - eda-2d
   - vis-scales
   - spread-gather
-  - relational-basics
   - vector-functions
   - window-functions
   - workflow-rmarkdown
