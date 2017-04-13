@@ -1,4 +1,4 @@
-
+cur_week <- 2
 themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
 
 
@@ -35,9 +35,14 @@ build_units <- function() {
   units <- load_units()
   supplements <- load_supplements()
 
-  syllabus %>%
+  syllabus[1:cur_week] %>%
     theme_index(units) %>%
     write_if_different("docs/index.md")
+
+  syllabus %>%
+    theme_index(units) %>%
+    write_if_different("docs/index-dev.md")
+
 
   supplements %>%
     supplements_index() %>%
