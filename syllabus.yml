@@ -6,11 +6,6 @@
   - vis-basics
   - manip-basics
   - rmarkdown-basics
-  supplements:
-  - happy-git
-  - grolemund-wrangle
-  - woo-vis
-  - keifer-blog
 
 - units:
   - vis-basics-2
@@ -31,60 +26,45 @@
   - vector-functions
   - window-functions
   - workflow-rmarkdown
-#
-# - units:
-#   - parse-vector
-#   - parse-file
-#   - vis-summaries
-#   - iteration
-#   - workflow-projects
-#
-# - units:
-#   - string-basics
-#   - regexps
-#   - separate-unite
-#   - factor-basics
-#
-#   supplements:
-#   - biobroom
-#   - leek-non-tidy
-#   - wickham-tidy-data
-#
-# - units:
-#   -
-#   - vis-perception
-#   supplements:
-#   - happy-graphing
-#
-# - units:
-#   - vectors
-#   - lists
-#
-#   supplements:
-#   - wickham-purrr
-#
-# - units:
-#   - window-functions
-#   - filter-joins
-#   - joins-debugging
-#
-# - units:
-#   - model-basics
-#   - model-vis
-#   - model-multivariate
-#
-# - units:
-#   - list-cols
-#   - model-many
-#   - report-generation
-#
-# - units:
-#   - spatial-basics
-#   - spatial-vis
-#
-# - units:
-#   - export
-#   - rmarkdown-formats
-#   - reprexes
-#   - learning-more
-#
+
+- units:
+  - datetime-basics
+  - datetime-vis
+  - string-basics
+  - factor-basics
+  - parse-vector
+  - parse-file
+  - iteration
+
+- units:
+  - regexps
+  - separate-unite
+  - vis-summaries
+  - workflow-projects
+  - vis-perception
+
+- units:
+  - vectors
+  - lists
+  - filter-joins
+  - joins-debugging
+
+- units:
+  - model-basics
+  - model-vis
+  - model-multivariate
+
+- units:
+  - list-cols
+  - model-many
+  - report-generation
+
+- units:
+  - spatial-basics
+  - spatial-vis
+
+- units:
+  - export
+  - rmarkdown-formats
+  - reprexes
+  - learning-more
