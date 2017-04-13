@@ -40,8 +40,8 @@ desc: |
   )
   ```
 
-  (The `L` suffix indicates that we have the integer 4, not the real nubmer
-  4. You'll learn more about that later.)
+  (The `L` suffix indicates that we have the integer 4, not the real
+  number 4. You'll learn more about that later.)
 
   You'll learn import starting with step 2, because you can practice parsing
   character vectors with toy data in R. This will be helpful later when you

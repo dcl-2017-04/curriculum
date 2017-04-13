@@ -28,19 +28,21 @@
   - workflow-rmarkdown
 
 - units:
+  - iteration
   - datetime-basics
   - datetime-vis
   - string-basics
-  - factor-basics
+  - vis-annotation
   - parse-vector
   - parse-file
-  - iteration
 
 - units:
+  - factor-basics
   - regexps
   - separate-unite
-#  - workflow-projects
   - vis-perception
+  - model-basics
+#  - workflow-projects
 
 - units:
   - vectors
@@ -49,7 +51,6 @@
   - joins-debugging
 
 - units:
-  - model-basics
   - model-vis
   - model-multivariate
 

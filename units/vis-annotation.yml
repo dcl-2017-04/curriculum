@@ -1,0 +1,12 @@
+title: Annotations
+theme: communicate
+
+desc: |
+  Visualising strings can be challenging because they almost invariables
+  seem to end up plotted on top of each other. This section gives you
+  helpful tools for drawing strings on your plots.
+
+needs: [vis-basics-2]
+
+readings:
+- book: r4ds-28.3

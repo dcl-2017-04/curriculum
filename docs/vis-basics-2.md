@@ -6,7 +6,7 @@ title: Visualisation basics (2)
 
 # Visualisation basics (2) <small class='explore'>[explore]</small>
 <small>(Builds on: [Visualisation basics (1)](vis-basics.md))</small>  
-<small>(Leads to: [ggplot2 calls](vis-calls.md), [Labelling your graphics](vis-labelling.md), [Scales](vis-scales.md), [The grammar of graphics](vis-theory.md))</small>
+<small>(Leads to: [Annotations](vis-annotation.md), [ggplot2 calls](vis-calls.md), [Labels](vis-labelling.md), [Scales](vis-scales.md), [The grammar of graphics](vis-theory.md))</small>
 
 Now it's time to learn some more of the components that make up ggplot2.
 

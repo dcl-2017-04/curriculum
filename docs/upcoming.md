@@ -76,7 +76,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labelling your graphics</a></td>
+  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labels</a></td>
   <td colspan="1"></td>
 </tr>
 <tr>
@@ -164,6 +164,12 @@ title: Theme index
 <tbody>
 <tr>
 <td>4</td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
   <td colspan="4"></td>
@@ -181,9 +187,9 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
   <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-annotation.html">Annotations</a></td>
+  <td colspan="1"></td>
 </tr>
 <tr>
 <td></td>
@@ -197,16 +203,16 @@ title: Theme index
   <td colspan="3"><a class="wrangle" href="parse-file.html">Parsing files</a></td>
   <td colspan="4"></td>
 </tr>
-<tr>
-<td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
-  <td colspan="3"></td>
-</tr>
 </tbody>
 <tbody>
 <tr>
 <td>5</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
   <td colspan="4"></td>
@@ -221,6 +227,12 @@ title: Theme index
 <td></td>
   <td colspan="3"><a class="explore" href="vis-perception.html">Perception</a></td>
   <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-basics.html">Model intuition</a></td>
+  <td colspan="2"></td>
 </tr>
 </tbody>
 <tbody>
@@ -252,12 +264,6 @@ title: Theme index
 <tbody>
 <tr>
 <td>7</td>
-  <td colspan="3"></td>
-  <td colspan="3"><a class="model" href="model-basics.html">Model intuition</a></td>
-  <td colspan="2"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="3"></td>
   <td colspan="3"><a class="model" href="model-vis.html">Visualising models</a></td>
   <td colspan="2"></td>

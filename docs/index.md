@@ -76,7 +76,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labelling your graphics</a></td>
+  <td colspan="3"><a class="communicate" href="vis-labelling.html">Labels</a></td>
   <td colspan="1"></td>
 </tr>
 <tr>

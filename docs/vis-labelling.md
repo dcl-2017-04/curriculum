@@ -1,10 +1,10 @@
 ---
-title: Labelling your graphics
+title: Labels
 ---
 
 <!-- Generated automatically from vis-labelling.yml. Do not edit by hand -->
 
-# Labelling your graphics <small class='communicate'>[communicate]</small>
+# Labels <small class='communicate'>[communicate]</small>
 <small>(Builds on: [Visualisation basics (2)](vis-basics-2.md))</small>
 
 Good labels make visualisations much easier to understand for newcomers to
