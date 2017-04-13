@@ -5,7 +5,7 @@ title: Iteration
 <!-- Generated automatically from iteration.yml. Do not edit by hand -->
 
 # Iteration <small class='program'>[program]</small>
-<small>(Builds on: [Lists](lists.md), [Vector functions](vector-functions.md))</small>  
+<small>(Builds on: [Lists](lists.md), [Function basics](function-basics.md))</small>  
 <small>(Leads to: [List columns](list-cols.md), [Programming dplyr](manip-programming.md))</small>
 
 Functions allow you to eliminate one type of duplication. The tools

@@ -109,7 +109,7 @@ The most important arguments to `read_csv()` are:
 
 -   It's fairly common to encounter csv files that have a bunch of 💩 at the top. You can use `skip = n` to skip the first n lines, or `comment = "#"` to ignore all lines that start with `#`.
 
--   `read_csv()` excepts missing values to be suppled as `NA`. If your file uses a different convention, use `na = "."` to override the default.
+-   `read_csv()` expects missing values to be suppled as `NA`. If your file uses a different convention, use `na = "."` to override the default.
 
 You'll get to practice using these arguments in the exercises.
 

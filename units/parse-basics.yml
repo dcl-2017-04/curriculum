@@ -64,6 +64,6 @@ desc: "\nSo far you've worked with data sets that have been bundled in R package
   more about that later in the course\n\n-   It's fairly common to encounter csv files
   that have a bunch of \U0001F4A9 at the top. You can use `skip = n` to skip the first
   n lines, or `comment = \"#\"` to ignore all lines that start with `#`.\n\n-   `read_csv()`
-  excepts missing values to be suppled as `NA`. If your file uses a different convention,
+  expects missing values to be suppled as `NA`. If your file uses a different convention,
   use `na = \".\"` to override the default.\n\nYou'll get to practice using these
   arguments in the exercises.\n"

@@ -6,7 +6,7 @@ title: Data structure basics
 
 # Data structure basics <small class='program'>[program]</small>
 <small>(Builds on: [Manipulation basics](manip-basics.md))</small>  
-<small>(Leads to: [Date/time basics](datetime-basics.md), [Parsing basics](parse-basics.md), [Vector functions](vector-functions.md), [Atomic vectors](vectors.md))</small>
+<small>(Leads to: [Date/time basics](datetime-basics.md), [Function basics](function-basics.md), [Parsing basics](parse-basics.md), [Atomic vectors](vectors.md))</small>
 
 
 It's helpful to know a little bit about how data structures are organised in R. The simplest data structure in R is the vector, which can be broken up in to atomic vectors and augmented vectors. Vectors of related data are organised together in tibbles and data.frames.

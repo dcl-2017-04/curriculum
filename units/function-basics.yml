@@ -1,4 +1,4 @@
-title: Vector functions
+title: Function basics
 theme: program
 
 desc: |
@@ -8,15 +8,6 @@ desc: |
   of your code change (as they invariably do), you only need to make the
   change in a single place, reducing the chances of inconsistencies within
   your code.
-
-  To start with, we'll focus on functions that work with vectors. There
-  are two common types:
-
-  * Vectorised functions that return an output the same length as their
-    input. You typically use these functions in `mutate()`.
-
-  * Summary functions that return an output of length one. You typically
-    use these functions with `summarise()`.
 
 needs: [eda-1d, data-structure-basics]
 
