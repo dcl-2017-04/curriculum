@@ -1,4 +1,4 @@
-title: RMarkdown workflow
+title: RMarkdown
 theme: workflow
 needs: [setup]
 

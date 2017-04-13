@@ -155,15 +155,51 @@ title: Theme index
   <td colspan="3"><a class="wrangle" href="window-functions.html">Window functions</a></td>
   <td colspan="4"></td>
 </tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown workflow</a></td>
-</tr>
 </tbody>
 <tbody>
 <tr>
 <td id='week-4'>4</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="spatial-basics.html">Spatial basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="spatial-vis.html">Spatial visualisation</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="vis-perception.html">Perception</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="string-basics.html">String basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-annotation.html">Annotations</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-5'>5</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
   <td colspan="3"></td>
@@ -182,18 +218,6 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="string-basics.html">String basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="vis-annotation.html">Annotations</a></td>
-  <td colspan="1"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="parse-vector.html">Parsing vectors</a></td>
   <td colspan="4"></td>
 </tr>
@@ -201,14 +225,6 @@ title: Theme index
 <td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="parse-file.html">Parsing files</a></td>
-  <td colspan="4"></td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td id='week-5'>5</td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
   <td colspan="4"></td>
 </tr>
 <tr>
@@ -222,11 +238,6 @@ title: Theme index
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="separate-unite.html">Separate and unite</a></td>
   <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="vis-perception.html">Perception</a></td>
-  <td colspan="5"></td>
 </tr>
 <tr>
 <td></td>
@@ -288,24 +299,13 @@ title: Theme index
   <td colspan="3"><a class="model" href="model-many.html">Many models</a></td>
   <td colspan="2"></td>
 </tr>
-<tr>
-<td></td>
-  <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="report-generation.html">Generating multiple reports</a></td>
-  <td colspan="1"></td>
-</tr>
 </tbody>
 <tbody>
 <tr>
 <td id='week-9'>9</td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="spatial-basics.html">Spatial basics</a></td>
   <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="spatial-vis.html">Spatial visualisation</a></td>
-  <td colspan="5"></td>
+  <td colspan="3"><a class="communicate" href="report-generation.html">Generating multiple reports</a></td>
+  <td colspan="1"></td>
 </tr>
 </tbody>
 <tbody>

@@ -25,22 +25,25 @@
   - spread-gather
   - vector-functions
   - window-functions
+
+- units:
+  - spatial-basics
+  - spatial-vis
+  - vis-perception
+  - string-basics
+  - vis-annotation
   - workflow-rmarkdown
 
 - units:
+  - factor-basics
   - iteration
   - datetime-basics
   - datetime-vis
-  - string-basics
-  - vis-annotation
   - parse-vector
   - parse-file
-
-- units:
-  - factor-basics
+# - reading multiple files
   - regexps
   - separate-unite
-  - vis-perception
   - model-basics
 #  - workflow-projects
 
@@ -57,11 +60,9 @@
 - units:
   - list-cols
   - model-many
-  - report-generation
 
 - units:
-  - spatial-basics
-  - spatial-vis
+  - report-generation
 
 - units:
   - export
