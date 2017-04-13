@@ -128,6 +128,12 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="parse-basics.html">Parsing basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="3"><a class="explore" href="eda-2d.html">Exploratory data analysis (2D)</a></td>
   <td colspan="5"></td>
 </tr>

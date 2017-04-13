@@ -20,12 +20,12 @@
 - units: # week 3
   - missing-values
   - relational-basics
+  - parse-basics
   - eda-2d
   - vis-scales
   - spread-gather
   - vector-functions
   - window-functions
-# - parsing basics
 
 - units: # week 4
   - spatial-basics
