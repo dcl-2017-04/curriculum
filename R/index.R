@@ -37,10 +37,18 @@ week_tbody <- function(week_num,
 
 }
 
-theme_index <- function(syllabus_index = load_syllabus(), unit_index = load_units()) {
+theme_index <- function(syllabus_index = load_syllabus(),
+                        unit_index = load_units(),
+                        reverse = FALSE
+                        ) {
+
+  week <- seq_along(syllabus_index)
+  if (reverse) {
+    week <- rev(week)
+  }
 
   row_groups <- map(
-    seq_along(syllabus_index),
+    week,
     week_tbody,
     unit_index = unit_index,
     syllabus_index = syllabus_index

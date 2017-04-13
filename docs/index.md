@@ -30,45 +30,6 @@ title: Theme index
 </thead>
 <tbody>
 <tr>
-<td id='week-1'>1</td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="setup.html">Setup</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="code-style.html">Code style</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="5"></td>
-  <td colspan="3"><a class="workflow" href="documentation.html">Documentation</a></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="data-basics.html">Data basics</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="vis-basics.html">Visualisation basics (1)</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="manip-basics.html">Manipulation basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="4"></td>
-  <td colspan="3"><a class="communicate" href="rmarkdown-basics.html">R Markdown basics</a></td>
-  <td colspan="1"></td>
-</tr>
-</tbody>
-<tbody>
-<tr>
 <td id='week-2'>2</td>
   <td colspan="3"><a class="explore" href="vis-basics-2.html">Visualisation basics (2)</a></td>
   <td colspan="5"></td>
@@ -111,6 +72,45 @@ title: Theme index
 <td></td>
   <td colspan="3"><a class="explore" href="vis-calls.html">ggplot2 calls</a></td>
   <td colspan="5"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-1'>1</td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="setup.html">Setup</a></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="code-style.html">Code style</a></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="documentation.html">Documentation</a></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="data-basics.html">Data basics</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="vis-basics.html">Visualisation basics (1)</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="manip-basics.html">Manipulation basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="rmarkdown-basics.html">R Markdown basics</a></td>
+  <td colspan="1"></td>
 </tr>
 </tbody>
 </table>

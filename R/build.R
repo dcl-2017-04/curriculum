@@ -36,7 +36,7 @@ build_units <- function() {
   supplements <- load_supplements()
 
   syllabus[1:cur_week] %>%
-    theme_index(units) %>%
+    theme_index(units, reverse = TRUE) %>%
     write_if_different("docs/index.md")
 
   syllabus %>%
