@@ -3,7 +3,7 @@ unit_row <- function(unit, title, theme, week = "", n = 2) {
   start_col <- match(theme, tolower(themes))
   end_col <- start_col + n
 
-  week <- glue(  "<td>{week}</td>")
+  week <- if (week == "") "<td></td>" else glue(  "<td id='week-{week}'>{week}</td>")
   left <- if (start_col > 1)   glue('  <td colspan="{start_col - 1}"></td>')
   right <- if (end_col < ncol) glue('  <td colspan="{ncol - end_col}"></td>')
 

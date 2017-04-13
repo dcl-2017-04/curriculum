@@ -30,7 +30,7 @@ title: Theme index
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td id='week-1'>1</td>
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="setup.html">Setup</a></td>
 </tr>
@@ -69,7 +69,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>2</td>
+<td id='week-2'>2</td>
   <td colspan="3"><a class="explore" href="vis-basics-2.html">Visualisation basics (2)</a></td>
   <td colspan="5"></td>
 </tr>
@@ -115,7 +115,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>3</td>
+<td id='week-3'>3</td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="missing-values.html">Missing values</a></td>
   <td colspan="4"></td>
@@ -163,7 +163,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>4</td>
+<td id='week-4'>4</td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
   <td colspan="3"></td>
@@ -206,7 +206,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>5</td>
+<td id='week-5'>5</td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
   <td colspan="4"></td>
@@ -237,7 +237,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>6</td>
+<td id='week-6'>6</td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="vectors.html">Atomic vectors</a></td>
   <td colspan="3"></td>
@@ -263,7 +263,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>7</td>
+<td id='week-7'>7</td>
   <td colspan="3"></td>
   <td colspan="3"><a class="model" href="model-vis.html">Visualising models</a></td>
   <td colspan="2"></td>
@@ -277,7 +277,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>8</td>
+<td id='week-8'>8</td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
   <td colspan="3"></td>
@@ -297,7 +297,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>9</td>
+<td id='week-9'>9</td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="spatial-basics.html">Spatial basics</a></td>
   <td colspan="4"></td>
@@ -310,7 +310,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>10</td>
+<td id='week-10'>10</td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="export.html">Exporting data</a></td>
   <td colspan="4"></td>

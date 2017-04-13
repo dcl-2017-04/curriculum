@@ -30,7 +30,7 @@ title: Theme index
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td id='week-1'>1</td>
   <td colspan="5"></td>
   <td colspan="3"><a class="workflow" href="setup.html">Setup</a></td>
 </tr>
@@ -69,7 +69,7 @@ title: Theme index
 </tbody>
 <tbody>
 <tr>
-<td>2</td>
+<td id='week-2'>2</td>
   <td colspan="3"><a class="explore" href="vis-basics-2.html">Visualisation basics (2)</a></td>
   <td colspan="5"></td>
 </tr>
