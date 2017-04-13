@@ -41,8 +41,7 @@ build_units <- function() {
 
   syllabus %>%
     theme_index(units) %>%
-    write_if_different("docs/index-dev.md")
-
+    write_if_different("docs/upcoming.md")
 
   supplements %>%
     supplements_index() %>%
