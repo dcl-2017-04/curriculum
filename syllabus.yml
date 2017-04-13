@@ -1,4 +1,4 @@
-- units:
+- units: # week 1
   - setup
   - code-style
   - documentation
@@ -7,7 +7,7 @@
   - manip-basics
   - rmarkdown-basics
 
-- units:
+- units: # week 2
   - vis-basics-2
   - vis-labelling
   - manip-one-table
@@ -17,7 +17,7 @@
   - getting-help
   - vis-calls
 
-- units:
+- units: # week 3
   - missing-values
   - relational-basics
   - eda-2d
@@ -25,22 +25,22 @@
   - spread-gather
   - vector-functions
   - window-functions
+# - parsing basics
 
-- units:
+- units: # week 4
   - spatial-basics
   - spatial-vis
   - vis-perception
   - string-basics
   - vis-annotation
   - workflow-rmarkdown
-
-- units:
-  - factor-basics
-  - iteration
+  - filter-joins
   - datetime-basics
+
+- units: # week 5
+  - iteration
   - datetime-vis
-  - parse-vector
-  - parse-file
+  - joins-debugging
 # - reading multiple files
   - regexps
   - separate-unite
@@ -48,13 +48,14 @@
 #  - workflow-projects
 
 - units:
+  - factor-basics
+  - parse-vector
+  - parse-file
+  - model-vis
   - vectors
   - lists
-  - filter-joins
-  - joins-debugging
 
 - units:
-  - model-vis
   - model-multivariate
 
 - units:
