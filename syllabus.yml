@@ -39,8 +39,7 @@
 - units:
   - regexps
   - separate-unite
-  - vis-summaries
-  - workflow-projects
+#  - workflow-projects
   - vis-perception
 
 - units:
