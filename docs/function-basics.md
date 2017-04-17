@@ -9,7 +9,7 @@ title: Function basics
 <small>(Leads to: [Iteration](iteration.md))</small>
 
 Functions are powerful tool for reducing the amount of duplication in your
-code. Reducing duplicationg is a good principle because it means that
+code. Reducing duplication is a good principle because it means that
 each "fact" in your code is only stored in one place. When the requirements
 of your code change (as they invariably do), you only need to make the
 change in a single place, reducing the chances of inconsistencies within
