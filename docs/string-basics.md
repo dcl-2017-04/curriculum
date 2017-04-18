@@ -11,7 +11,7 @@ title: String basics
 The basics of string manipulation will give you the ability to create new
 strings by combining existing strings, or by pulling out values at specific
 locations. Later we'll come back to regular expressions, which give you a
-powerful language for describing and manipulation patterns within a string.
+powerful language for describing and manipulating patterns within a string.
 
 ## Readings
 
