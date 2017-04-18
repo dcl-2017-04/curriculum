@@ -9,7 +9,7 @@ title: Perception
 
 To construct effective graphics, you must understand the basics of how
 the human perceptual system works. This 40 minute talk by John Rauser,
-a data scientist as Snapchat, will give you a high-level overview.
+a data scientist at Snapchat, will give you a high-level overview.
 As a bonus the majority of graphics were created with ggplot2.
 
 ## Readings

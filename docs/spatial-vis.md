@@ -20,7 +20,7 @@ devtools::install_github("tidyverse/ggplot2")
 
 Check that the install has succeeded by loading the tidyverse and then running `?geom_sf`. If you can't find the documentation for `geom_sf` something has gone wrong. The first thing to try is restarting R so that you have a clean session. Installing ggplot2 is tricky if you already have it loaded!
 
-Next we'll load the tidyverse, sf, and create a couple of sample datasets.
+Next we'll load the tidyverse, sf, and read in a couple of sample datasets.
 
 ``` r
 library(tidyverse)
@@ -43,6 +43,8 @@ ggplot() +
 
 ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
+Notice that ggplot2 takes care of setting the aspect ratio correctly.
+
 You can supply other aesthetics: for polygons, `fill` is most useful:
 
 ``` r
@@ -52,9 +54,7 @@ ggplot() +
 
 ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
-Note that ggplot2 takes care of setting the aspect ratio correctly.
-
-When you include multiple layers, ggplot2 will take care of ensuring that they all have a common CRS.
+When you include multiple layers, ggplot2 will take care of ensuring that they all have a common CRS so that it makes sense to overlay them.
 
 ``` r
 ggplot() +
@@ -64,7 +64,7 @@ ggplot() +
 
 ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
-You can also combine with regular layers. `x` and `y` positions are assumed be in the same CRS as the sf object.
+You can combine `geom_sf()` with other geoms. In this case, `x` and `y` positions are assumed be in the same CRS as the sf object (typically these will be longitude and latitude).
 
 ``` r
 ggplot() +
@@ -90,13 +90,13 @@ You'll need to use `coord_sf()` for two reasons:
 
     ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
--   You want to override to use a specific projection. If you don't specify the `crs` argument, it just uses the one provided in the first layer. The following example uses "USA\_Contiguous\_Albers\_Equal\_Area\_Conic", which has EPSG ID
+-   You want to override to use a specific projection. If you don't specify the `crs` argument, it just uses the one provided in the first layer. The following example uses "USA\_Contiguous\_Albers\_Equal\_Area\_Conic". The easiest way to supply the CRS is as a EPSG ID. I found this ID (102003) with a little googling.
 
-1.  ``` r
+    ``` r
     ggplot() +
       geom_sf(data = states) +
       coord_sf(crs = st_crs(102003))
     ```
 
-    ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-8-1.png "fig:")
+    ![](spatial-vis_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
