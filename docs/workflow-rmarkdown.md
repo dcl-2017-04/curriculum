@@ -10,7 +10,7 @@ title: RMarkdown
 As you start to write more code, it's a good idea to be a little thoughtful
 about your use of RMarkdown.
 
-As well as this units readig, make sure you know what each of the following
+As well as the reading, make sure you know what each of the following
 keyboard shortcuts do:
 
 * Cmd/Ctrl + Enter
