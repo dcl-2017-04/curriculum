@@ -122,9 +122,8 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="relational-basics.html">Essentials of relational data</a></td>
-  <td colspan="4"></td>
+  <td colspan="3"><a class="explore" href="eda-2d.html">Exploratory data analysis (2D)</a></td>
+  <td colspan="5"></td>
 </tr>
 <tr>
 <td></td>
@@ -134,20 +133,15 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="3"><a class="explore" href="eda-2d.html">Exploratory data analysis (2D)</a></td>
-  <td colspan="5"></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="relational-basics.html">Essentials of relational data</a></td>
+  <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>
   <td colspan="4"></td>
   <td colspan="3"><a class="communicate" href="vis-scales.html">Scales</a></td>
   <td colspan="1"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="spread-gather.html">Spreading and gathering</a></td>
-  <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>

@@ -19,15 +19,15 @@
 
 - units: # week 3
   - missing-values
-  - relational-basics
-  - parse-basics
   - eda-2d
+  - parse-basics
+  - relational-basics
   - vis-scales
-  - spread-gather
   - function-basics
   - window-functions
 
 - units: # week 4
+  - spread-gather
   - spatial-basics
   - spatial-vis
   - vis-perception
