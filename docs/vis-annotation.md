@@ -7,9 +7,10 @@ title: Annotations
 # Annotations <small class='communicate'>[communicate]</small>
 <small>(Builds on: [Visualisation basics (2)](vis-basics-2.md))</small>
 
-Visualising strings can be challenging because they almost invariables
-seem to end up plotted on top of each other. This section gives you
-helpful tools for drawing strings on your plots.
+Adding strings to a plot is challenging because they almost invariably
+seem to end up plotted on top of each other. This section gives you a
+few helpful tools for adding strings to a plot without generating a
+giant hairball.
 
 ## Readings
 
