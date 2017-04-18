@@ -14,7 +14,7 @@ Spatial packages
 
 In R, there are two main lineages of tools for dealing with spatial data: sp and sf.
 
--   sp has been around for a while (the first release was in 2005), and it has a rich ecosystem of tools built around it. However, it uses a rather complicated object design which makes it hard to use.
+-   sp has been around for a while (the first release was in 2005), and it has a rich ecosystem of tools built on top of it. However, it uses a rather data structure, which can make it challenging to use.
 
 -   sf is newer (first released in October 2016!) so it doesn't have such a rich ecosystem. However, it's much easier to use and fits in very naturally with the tidyverse, and the ecosystem around it will grow rapidly.
 
@@ -42,20 +42,20 @@ nc <- read_sf(system.file("shape/nc.shp", package = "sf"),
 
 I recommend always setting `quiet = TRUE` and `stringsAsFactors = FALSE`.
 
-Here we're loading from **shapefile** which is the way spatial data is most commonly stored. Typically you'll have four files:
+Here we're loading from a **shapefile** which is the way spatial data is most commonly stored. Despite the name a shapefile isn't just one file, but is a collection of files that have the same name, but different extensions. Typically you'll have four files:
 
 -   `.shp` contains the geometry, and `.shx` contains an index into that geometry.
 
--   `.dbf` contains the other columns in the data frame
+-   `.dbf` contains metadata about each geometry (the other columns in the data frame).
 
--   `.prf` gives the coordinate system and projection information. You'll learn more about that shortly.
+-   `.prf` contains the coordinate system and projection information. You'll learn more about that shortly.
 
-`read_sf()` can read in the majority of spatial file formats, so don't worry if your data is in this format.
+`read_sf()` can read in the majority of spatial file formats, so don't worry if your data isn't in a shapefile; the chances are `read_sf()` will still be able to read it.
 
 Converting data
 ---------------
 
-If you get a spatial object created by the sp package, us `st_as_sf()` to convert it to sf. For example, you can take data from the maps package (included in base R) and convert it to sf:
+If you get a spatial object created by another package, us `st_as_sf()` to convert it to sf. For example, you can take data from the maps package (included in base R) and convert it to sf:
 
 ``` r
 library(maps)
@@ -129,7 +129,7 @@ nc$geometry
 #> MULTIPOLYGON(((-77.2176666259766 36.24098205566...
 ```
 
-We can get a simple visualisation use `plot()`. In the next unit, we'll learn how to use ggplot2 for more complex data visualisations, but this simple plot is a great diagnostic tool
+Use `plot()` to show the geometry. You'll learn how to use ggplot2 for more complex data visualisations in the next unit.
 
 ``` r
 plot(nc$geometry)
@@ -151,12 +151,14 @@ nz_sf %>%
 #> 2 POLYGON((172.639053344727 -... South.Island  150444467051
 ```
 
-(`st_area()` returns an object with units, which is annoying to work with. I used `as.numeric()` to convert to a regular numeric vector)
+`st_area()` returns an object with units (i.e. *m*<sup>2</sup>), which is precise, but a little annoying to work with. I used `as.numeric()` to convert to a regular numeric vector.
 
 Geometry
 --------
 
-The geometry column is a list-column, and it's worthwhile to pull out one piece so you can see what's going on under the hood:
+The geometry column is a list-column. You'll learn more about list-columns later in the course, but in brief, they're the richest and most complex type of column because a list can contain any other data structure including other lists.
+
+It's worthwhile to pull out one piece so you can see what's going on under the hood:
 
 ``` r
 str(nc$geometry[[1]])
@@ -168,6 +170,8 @@ plot(nc$geometry[[1]])
 ```
 
 ![](spatial-basics_files/figure-markdown_github/unnamed-chunk-7-1.png)
+
+Note the use of `[[` to extract a single element, here, the first polygon.
 
 This is list of lists of matrices:
 
@@ -198,6 +202,8 @@ This is list of lists of matrices:
     #>  - attr(*, "class")= chr [1:3] "XY" "MULTIPOLYGON" "sfg"
     ```
 
+    This is a county made up of three non-contiguous pieces.
+
 -   The second-level list is not used in this dataset, but is needed when you have a landmass that contains an lake. (Or a landmass that contains an lake which has an island which has a pond).
 
 -   Each row of the matrix gives the location of a point on the boundary of the polygon.
@@ -205,14 +211,14 @@ This is list of lists of matrices:
 Coordinate system
 -----------------
 
-To correctly plot spatial data, you need know exactly what the positions mean, you need to know what the **coordinate reference system** is. Often spatial data is described in terms of latitude and longitude. You can check this with `st_is_longlat()`:
+To correctly plot spatial data, you need know exactly what the numeric positions mean, i.e. what are they in reference to? This is called the **coordinate reference system** or CRS. Often spatial data is described in terms of latitude and longitude. You can check this with `st_is_longlat()`:
 
 ``` r
 st_is_longlat(nc)
 #> [1] TRUE
 ```
 
-You might think that if you know the latitude and longitude of a point, you know exactly where it is on the Earth. However, things are not quite so simple, because latitude and longitude assume that the Earth is a smooth ellipsoid, which is not true. Because different approximations to the sphere work better in differently places, most countries have their own approximation: this is called the **datum**.
+You might think that if you know the latitude and longitude of a point, you know exactly where it is on the Earth. However, things are not quite so simple, because latitude and longitude are based on the assumption that the Earth is a smooth ellipsoid, which is not true. Because different approximations work better in differently places, most countries have their own approximation: this is called the **geodetic datum**, or just **datum** for short.
 
 Take two minutes and watch this simple explanation of the datum: <https://www.youtube.com/watch?v=xKGlMp__jog>
 
