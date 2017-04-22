@@ -27,33 +27,35 @@
   - window-functions
 
 - units: # week 4
-  - spread-gather
   - spatial-basics
   - spatial-vis
-  - vis-perception
-  - string-basics
   - vis-annotation
+  - spread-gather
+  - string-basics
+  - vis-perception
   - workflow-rmarkdown
-  - filter-joins
-  - datetime-basics
 
 - units: # week 5
   - iteration
-  - datetime-vis
-  - joins-debugging
-# - reading multiple files
+# - googlesheets
   - regexps
   - separate-unite
+  - datetime-basics
   - model-basics
-#  - workflow-projects
+  - filter-joins
 
 - units:
+  - joins-debugging
+  - datetime-vis
   - factor-basics
   - parse-vector
   - parse-file
   - model-vis
   - vectors
   - lists
+# - ggplot2 themes
+# - reading multiple files
+# - workflow-projects
 
 - units:
   - model-multivariate
@@ -61,6 +63,7 @@
 - units:
   - list-cols
   - model-many
+# - bigrquery
 
 - units:
   - report-generation

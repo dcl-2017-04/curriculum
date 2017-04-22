@@ -156,4 +156,45 @@ title: Theme index
   <td colspan="4"></td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+<td id='week-4'>4</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="spatial-basics.html">Spatial basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="spatial-vis.html">Spatial visualisation</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-annotation.html">Annotations</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="spread-gather.html">Spreading and gathering</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="string-basics.html">String basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="vis-perception.html">Perception</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown</a></td>
+</tr>
+</tbody>
 </table>
