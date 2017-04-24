@@ -5,9 +5,9 @@ readings: ~
 desc: "\nSpatial packages\n----------------\n\nIn R, there are two main lineages of
   tools for dealing with spatial data: sp and sf.\n\n-   sp has been around for a
   while (the first release was in 2005), and it has a rich ecosystem of tools built
-  on top of it. However, it uses a rather data structure, which can make it challenging
-  to use.\n\n-   sf is newer (first released in October 2016!) so it doesn't have
-  such a rich ecosystem. However, it's much easier to use and fits in very naturally
+  on top of it. However, it uses a rather complex data structure, which can make it
+  challenging to use.\n\n-   sf is newer (first released in October 2016!) so it doesn't
+  have such a rich ecosystem. However, it's much easier to use and fits in very naturally
   with the tidyverse, and the ecosystem around it will grow rapidly.\n\nIn this class,
   we're going to use sf, so start by installing it:\n\n``` r\ninstall.packages(\"sf\")\n```\n\nLoading
   data\n------------\n\nTo read spatial data in R, use `read_sf()`. The following
@@ -54,8 +54,8 @@ desc: "\nSpatial packages\n----------------\n\nIn R, there are two main lineages
   \n#> 3 POLYGON((166.580032348633 -...          Coal.Island \n#> 4 POLYGON((167.579833984375
   -...       Codfish.Island \n#> 5 POLYGON((173.906433105469 -...     D'Urville.Island
   \n#> 6 POLYGON((175.535934448242 -... Great.Barrier.Island\n```\n\nThis is an ordinary
-  data frame, with one exception: the **geometry** column. This column contains simple
-  \"features\", a standard way of representing two dimesional geometries like points,
+  data frame, with one exception: the **geometry** column. This column contains **simple
+  features**, a standard way of representing two dimesional geometries like points,
   lines, polygons, multilines, and multipolygons. Multilines and multipolygons are
   nededed to represent geographic phenomena like a river with multiple branches, or
   a state made up of multiple islands.\n\n``` r\nnc$geometry\n#> Geometry set for
@@ -77,8 +77,8 @@ desc: "\nSpatial packages\n----------------\n\nIn R, there are two main lineages
   to a regular numeric vector.\n\nGeometry\n--------\n\nThe geometry column is a list-column.
   You'll learn more about list-columns later in the course, but in brief, they're
   the richest and most complex type of column because a list can contain any other
-  data structure including other lists.\n\nIt's worthwhile to pull out one piece so
-  you can see what's going on under the hood:\n\n``` r\nstr(nc$geometry[[1]])\n#>
+  data structure, including other lists.\n\nIt's worthwhile to pull out one piece
+  so you can see what's going on under the hood:\n\n``` r\nstr(nc$geometry[[1]])\n#>
   List of 1\n#>  $ :List of 1\n#>   ..$ : num [1:27, 1:2] -81.5 -81.5 -81.6 -81.6
   -81.7 ...\n#>  - attr(*, \"class\")= chr [1:3] \"XY\" \"MULTIPOLYGON\" \"sfg\"\nplot(nc$geometry[[1]])\n```\n\n![](spatial-basics_files/figure-markdown_github/unnamed-chunk-7-1.png)\n\nNote
   the use of `[[` to extract a single element, here, the first polygon.\n\nThis is

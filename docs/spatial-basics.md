@@ -14,7 +14,7 @@ Spatial packages
 
 In R, there are two main lineages of tools for dealing with spatial data: sp and sf.
 
--   sp has been around for a while (the first release was in 2005), and it has a rich ecosystem of tools built on top of it. However, it uses a rather data structure, which can make it challenging to use.
+-   sp has been around for a while (the first release was in 2005), and it has a rich ecosystem of tools built on top of it. However, it uses a rather complex data structure, which can make it challenging to use.
 
 -   sf is newer (first released in October 2016!) so it doesn't have such a rich ecosystem. However, it's much easier to use and fits in very naturally with the tidyverse, and the ecosystem around it will grow rapidly.
 
@@ -111,7 +111,7 @@ head(nz_sf)
 #> 6 POLYGON((175.535934448242 -... Great.Barrier.Island
 ```
 
-This is an ordinary data frame, with one exception: the **geometry** column. This column contains simple "features", a standard way of representing two dimesional geometries like points, lines, polygons, multilines, and multipolygons. Multilines and multipolygons are nededed to represent geographic phenomena like a river with multiple branches, or a state made up of multiple islands.
+This is an ordinary data frame, with one exception: the **geometry** column. This column contains **simple features**, a standard way of representing two dimesional geometries like points, lines, polygons, multilines, and multipolygons. Multilines and multipolygons are nededed to represent geographic phenomena like a river with multiple branches, or a state made up of multiple islands.
 
 ``` r
 nc$geometry
@@ -156,7 +156,7 @@ nz_sf %>%
 Geometry
 --------
 
-The geometry column is a list-column. You'll learn more about list-columns later in the course, but in brief, they're the richest and most complex type of column because a list can contain any other data structure including other lists.
+The geometry column is a list-column. You'll learn more about list-columns later in the course, but in brief, they're the richest and most complex type of column because a list can contain any other data structure, including other lists.
 
 It's worthwhile to pull out one piece so you can see what's going on under the hood:
 

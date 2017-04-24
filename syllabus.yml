@@ -29,9 +29,9 @@
 - units: # week 4
   - spatial-basics
   - spatial-vis
-  - vis-annotation
   - spread-gather
   - string-basics
+  - vis-annotation
   - vis-perception
   - workflow-rmarkdown
 

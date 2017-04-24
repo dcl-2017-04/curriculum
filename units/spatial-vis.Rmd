@@ -17,8 +17,7 @@ Since sf is so new, support for it in ggplot2 is also very new. That means you'l
 devtools::install_github("tidyverse/ggplot2")
 ```
 
-Check that the install has succeeded by loading the tidyverse and then running `?geom_sf`. If you can't find the documentation for `geom_sf` something has gone wrong. The first thing to try is restarting R so that you
-have a clean session. Installing ggplot2 is tricky if you already have it loaded!
+Check that the install has succeeded by loading the tidyverse and then running `?geom_sf`. If you can't find the documentation for `geom_sf`, something has gone wrong. The first thing to try is restarting R so that you have a clean session. Installing ggplot2 is tricky if you already have it loaded!
 
 Next we'll load the tidyverse, sf, and read in a couple of sample datasets.
 
