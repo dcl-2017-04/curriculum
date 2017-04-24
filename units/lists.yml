@@ -6,7 +6,7 @@ desc: |
   inside a list, even other lists. They power tibbles and data frames,
   and most other complex object types (e.g. linear models).
 
-needs: [vectors]
+needs: [data-structure-basics]
 
 readings:
-- book: r4ds-20.4
+- book: r4ds-20.5
