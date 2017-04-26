@@ -201,6 +201,12 @@ title: Theme index
 <tr>
 <td id='week-5'>5</td>
   <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="lists.html">Lists</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="2"></td>
   <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
   <td colspan="3"></td>
 </tr>
@@ -208,12 +214,6 @@ title: Theme index
 <td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="separate-unite.html">Separate and unite</a></td>
   <td colspan="4"></td>
 </tr>
 <tr>
@@ -239,23 +239,6 @@ title: Theme index
 <tr>
 <td id='week-6'>6</td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="joins-debugging.html">Debugging joins</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="3"><a class="explore" href="datetime-vis.html">Date/time visualisation</a></td>
-  <td colspan="5"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="parse-vector.html">Parsing vectors</a></td>
   <td colspan="4"></td>
 </tr>
@@ -273,6 +256,12 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="separate-unite.html">Separate and unite</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="vectors.html">Atomic vectors</a></td>
   <td colspan="3"></td>
@@ -280,7 +269,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="lists.html">Lists</a></td>
+  <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
   <td colspan="3"></td>
 </tr>
 </tbody>
@@ -291,16 +280,33 @@ title: Theme index
   <td colspan="3"><a class="model" href="model-multivariate.html">Models with multiple variables</a></td>
   <td colspan="2"></td>
 </tr>
-</tbody>
-<tbody>
 <tr>
-<td id='week-8'>8</td>
+<td></td>
   <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
+  <td colspan="3"><a class="program" href="manip-programming.html">Programming dplyr</a></td>
   <td colspan="3"></td>
 </tr>
 <tr>
 <td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="joins-debugging.html">Debugging joins</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="datetime-vis.html">Date/time visualisation</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
+  <td colspan="4"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-8'>8</td>
   <td colspan="3"></td>
   <td colspan="3"><a class="model" href="model-many.html">Many models</a></td>
   <td colspan="2"></td>

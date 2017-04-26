@@ -5,8 +5,7 @@ title: Atomic vectors
 <!-- Generated automatically from vectors.yml. Do not edit by hand -->
 
 # Atomic vectors <small class='program'>[program]</small>
-<small>(Builds on: [Data structure basics](data-structure-basics.md))</small>  
-<small>(Leads to: [Lists](lists.md))</small>
+<small>(Builds on: [Data structure basics](data-structure-basics.md))</small>
 
 The tidyverse functions that you've focussed on so far are holistic:
 they take a complete data frame and perform various transformations on it.
