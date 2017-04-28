@@ -1,0 +1,12 @@
+title: ggplot2 themes
+theme: communicate
+needs: [vis-theory]
+
+desc: |
+  ggplot2 themes control the appearance of all non-data elements of the plot.
+  They are not generally important during the exploratory phase of a data
+  analysis, but are important during the communication phase. They're
+  particularly important if you want to match an existing publication style.
+
+readings:
+- book: ggplot2-8

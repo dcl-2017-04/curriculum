@@ -1,0 +1,11 @@
+title: Advanced scales
+theme: communicate
+
+desc: |
+  You've learned the basics of controlling scales. Now we'll dive into more
+  of the details.
+
+needs: [vis-scales]
+
+readings:
+- book: ggplot2-7

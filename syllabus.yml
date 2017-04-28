@@ -38,11 +38,12 @@
 - units: # week 5
   - lists
   - iteration
-  - regexps
   - datetime-basics
+  - vis-scales-2
+  - regexps
+  - vis-themes
   - model-basics
   - filter-joins
-# - vis-themes
 
 - units: # week 6
   - parse-vector

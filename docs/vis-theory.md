@@ -6,7 +6,7 @@ title: The grammar of graphics
 
 # The grammar of graphics <small class='explore'>[explore]</small>
 <small>(Builds on: [Visualisation basics (2)](vis-basics-2.md))</small>  
-<small>(Leads to: [Perception](vis-perception.md), [Grouped summaries](vis-summaries.md))</small>
+<small>(Leads to: [Perception](vis-perception.md), [Grouped summaries](vis-summaries.md), [ggplot2 themes](vis-themes.md))</small>
 
 Now is a good time to learn a bit more about the underlying theory
 of ggplot2. Read these two short chapters to familiarise yourself

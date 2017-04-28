@@ -213,14 +213,26 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-scales-2.html">Advanced scales</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
   <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
   <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-themes.html">ggplot2 themes</a></td>
+  <td colspan="1"></td>
 </tr>
 <tr>
 <td></td>
