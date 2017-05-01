@@ -1,4 +1,4 @@
-cur_week <- 4
+cur_week <- 5
 themes <- c("Explore", "Wrangle", "Program", "Model", "Communicate", "Workflow")
 
 

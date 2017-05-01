@@ -206,27 +206,15 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
-  <td colspan="3"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="4"></td>
   <td colspan="3"><a class="communicate" href="vis-scales-2.html">Advanced scales</a></td>
   <td colspan="1"></td>
 </tr>
 <tr>
 <td></td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
-  <td colspan="4"></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
+  <td colspan="3"></td>
 </tr>
 <tr>
 <td></td>
@@ -243,13 +231,25 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="filter-joins.html">Semi- and anti-joins</a></td>
+  <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
   <td colspan="4"></td>
 </tr>
 </tbody>
 <tbody>
 <tr>
 <td id='week-6'>6</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="filter-joins.html">Semi- and anti-joins</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="parse-vector.html">Parsing vectors</a></td>
   <td colspan="4"></td>

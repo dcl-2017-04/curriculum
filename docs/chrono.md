@@ -197,4 +197,48 @@ title: Theme index
   <td colspan="3"><a class="workflow" href="workflow-rmarkdown.html">RMarkdown</a></td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+<td id='week-5'>5</td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="lists.html">Lists</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-scales-2.html">Advanced scales</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="iteration.html">Iteration</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-themes.html">ggplot2 themes</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-basics.html">Model intuition</a></td>
+  <td colspan="2"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="regexps.html">Regular expressions</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="datetime-basics.html">Date/time basics</a></td>
+  <td colspan="4"></td>
+</tr>
+</tbody>
 </table>

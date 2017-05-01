@@ -37,15 +37,15 @@
 
 - units: # week 5
   - lists
-  - iteration
-  - datetime-basics
   - vis-scales-2
-  - regexps
+  - iteration
   - vis-themes
   - model-basics
-  - filter-joins
+  - regexps
+  - datetime-basics
 
 - units: # week 6
+  - filter-joins
   - parse-vector
   - parse-file
   - model-vis
