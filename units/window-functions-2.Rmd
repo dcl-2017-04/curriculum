@@ -1,5 +1,5 @@
 ---
-unit_title: "Vectorised functions"
+unit_title: "Transformation functions"
 theme: wrangle
 needs: [manip-basics]
 ---
@@ -8,10 +8,10 @@ needs: [manip-basics]
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-`summarise()` and `mutate()` work at the data frame level: they take a data frame as input and return a data frame as output. You combine these data frame function with with vector functions: functions that take a vector as input and return a vector as output. `summarise()` and `mutate()` have different constraints on the type of vector functions that they work with:
+`summarise()` and `mutate()` work at the data frame level: they take a data frame as input and return a data frame as output. You combine these data frame functions with with vector functions: functions that take a vector as input and return a vector as output. The length of the output determines whether a given function work with `summarise()` or `mutate()`:
 
 * `summarise()` works with __summary__ functions; functions that take `n` inputs
-  and return a single output. This includes functions like `sum()` and `mean()`
+  and return 1 output. This includes functions like `sum()` and `mean()`
   for numeric vectors; `all()` and `any()` for logical vectors; and `str_c()`
   with `collapse` for character vectors.
   
@@ -27,32 +27,51 @@ library(tidyverse)
 
 ## Vectorised map functions
 
-A unary vectorised map takes a vector `x` and return a new vector `z` with two constraints:
+### Unary
 
-1. `z` is the same length of `x`.
+The simplest type of transformation function is the "unary vectorised map". This is a precise, but complicated name. Let's unpack it and explain each component:
 
-1. The value of `z[i]` only depends on `x[i]`.
+* __Unary__ means that the function takes a single vector as input.
 
-Let's unpack the name of this class of function to better understand :
+* __Vectorised__ means that the function takes a vector as input
+  and returns a vector of the same length as the output (but possibly a
+  different type). 
 
-* __Unary__ means that it takes a single argument.
+* __Map__ is a mathematical term that means that you can independently
+  compute each element of the output from the corresponding piece of the 
+  input. In other words, if your input is `x` and your output is `z`, 
+  the only value of `x` that `z[i]` depends on is `x[i]`.
 
-* __Vectorised__ means that the output is the same size as the input.
-
-* __Map__ is a mathematical term that means that you can independent compute 
-  each pieces of the output from the corresponding piece of the input.
-
-The diagram below shows a graphical depiction of such a function. The input, `x`, is on the left, and the output, `z` is on the right.
+The diagram below shows a vectorised function, focussing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
 
 ```{r, echo = FALSE}
 knitr::include_graphics("diagrams/map.png", dpi = 220)
 ```
 
-This definition includes many mathematical functions like `log()` and `abs()`.
+It's helpful to organise unary vectorised maps by the type of input vector:
 
-More useful, however, are the __binary__ vectorised functions. These take two inputs `x` and `y`, and return a vector `z`, with the same constraints as above. This class of functions includes the very useful mathematical operators like `-`, `+`, `/`, `*`, `%%` and `%/%`. You've used these a lot already.
+*   Numeric: most of these come from base R and include functions like 
+    `log()` and `abs()`, and operators like `!` and `-`.
 
-One fact that you've probably taken advantage of but might not have thought about explicitly, is what happens if the inputs are different lengths? For example, in `x * 2` below, `x` has length 5, but `y` has length 1.
+    ```{r}
+    x1 <- c(1, 4, 2)
+    -x1
+    
+    x2 <- c(TRUE, FALSE, FALSE)
+    !x2
+    ```
+
+*   Character: these are provided by stringr and include 
+    functions like `str_length()`, `str_lower()` and `str_upper()`.
+    
+*   Date times: these are provided by lubridate and include functions like
+    `yday()` and `year()`.
+    
+### Binary
+
+Another extremely common class of transformation functions are the __binary__ vectorised maps. These are similar to the unary transformation functions except that they take 2 vector inputs. You've used many of these functions already because they include the mathematical operators `-`, `+`, `/`, `*`, `%%` and `%/%`. 
+
+There is a new wrinkle with these functions: since they take two vectors, what happens if they are different lengths? For example, in `x * 2` below, `x` has length 5, but `y` has length 1.
 
 ```{r}
 x <- sample(100, 10)
@@ -61,9 +80,7 @@ y <- 2
 x * y
 ```
 
-R has a special set of rules to cover this situation, the so-called __recycling rules__. Whenever you call a binary operator with inputs of different lengths, R will recycle the shorter vector to be the same length as the longer.
-
-This is particularly useful when combined with summary operators:
+R has a special set of rules that cover this situation called the __recycling rules__. Whenever you call a binary vectorised fuction with inputs of different lengths, R will recycle the shorter vector to be the same length as the longer. This is particularly useful when combined with summary operators:
 
 ```{r}
 x - min(x)
@@ -74,11 +91,11 @@ x - min(x)
 
 ## Vectorised window functions
 
-A vectorised map function can be generalised to vectorised __window__ functions. In a window function the output no depends on a contiguous window of values (i.e. a sequence with no gaps). Map functions are a special case of window functions because in a map function, the "window" is just a single value.
+Vectorised map functions can be generalised to vectorised __window__ functions. In a window function the output now depends on a contiguous window of values (i.e. a sequence with no gaps). Map functions are a special case of window functions because in a map function, the "window" is just a single value.
 
 ### Offset
 
-The simplest type of window is just an offset. Each output value still depends on only a single input value, but the input and output are no longer aligned.
+The simplest type of window is an offset. Each output value still depends on only a single input value, but the input and output are no longer aligned. The following diagram illustrates offsets in either direction.
 
 ```{r echo = FALSE}
 knitr::include_graphics("diagrams/offset.png", dpi = 220)
@@ -94,17 +111,9 @@ tibble(
 )
 ```
 
-You can change the number of positions to look ahead or behind with the second argument, `n`.
+Change the number of positions to look ahead or behind with the second argument, `n`.
 
 Remember that these are vectorised functions, so the output must be the same length as the input. That means we need to pad either the beginning or the end of the vector. `lead()` and `lag()` pad with `NA` but you can change this value with the `default` argument.
-
-```{r}
-tibble(
-  x = 1:5,
-  pos = lead(x, default = 0),
-  neg = lag(x, default = 0)
-)
-```
 
 `lead()` and `lag()` are very useful when combined with a binary vectorised map:
 
@@ -114,7 +123,7 @@ tibble(
 
 ### Rolling
 
-Rolling window functions are the next step up in complexity. Instead of a window of size one, they now have a window of size `m`.
+Rolling window functions are the next step up in complexity. Instead of a window of size one, they now have a fixed window of size `m`.
 
 ```{r echo = FALSE}
 knitr::include_graphics("diagrams/rolling.png", dpi = 220)
@@ -130,22 +139,23 @@ tibble(
   roll_sum = roll_sum(x, 2, fill = NA),
   roll_mean = roll_mean(x, 2, fill = NA)
 )
-
 ```
 
 You can control how the window is aligned to the data with the `align` argument.
 
-
+```{r echo = FALSE}
+knitr::include_graphics("diagrams/rolling-dir.png", dpi = 220)
+```
 
 ### Cumulative
 
-Cumulative functions are even more complex because the window size is no longer fixed. A cumulative function uses all values up to the current position.
+The next step up in complexity are the cumulative functions, where the window size is no longer constant. A cumulative function uses all values up to the current position.
 
 ```{r echo = FALSE}
 knitr::include_graphics("diagrams/cumulative.png", dpi = 220)
 ```
 
-Base R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`.
+Base R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`. I'm not aware of any useful cumulative functions for strings or date/times.
 
 ```{r}
 library(RcppRoll)
@@ -169,12 +179,24 @@ This class of window function includes all the ranking functions, because the ra
 
 ```{r}
 tibble(
-  x = c(3, 3, 3, 2, 2, 1),
+  x = c(10, 10, 10, 20, 20, 30),
   min = min_rank(x),
   dense = dense_rank(x),
   row_number = row_number(x)
 )
 ```
+
+Use `desc()` if you want the highest inputs to have the lowest ranks.
+
+`min_rank()` works like sports ranking: if there are three people tied for first place, the next rank is 4th place. `dense_rank()` ensures that the ranks are "dense", i.e. it doesn't skip any ranks for ties. `row_number()` breaks ties so that every row gets a unique number. It's easiest to understand the differences in terms of filtering:
+
+* `min_rank(x) <= 2` will select all elements in first place, and 
+  will only select another if there wasn't a tie for first.
+
+* `dense_rank(x) <= 2` will select all elements tied for first place,
+  and all elements tied for the next rank.
+
+* `row_number(x) <= 2` will always select exactly two elements.
 
 ### Ordering
 
