@@ -7,6 +7,7 @@ needs: [manip-basics]
 ```{r, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 options(digits = 3)
+set.seed(1014)
 ```
 
 `summarise()` and `mutate()` work at the data frame level: they take a data frame as input and return a data frame as output. You combine these data frame functions with with vector functions: functions that take a vector as input and return a vector as output. The length of the output determines whether a given function work with `summarise()` or `mutate()`:
@@ -210,3 +211,24 @@ So far we've dodged the question of what we mean by "before" and "after", relyin
   computing a single window function.
   
 * Use the `order_by()` helper if there is no `order_by` argument.
+
+The main difference between the `arrange` and `order_by` is what happens to the other columns:
+
+```{r}
+df <- tribble(
+  ~time, ~ value,
+      7,       3,
+      1,       5,
+      5,       -2,
+      3,       0
+)
+
+df %>% 
+  arrange(time) %>%
+  mutate(cumulate = cumsum(value))
+
+df %>% 
+  mutate(cumulate = order_by(time, cumsum(value)))
+```
+
+

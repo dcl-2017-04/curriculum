@@ -64,16 +64,17 @@ x <- sample(100, 10)
 y <- 2
 
 x * y
-#>  [1]  34  90 124 200 158 134 100   8 174  46
+#>  [1] 168 120  32   2  90  96  56 138 144 160
 ```
 
 R has a special set of rules that cover this situation called the **recycling rules**. Whenever you call a binary vectorised fuction with inputs of different lengths, R will recycle the shorter vector to be the same length as the longer. This is particularly useful when combined with summary operators:
 
 ``` r
 x - min(x)
-#>  [1] 13 41 58 96 75 63 46  0 83 19
+#>  [1] 83 59 15  0 44 47 27 68 71 79
 (x - mean(x)) / sd(x)
-#>  [1] -1.152 -0.266  0.272  1.475  0.810  0.430 -0.108 -1.563  1.063 -0.962
+#>  [1]  1.2024  0.3461 -1.2238 -1.7590 -0.1891 -0.0821 -0.7956  0.6672
+#>  [9]  0.7742  1.0597
 ```
 
 (You can use recycling rules with vectors that are not of length 1, but that makes it easy to write confusing code, so I don't recommend it.)
@@ -218,3 +219,37 @@ So far we've dodged the question of what we mean by "before" and "after", relyin
 -   Use the `order_by` argument (if present), to order by a specific variable. This is more efficient than `arrange()` if you're only computing a single window function.
 
 -   Use the `order_by()` helper if there is no `order_by` argument.
+
+The main difference between the `arrange` and `order_by` is what happens to the other columns:
+
+``` r
+df <- tribble(
+  ~time, ~ value,
+      7,       3,
+      1,       5,
+      5,       -2,
+      3,       0
+)
+
+df %>% 
+  arrange(time) %>%
+  mutate(cumulate = cumsum(value))
+#> # A tibble: 4 × 3
+#>    time value cumulate
+#>   <dbl> <dbl>    <dbl>
+#> 1     1     5        5
+#> 2     3     0        5
+#> 3     5    -2        3
+#> 4     7     3        6
+
+df %>% 
+  mutate(cumulate = order_by(time, cumsum(value)))
+#> # A tibble: 4 × 3
+#>    time value cumulate
+#>   <dbl> <dbl>    <dbl>
+#> 1     7     3        6
+#> 2     1     5        5
+#> 3     5    -2        3
+#> 4     3     0        5
+```
+
