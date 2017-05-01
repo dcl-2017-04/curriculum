@@ -29,7 +29,7 @@ desc: |2
 
   The diagram below shows a vectorised function, focussing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
 
-  <img src="diagrams/map.png" width="126" />
+  <img src="diagrams/map.png" width="139" />
 
   It's helpful to organise unary vectorised maps by the type of input vector:
 
@@ -60,17 +60,16 @@ desc: |2
   y <- 2
 
   x * y
-  #>  [1]  76 174 184 110 156 168 176 104   4 186
+  #>  [1]  34  90 124 200 158 134 100   8 174  46
   ```
 
   R has a special set of rules that cover this situation called the **recycling rules**. Whenever you call a binary vectorised fuction with inputs of different lengths, R will recycle the shorter vector to be the same length as the longer. This is particularly useful when combined with summary operators:
 
   ``` r
   x - min(x)
-  #>  [1] 36 85 90 53 76 82 86 50  0 91
+  #>  [1] 13 41 58 96 75 63 46  0 83 19
   (x - mean(x)) / sd(x)
-  #>  [1] -0.9701301  0.6747272  0.8425697 -0.3994653  0.3726105  0.5740216
-  #>  [7]  0.7082957 -0.5001709 -2.1785966  0.8761382
+  #>  [1] -1.152 -0.266  0.272  1.475  0.810  0.430 -0.108 -1.563  1.063 -0.962
   ```
 
   (You can use recycling rules with vectors that are not of length 1, but that makes it easy to write confusing code, so I don't recommend it.)
@@ -84,7 +83,7 @@ desc: |2
 
   The simplest type of window is an offset. Each output value still depends on only a single input value, but the input and output are no longer aligned. The following diagram illustrates offsets in either direction.
 
-  <img src="diagrams/offset.png" width="281" />
+  <img src="diagrams/offset.png" width="310" />
 
   In dplyr you can use `lead()` (positive) and `lag()` (negative) to look at offsets.
 
@@ -118,7 +117,7 @@ desc: |2
 
   Rolling window functions are the next step up in complexity. Instead of a window of size one, they now have a fixed window of size `m`.
 
-  <img src="diagrams/rolling.png" width="151" />
+  <img src="diagrams/rolling.png" width="166" />
 
   Neither base R not dplyr provide rolling functions, but you can get them from the RcppRoll package. By default the `roll_` functions are not vectorised (they return shorter vectors), but you can make them vectorised by setting `fill = NA`.
 
@@ -140,15 +139,15 @@ desc: |2
   #> 5     5       NA        NA
   ```
 
-  You can control how the window is aligned to the data with the `align` argument.
+  You can control how the window is aligned to the data with the `align` argument. The following figure shows `n = 3` and the three possible values of `align`. Note that the output value is `NA` if there are less than 3 inputs.
 
-  <img src="diagrams/rolling-dir.png" width="494" />
+  <img src="diagrams/rolling-dir.png" width="544" />
 
   ### Cumulative
 
   The next step up in complexity are the cumulative functions, where the window size is no longer constant. A cumulative function uses all values up to the current position.
 
-  <img src="diagrams/cumulative.png" width="126" />
+  <img src="diagrams/cumulative.png" width="139" />
 
   Base R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`. I'm not aware of any useful cumulative functions for strings or date/times.
 
@@ -174,7 +173,7 @@ desc: |2
 
   The most complex type of window function is the **complete** window function, where every output value depends on every input value.
 
-  <img src="diagrams/complete.png" width="126" />
+  <img src="diagrams/complete.png" width="139" />
 
   This class of window function includes all the ranking functions, because the rank of any value depends on the rank of all the other values. There are three key ranking functions that differ in how ties are handled:
 

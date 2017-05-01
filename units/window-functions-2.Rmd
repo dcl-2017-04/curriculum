@@ -6,6 +6,7 @@ needs: [manip-basics]
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(digits = 3)
 ```
 
 `summarise()` and `mutate()` work at the data frame level: they take a data frame as input and return a data frame as output. You combine these data frame functions with with vector functions: functions that take a vector as input and return a vector as output. The length of the output determines whether a given function work with `summarise()` or `mutate()`:
@@ -45,7 +46,7 @@ The simplest type of transformation function is the "unary vectorised map". This
 The diagram below shows a vectorised function, focussing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
 
 ```{r, echo = FALSE}
-knitr::include_graphics("diagrams/map.png", dpi = 220)
+knitr::include_graphics("diagrams/map.png", dpi = 200)
 ```
 
 It's helpful to organise unary vectorised maps by the type of input vector:
@@ -98,7 +99,7 @@ Vectorised map functions can be generalised to vectorised __window__ functions. 
 The simplest type of window is an offset. Each output value still depends on only a single input value, but the input and output are no longer aligned. The following diagram illustrates offsets in either direction.
 
 ```{r echo = FALSE}
-knitr::include_graphics("diagrams/offset.png", dpi = 220)
+knitr::include_graphics("diagrams/offset.png", dpi = 200)
 ```
 
 In dplyr you can use `lead()` (positive) and `lag()` (negative) to look at offsets.
@@ -126,7 +127,7 @@ Remember that these are vectorised functions, so the output must be the same len
 Rolling window functions are the next step up in complexity. Instead of a window of size one, they now have a fixed window of size `m`.
 
 ```{r echo = FALSE}
-knitr::include_graphics("diagrams/rolling.png", dpi = 220)
+knitr::include_graphics("diagrams/rolling.png", dpi = 200)
 ```
 
 Neither base R not dplyr provide rolling functions, but you can get them from the RcppRoll package. By default the `roll_` functions are not vectorised (they return shorter vectors), but you can make them vectorised by setting `fill = NA`.
@@ -141,10 +142,10 @@ tibble(
 )
 ```
 
-You can control how the window is aligned to the data with the `align` argument.
+You can control how the window is aligned to the data with the `align` argument. The following figure shows `n = 3` and the three possible values of `align`. Note that the output value is `NA` if there are less than 3 inputs.
 
 ```{r echo = FALSE}
-knitr::include_graphics("diagrams/rolling-dir.png", dpi = 220)
+knitr::include_graphics("diagrams/rolling-dir.png", dpi = 200)
 ```
 
 ### Cumulative
@@ -152,7 +153,7 @@ knitr::include_graphics("diagrams/rolling-dir.png", dpi = 220)
 The next step up in complexity are the cumulative functions, where the window size is no longer constant. A cumulative function uses all values up to the current position.
 
 ```{r echo = FALSE}
-knitr::include_graphics("diagrams/cumulative.png", dpi = 220)
+knitr::include_graphics("diagrams/cumulative.png", dpi = 200)
 ```
 
 Base R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`. I'm not aware of any useful cumulative functions for strings or date/times.
@@ -172,7 +173,7 @@ tibble(
 The most complex type of window function is the __complete__ window function, where every output value depends on every input value.
 
 ```{r echo = FALSE}
-knitr::include_graphics("diagrams/complete.png", dpi = 220)
+knitr::include_graphics("diagrams/complete.png", dpi = 200)
 ```
 
 This class of window function includes all the ranking functions, because the rank of any value depends on the rank of all the other values. There are three key ranking functions that differ in how ties are handled:
