@@ -28,7 +28,7 @@ build_units <- function() {
     walk(render_rmd)
 
   # Copy Rmarkdown directories
-  notes <- dir("units/", pattern = "(_files|\\.md)$", full.names = TRUE)
+  notes <- dir("units/", pattern = "(_files|\\.md|diagrams)$", full.names = TRUE)
   notes %>% walk(file.copy, to = "docs", recursive = TRUE)
 
   syllabus <- load_syllabus()
