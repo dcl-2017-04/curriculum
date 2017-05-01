@@ -13,4 +13,5 @@ desc: |
 needs: [setup]
 
 readings:
+- book: r4ds-23.1
 - book: r4ds-23.2
