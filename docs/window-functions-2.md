@@ -31,7 +31,7 @@ The simplest type of transformation function is the "unary vectorised map". This
 
 -   **Map** is a mathematical term that means that you can independently compute each element of the output from the corresponding piece of the input. In other words, if your input is `x` and your output is `z`, the only value of `x` that `z[i]` depends on is `x[i]`.
 
-The diagram below shows a vectorised function, focussing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
+The diagram below shows a vectorised function, focusing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
 
 <img src="diagrams/map.png" width="139" />
 

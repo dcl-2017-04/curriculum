@@ -23,7 +23,7 @@ desc: "\n`summarise()` and `mutate()` work at the data frame level: they take a 
   independently compute each element of the output from the corresponding piece of
   the input. In other words, if your input is `x` and your output is `z`, the only
   value of `x` that `z[i]` depends on is `x[i]`.\n\nThe diagram below shows a vectorised
-  function, focussing on how the input is connected to the output. The input is on
+  function, focusing on how the input is connected to the output. The input is on
   the left, and the output is on the bottom. You can see how each input affects the
   output by following the lines right and down; you can see how an output is computed
   from the input by following the lines up and left. The connections for a vectorised
