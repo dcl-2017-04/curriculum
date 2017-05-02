@@ -8,4 +8,4 @@ desc: |
 needs: [vis-scales]
 
 readings:
-- book: ggplot2-7
+- book: ggplot2-6

@@ -12,6 +12,6 @@ of the details.
 
 ## Readings
 
-  * [Positioning](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_7) [ggplot2-7]
+  * [Scales, axes and legends](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_6) [ggplot2-6]
 
 
