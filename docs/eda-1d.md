@@ -6,7 +6,7 @@ title: Exploratory data analysis (1D)
 
 # Exploratory data analysis (1D) <small class='explore'>[explore]</small>
 <small>(Builds on: [Visualisation basics (1)](vis-basics.md), [Manipulation basics](manip-basics.md))</small>  
-<small>(Leads to: [Exploratory data analysis (2D)](eda-2d.md), [Function basics](function-basics.md), [Parsing vectors](parse-vector.md), [Essentials of relational data](relational-basics.md), [String basics](string-basics.md), [Tidy data](tidy-data.md))</small>
+<small>(Leads to: [Exploratory data analysis (2D)](eda-2d.md), [Function basics](function-basics.md), [Essentials of relational data](relational-basics.md), [String basics](string-basics.md), [Tidy data](tidy-data.md))</small>
 
 
 Exploratory data analysis is partly a set of techniques, but is mostly a mindset: you want to remain open to what the data is telling you.

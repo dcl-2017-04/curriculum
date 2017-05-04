@@ -1,0 +1,19 @@
+title: Parsing details
+theme: wrangle
+needs: [parse-basics, tidy-data]
+
+desc: |
+  You have the basics of parsing files, but now it's time to learn how
+  to handle more complicated situations where readr doesn't automatically
+  guess the correct columns types. In this unit you'll learn:
+
+  * How to parse character vectors that are already in R, and how to
+    tell readr how to parse vectors from disk.
+
+  * How to recognise and fix problems caused by readr failing to guess
+    the correct variable type.
+
+readings:
+- book: r4ds-11.3
+- book: r4ds-11.4
+- book: cheatsheets-data-import

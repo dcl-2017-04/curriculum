@@ -5,7 +5,7 @@ title: Exporting data
 <!-- Generated automatically from export.yml. Do not edit by hand -->
 
 # Exporting data <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Parsing files](parse-file.md))</small>
+<small>(Builds on: [Parsing basics](parse-basics.md))</small>
 
 There are three main reasons you might want to export a tibble from R:
 
