@@ -250,6 +250,12 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="window-functions-2.html">Transformation functions</a></td>
   <td colspan="4"></td>
@@ -279,12 +285,6 @@ title: Theme index
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
   <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
-  <td colspan="2"></td>
-  <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
-  <td colspan="3"></td>
 </tr>
 <tr>
 <td></td>

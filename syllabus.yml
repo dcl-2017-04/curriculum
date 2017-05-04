@@ -46,6 +46,7 @@
 
 - units: # week 6
   - filter-joins
+  - list-cols
   - window-functions-2
   - parse-details
   - model-vis
@@ -53,10 +54,9 @@
 
 - units: # week 7
   - factor-basics
-  - list-cols
   - model-multivariate
 # - rectangling
-# - dplyr-databases
+  - dplyr-databases
   - joins-debugging
 
 - units: # week 8

@@ -1,0 +1,15 @@
+title: dplyr and databases
+theme: wrangle
+
+desc: |
+  So far you've used dplyr with in-memory dataframes. But one of the coolest
+  things about dplyr is that provides an abstract interface: in other words,
+  you can use the same code to work with data stored in different places.
+  In this unit, you'll learn how to use dplyr with data that lives in a
+  database.
+
+needs: [relational-basics]
+
+readings:
+- href: http://dbplyr.tidyverse.org/articles/dbplyr.html
+  text: Introduction to dplyr
