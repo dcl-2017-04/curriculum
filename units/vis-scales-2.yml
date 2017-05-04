@@ -5,7 +5,7 @@ desc: |
   You've learned the basics of controlling scales. Now we'll dive into more
   of the details.
 
-needs: [vis-scales]
+needs: [vis-scales, datetime-basics]
 
 readings:
 - book: ggplot2-6
