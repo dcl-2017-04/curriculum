@@ -54,7 +54,7 @@ theme_index <- function(syllabus_index = load_syllabus(),
     syllabus_index = syllabus_index
   )
 
-  theme_headers <- paste(glue('  <th>{themes}</th>'), collapse = "\n")
+  theme_headers <- paste(glue('    <th>{themes}</th>'), collapse = "\n")
   header <- glue('
     ---
     title: Theme index

@@ -18,12 +18,12 @@ title: Theme index
 <thead>
 <tr>
   <th></th>
-  <th>Explore</th>
-  <th>Wrangle</th>
-  <th>Program</th>
-  <th>Model</th>
-  <th>Communicate</th>
-  <th>Workflow</th>
+    <th>Explore</th>
+<th>Wrangle</th>
+<th>Program</th>
+<th>Model</th>
+<th>Communicate</th>
+<th>Workflow</th>
   <th></th>
   <th></th>
 </tr>
