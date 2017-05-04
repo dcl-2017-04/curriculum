@@ -46,26 +46,24 @@
 
 - units: # week 6
   - filter-joins
-  - parse-vector
-  - parse-file
+  - window-functions-2
+  - parse-details
   - model-vis
   - separate-unite
-  - vectors
-  - list-cols
 
 - units: # week 7
-  - model-multivariate
-# - googlesheets
-  - manip-programming # dplyr 0.6
-  - joins-debugging
-  - datetime-vis
   - factor-basics
-# - reading multiple files
-# - workflow-projects
+  - list-cols
+  - model-multivariate
+# - rectangling
+# - dplyr-databases
+  - joins-debugging
 
 - units: # week 8
+  - manip-programming # dplyr 0.6
+# - googlesheets
   - model-many
-# - bigrquery
+# - reading multiple files
 
 - units: # week 9
   - report-generation
