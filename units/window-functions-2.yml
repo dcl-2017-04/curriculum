@@ -27,102 +27,100 @@ desc: "\n`summarise()` and `mutate()` work at the data frame level: they take a 
   the left, and the output is on the bottom. You can see how each input affects the
   output by following the lines right and down; you can see how an output is computed
   from the input by following the lines up and left. The connections for a vectorised
-  function are simple: each input only affects the output at the same position.\n\n<img
-  src=\"diagrams/map.png\" width=\"139\" />\n\nIt's helpful to organise unary vectorised
-  maps by the type of input vector:\n\n-   Numeric: most of these come from base R
-  and include functions like `log()` and `abs()`, and operators like `!` and `-`.\n\n
-  \   ``` r\n    x1 <- c(1, 4, 2)\n    -x1\n    #> [1] -1 -4 -2\n\n    x2 <- c(TRUE,
-  FALSE, FALSE)\n    !x2\n    #> [1] FALSE  TRUE  TRUE\n    ```\n\n-   Character:
-  these are provided by stringr and include functions like `str_length()`, `str_lower()`
-  and `str_upper()`.\n\n-   Date times: these are provided by lubridate and include
-  functions like `yday()` and `year()`.\n\n### Binary\n\nAnother extremely common
-  class of transformation functions are the **binary** vectorised maps. These are
-  similar to the unary transformation functions except that they take 2 vector inputs.
-  You've used many of these functions already because they include the mathematical
-  operators `-`, `+`, `/`, `*`, `%%` and `%/%`.\n\nThere is a new wrinkle with these
-  functions: since they take two vectors, what happens if they are different lengths?
-  For example, in `x * 2` below, `x` has length 5, but `y` has length 1.\n\n``` r\nx
-  <- sample(100, 10)\ny <- 2\n\nx * y\n#>  [1] 168 120  32   2  90  96  56 138 144
-  160\n```\n\nR has a special set of rules that cover this situation called the **recycling
-  rules**. Whenever you call a binary vectorised fuction with inputs of different
-  lengths, R will recycle the shorter vector to be the same length as the longer.
-  This is particularly useful when combined with summary operators:\n\n``` r\nx -
-  min(x)\n#>  [1] 83 59 15  0 44 47 27 68 71 79\n(x - mean(x)) / sd(x)\n#>  [1]  1.2024
-  \ 0.3461 -1.2238 -1.7590 -0.1891 -0.0821 -0.7956  0.6672\n#>  [9]  0.7742  1.0597\n```\n\n(You
-  can use recycling rules with vectors that are not of length 1, but that makes it
-  easy to write confusing code, so I don't recommend it.)\n\nVectorised window functions\n---------------------------\n\nVectorised
-  map functions can be generalised to vectorised **window** functions. In a window
-  function the output now depends on a contiguous window of values (i.e. a sequence
-  with no gaps). Map functions are a special case of window functions because in a
-  map function, the \"window\" is just a single value.\n\n### Offset\n\nThe simplest
-  type of window is an offset. Each output value still depends on only a single input
-  value, but the input and output are no longer aligned. The following diagram illustrates
-  offsets in either direction.\n\n<img src=\"diagrams/offset.png\" width=\"310\" />\n\nIn
-  dplyr you can use `lead()` (positive) and `lag()` (negative) to look at offsets.\n\n```
-  r\ntibble(\n  x = 1:5,\n  pos = lead(x),\n  neg = lag(x)\n)\n#> # A tibble: 5 ×
-  3\n#>       x   pos   neg\n#>   <int> <int> <int>\n#> 1     1     2    NA\n#> 2
-  \    2     3     1\n#> 3     3     4     2\n#> 4     4     5     3\n#> 5     5    NA
-  \    4\n```\n\nChange the number of positions to look ahead or behind with the second
-  argument, `n`.\n\nRemember that these are vectorised functions, so the output must
-  be the same length as the input. That means we need to pad either the beginning
-  or the end of the vector. `lead()` and `lag()` pad with `NA` but you can change
-  this value with the `default` argument.\n\n`lead()` and `lag()` are very useful
-  when combined with a binary vectorised map:\n\n-   `x == lag(x)` tells you if `x`
-  has changed compared to the previous value.\n\n-   `x - lag(x)` tells you how `x`
-  has changed.\n\n### Rolling\n\nRolling window functions are the next step up in
-  complexity. Instead of a window of size one, they now have a fixed window of size
-  `m`.\n\n<img src=\"diagrams/rolling.png\" width=\"166\" />\n\nNeither base R not
-  dplyr provide rolling functions, but you can get them from the RcppRoll package.
-  By default the `roll_` functions are not vectorised (they return shorter vectors),
-  but you can make them vectorised by setting `fill = NA`.\n\n``` r\nlibrary(RcppRoll)\n\ntibble(\n
+  function are simple: each input only affects the output at the same position.\n\n![](diagrams/map.png)\n\nIt's
+  helpful to organise unary vectorised maps by the type of input vector:\n\n-   Numeric:
+  most of these come from base R and include functions like `log()` and `abs()`, and
+  operators like `!` and `-`.\n\n    ``` r\n    x1 <- c(1, 4, 2)\n    -x1\n    #>
+  [1] -1 -4 -2\n\n    x2 <- c(TRUE, FALSE, FALSE)\n    !x2\n    #> [1] FALSE  TRUE
+  \ TRUE\n    ```\n\n-   Character: these are provided by stringr and include functions
+  like `str_length()`, `str_lower()` and `str_upper()`.\n\n-   Date times: these are
+  provided by lubridate and include functions like `yday()` and `year()`.\n\n### Binary\n\nAnother
+  extremely common class of transformation functions are the **binary** vectorised
+  maps. These are similar to the unary transformation functions except that they take
+  2 vector inputs. You've used many of these functions already because they include
+  the mathematical operators `-`, `+`, `/`, `*`, `%%` and `%/%`.\n\nThere is a new
+  wrinkle with these functions: since they take two vectors, what happens if they
+  are different lengths? For example, in `x * 2` below, `x` has length 5, but `y`
+  has length 1.\n\n``` r\nx <- sample(100, 10)\ny <- 2\n\nx * y\n#>  [1]  18 166 118
+  \ 32   2  90  94  54 136 142\n```\n\nR has a special set of rules that cover this
+  situation called the **recycling rules**. Whenever you call a binary vectorised
+  fuction with inputs of different lengths, R will recycle the shorter vector to be
+  the same length as the longer. This is particularly useful when combined with summary
+  operators:\n\n``` r\nx - min(x)\n#>  [1]  8 82 58 15  0 44 46 26 67 70\n(x - mean(x))
+  / sd(x)\n#>  [1] -1.1889  1.4295  0.5803 -0.9412 -1.4720  0.0849  0.1557 -0.5520\n#>
+  \ [9]  0.8987  1.0049\n```\n\n(You can use recycling rules with vectors that are
+  not of length 1, but that makes it easy to write confusing code, so I don't recommend
+  it.)\n\nVectorised window functions\n---------------------------\n\nVectorised map
+  functions can be generalised to vectorised **window** functions. In a window function
+  the output now depends on a contiguous window of values (i.e. a sequence with no
+  gaps). Map functions are a special case of window functions because in a map function,
+  the \"window\" is just a single value.\n\n### Offset\n\nThe simplest type of window
+  is an offset. Each output value still depends on only a single input value, but
+  the input and output are no longer aligned. The following diagram illustrates offsets
+  in either direction.\n\n![](diagrams/offset.png)\n\nIn dplyr you can use `lead()`
+  (positive) and `lag()` (negative) to look at offsets.\n\n``` r\ntibble(\n  x = 1:5,\n
+  \ pos = lead(x),\n  neg = lag(x)\n)\n#> # A tibble: 5 × 3\n#>       x   pos   neg\n#>
+  \  <int> <int> <int>\n#> 1     1     2    NA\n#> 2     2     3     1\n#> 3     3
+  \    4     2\n#> 4     4     5     3\n#> 5     5    NA     4\n```\n\nChange the
+  number of positions to look ahead or behind with the second argument, `n`.\n\nRemember
+  that these are vectorised functions, so the output must be the same length as the
+  input. That means we need to pad either the beginning or the end of the vector.
+  `lead()` and `lag()` pad with `NA` but you can change this value with the `default`
+  argument.\n\n`lead()` and `lag()` are very useful when combined with a binary vectorised
+  map:\n\n-   `x == lag(x)` tells you if `x` has changed compared to the previous
+  value.\n\n-   `x - lag(x)` tells you how `x` has changed.\n\n### Rolling\n\nRolling
+  window functions are the next step up in complexity. Instead of a window of size
+  one, they now have a fixed window of size `m`.\n\n![](diagrams/rolling.png)\n\nNeither
+  base R not dplyr provide rolling functions, but you can get them from the RcppRoll
+  package. By default the `roll_` functions are not vectorised (they return shorter
+  vectors), but you can make them vectorised by setting `fill = NA`.\n\n``` r\nlibrary(RcppRoll)\n\ntibble(\n
   \ x = 1:5,\n  roll_sum = roll_sum(x, 2, fill = NA),\n  roll_mean = roll_mean(x,
   2, fill = NA)\n)\n#> # A tibble: 5 × 3\n#>       x roll_sum roll_mean\n#>   <int>
   \   <dbl>     <dbl>\n#> 1     1        3       1.5\n#> 2     2        5       2.5\n#>
   3     3        7       3.5\n#> 4     4        9       4.5\n#> 5     5       NA        NA\n```\n\nYou
   can control how the window is aligned to the data with the `align` argument. The
   following figure shows `n = 3` and the three possible values of `align`. Note that
-  the output value is `NA` if there are less than 3 inputs.\n\n<img src=\"diagrams/rolling-dir.png\"
-  width=\"544\" />\n\n### Cumulative\n\nThe next step up in complexity are the cumulative
-  functions, where the window size is no longer constant. A cumulative function uses
-  all values up to the current position.\n\n<img src=\"diagrams/cumulative.png\" width=\"139\"
-  />\n\nBase R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`,
-  and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`.
-  I'm not aware of any useful cumulative functions for strings or date/times.\n\n```
-  r\nlibrary(RcppRoll)\n\ntibble(\n  x = 1:5,\n  cumsum = cumsum(x),\n  cummean =
-  cummean(x)\n)\n#> # A tibble: 5 × 3\n#>       x cumsum cummean\n#>   <int>  <int>
-  \  <dbl>\n#> 1     1      1     1.0\n#> 2     2      3     1.5\n#> 3     3      6
-  \    2.0\n#> 4     4     10     2.5\n#> 5     5     15     3.0\n```\n\n### Complete\n\nThe
-  most complex type of window function is the **complete** window function, where
-  every output value depends on every input value.\n\n<img src=\"diagrams/complete.png\"
-  width=\"139\" />\n\nThis class of window function includes all the ranking functions,
-  because the rank of any value depends on the rank of all the other values. There
-  are three key ranking functions that differ in how ties are handled:\n\n``` r\ntibble(\n
-  \ x = c(10, 10, 10, 20, 20, 30),\n  min = min_rank(x),\n  dense = dense_rank(x),\n
-  \ row_number = row_number(x)\n)\n#> # A tibble: 6 × 4\n#>       x   min dense row_number\n#>
-  \  <dbl> <int> <int>      <int>\n#> 1    10     1     1          1\n#> 2    10     1
-  \    1          2\n#> 3    10     1     1          3\n#> 4    20     4     2          4\n#>
-  5    20     4     2          5\n#> 6    30     6     3          6\n```\n\nUse `desc()`
-  if you want the highest inputs to have the lowest ranks.\n\n`min_rank()` works like
-  sports ranking: if there are three people tied for first place, the next rank is
-  4th place. `dense_rank()` ensures that the ranks are \"dense\", i.e. it doesn't
-  skip any ranks for ties. `row_number()` breaks ties so that every row gets a unique
-  number. It's easiest to understand the differences in terms of filtering:\n\n-   `min_rank(x)
-  <= 2` will select all elements in first place, and will only select another if there
-  wasn't a tie for first.\n\n-   `dense_rank(x) <= 2` will select all elements tied
-  for first place, and all elements tied for the next rank.\n\n-   `row_number(x)
-  <= 2` will always select exactly two elements.\n\n### Ordering\n\nSo far we've dodged
-  the question of what we mean by \"before\" and \"after\", relying on the order of
-  the rows. There are three ways to be more precise:\n\n-   `arrange()` the data so
-  you know exactly how the rows are ordered.\n\n-   Use the `order_by` argument (if
-  present), to order by a specific variable. This is more efficient than `arrange()`
-  if you're only computing a single window function.\n\n-   Use the `order_by()` helper
-  if there is no `order_by` argument.\n\nThe main difference between the `arrange`
-  and `order_by` is what happens to the other columns:\n\n``` r\ndf <- tribble(\n
-  \ ~time, ~ value,\n      7,       3,\n      1,       5,\n      5,       -2,\n      3,
-  \      0\n)\n\ndf %>% \n  arrange(time) %>%\n  mutate(cumulate = cumsum(value))\n#>
-  # A tibble: 4 × 3\n#>    time value cumulate\n#>   <dbl> <dbl>    <dbl>\n#> 1     1
-  \    5        5\n#> 2     3     0        5\n#> 3     5    -2        3\n#> 4     7
-  \    3        6\n\ndf %>% \n  mutate(cumulate = order_by(time, cumsum(value)))\n#>
-  # A tibble: 4 × 3\n#>    time value cumulate\n#>   <dbl> <dbl>    <dbl>\n#> 1     7
-  \    3        6\n#> 2     1     5        5\n#> 3     5    -2        3\n#> 4     3
-  \    0        5\n```\n"
+  the output value is `NA` if there are less than 3 inputs.\n\n![](diagrams/rolling-dir.png)\n\n###
+  Cumulative\n\nThe next step up in complexity are the cumulative functions, where
+  the window size is no longer constant. A cumulative function uses all values up
+  to the current position.\n\n![](diagrams/cumulative.png)\n\nBase R includes the
+  cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr
+  provides a few others: `cummean()`, `cumany()`, `cumall()`. I'm not aware of any
+  useful cumulative functions for strings or date/times.\n\n``` r\nlibrary(RcppRoll)\n\ntibble(\n
+  \ x = 1:5,\n  cumsum = cumsum(x),\n  cummean = cummean(x)\n)\n#> # A tibble: 5 ×
+  3\n#>       x cumsum cummean\n#>   <int>  <int>   <dbl>\n#> 1     1      1     1.0\n#>
+  2     2      3     1.5\n#> 3     3      6     2.0\n#> 4     4     10     2.5\n#>
+  5     5     15     3.0\n```\n\n### Complete\n\nThe most complex type of window function
+  is the **complete** window function, where every output value depends on every input
+  value.\n\n![](diagrams/complete.png)\n\nThis class of window function includes all
+  the ranking functions, because the rank of any value depends on the rank of all
+  the other values. There are three key ranking functions that differ in how ties
+  are handled:\n\n``` r\ntibble(\n  x = c(10, 10, 10, 20, 20, 30),\n  min = min_rank(x),\n
+  \ dense = dense_rank(x),\n  row_number = row_number(x)\n)\n#> # A tibble: 6 × 4\n#>
+  \      x   min dense row_number\n#>   <dbl> <int> <int>      <int>\n#> 1    10     1
+  \    1          1\n#> 2    10     1     1          2\n#> 3    10     1     1          3\n#>
+  4    20     4     2          4\n#> 5    20     4     2          5\n#> 6    30     6
+  \    3          6\n```\n\nUse `desc()` if you want the highest inputs to have the
+  lowest ranks.\n\n`min_rank()` works like sports ranking: if there are three people
+  tied for first place, the next rank is 4th place. `dense_rank()` ensures that the
+  ranks are \"dense\", i.e. it doesn't skip any ranks for ties. `row_number()` breaks
+  ties so that every row gets a unique number. It's easiest to understand the differences
+  in terms of filtering:\n\n-   `min_rank(x) <= 2` will select all elements in first
+  place, and will only select another if there wasn't a tie for first.\n\n-   `dense_rank(x)
+  <= 2` will select all elements tied for first place, and all elements tied for the
+  next rank.\n\n-   `row_number(x) <= 2` will always select exactly two elements.\n\n###
+  Ordering\n\nSo far we've dodged the question of what we mean by \"before\" and \"after\",
+  relying on the order of the rows. There are three ways to be more precise:\n\n-
+  \  `arrange()` the data so you know exactly how the rows are ordered.\n\n-   Use
+  the `order_by` argument (if present), to order by a specific variable. This is more
+  efficient than `arrange()` if you're only computing a single window function.\n\n-
+  \  Use the `order_by()` helper if there is no `order_by` argument.\n\nThe main difference
+  between the `arrange` and `order_by` is what happens to the other columns:\n\n```
+  r\ndf <- tribble(\n  ~time, ~ value,\n      7,       3,\n      1,       5,\n      5,
+  \      -2,\n      3,       0\n)\n\ndf %>% \n  arrange(time) %>%\n  mutate(cumulate
+  = cumsum(value))\n#> # A tibble: 4 × 3\n#>    time value cumulate\n#>   <dbl> <dbl>
+  \   <dbl>\n#> 1     1     5        5\n#> 2     3     0        5\n#> 3     5    -2
+  \       3\n#> 4     7     3        6\n\ndf %>% \n  mutate(cumulate = order_by(time,
+  cumsum(value)))\n#> # A tibble: 4 × 3\n#>    time value cumulate\n#>   <dbl> <dbl>
+  \   <dbl>\n#> 1     7     3        6\n#> 2     1     5        5\n#> 3     5    -2
+  \       3\n#> 4     3     0        5\n```\n"

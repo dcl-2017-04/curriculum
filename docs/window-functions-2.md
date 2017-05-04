@@ -33,7 +33,7 @@ The simplest type of transformation function is the "unary vectorised map". This
 
 The diagram below shows a vectorised function, focusing on how the input is connected to the output. The input is on the left, and the output is on the bottom. You can see how each input affects the output by following the lines right and down; you can see how an output is computed from the input by following the lines up and left. The connections for a vectorised function are simple: each input only affects the output at the same position.
 
-<img src="diagrams/map.png" width="139" />
+![](diagrams/map.png)
 
 It's helpful to organise unary vectorised maps by the type of input vector:
 
@@ -64,17 +64,17 @@ x <- sample(100, 10)
 y <- 2
 
 x * y
-#>  [1] 168 120  32   2  90  96  56 138 144 160
+#>  [1]  18 166 118  32   2  90  94  54 136 142
 ```
 
 R has a special set of rules that cover this situation called the **recycling rules**. Whenever you call a binary vectorised fuction with inputs of different lengths, R will recycle the shorter vector to be the same length as the longer. This is particularly useful when combined with summary operators:
 
 ``` r
 x - min(x)
-#>  [1] 83 59 15  0 44 47 27 68 71 79
+#>  [1]  8 82 58 15  0 44 46 26 67 70
 (x - mean(x)) / sd(x)
-#>  [1]  1.2024  0.3461 -1.2238 -1.7590 -0.1891 -0.0821 -0.7956  0.6672
-#>  [9]  0.7742  1.0597
+#>  [1] -1.1889  1.4295  0.5803 -0.9412 -1.4720  0.0849  0.1557 -0.5520
+#>  [9]  0.8987  1.0049
 ```
 
 (You can use recycling rules with vectors that are not of length 1, but that makes it easy to write confusing code, so I don't recommend it.)
@@ -88,7 +88,7 @@ Vectorised map functions can be generalised to vectorised **window** functions. 
 
 The simplest type of window is an offset. Each output value still depends on only a single input value, but the input and output are no longer aligned. The following diagram illustrates offsets in either direction.
 
-<img src="diagrams/offset.png" width="310" />
+![](diagrams/offset.png)
 
 In dplyr you can use `lead()` (positive) and `lag()` (negative) to look at offsets.
 
@@ -122,7 +122,7 @@ Remember that these are vectorised functions, so the output must be the same len
 
 Rolling window functions are the next step up in complexity. Instead of a window of size one, they now have a fixed window of size `m`.
 
-<img src="diagrams/rolling.png" width="166" />
+![](diagrams/rolling.png)
 
 Neither base R not dplyr provide rolling functions, but you can get them from the RcppRoll package. By default the `roll_` functions are not vectorised (they return shorter vectors), but you can make them vectorised by setting `fill = NA`.
 
@@ -146,13 +146,13 @@ tibble(
 
 You can control how the window is aligned to the data with the `align` argument. The following figure shows `n = 3` and the three possible values of `align`. Note that the output value is `NA` if there are less than 3 inputs.
 
-<img src="diagrams/rolling-dir.png" width="544" />
+![](diagrams/rolling-dir.png)
 
 ### Cumulative
 
 The next step up in complexity are the cumulative functions, where the window size is no longer constant. A cumulative function uses all values up to the current position.
 
-<img src="diagrams/cumulative.png" width="139" />
+![](diagrams/cumulative.png)
 
 Base R includes the cumulative functions `cumsum()`, `cumprod()`, `cummax()`, and `cummin()`. dplyr provides a few others: `cummean()`, `cumany()`, `cumall()`. I'm not aware of any useful cumulative functions for strings or date/times.
 
@@ -178,7 +178,7 @@ tibble(
 
 The most complex type of window function is the **complete** window function, where every output value depends on every input value.
 
-<img src="diagrams/complete.png" width="139" />
+![](diagrams/complete.png)
 
 This class of window function includes all the ranking functions, because the rank of any value depends on the rank of all the other values. There are three key ranking functions that differ in how ties are handled:
 
