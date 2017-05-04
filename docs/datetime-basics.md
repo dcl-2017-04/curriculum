@@ -6,7 +6,7 @@ title: Date/time basics
 
 # Date/time basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Data structure basics](data-structure-basics.md))</small>  
-<small>(Leads to: [Date/time visualisation](datetime-vis.md), [Advanced scales](vis-scales-2.md))</small>
+<small>(Leads to: [Date/time visualisation](datetime-vis.md), [Parsing details](parse-details.md), [Advanced scales](vis-scales-2.md))</small>
 
 Date/time data includes dates, date-times, and times, but we'll mostly
 focus on dates and date-times. This unit gives you the basic tools you'll

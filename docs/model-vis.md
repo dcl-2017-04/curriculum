@@ -15,16 +15,13 @@ to take that approach here for two reasons:
 * It requires many months of study to interpret the coefficients of even
   fairly simple model classes like logistic regression or survival analysis.
 
-* Many modern classes of model have large numbers coefficients,
-  which are hard to interpret.
+* Modern model classes (like random forests or SVMs) may have 100s or
+  1000s (or more!) coefficients.
 
 Instead, we'll understand a model by looking at it's predictions. This
-doesn't cover every possible model (because not every model makes predictions)
-but it does cover a very wide class, including most models in statistics
-and machine learning.
-
-In this unit, you'll learn the basic approach, visualising a very simple
-model.
+doesn't cover every possible type of model (because not every model makes
+predictions) but it does cover a very wide class, including most models in
+statistics and machine learning.
 
 ## Readings
 

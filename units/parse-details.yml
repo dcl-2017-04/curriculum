@@ -1,6 +1,6 @@
 title: Parsing details
 theme: wrangle
-needs: [parse-basics, tidy-data]
+needs: [parse-basics, tidy-data, datetime-basics, string-basics]
 
 desc: |
   You have the basics of parsing files, but now it's time to learn how

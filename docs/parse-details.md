@@ -5,7 +5,7 @@ title: Parsing details
 <!-- Generated automatically from parse-details.yml. Do not edit by hand -->
 
 # Parsing details <small class='wrangle'>[wrangle]</small>
-<small>(Builds on: [Parsing basics](parse-basics.md), [Tidy data](tidy-data.md))</small>
+<small>(Builds on: [Parsing basics](parse-basics.md), [Tidy data](tidy-data.md), [Date/time basics](datetime-basics.md), [String basics](string-basics.md))</small>
 
 You have the basics of parsing files, but now it's time to learn how
 to handle more complicated situations where readr doesn't automatically

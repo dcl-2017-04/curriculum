@@ -6,7 +6,7 @@ title: String basics
 
 # String basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Exploratory data analysis (1D)](eda-1d.md))</small>  
-<small>(Leads to: [Factor basics](factor-basics.md), [Regular expressions](regexps.md))</small>
+<small>(Leads to: [Factor basics](factor-basics.md), [Parsing details](parse-details.md), [Regular expressions](regexps.md))</small>
 
 The basics of string manipulation will give you the ability to create new
 strings by combining existing strings, or by pulling out values at specific
