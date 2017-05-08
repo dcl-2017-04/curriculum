@@ -294,6 +294,17 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
+  <td colspan="3"><a class="explore" href="rectangling.html">Data rectangling</a></td>
+  <td colspan="5"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="dplyr-databases.html">dplyr and databases</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="joins-debugging.html">Debugging joins</a></td>
   <td colspan="4"></td>

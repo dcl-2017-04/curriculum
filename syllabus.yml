@@ -55,7 +55,7 @@
 - units: # week 7
   - factor-basics
   - model-multivariate
-# - rectangling
+  - rectangling
   - dplyr-databases
   - joins-debugging
 
