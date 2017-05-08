@@ -45,12 +45,12 @@
   - datetime-basics
 
 - units: # week 6
-  - filter-joins
   - list-cols
   - window-functions-2
-  - parse-details
+  - filter-joins
   - model-vis
   - separate-unite
+  - parse-details
 
 - units: # week 7
   - factor-basics

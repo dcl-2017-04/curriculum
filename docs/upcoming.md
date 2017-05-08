@@ -244,12 +244,6 @@ title: Theme index
 <tbody>
 <tr>
 <td id='week-6'>6</td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="filter-joins.html">Semi- and anti-joins</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
   <td colspan="3"></td>
@@ -263,7 +257,7 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="parse-details.html">Parsing details</a></td>
+  <td colspan="3"><a class="wrangle" href="filter-joins.html">Semi- and anti-joins</a></td>
   <td colspan="4"></td>
 </tr>
 <tr>
@@ -276,6 +270,12 @@ title: Theme index
 <td></td>
   <td colspan="1"></td>
   <td colspan="3"><a class="wrangle" href="separate-unite.html">Separate and unite</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="parse-details.html">Parsing details</a></td>
   <td colspan="4"></td>
 </tr>
 </tbody>
