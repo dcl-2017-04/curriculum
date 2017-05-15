@@ -292,8 +292,10 @@ title: Theme index
   <td colspan="3"><a class="model" href="model-multivariate.html">Models with multiple variables</a></td>
   <td colspan="2"></td>
 </tr>
+</tbody>
+<tbody>
 <tr>
-<td></td>
+<td id='week-8'>8</td>
   <td colspan="3"><a class="explore" href="rectangling.html">Data rectangling</a></td>
   <td colspan="5"></td>
 </tr>
@@ -309,10 +311,8 @@ title: Theme index
   <td colspan="3"><a class="wrangle" href="joins-debugging.html">Debugging joins</a></td>
   <td colspan="4"></td>
 </tr>
-</tbody>
-<tbody>
 <tr>
-<td id='week-8'>8</td>
+<td></td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="manip-programming.html">Programming dplyr</a></td>
   <td colspan="3"></td>

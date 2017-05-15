@@ -55,11 +55,11 @@
 - units: # week 7
   - factor-basics
   - model-multivariate
+
+- units: # week 8
   - rectangling
   - dplyr-databases
   - joins-debugging
-
-- units: # week 8
   - manip-programming # dplyr 0.6
 # - googlesheets
   - model-many
