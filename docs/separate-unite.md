@@ -17,7 +17,7 @@ you a lot of power. You might also want to read about `extract()`:
 `str_split()` is to `separate()` as `str_match()` is to `extract().
 
 The inverse of `separate()` is `unite()`. You use it when you have a variable
-that is spread across multiple columns. This happen much less commonly.
+that is spread across multiple columns. This happens much less commonly.
 
 ## Readings
 

@@ -57,7 +57,7 @@ It's helpful to organise unary vectorised maps by the type of input vector:
 
 Another extremely common class of transformation functions are the **binary** vectorised maps. These are similar to the unary transformation functions except that they take 2 vector inputs. You've used many of these functions already because they include the mathematical operators `-`, `+`, `/`, `*`, `%%` and `%/%`.
 
-There is a new wrinkle with these functions: since they take two vectors, what happens if they are different lengths? For example, in `x * 2` below, `x` has length 5, but `y` has length 1.
+There is a new wrinkle with these functions: since they take two vectors, what happens if they are different lengths? For example, in `x * 2` below, `x` has length 10, but `y` has length 1.
 
 ``` r
 x <- sample(100, 10)
@@ -98,7 +98,7 @@ tibble(
   pos = lead(x),
   neg = lag(x)
 )
-#> # A tibble: 5 × 3
+#> # A tibble: 5 x 3
 #>       x   pos   neg
 #>   <int> <int> <int>
 #> 1     1     2    NA
@@ -134,7 +134,7 @@ tibble(
   roll_sum = roll_sum(x, 2, fill = NA),
   roll_mean = roll_mean(x, 2, fill = NA)
 )
-#> # A tibble: 5 × 3
+#> # A tibble: 5 x 3
 #>       x roll_sum roll_mean
 #>   <int>    <dbl>     <dbl>
 #> 1     1        3       1.5
@@ -164,7 +164,7 @@ tibble(
   cumsum = cumsum(x),
   cummean = cummean(x)
 )
-#> # A tibble: 5 × 3
+#> # A tibble: 5 x 3
 #>       x cumsum cummean
 #>   <int>  <int>   <dbl>
 #> 1     1      1     1.0
@@ -189,7 +189,7 @@ tibble(
   dense = dense_rank(x),
   row_number = row_number(x)
 )
-#> # A tibble: 6 × 4
+#> # A tibble: 6 x 4
 #>       x   min dense row_number
 #>   <dbl> <int> <int>      <int>
 #> 1    10     1     1          1
@@ -234,7 +234,7 @@ df <- tribble(
 df %>% 
   arrange(time) %>%
   mutate(cumulate = cumsum(value))
-#> # A tibble: 4 × 3
+#> # A tibble: 4 x 3
 #>    time value cumulate
 #>   <dbl> <dbl>    <dbl>
 #> 1     1     5        5
@@ -244,7 +244,7 @@ df %>%
 
 df %>% 
   mutate(cumulate = order_by(time, cumsum(value)))
-#> # A tibble: 4 × 3
+#> # A tibble: 4 x 3
 #>    time value cumulate
 #>   <dbl> <dbl>    <dbl>
 #> 1     7     3        6
