@@ -296,8 +296,15 @@ title: Theme index
 <tbody>
 <tr>
 <td id='week-8'>8</td>
-  <td colspan="3"><a class="explore" href="rectangling.html">Data rectangling</a></td>
-  <td colspan="5"></td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-many.html">Many models</a></td>
+  <td colspan="2"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="manip-scoped.html">Scoped verbs</a></td>
+  <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>
@@ -308,8 +315,15 @@ title: Theme index
 <tr>
 <td></td>
   <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="joins-debugging.html">Debugging joins</a></td>
+  <td colspan="3"><a class="wrangle" href="export.html">Exporting data</a></td>
   <td colspan="4"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-9'>9</td>
+  <td colspan="3"><a class="explore" href="rectangling.html">Data rectangling</a></td>
+  <td colspan="5"></td>
 </tr>
 <tr>
 <td></td>
@@ -319,14 +333,6 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="3"></td>
-  <td colspan="3"><a class="model" href="model-many.html">Many models</a></td>
-  <td colspan="2"></td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td id='week-9'>9</td>
   <td colspan="4"></td>
   <td colspan="3"><a class="communicate" href="report-generation.html">Generating multiple reports</a></td>
   <td colspan="1"></td>
@@ -335,12 +341,6 @@ title: Theme index
 <tbody>
 <tr>
 <td id='week-10'>10</td>
-  <td colspan="1"></td>
-  <td colspan="3"><a class="wrangle" href="export.html">Exporting data</a></td>
-  <td colspan="4"></td>
-</tr>
-<tr>
-<td></td>
   <td colspan="4"></td>
   <td colspan="3"><a class="communicate" href="rmarkdown-formats.html">R Markdown presentations</a></td>
   <td colspan="1"></td>

@@ -57,19 +57,23 @@
   - model-multivariate
 
 - units: # week 8
-  - rectangling
-  - dplyr-databases
-  - joins-debugging
-  - manip-programming # dplyr 0.6
-# - googlesheets
   - model-many
-# - reading multiple files
+  - manip-scoped
+  - dplyr-databases
+  - export
 
 - units: # week 9
+  - rectangling
+  - manip-programming # dplyr 0.6
   - report-generation
+#  - vis-positioning
 
 - units: # week 10
-  - export
   - rmarkdown-formats
   - reprexes
   - learning-more
+# - analysis-workflow
+
+# Next
+# - parse-many-files
+# - joins-debugging

@@ -15,6 +15,6 @@ database.
 
 ## Readings
 
-  * [Introduction to dplyr](http://dbplyr.tidyverse.org/articles/dbplyr.html)
+  * [Introduction to dbplyr](http://dbplyr.tidyverse.org/articles/dbplyr.html)
 
 

@@ -1,0 +1,9 @@
+---
+unit_title: Scoped verbs
+needs: [iteration, manip-basics]
+theme: wrangle
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```

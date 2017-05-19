@@ -1,6 +1,6 @@
 ---
 unit_title: Programming dplyr
-needs: [iteration, manip-basics]
+needs: [manip-scoped]
 theme: program
 ---
 

@@ -1,8 +1,6 @@
 title: Programming dplyr
 theme: program
-needs:
-- iteration
-- manip-basics
+needs: manip-scoped
 readings: ~
 desc: |2
 
