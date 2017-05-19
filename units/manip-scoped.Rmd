@@ -6,4 +6,112 @@ theme: wrangle
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+options(tibble.print_min = 5, tibble.print_max = 5)
+library(tidyverse)
 ```
+
+## dplyr 0.6.0
+
+First, make sure you have the latest version of dplyr, 0.6.0. You can check what version you currently have with `packageVersion()`:
+
+```{r}
+packageVersion("dplyr")
+```
+
+If you're version is older, use `install.packages()` to update it.
+
+## Scoped verbs
+
+In this version of dplyr each of the single table verbs comes in three additional forms, `_if`, `_at`, and `_all`. You can use these forms to affect multiple variables at once. 
+
+* `_if` allows you to pick variables based on a predicate function like
+  `is.numeric()` or `is.character()`
+  
+* `_at` allows you to pick variables using the same syntax as `select()`.
+
+* `_all` operates on all variables.
+
+I'll illustrate the three variants in detail for `summarise()`, then explore in less detail how you can use similar techniques with `mutate()` and `filter()`. You'll need the scoped variants of the other verbs less frequently, but when you do, it should be straightforward to generalise what you learn here.
+
+## Summarise
+
+### `summarise_all()`
+
+The simplest variant to understand is `summarise_all()`. It takes a tibble and a function and applies that function to each column:
+
+```{r}
+df <- tibble(
+  x = runif(100),
+  y = runif(100),
+  z = runif(100)
+)
+summarise_all(df, mean)
+```
+
+If you want to apply multiple summaries, use the `funs()` helper:
+
+```{r}
+summarise_all(df, funs(min, max))
+```
+
+### `summarise_at()`
+
+`summarise_at()` allows you to pick columns in the same way as `select()`, i.e. based on their names. There is one small different: you need to wrap your complete selection with the `vars()` helper.
+
+```{r}
+summarise_at(df, vars(-z), mean)
+```
+
+By default, the newly created columns have the shortest names needed to uniquely identify the output.
+
+```{r}
+summarise_at(df, vars(x), funs(min, max))
+summarise_at(df, vars(x, y), min)
+summarise_at(df, vars(-z), funs(min, max))
+```
+
+### `summarise_if()`
+
+`summarise_at()` allows you to pick variables to summarise based on their name. `summarise_if()` allows you to pick variables to summarise based on some property of the column. Typically this is their type:
+
+```{r}
+starwars %>%
+  group_by(species) %>%
+  summarise_if(is.numeric, mean, na.rm = TRUE)
+```
+
+(Note that `na.rm = TRUE` is passed on to `mean` function, in the same way that purrr's map functions work.)
+
+## Mutate
+
+`mutate_all()`, `mutate_if()` and `mutate_at()` work in a similar way to their summarise equivalents.
+
+```{r}
+mutate_all(df, log10)
+```
+
+Rather than creating functions with `~` (like in purrr), you can create shortcuts directly inside funs:
+
+```{r}
+mutate_all(df, funs(round(. * 25)))
+```
+
+The default names are generated in the same way as `summarise()`. That means that you may want to use a `transmute()` variant if you want to apply multiple transformations and don't want the original values:
+
+```{r}
+mutate_all(df, funs(log, double = . * 2))
+transmute_all(df, funs(log, double = . * 2))
+```
+
+## Filter
+
+`filter_all()` is the most useful of the three. You always use it conjunction with `all_vars()` or `any_vars()` depending on whether or not you want rows where all variables meet the criterion, or where just one variable meets it.
+
+It's particularly useful finding missing values:
+
+```{r}
+library(nycflights13)
+
+filter_all(weather, any_vars(is.na(.)))
+```
+
