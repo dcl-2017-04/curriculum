@@ -337,6 +337,11 @@ title: Theme index
   <td colspan="3"><a class="communicate" href="report-generation.html">Generating multiple reports</a></td>
   <td colspan="1"></td>
 </tr>
+<tr>
+<td></td>
+  <td colspan="3"><a class="explore" href="vis-position.html">Positioning</a></td>
+  <td colspan="5"></td>
+</tr>
 </tbody>
 <tbody>
 <tr>

@@ -66,7 +66,7 @@
   - rectangling
   - manip-programming # dplyr 0.6
   - report-generation
-#  - vis-positioning
+  - vis-position
 
 - units: # week 10
   - rmarkdown-formats
