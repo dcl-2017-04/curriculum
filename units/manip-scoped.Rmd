@@ -4,7 +4,7 @@ needs: [iteration, manip-basics]
 theme: wrangle
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 options(tibble.print_min = 5, tibble.print_max = 5)
 library(tidyverse)
@@ -18,20 +18,22 @@ First, make sure you have the latest version of dplyr, 0.6.0. You can check what
 packageVersion("dplyr")
 ```
 
+(If you're using the development version, version 0.5.0.9005 is also ok.)
+
 If you're version is older, use `install.packages()` to update it.
 
 ## Scoped verbs
 
-In this version of dplyr each of the single table verbs comes in three additional forms, `_if`, `_at`, and `_all`. You can use these forms to affect multiple variables at once. 
+In the latest version of dplyr each of the single table verbs comes in three additional forms with the suffixes `_if`, `_at`, and `_all`. These __scoped__ variants allow you to affect multiple variables at once:
 
 * `_if` allows you to pick variables based on a predicate function like
-  `is.numeric()` or `is.character()`
+  `is.numeric()` or `is.character()`.
   
 * `_at` allows you to pick variables using the same syntax as `select()`.
 
 * `_all` operates on all variables.
 
-I'll illustrate the three variants in detail for `summarise()`, then explore in less detail how you can use similar techniques with `mutate()` and `filter()`. You'll need the scoped variants of the other verbs less frequently, but when you do, it should be straightforward to generalise what you learn here.
+I'll illustrate the three variants in detail for `summarise()`, then explore in less detail how you can use similar techniques with `mutate()` and `filter()`. You'll need the scoped variants of the other verbs less frequently, but when you do, it should be straightforward to generalise what you've learn here.
 
 ## Summarise
 
@@ -54,9 +56,21 @@ If you want to apply multiple summaries, use the `funs()` helper:
 summarise_all(df, funs(min, max))
 ```
 
+There are two slightly inconsistent ways to use an inline function (this inconistency will get ironed out in a future version).
+
+```{r}
+# For a single function, use ~ 
+summarise_all(df, ~ sd(.) / mean(.))
+
+# For multiple functions, use funs(), dropping the ~
+# Typically you'll want to name the function so you get reasonable
+# variable names.
+summarise_all(df, funs(cv = sd(.) / mean(.), mean))
+```
+
 ### `summarise_at()`
 
-`summarise_at()` allows you to pick columns in the same way as `select()`, i.e. based on their names. There is one small different: you need to wrap your complete selection with the `vars()` helper.
+`summarise_at()` allows you to pick columns in the same way as `select()`, that is, based on their names. There is one small difference: you need to wrap the complete selection with the `vars()` helper (this avoids ambiguity).
 
 ```{r}
 summarise_at(df, vars(-z), mean)
@@ -70,9 +84,11 @@ summarise_at(df, vars(x, y), min)
 summarise_at(df, vars(-z), funs(min, max))
 ```
 
+See the examples in the documentation if you want to force names when they're not otherwise needed.
+
 ### `summarise_if()`
 
-`summarise_at()` allows you to pick variables to summarise based on their name. `summarise_if()` allows you to pick variables to summarise based on some property of the column. Typically this is their type:
+`summarise_at()` allows you to pick variables to summarise based on their name. `summarise_if()` allows you to pick variables to summarise based on some property of the column. Typically this is their type because you want to (e.g.) apply a numeric summary function only to numeric columns:
 
 ```{r}
 starwars %>%
@@ -80,7 +96,7 @@ starwars %>%
   summarise_if(is.numeric, mean, na.rm = TRUE)
 ```
 
-(Note that `na.rm = TRUE` is passed on to `mean` function, in the same way that purrr's map functions work.)
+(Note that `na.rm = TRUE` is passed on to `mean()` in the same way as in `purrr::map()`.)
 
 ## Mutate
 
@@ -90,28 +106,32 @@ starwars %>%
 mutate_all(df, log10)
 ```
 
-Rather than creating functions with `~` (like in purrr), you can create shortcuts directly inside funs:
+Often you'll want to use an inline expression. As above, either use `~` for a single function or `funs()` for multiple functions:
 
 ```{r}
-mutate_all(df, funs(round(. * 25)))
+mutate_all(df, ~ round(. * 25))
+mutate_all(df, funs(half = . / 2, double = . * 2))
 ```
 
 The default names are generated in the same way as `summarise()`. That means that you may want to use a `transmute()` variant if you want to apply multiple transformations and don't want the original values:
 
 ```{r}
-mutate_all(df, funs(log, double = . * 2))
-transmute_all(df, funs(log, double = . * 2))
+transmute_all(df, funs(half = . / 2, double = . * 2))
 ```
 
 ## Filter
 
-`filter_all()` is the most useful of the three. You always use it conjunction with `all_vars()` or `any_vars()` depending on whether or not you want rows where all variables meet the criterion, or where just one variable meets it.
+`filter_all()` is the most useful of the three `filter()` variants. You use it conjunction with `all_vars()` or `any_vars()` depending on whether or not you want rows where all variables meet the criterion, or where just one variable meets it.
 
 It's particularly useful finding missing values:
 
 ```{r}
 library(nycflights13)
 
+# Rows where any value is missing
 filter_all(weather, any_vars(is.na(.)))
+
+# Rows where all wind variables are missing
+filter_at(weather, vars(starts_with("wind")), all_vars(is.na(.)))
 ```
 
