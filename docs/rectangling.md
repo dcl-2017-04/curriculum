@@ -4,7 +4,7 @@ title: Data rectangling
 
 <!-- Generated automatically from rectangling.yml. Do not edit by hand -->
 
-# Data rectangling <small class='explore'>[explore]</small>
+# Data rectangling <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [List columns](list-cols.md))</small>
 
 

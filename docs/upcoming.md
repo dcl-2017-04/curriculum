@@ -322,8 +322,9 @@ title: Theme index
 <tbody>
 <tr>
 <td id='week-9'>9</td>
-  <td colspan="3"><a class="explore" href="rectangling.html">Data rectangling</a></td>
-  <td colspan="5"></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="rectangling.html">Data rectangling</a></td>
+  <td colspan="4"></td>
 </tr>
 <tr>
 <td></td>
@@ -339,8 +340,9 @@ title: Theme index
 </tr>
 <tr>
 <td></td>
-  <td colspan="3"><a class="explore" href="vis-position.html">Positioning</a></td>
-  <td colspan="5"></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-position.html">Positioning</a></td>
+  <td colspan="1"></td>
 </tr>
 </tbody>
 <tbody>

@@ -1,5 +1,5 @@
 title: Data rectangling
-theme: explore
+theme: wrangle
 needs: list-cols
 readings: ~
 desc: "\nData rectangling is the process of turning non-rectangular data into tidy

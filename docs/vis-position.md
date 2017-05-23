@@ -4,7 +4,7 @@ title: Positioning
 
 <!-- Generated automatically from vis-position.yml. Do not edit by hand -->
 
-# Positioning <small class='explore'>[explore]</small>
+# Positioning <small class='communicate'>[communicate]</small>
 <small>(Builds on: [Advanced scales](vis-scales-2.md))</small>
 
 In ggplot2, positioning is controlled collectively by positiong adjustments,

@@ -1,6 +1,6 @@
 ---
 unit_title: Data rectangling
-theme: explore
+theme: wrangle
 needs: [list-cols]
 ---
 
