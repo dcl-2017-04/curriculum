@@ -18,7 +18,7 @@ but consistent patterns more clear).
 
 ## Readings
 
-  * [Toolbox](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
+  * [Toolbox](https://link-springer-com.stanford.idm.oclc.org/chapter/10.1007/978-3-319-24277-4_3) [ggplot2-3].
     Read only §3.5: summary geoms are a special case of compound geoms that do
     some aggregation before visualising the data.
 

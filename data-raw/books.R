@@ -15,4 +15,4 @@ books <- paths %>%
     depth = as.integer(depth)
   )
 
-devtools::use_data(books)
+devtools::use_data(books, overwrite = TRUE)

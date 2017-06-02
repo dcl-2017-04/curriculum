@@ -14,6 +14,6 @@ particularly important if you want to match an existing publication style.
 
 ## Readings
 
-  * [Themes](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_8) [ggplot2-8]
+  * [Themes](https://link-springer-com.stanford.idm.oclc.org/chapter/10.1007/978-3-319-24277-4_8) [ggplot2-8]
 
 

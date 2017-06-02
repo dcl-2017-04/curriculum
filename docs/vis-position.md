@@ -14,6 +14,6 @@ details of facetting and coordinate systems.
 
 ## Readings
 
-  * [Positioning](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_7) [ggplot2-7]
+  * [Positioning](https://link-springer-com.stanford.idm.oclc.org/chapter/10.1007/978-3-319-24277-4_7) [ggplot2-7]
 
 

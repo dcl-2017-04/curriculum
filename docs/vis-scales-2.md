@@ -13,6 +13,6 @@ of the details.
 
 ## Readings
 
-  * [Scales, axes and legends](http://link.springer.com.ezproxy.stanford.edu/chapter/10.1007/978-3-319-24277-4_6) [ggplot2-6]
+  * [Scales, axes and legends](https://link-springer-com.stanford.idm.oclc.org/chapter/10.1007/978-3-319-24277-4_6) [ggplot2-6]
 
 
