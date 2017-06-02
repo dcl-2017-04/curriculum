@@ -6,7 +6,7 @@ title: Parsing basics
 
 # Parsing basics <small class='wrangle'>[wrangle]</small>
 <small>(Builds on: [Data structure basics](data-structure-basics.md), [Manipulation basics](manip-basics.md))</small>  
-<small>(Leads to: [Exporting data](export.md), [Parsing details](parse-details.md))</small>
+<small>(Leads to: [Exporting data](export.md), [Google sheets](googlesheets.md), [Parsing details](parse-details.md))</small>
 
 
 So far you've worked with data sets that have been bundled in R packages, or have been created with `tibble()` or `tribble()`. Now it's time to learn how to read simple flat files from disk. To do this, we'll use functions from [readr](http://readr.tidyverse.org). readr is one of the core tidyverse packages, so you won't usually load it explicitly.

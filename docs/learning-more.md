@@ -20,7 +20,6 @@ build up a regular practice of
 * [RStudio Tips](https://twitter.com/rstudiotips): this twitter account
   posts little tips and tricks for using RStudio effectively.
 
-* [tidyverse.org](http://tidyverse.org): there's not much here yet,
-  but the goal is to provide an up-to-date resource for everything
-  tidyverse
+* [tidyverse.org](http://tidyverse.org): an up-to-date resource for
+  everything tidyverse.
 

@@ -12,4 +12,4 @@ needs: [relational-basics]
 
 readings:
 - href: http://dbplyr.tidyverse.org/articles/dbplyr.html
-  text: Introduction to dplyr
+  text: Introduction to dbplyr

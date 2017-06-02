@@ -30,6 +30,58 @@ title: Theme index
 </thead>
 <tbody>
 <tr>
+<td id='week-7'>7</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="factor-basics.html">Factor basics</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-multivariate.html">Models with multiple variables</a></td>
+  <td colspan="2"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-6'>6</td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="list-cols.html">List columns</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="window-functions-2.html">Transformation functions</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="filter-joins.html">Semi- and anti-joins</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-vis.html">Visualising models</a></td>
+  <td colspan="2"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="separate-unite.html">Separate and unite</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="parse-details.html">Parsing details</a></td>
+  <td colspan="4"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
 <td id='week-5'>5</td>
   <td colspan="2"></td>
   <td colspan="3"><a class="program" href="lists.html">Lists</a></td>

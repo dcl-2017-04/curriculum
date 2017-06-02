@@ -73,7 +73,7 @@ It's helpful to organise unary vectorised maps by the type of input vector:
 
 Another extremely common class of transformation functions are the __binary__ vectorised maps. These are similar to the unary transformation functions except that they take 2 vector inputs. You've used many of these functions already because they include the mathematical operators `-`, `+`, `/`, `*`, `%%` and `%/%`. 
 
-There is a new wrinkle with these functions: since they take two vectors, what happens if they are different lengths? For example, in `x * 2` below, `x` has length 5, but `y` has length 1.
+There is a new wrinkle with these functions: since they take two vectors, what happens if they are different lengths? For example, in `x * 2` below, `x` has length 10, but `y` has length 1.
 
 ```{r}
 x <- sample(100, 10)
