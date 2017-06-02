@@ -48,7 +48,7 @@ JSON is a popular data exchange format that made up of three simple components:
     ["can arrays mix types?", true, 100]
     ```
 
-*   __Objects__, name value pairs separated by colons. Objects are like
+*   __Objects__, name-value pairs separated by colons. Objects are like
     named lists.
     
     ```json
@@ -59,7 +59,7 @@ JSON is a popular data exchange format that made up of three simple components:
     }
     ```
 
-Arrays and objects can be nested in arbitrarily: it's common to have arrays of objects, and objects with array values. You can load a json file into R with `jsonlite::read_json()`. Both arrays and objects are turned into R lists: objects become named lists, and arrays become unnamed lists.
+Arrays and objects can be nested arbitrarily: it's common to have arrays of objects, and objects with array values. You can load a json file into R with `jsonlite::read_json()`. Both arrays and objects are turned into R lists: objects become named lists, and arrays become unnamed lists.
 
 ## An API of Ice and Fire
 
@@ -176,7 +176,7 @@ str(gh_repos[[2]][[2]])
 str(gh_repos[[6]][[30]])
 ```
 
-How many repos are there in total?  We need to fund the length of each sub-list, and sum them up:
+How many repos are there in total? We need to find the length of each sub-list, and sum them up:
 
 ```{r}
 gh_repos %>% map_int(length) %>% sum()

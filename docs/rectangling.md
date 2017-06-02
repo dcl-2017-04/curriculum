@@ -47,7 +47,7 @@ JSON is a popular data exchange format that made up of three simple components:
     ["can arrays mix types?", true, 100]
     ```
 
--   **Objects**, name value pairs separated by colons. Objects are like named lists.
+-   **Objects**, name-value pairs separated by colons. Objects are like named lists.
 
     ``` json
     {
@@ -57,7 +57,7 @@ JSON is a popular data exchange format that made up of three simple components:
     }
     ```
 
-Arrays and objects can be nested in arbitrarily: it's common to have arrays of objects, and objects with array values. You can load a json file into R with `jsonlite::read_json()`. Both arrays and objects are turned into R lists: objects become named lists, and arrays become unnamed lists.
+Arrays and objects can be nested arbitrarily: it's common to have arrays of objects, and objects with array values. You can load a json file into R with `jsonlite::read_json()`. Both arrays and objects are turned into R lists: objects become named lists, and arrays become unnamed lists.
 
 An API of Ice and Fire
 ----------------------
@@ -330,269 +330,11 @@ Our hypothesis then is that we have an array of arrays of objects, where each ob
 
 ``` r
 str(gh_repos[[1]][[2]])
-#> List of 68
-#>  $ id               : int 40500181
-#>  $ name             : chr "argufy"
-#>  $ full_name        : chr "gaborcsardi/argufy"
-#>  $ owner            :List of 17
-#>   ..$ login              : chr "gaborcsardi"
-#>   ..$ id                 : int 660288
-#>   ..$ avatar_url         : chr "https://avatars.githubusercontent.com/u/660288?v=3"
-#>   ..$ gravatar_id        : chr ""
-#>   ..$ url                : chr "https://api.github.com/users/gaborcsardi"
-#>   ..$ html_url           : chr "https://github.com/gaborcsardi"
-#>   ..$ followers_url      : chr "https://api.github.com/users/gaborcsardi/followers"
-#>   ..$ following_url      : chr "https://api.github.com/users/gaborcsardi/following{/other_user}"
-#>   ..$ gists_url          : chr "https://api.github.com/users/gaborcsardi/gists{/gist_id}"
-#>   ..$ starred_url        : chr "https://api.github.com/users/gaborcsardi/starred{/owner}{/repo}"
-#>   ..$ subscriptions_url  : chr "https://api.github.com/users/gaborcsardi/subscriptions"
-#>   ..$ organizations_url  : chr "https://api.github.com/users/gaborcsardi/orgs"
-#>   ..$ repos_url          : chr "https://api.github.com/users/gaborcsardi/repos"
-#>   ..$ events_url         : chr "https://api.github.com/users/gaborcsardi/events{/privacy}"
-#>   ..$ received_events_url: chr "https://api.github.com/users/gaborcsardi/received_events"
-#>   ..$ type               : chr "User"
-#>   ..$ site_admin         : logi FALSE
-#>  $ private          : logi FALSE
-#>  $ html_url         : chr "https://github.com/gaborcsardi/argufy"
-#>  $ description      : chr "Declarative function argument checks"
-#>  $ fork             : logi FALSE
-#>  $ url              : chr "https://api.github.com/repos/gaborcsardi/argufy"
-#>  $ forks_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/forks"
-#>  $ keys_url         : chr "https://api.github.com/repos/gaborcsardi/argufy/keys{/key_id}"
-#>  $ collaborators_url: chr "https://api.github.com/repos/gaborcsardi/argufy/collaborators{/collaborator}"
-#>  $ teams_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/teams"
-#>  $ hooks_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/hooks"
-#>  $ issue_events_url : chr "https://api.github.com/repos/gaborcsardi/argufy/issues/events{/number}"
-#>  $ events_url       : chr "https://api.github.com/repos/gaborcsardi/argufy/events"
-#>  $ assignees_url    : chr "https://api.github.com/repos/gaborcsardi/argufy/assignees{/user}"
-#>  $ branches_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/branches{/branch}"
-#>  $ tags_url         : chr "https://api.github.com/repos/gaborcsardi/argufy/tags"
-#>  $ blobs_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/git/blobs{/sha}"
-#>  $ git_tags_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/git/tags{/sha}"
-#>  $ git_refs_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/git/refs{/sha}"
-#>  $ trees_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/git/trees{/sha}"
-#>  $ statuses_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/statuses/{sha}"
-#>  $ languages_url    : chr "https://api.github.com/repos/gaborcsardi/argufy/languages"
-#>  $ stargazers_url   : chr "https://api.github.com/repos/gaborcsardi/argufy/stargazers"
-#>  $ contributors_url : chr "https://api.github.com/repos/gaborcsardi/argufy/contributors"
-#>  $ subscribers_url  : chr "https://api.github.com/repos/gaborcsardi/argufy/subscribers"
-#>  $ subscription_url : chr "https://api.github.com/repos/gaborcsardi/argufy/subscription"
-#>  $ commits_url      : chr "https://api.github.com/repos/gaborcsardi/argufy/commits{/sha}"
-#>  $ git_commits_url  : chr "https://api.github.com/repos/gaborcsardi/argufy/git/commits{/sha}"
-#>  $ comments_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/comments{/number}"
-#>  $ issue_comment_url: chr "https://api.github.com/repos/gaborcsardi/argufy/issues/comments{/number}"
-#>  $ contents_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/contents/{+path}"
-#>  $ compare_url      : chr "https://api.github.com/repos/gaborcsardi/argufy/compare/{base}...{head}"
-#>  $ merges_url       : chr "https://api.github.com/repos/gaborcsardi/argufy/merges"
-#>  $ archive_url      : chr "https://api.github.com/repos/gaborcsardi/argufy/{archive_format}{/ref}"
-#>  $ downloads_url    : chr "https://api.github.com/repos/gaborcsardi/argufy/downloads"
-#>  $ issues_url       : chr "https://api.github.com/repos/gaborcsardi/argufy/issues{/number}"
-#>  $ pulls_url        : chr "https://api.github.com/repos/gaborcsardi/argufy/pulls{/number}"
-#>  $ milestones_url   : chr "https://api.github.com/repos/gaborcsardi/argufy/milestones{/number}"
-#>  $ notifications_url: chr "https://api.github.com/repos/gaborcsardi/argufy/notifications{?since,all,participating}"
-#>  $ labels_url       : chr "https://api.github.com/repos/gaborcsardi/argufy/labels{/name}"
-#>  $ releases_url     : chr "https://api.github.com/repos/gaborcsardi/argufy/releases{/id}"
-#>  $ deployments_url  : chr "https://api.github.com/repos/gaborcsardi/argufy/deployments"
-#>  $ created_at       : chr "2015-08-10T18:56:23Z"
-#>  $ updated_at       : chr "2016-06-30T18:28:08Z"
-#>  $ pushed_at        : chr "2016-03-12T14:59:25Z"
-#>  $ git_url          : chr "git://github.com/gaborcsardi/argufy.git"
-#>  $ ssh_url          : chr "git@github.com:gaborcsardi/argufy.git"
-#>  $ clone_url        : chr "https://github.com/gaborcsardi/argufy.git"
-#>  $ svn_url          : chr "https://github.com/gaborcsardi/argufy"
-#>  $ homepage         : NULL
-#>  $ size             : int 115
-#>  $ stargazers_count : int 19
-#>  $ watchers_count   : int 19
-#>  $ language         : chr "R"
-#>  $ has_issues       : logi TRUE
-#>  $ has_downloads    : logi TRUE
-#>  $ has_wiki         : logi TRUE
-#>  $ has_pages        : logi FALSE
-#>  $ forks_count      : int 1
-#>  $ mirror_url       : NULL
-#>  $ open_issues_count: int 6
-#>  $ forks            : int 1
-#>  $ open_issues      : int 6
-#>  $ watchers         : int 19
-#>  $ default_branch   : chr "master"
 str(gh_repos[[2]][[2]])
-#> List of 68
-#>  $ id               : int 14152301
-#>  $ name             : chr "2014-01-27-miami"
-#>  $ full_name        : chr "jennybc/2014-01-27-miami"
-#>  $ owner            :List of 17
-#>   ..$ login              : chr "jennybc"
-#>   ..$ id                 : int 599454
-#>   ..$ avatar_url         : chr "https://avatars.githubusercontent.com/u/599454?v=3"
-#>   ..$ gravatar_id        : chr ""
-#>   ..$ url                : chr "https://api.github.com/users/jennybc"
-#>   ..$ html_url           : chr "https://github.com/jennybc"
-#>   ..$ followers_url      : chr "https://api.github.com/users/jennybc/followers"
-#>   ..$ following_url      : chr "https://api.github.com/users/jennybc/following{/other_user}"
-#>   ..$ gists_url          : chr "https://api.github.com/users/jennybc/gists{/gist_id}"
-#>   ..$ starred_url        : chr "https://api.github.com/users/jennybc/starred{/owner}{/repo}"
-#>   ..$ subscriptions_url  : chr "https://api.github.com/users/jennybc/subscriptions"
-#>   ..$ organizations_url  : chr "https://api.github.com/users/jennybc/orgs"
-#>   ..$ repos_url          : chr "https://api.github.com/users/jennybc/repos"
-#>   ..$ events_url         : chr "https://api.github.com/users/jennybc/events{/privacy}"
-#>   ..$ received_events_url: chr "https://api.github.com/users/jennybc/received_events"
-#>   ..$ type               : chr "User"
-#>   ..$ site_admin         : logi FALSE
-#>  $ private          : logi FALSE
-#>  $ html_url         : chr "https://github.com/jennybc/2014-01-27-miami"
-#>  $ description      : chr "Software Carpentry Bootcamp at the University of Miami"
-#>  $ fork             : logi FALSE
-#>  $ url              : chr "https://api.github.com/repos/jennybc/2014-01-27-miami"
-#>  $ forks_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/forks"
-#>  $ keys_url         : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/keys{/key_id}"
-#>  $ collaborators_url: chr "https://api.github.com/repos/jennybc/2014-01-27-miami/collaborators{/collaborator}"
-#>  $ teams_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/teams"
-#>  $ hooks_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/hooks"
-#>  $ issue_events_url : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/issues/events{/number}"
-#>  $ events_url       : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/events"
-#>  $ assignees_url    : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/assignees{/user}"
-#>  $ branches_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/branches{/branch}"
-#>  $ tags_url         : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/tags"
-#>  $ blobs_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/git/blobs{/sha}"
-#>  $ git_tags_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/git/tags{/sha}"
-#>  $ git_refs_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/git/refs{/sha}"
-#>  $ trees_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/git/trees{/sha}"
-#>  $ statuses_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/statuses/{sha}"
-#>  $ languages_url    : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/languages"
-#>  $ stargazers_url   : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/stargazers"
-#>  $ contributors_url : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/contributors"
-#>  $ subscribers_url  : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/subscribers"
-#>  $ subscription_url : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/subscription"
-#>  $ commits_url      : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/commits{/sha}"
-#>  $ git_commits_url  : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/git/commits{/sha}"
-#>  $ comments_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/comments{/number}"
-#>  $ issue_comment_url: chr "https://api.github.com/repos/jennybc/2014-01-27-miami/issues/comments{/number}"
-#>  $ contents_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/contents/{+path}"
-#>  $ compare_url      : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/compare/{base}...{head}"
-#>  $ merges_url       : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/merges"
-#>  $ archive_url      : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/{archive_format}{/ref}"
-#>  $ downloads_url    : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/downloads"
-#>  $ issues_url       : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/issues{/number}"
-#>  $ pulls_url        : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/pulls{/number}"
-#>  $ milestones_url   : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/milestones{/number}"
-#>  $ notifications_url: chr "https://api.github.com/repos/jennybc/2014-01-27-miami/notifications{?since,all,participating}"
-#>  $ labels_url       : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/labels{/name}"
-#>  $ releases_url     : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/releases{/id}"
-#>  $ deployments_url  : chr "https://api.github.com/repos/jennybc/2014-01-27-miami/deployments"
-#>  $ created_at       : chr "2013-11-05T19:55:23Z"
-#>  $ updated_at       : chr "2014-06-02T08:52:46Z"
-#>  $ pushed_at        : chr "2014-01-28T07:01:26Z"
-#>  $ git_url          : chr "git://github.com/jennybc/2014-01-27-miami.git"
-#>  $ ssh_url          : chr "git@github.com:jennybc/2014-01-27-miami.git"
-#>  $ clone_url        : chr "https://github.com/jennybc/2014-01-27-miami.git"
-#>  $ svn_url          : chr "https://github.com/jennybc/2014-01-27-miami"
-#>  $ homepage         : NULL
-#>  $ size             : int 16662
-#>  $ stargazers_count : int 1
-#>  $ watchers_count   : int 1
-#>  $ language         : chr "Python"
-#>  $ has_issues       : logi TRUE
-#>  $ has_downloads    : logi TRUE
-#>  $ has_wiki         : logi TRUE
-#>  $ has_pages        : logi TRUE
-#>  $ forks_count      : int 6
-#>  $ mirror_url       : NULL
-#>  $ open_issues_count: int 4
-#>  $ forks            : int 6
-#>  $ open_issues      : int 4
-#>  $ watchers         : int 1
-#>  $ default_branch   : chr "gh-pages"
 str(gh_repos[[6]][[30]])
-#> List of 68
-#>  $ id               : int 54576272
-#>  $ name             : chr "youtubedata"
-#>  $ full_name        : chr "masalmon/youtubedata"
-#>  $ owner            :List of 17
-#>   ..$ login              : chr "masalmon"
-#>   ..$ id                 : int 8360597
-#>   ..$ avatar_url         : chr "https://avatars.githubusercontent.com/u/8360597?v=3"
-#>   ..$ gravatar_id        : chr ""
-#>   ..$ url                : chr "https://api.github.com/users/masalmon"
-#>   ..$ html_url           : chr "https://github.com/masalmon"
-#>   ..$ followers_url      : chr "https://api.github.com/users/masalmon/followers"
-#>   ..$ following_url      : chr "https://api.github.com/users/masalmon/following{/other_user}"
-#>   ..$ gists_url          : chr "https://api.github.com/users/masalmon/gists{/gist_id}"
-#>   ..$ starred_url        : chr "https://api.github.com/users/masalmon/starred{/owner}{/repo}"
-#>   ..$ subscriptions_url  : chr "https://api.github.com/users/masalmon/subscriptions"
-#>   ..$ organizations_url  : chr "https://api.github.com/users/masalmon/orgs"
-#>   ..$ repos_url          : chr "https://api.github.com/users/masalmon/repos"
-#>   ..$ events_url         : chr "https://api.github.com/users/masalmon/events{/privacy}"
-#>   ..$ received_events_url: chr "https://api.github.com/users/masalmon/received_events"
-#>   ..$ type               : chr "User"
-#>   ..$ site_admin         : logi FALSE
-#>  $ private          : logi FALSE
-#>  $ html_url         : chr "https://github.com/masalmon/youtubedata"
-#>  $ description      : NULL
-#>  $ fork             : logi FALSE
-#>  $ url              : chr "https://api.github.com/repos/masalmon/youtubedata"
-#>  $ forks_url        : chr "https://api.github.com/repos/masalmon/youtubedata/forks"
-#>  $ keys_url         : chr "https://api.github.com/repos/masalmon/youtubedata/keys{/key_id}"
-#>  $ collaborators_url: chr "https://api.github.com/repos/masalmon/youtubedata/collaborators{/collaborator}"
-#>  $ teams_url        : chr "https://api.github.com/repos/masalmon/youtubedata/teams"
-#>  $ hooks_url        : chr "https://api.github.com/repos/masalmon/youtubedata/hooks"
-#>  $ issue_events_url : chr "https://api.github.com/repos/masalmon/youtubedata/issues/events{/number}"
-#>  $ events_url       : chr "https://api.github.com/repos/masalmon/youtubedata/events"
-#>  $ assignees_url    : chr "https://api.github.com/repos/masalmon/youtubedata/assignees{/user}"
-#>  $ branches_url     : chr "https://api.github.com/repos/masalmon/youtubedata/branches{/branch}"
-#>  $ tags_url         : chr "https://api.github.com/repos/masalmon/youtubedata/tags"
-#>  $ blobs_url        : chr "https://api.github.com/repos/masalmon/youtubedata/git/blobs{/sha}"
-#>  $ git_tags_url     : chr "https://api.github.com/repos/masalmon/youtubedata/git/tags{/sha}"
-#>  $ git_refs_url     : chr "https://api.github.com/repos/masalmon/youtubedata/git/refs{/sha}"
-#>  $ trees_url        : chr "https://api.github.com/repos/masalmon/youtubedata/git/trees{/sha}"
-#>  $ statuses_url     : chr "https://api.github.com/repos/masalmon/youtubedata/statuses/{sha}"
-#>  $ languages_url    : chr "https://api.github.com/repos/masalmon/youtubedata/languages"
-#>  $ stargazers_url   : chr "https://api.github.com/repos/masalmon/youtubedata/stargazers"
-#>  $ contributors_url : chr "https://api.github.com/repos/masalmon/youtubedata/contributors"
-#>  $ subscribers_url  : chr "https://api.github.com/repos/masalmon/youtubedata/subscribers"
-#>  $ subscription_url : chr "https://api.github.com/repos/masalmon/youtubedata/subscription"
-#>  $ commits_url      : chr "https://api.github.com/repos/masalmon/youtubedata/commits{/sha}"
-#>  $ git_commits_url  : chr "https://api.github.com/repos/masalmon/youtubedata/git/commits{/sha}"
-#>  $ comments_url     : chr "https://api.github.com/repos/masalmon/youtubedata/comments{/number}"
-#>  $ issue_comment_url: chr "https://api.github.com/repos/masalmon/youtubedata/issues/comments{/number}"
-#>  $ contents_url     : chr "https://api.github.com/repos/masalmon/youtubedata/contents/{+path}"
-#>  $ compare_url      : chr "https://api.github.com/repos/masalmon/youtubedata/compare/{base}...{head}"
-#>  $ merges_url       : chr "https://api.github.com/repos/masalmon/youtubedata/merges"
-#>  $ archive_url      : chr "https://api.github.com/repos/masalmon/youtubedata/{archive_format}{/ref}"
-#>  $ downloads_url    : chr "https://api.github.com/repos/masalmon/youtubedata/downloads"
-#>  $ issues_url       : chr "https://api.github.com/repos/masalmon/youtubedata/issues{/number}"
-#>  $ pulls_url        : chr "https://api.github.com/repos/masalmon/youtubedata/pulls{/number}"
-#>  $ milestones_url   : chr "https://api.github.com/repos/masalmon/youtubedata/milestones{/number}"
-#>  $ notifications_url: chr "https://api.github.com/repos/masalmon/youtubedata/notifications{?since,all,participating}"
-#>  $ labels_url       : chr "https://api.github.com/repos/masalmon/youtubedata/labels{/name}"
-#>  $ releases_url     : chr "https://api.github.com/repos/masalmon/youtubedata/releases{/id}"
-#>  $ deployments_url  : chr "https://api.github.com/repos/masalmon/youtubedata/deployments"
-#>  $ created_at       : chr "2016-03-23T16:35:56Z"
-#>  $ updated_at       : chr "2016-03-23T16:36:40Z"
-#>  $ pushed_at        : chr "2016-03-23T16:43:46Z"
-#>  $ git_url          : chr "git://github.com/masalmon/youtubedata.git"
-#>  $ ssh_url          : chr "git@github.com:masalmon/youtubedata.git"
-#>  $ clone_url        : chr "https://github.com/masalmon/youtubedata.git"
-#>  $ svn_url          : chr "https://github.com/masalmon/youtubedata"
-#>  $ homepage         : NULL
-#>  $ size             : int 75
-#>  $ stargazers_count : int 0
-#>  $ watchers_count   : int 0
-#>  $ language         : chr "R"
-#>  $ has_issues       : logi TRUE
-#>  $ has_downloads    : logi TRUE
-#>  $ has_wiki         : logi TRUE
-#>  $ has_pages        : logi FALSE
-#>  $ forks_count      : int 0
-#>  $ mirror_url       : NULL
-#>  $ open_issues_count: int 0
-#>  $ forks            : int 0
-#>  $ open_issues      : int 0
-#>  $ watchers         : int 0
-#>  $ default_branch   : chr "master"
 ```
 
-How many repos are there in total? We need to fund the length of each sub-list, and sum them up:
+How many repos are there in total? We need to find the length of each sub-list, and sum them up:
 
 ``` r
 gh_repos %>% map_int(length) %>% sum()
@@ -609,7 +351,7 @@ length(gh_flat)
 #> [1] 176
 ```
 
-![](diagrams/lists-flatten.png)
+<img src="diagrams/lists-flatten.png" width="432" />
 
 ### Rectangle
 
