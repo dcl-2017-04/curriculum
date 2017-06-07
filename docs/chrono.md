@@ -293,4 +293,74 @@ title: Theme index
   <td colspan="2"></td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+<td id='week-8'>8</td>
+  <td colspan="3"></td>
+  <td colspan="3"><a class="model" href="model-many.html">Many models</a></td>
+  <td colspan="2"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="manip-scoped.html">Scoped verbs</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="dplyr-databases.html">dplyr and databases</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="export.html">Exporting data</a></td>
+  <td colspan="4"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-9'>9</td>
+  <td colspan="1"></td>
+  <td colspan="3"><a class="wrangle" href="rectangling.html">Data rectangling</a></td>
+  <td colspan="4"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="2"></td>
+  <td colspan="3"><a class="program" href="manip-programming.html">Programming with dplyr</a></td>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="report-generation.html">Generating multiple reports</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="vis-position.html">Positioning</a></td>
+  <td colspan="1"></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td id='week-10'>10</td>
+  <td colspan="4"></td>
+  <td colspan="3"><a class="communicate" href="rmarkdown-formats.html">R Markdown presentations</a></td>
+  <td colspan="1"></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="reprexes.html">Reprexes</a></td>
+</tr>
+<tr>
+<td></td>
+  <td colspan="5"></td>
+  <td colspan="3"><a class="workflow" href="learning-more.html">Learning more</a></td>
+</tr>
+</tbody>
 </table>
